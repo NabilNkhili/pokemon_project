@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Abilities</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        {% if categories %}
+            {% for category, _ in categories.items() %}
+                <a href="/category/{{ category }}">{{ category.capitalize() }}</a>
+            {% endfor %}
+        {% endif %}
+        
+        <!-- Formulaire de recherche amélioré -->
+        <input type="text" id="search-bar" placeholder="Search..." onkeyup="search()">
+        <button onclick="search()">Search</button>
+    </div>
+
+    <div class="content">
+        <h1>All Abilities</h1>
+        <p>Total Abilities: {{ total_abilities }}</p>
+
+        <!-- Boutons pour trier -->
+        <div class="filter-buttons">
+            <button onclick="showAll()">Show All</button>
+            <button onclick="showAbilities()">Show Abilities</button>
+            <button onclick="showHiddenAbilities()">Show Hidden Abilities</button>
+        </div>
+
+        <!-- Liste des capacités normales -->
+        <div id="abilities-list" class="abilities-grid">
+            <h2>Abilities</h2>
+            <div class="grid-container">
+                {% for ability in abilities %}
+                    <div class="ability-card">
+                        <strong>{{ ability.label }}</strong>
+                        <a href="{{ url_for('ability_details', ability_name=ability.label) }}">More Info</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Liste des Hidden Abilities -->
+        <div id="hidden-abilities-list" class="abilities-grid">
+            <h2>Hidden Abilities</h2>
+            <div class="grid-container">
+                {% for ability in hidden_abilities %}
+                    <div class="ability-card">
+                        <strong>{{ ability.label }}</strong>
+                        <a href="{{ ability.uri }}">More Info</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <!-- Script JS pour la recherche et le tri -->
+    <script>
+        function search() {
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const cards = document.querySelectorAll('.ability-card'); // Cibler les cartes de capacité
+
+            let found = false; // Suivi des résultats
+            cards.forEach(card => {
+                const label = card.querySelector('strong').textContent.toLowerCase();
+                if (label.includes(query)) {
+                    card.style.display = 'block'; // Affiche les résultats correspondants
+                    found = true;
+                } else {
+                    card.style.display = 'none'; // Cache les résultats non correspondants
+                }
+            });
+
+            if (!found) {
+                console.log("No results found for: " + query);
+            }
+        }
+
+        // Fonctions pour trier les capacités
+        function showAll() {
+            document.getElementById('abilities-list').style.display = 'block';
+            document.getElementById('hidden-abilities-list').style.display = 'block';
+        }
+
+        function showAbilities() {
+            document.getElementById('abilities-list').style.display = 'block';
+            document.getElementById('hidden-abilities-list').style.display = 'none';
+        }
+
+        function showHiddenAbilities() {
+            document.getElementById('abilities-list').style.display = 'none';
+            document.getElementById('hidden-abilities-list').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

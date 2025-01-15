@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}{{ label }}{% endblock %}
+{% block content %}
+    <div class="pokemon-detail">
+        <img src="/proxy-image/?url={{ result.image | urlencode }}" 
+     alt="{{ result.label }}" 
+     onerror="this.src='/static/no_image.png';">
+
+
+        <h1>{{ label }}</h1>
+        
+        <table class="detail-table">
+            {% for predicate, obj in triples %}
+            <tr>
+                <th>{{ predicate }}</th>
+                <td>{{ obj }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <a href="/">Back to Home</a>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,197 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix dbp: <http://dbpedia.org/property/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix ex: <http://example.org/pokemon/> .
+@prefix ep: <http://example.org/episodes/> .
+
+
+### Définition des classes principales
+ex:Pokemon a rdfs:Class ;
+    rdfs:label "Pokemon" ;
+    rdfs:comment "Représente un Pokémon, incluant ses types, capacités et caractéristiques." .
+
+ex:PokemonType a rdfs:Class ;
+    rdfs:label "Pokemon Type" ;
+    rdfs:comment "Type d'un Pokémon, comme Eau, Feu, Plante, etc." .
+
+ex:Ability a rdfs:Class ;
+    rdfs:label "Ability" ;
+    rdfs:comment "Capacité d'un Pokémon influençant son comportement en combat." .
+
+ex:HiddenAbility a rdfs:Class ;
+    rdfs:label "Hidden Ability" ;
+    rdfs:subClassOf ex:Ability ;
+    rdfs:comment "Capacité cachée d'un Pokémon qui n'est pas toujours visible par défaut." .
+
+ex:EggGroup a rdfs:Class ;
+    rdfs:label "Egg Group" ;
+    rdfs:comment "Groupe d'œufs auquel appartient un Pokémon pour la reproduction." .
+
+ex:Move a rdfs:Class ;
+    rdfs:label "Move" ;
+    rdfs:comment "Attaque ou mouvement qu'un Pokémon peut utiliser en combat." .
+
+
+
+### Définition des classes principales
+ep:Episode a rdfs:Class ;
+    rdfs:label "Episode" ;
+    rdfs:comment "Épisode d'une série animée Pokémon." .    
+
+### Définition des propriétés principales
+ex:hasType a rdf:Property ;
+    rdfs:domain ex:Pokemon ;
+    rdfs:range ex:PokemonType ;
+    rdfs:label "hasType" ;
+    rdfs:comment "Indique le type d'un Pokémon." .
+
+ex:hasAbility a rdf:Property ;
+    rdfs:domain ex:Pokemon ;
+    rdfs:range ex:Ability ;
+    rdfs:label "hasAbility" ;
+    rdfs:comment "Indique une capacité d'un Pokémon." .
+
+ex:hasHiddenAbility a rdf:Property ;
+    rdfs:domain ex:Pokemon ;
+    rdfs:range ex:HiddenAbility ;
+    rdfs:label "hasHiddenAbility" ;
+    rdfs:comment "Indique une capacité cachée d'un Pokémon." .
+
+ex:hasEggGroup a rdf:Property ;
+    rdfs:domain ex:Pokemon ;
+    rdfs:range ex:EggGroup ;
+    rdfs:label "hasEggGroup" ;
+    rdfs:comment "Indique le groupe d'œufs d'un Pokémon." .
+
+ex:hasMove a rdf:Property ;
+    rdfs:domain ex:Pokemon ;
+    rdfs:range ex:Move ;
+    rdfs:label "hasMove" ;
+    rdfs:comment "Indique un mouvement que le Pokémon peut utiliser en combat." .
+
+ex:hasPower a rdf:Property ;
+    rdfs:domain ex:Move ;
+    rdfs:range xsd:integer ;
+    rdfs:label "hasPower" ;
+    rdfs:comment "Indique la puissance d'un mouvement." .
+
+ex:hasAccuracy a rdf:Property ;
+    rdfs:domain ex:Move ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasAccuracy" ;
+    rdfs:comment "Indique la précision d'un mouvement." .
+
+ex:hasCategory a rdf:Property ;
+    rdfs:domain ex:Move ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasCategory" ;
+    rdfs:comment "Catégorie du mouvement (physique, spécial, statut)." .
+
+ex:hasType a rdf:Property ;
+rdfs:domain ex:Move ;
+rdfs:range ex:PokemonType ;
+rdfs:label "hasType" ;
+rdfs:comment "Indique le type d'un Move (ex: Feu, Eau, Plante, etc.)." .
+
+
+ex:hasEpisode a rdf:Property ;
+    rdfs:domain ex:Episode ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasEpisode" ;
+    rdfs:comment "Indique le titre ou numéro d'un épisode." .
+
+ex:hasGeneration a rdf:Property ;
+    rdfs:domain ex:Pokemon ;
+    rdfs:range xsd:integer ;
+    rdfs:label "hasGeneration" ;
+    rdfs:comment "Indique la génération du Pokémon." .
+
+ex:hasImage a rdf:Property ;
+    rdfs:domain ex:Pokemon ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "hasImage" ;
+    rdfs:comment "Indique l'image associée à un Pokémon." .
+
+### Définition des relations avec Dbpedia
+ex:relatedToDbpedia a rdf:Property ;
+    rdfs:domain ex:Pokemon ;
+    rdfs:range dbr:Pokemon ;
+    rdfs:label "relatedToDbpedia" ;
+    rdfs:comment "Lien entre un Pokémon et sa ressource DBpedia." .
+
+### Définition des propriétés pour les épisodes
+ep:hasTitle a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasTitle" ;
+    rdfs:comment "Indique le titre de l'épisode." .
+
+ep:hasEpisodeNumber a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasEpisodeNumber" ;
+    rdfs:comment "Indique le numéro de l'épisode." .
+
+ep:hasJapanReleaseDate a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:date ;
+    rdfs:label "hasJapanReleaseDate" ;
+    rdfs:comment "Indique la date de diffusion au Japon." .
+
+ep:hasUSReleaseDate a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:date ;
+    rdfs:label "hasUSReleaseDate" ;
+    rdfs:comment "Indique la date de diffusion aux États-Unis." .
+
+ep:hasImage a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "hasImage" ;
+    rdfs:comment "Indique l'image associée à l'épisode." .
+
+ep:hasAnimation a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasAnimation" ;
+    rdfs:comment "Indique le studio d'animation de l'épisode." .
+
+ep:hasDirector a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasDirector" ;
+    rdfs:comment "Indique le(s) réalisateur(s) de l'épisode." .
+
+ep:hasScreenplay a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasScreenplay" ;
+    rdfs:comment "Indique le(s) scénariste(s) de l'épisode." .
+
+ep:hasStoryboard a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasStoryboard" ;
+    rdfs:comment "Indique le storyboard de l'épisode." .
+
+ep:hasOpening a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasOpening" ;
+    rdfs:comment "Indique l'opening de l'épisode." .
+
+ep:hasEnding a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range xsd:string ;
+    rdfs:label "hasEnding" ;
+    rdfs:comment "Indique l'ending de l'épisode." .
+
+ep:hasPokemonDebut a rdf:Property ;
+    rdfs:domain ep:Episode ;
+    rdfs:range ex:Pokemon ;
+    rdfs:label "hasPokemonDebut" ;
+    rdfs:comment "Indique les Pokémon qui ont débuté dans cet épisode." .

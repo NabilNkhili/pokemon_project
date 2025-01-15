@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Types</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        {% if categories %}
+            {% for category, _ in categories.items() %}
+                <a href="/category/{{ category }}">{{ category.capitalize() }}</a>
+            {% endfor %}
+        {% endif %}
+        <a href="/type">Types</a>  <!-- Lien vers la page des types -->
+        
+        <!-- Formulaire de recherche amélioré -->
+        <input type="text" id="search-bar" placeholder="Search..." onkeyup="search()">
+        <button onclick="search()">Search</button>
+    </div>
+
+    <div class="content">
+        <h1>Pokémon Types</h1>
+        <ul>
+            {% for type in types %}
+                <li>
+                    <strong>{{ type.label }}</strong>
+                    <a href="{{ type.uri }}">More Info</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Script JS pour la recherche -->
+    <script>
+        function search() {
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const types = document.querySelectorAll('li'); // Cibler les éléments de la liste
+
+            let found = false; // Suivi des résultats
+            types.forEach(type => {
+                const label = type.querySelector('strong').textContent.toLowerCase();
+                if (label.includes(query)) {
+                    type.style.display = 'block'; // Affiche les résultats correspondants
+                    found = true;
+                } else {
+                    type.style.display = 'none'; // Cache les résultats non correspondants
+                }
+            });
+
+            if (!found) {
+                console.log("No results found for: " + query);
+            }
+        }
+    </script>
+</body>
+</html>

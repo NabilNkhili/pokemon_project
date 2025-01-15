@@ -1,0 +1,4036 @@
+@prefix ex: <http://example.org/pokemon/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+
+ex:Adventure_Log a ex:Game ;
+    rdfs:label "Adventure Log" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Bootleg a ex:Game ;
+    rdfs:label "Bootleg" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Camp_Pok_mon a ex:Game ;
+    rdfs:label "Camp Pokémon" ;
+    schema1:Category "Entertainment" ;
+    schema1:Platform "iOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generation VI side series" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "October 21, 2014 (iOS), April 14, 2016 (Android)" ;
+    schema1:releaseDate_Australia "October 21, 2014 (iOS), April 14, 2016 (Android)" ;
+    schema1:releaseDate_Europe "October 21, 2014 (iOS), April 14, 2016 (Android)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/8b/Camp_Pok%C3%A9mon_Update_1.3.png/250px-Camp_Pok%C3%A9mon_Update_1.3.png" .
+
+ex:Cyber_Pok__Ball a ex:Game ;
+    rdfs:label "Cyber Poké Ball" ;
+    schema1:Category "Utility" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "2 player" ;
+    schema1:Connectivity "Physical" ;
+    schema1:Developer "Bandai" ;
+    schema1:Publisher "Bandai" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/a/a3/Cyber_Pok%C3%A9_Ball.jpg/250px-Cyber_Pok%C3%A9_Ball.jpg" .
+
+ex:Cyber_Pok_dex a ex:Game ;
+    rdfs:label "Cyber Pokédex" ;
+    schema1:Category "Utility" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "1-2 player" ;
+    schema1:Connectivity "Physical" ;
+    schema1:Developer "Bandai" ;
+    schema1:Publisher "Bandai" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5a/Cyber_Pok%C3%A9dex.png/250px-Cyber_Pok%C3%A9dex.png" .
+
+ex:Cyclone_2 a ex:Game ;
+    rdfs:label "Cyclone 2" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "2 player" ;
+    schema1:Connectivity "Physical" ;
+    schema1:Developer "Tiger Electronics" ;
+    schema1:Publisher "Tiger Electronics" ;
+    schema1:Part_of "Generation I Miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/9/9e/Cyclone_2_black.jpg/250px-Cyclone_2_black.jpg" .
+
+ex:Dance__Pikachu a ex:Game ;
+    rdfs:label "Dance! Pikachu" ;
+    schema1:Category "Rhythm game" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Banpresto" ;
+    schema1:Publisher "Banpresto" ;
+    schema1:Part_of "Generation I miscellaneous" ;
+    schema1:releaseDate_Japan "December 1999" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/28/Dance_Pikachu_machine.jpg/150px-Dance_Pikachu_machine.jpg" .
+
+ex:Dancing__Pok_mon_Band a ex:Game ;
+    rdfs:label "Dancing? Pokémon Band" ;
+    schema1:Category "Rhythm" ;
+    schema1:Platform "iOS, Android" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "Leaderboards" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VI miscellaneous" ;
+    schema1:releaseDate_Japan "June 30, 2015" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5e/Dancing_Pok%C3%A9mon_Band_logo.png/250px-Dancing_Pok%C3%A9mon_Band_logo.png" .
+
+ex:Detective_Pikachu__video_game_ a ex:Game ;
+    rdfs:label "Detective Pikachu (video game)" ;
+    schema1:Category "Action-adventure" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VI and VII spin-off" ;
+    schema1:releaseDate_Japan "February 3, 2016 (Birth of a New Duo), March 23, 2018 (full version)" ;
+    schema1:releaseDate_North_America "March 23, 2018" ;
+    schema1:releaseDate_Australia "March 24, 2018" ;
+    schema1:releaseDate_Europe "March 23, 2018" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "March 23, 2018" ;
+    schema1:releaseDate_Taiwan "March 23, 2018" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/bc/Detective_Pikachu_EN_Boxart.png/250px-Detective_Pikachu_EN_Boxart.png" .
+
+ex:Detective_Pikachu_Returns a ex:Game ;
+    rdfs:label "Detective Pikachu Returns" ;
+    schema1:Category "Action-adventure" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "Nintendo / The Pokémon Company" ;
+    schema1:Part_of "Generation IX spin-off" ;
+    schema1:releaseDate_Japan "October 6, 2023" ;
+    schema1:releaseDate_North_America "October 6, 2023" ;
+    schema1:releaseDate_Australia "October 6, 2023" ;
+    schema1:releaseDate_Europe "October 6, 2023" ;
+    schema1:releaseDate_South_Korea "October 6, 2023" ;
+    schema1:releaseDate_Hong_Kong "October 6, 2023" ;
+    schema1:releaseDate_Taiwan "October 6, 2023" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/38/Detective_Pikachu_Returns_EN_Boxart.jpg/250px-Detective_Pikachu_Returns_EN_Boxart.jpg" .
+
+ex:Digital_Pok__Ball_D___P a ex:Game ;
+    rdfs:label "Digital Poké Ball D & P" ;
+    schema1:Category "Utility" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "2 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Bandai" ;
+    schema1:Publisher "Bandai" ;
+    schema1:Part_of "Generation IV miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "2008" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/40/Digital_Poke_Ball_DP.png/250px-Digital_Poke_Ball_DP.png" .
+
+ex:Digital_Raid_Battle_Assistant a ex:Game ;
+    rdfs:label "Digital Raid Battle Assistant" ;
+    schema1:Category "Application" ;
+    schema1:Platform "PC, Mac, iOS, Android web browsers" ;
+    schema1:Players "1-4" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generation VIII miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "July 13, 2020" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/83/Raid_Battle_TCG_logo.png/250px-Raid_Battle_TCG_logo.png" .
+
+ex:Double_Battle__Battle_Mode_ a ex:Game ;
+    rdfs:label "Double Battle (Battle Mode)" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Eevee___Tamagotchi a ex:Game ;
+    rdfs:label "Eevee × Tamagotchi" ;
+    schema1:Category "Virtual pet" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "WiZ" ;
+    schema1:Publisher "Bandai" ;
+    schema1:Part_of "Generation VII" ;
+    schema1:releaseDate_Japan "January 26, 2019" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/6e/Eevee_Tamagotchi.png/180px-Eevee_Tamagotchi.png" .
+
+ex:Flat_Battle a ex:Game ;
+    rdfs:label "Flat Battle" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Generation a ex:Game ;
+    rdfs:label "Generation" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Generation_I a ex:Game ;
+    rdfs:label "Generation I" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/4/4d/YellowTitle.png" .
+
+ex:Generation_II a ex:Game ;
+    rdfs:label "Generation II" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/4/40/SilverTitle.png" .
+
+ex:Generation_III a ex:Game ;
+    rdfs:label "Generation III" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/6/63/LeafGreenTitle.png" .
+
+ex:Generation_IV a ex:Game ;
+    rdfs:label "Generation IV" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/6/6d/PlatinumTitle.png" .
+
+ex:Generation_IX a ex:Game ;
+    rdfs:label "Generation IX" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/4e/VioletTitle.png/250px-VioletTitle.png" .
+
+ex:Generation_V a ex:Game ;
+    rdfs:label "Generation V" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/e/ea/White2Title.png" .
+
+ex:Generation_VI a ex:Game ;
+    rdfs:label "Generation VI" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/45/Omega_RubyTitle.png/250px-Omega_RubyTitle.png" .
+
+ex:Generation_VII a ex:Game ;
+    rdfs:label "Generation VII" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/25/LGPikachuTitle.png/250px-LGPikachuTitle.png" .
+
+ex:Generation_VIII a ex:Game ;
+    rdfs:label "Generation VIII" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/d/d8/Shining_PearlTitle.png/250px-Shining_PearlTitle.png" .
+
+ex:GS_Cup a ex:Game ;
+    rdfs:label "GS Cup" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:HarmoKnight a ex:Game ;
+    rdfs:label "HarmoKnight" ;
+    schema1:Category "Rhythm platformer" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation V spin-off" ;
+    schema1:releaseDate_Japan "September 5, 2012" ;
+    schema1:releaseDate_North_America "March 28, 2013" ;
+    schema1:releaseDate_Australia "March 28, 2013" ;
+    schema1:releaseDate_Europe "March 28, 2013" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/3e/HarmoKnight.png/250px-HarmoKnight.png" .
+
+ex:Hey_You__Pikachu_ a ex:Game ;
+    rdfs:label "Hey You, Pikachu!" ;
+    schema1:Category "Virtual pet" ;
+    schema1:Platform "Nintendo 64" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I spin-off" ;
+    schema1:releaseDate_Japan "December 12, 1998" ;
+    schema1:releaseDate_North_America "November 6, 2000" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/2b/Hey_You_Pikachu_EN_boxart.png/250px-Hey_You_Pikachu_EN_boxart.png" .
+
+ex:History_of_Pok_mon a ex:Game ;
+    rdfs:label "History of Pokémon" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:HM a ex:Game ;
+    rdfs:label "HM" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/0/0c/Bag_HM_Normal_Sprite.png" .
+
+ex:Intellectual_Training_Drill_Pok_mon_Diamond___Pearl__Letter_and_Number_Intelligence_Game a ex:Game ;
+    rdfs:label "Intellectual Training Drill Pokémon Diamond & Pearl: Letter and Number Intelligence Game" ;
+    schema1:Category "Edutainment" ;
+    schema1:Platform "Advanced Pico Beena" ;
+    schema1:Players "1-2 players" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega Toys" ;
+    schema1:Publisher "Sega Toys" ;
+    schema1:Part_of "Generation IV miscellaneous" ;
+    schema1:releaseDate_Japan "November 21, 2006" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/4b/Intellectual_Training_Drill_Pokemon_DP_Letter_and_Number_Intelligence_Game_JP_boxart.png/250px-Intellectual_Training_Drill_Pokemon_DP_Letter_and_Number_Intelligence_Game_JP_boxart.png" .
+
+ex:Learn_Real_English_Through_Pok_mon__XY_Translation_Scope a ex:Game ;
+    rdfs:label "Learn Real English Through Pokémon: XY Translation Scope" ;
+    schema1:Category "Education" ;
+    schema1:Platform "iOS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "The Pokémon Company" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VI miscellaneous" ;
+    schema1:releaseDate_Japan "April 22, 2015" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/2b/Learn_Real_English_Through_Pok%C3%A9mon_XY_Translation_Scope.png/300px-Learn_Real_English_Through_Pok%C3%A9mon_XY_Translation_Scope.png" .
+
+ex:Learn_with_Pok_mon__Typing_Adventure a ex:Game ;
+    rdfs:label "Learn with Pokémon: Typing Adventure" ;
+    schema1:Category "Typing" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1-5 players simultaneous" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Genius Sonority" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation V miscellaneous" ;
+    schema1:releaseDate_Japan "April 21, 2011*, November 12, 2011*" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "January 10, 2013" ;
+    schema1:releaseDate_Europe "September 21, 2012" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/03/Typing_EN_boxart.png/330px-Typing_EN_boxart.png" .
+
+ex:User_Lewtwo_Pokemon_Sword_and_Shield_Build_30 a ex:Game ;
+    rdfs:label "User:Lewtwo/Pokemon Sword and Shield Build 30" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VIII core series" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/58/Sword_Beta_Build_30_Title_Screen.png/250px-Sword_Beta_Build_30_Title_Screen.png" .
+
+ex:Mix_Battle a ex:Game ;
+    rdfs:label "Mix Battle" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:My_Pok_mon_Place__New_Year a ex:Game ;
+    rdfs:label "My Pokémon Place: New Year" ;
+    schema1:Category "Minigames" ;
+    schema1:Platform "PC, Mac, iOS, Android web browsers" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "The Pokémon Company International" ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generation VIII miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "December 1, 2021" ;
+    schema1:releaseDate_Australia "December 1, 2021" ;
+    schema1:releaseDate_Europe "December 1, 2021" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/14/Pok%C3%A9mon_Place_New_Year_logo.png/250px-Pok%C3%A9mon_Place_New_Year_logo.png" .
+
+ex:My_Pok_mon_Ranch a ex:Game ;
+    rdfs:label "My Pokémon Ranch" ;
+    schema1:Category "Virtual life" ;
+    schema1:Platform "Wii" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Nintendo Wi-Fi Connection" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV side series" ;
+    schema1:releaseDate_Japan "March 25, 2008" ;
+    schema1:releaseDate_North_America "June 9, 2008" ;
+    schema1:releaseDate_Australia "July 4, 2008" ;
+    schema1:releaseDate_Europe "July 4, 2008" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/00/MPR-EN_logo.png/250px-MPR-EN_logo.png" .
+
+ex:New_Pok_mon_Snap a ex:Game ;
+    rdfs:label "New Pokémon Snap" ;
+    schema1:Category "First person rail shooter" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Nintendo Switch Online" ;
+    schema1:Developer "Bandai Namco Studios" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VIII spin-off" ;
+    schema1:releaseDate_Japan "April 30, 2021" ;
+    schema1:releaseDate_North_America "April 30, 2021" ;
+    schema1:releaseDate_Australia "April 30, 2021" ;
+    schema1:releaseDate_Europe "April 30, 2021" ;
+    schema1:releaseDate_South_Korea "April 30, 2021" ;
+    schema1:releaseDate_Hong_Kong "April 30, 2021" ;
+    schema1:releaseDate_Taiwan "April 30, 2021" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/ee/New_Pok%C3%A9mon_Snap_EN_boxart.png/250px-New_Pok%C3%A9mon_Snap_EN_boxart.png" .
+
+ex:Nintendo_Badge_Arcade a ex:Game ;
+    rdfs:label "Nintendo Badge Arcade" ;
+    schema1:Category "Virtual crane machine" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Nintendo Network, Swapdoodle" ;
+    schema1:Developer "Nintendo" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation VI-VII miscellaneous" ;
+    schema1:releaseDate_Japan "December 17, 2014" ;
+    schema1:releaseDate_North_America "November 10, 2015" ;
+    schema1:releaseDate_Australia "November 13, 2015" ;
+    schema1:releaseDate_Europe "November 13, 2015" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/44/Nintendo_Badge_Arcade_logo.png/250px-Nintendo_Badge_Arcade_logo.png" .
+
+ex:Pichu_Bros__mini a ex:Game ;
+    rdfs:label "Pichu Bros. mini" ;
+    schema1:Category "Minigames" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "10 players" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Denyusha" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "August 9, 2002" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/13/Pichu_Bros_mini_JP_boxart.png/190px-Pichu_Bros_mini_JP_boxart.png" .
+
+ex:Picross_NP_Vol__1 a ex:Game ;
+    rdfs:label "Picross NP Vol. 1" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Super Nintendo Entertainment System (Nintendo Power)" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I miscellaneous" ;
+    schema1:releaseDate_Japan "April 1, 1999" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/b6/Picross_NP_Vol_1.png/190px-Picross_NP_Vol_1.png" .
+
+ex:Pikachu_Talk a ex:Game ;
+    rdfs:label "Pikachu Talk" ;
+    schema1:Category "Virtual pet" ;
+    schema1:Platform "Google Home, Google Home Mini, Amazon Alexa" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "The Pokémon Company" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VII spin-off" ;
+    schema1:releaseDate_Japan "November 8, 2017" ;
+    schema1:releaseDate_North_America "February 26, 2018" ;
+    schema1:releaseDate_Australia "February 26, 2018" ;
+    schema1:releaseDate_Europe "February 26, 2018" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/ee/Pikachu_Talk_logo.png/250px-Pikachu_Talk_logo.png" .
+
+ex:Pikachu_s_Great_Surfing_Adventure a ex:Game ;
+    rdfs:label "Pikachu's Great Surfing Adventure" ;
+    schema1:Category "Driving game" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sammy Corporation" ;
+    schema1:Publisher "Banpresto" ;
+    schema1:Part_of "Generation II miscellaneous" ;
+    schema1:releaseDate_Japan "2000" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/1f/Pikachu_Great_Surfing_Adventure_machine.jpg/170px-Pikachu_Great_Surfing_Adventure_machine.jpg" .
+
+ex:Pikachu__DS_Tech_Demo a ex:Game ;
+    rdfs:label "Pikachu: DS Tech Demo" ;
+    schema1:Category "Virtual pet (tech demo)" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Nintendo" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "May 12, 2004" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/7/75/Pikachu_DS_Tech_Demo_DS.png" .
+
+ex:Pocket_Monsters_Advanced_Generation__Pok_mon_Super_Drill_Let_s_Learn_Numbers_from_1_to_20__ a ex:Game ;
+    rdfs:label "Pocket Monsters Advanced Generation: Pokémon Super Drill Let's Learn Numbers from 1 to 20!!" ;
+    schema1:Category "Edutainment" ;
+    schema1:Platform "CoCoPad" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega Toys" ;
+    schema1:Publisher "Sega Toys" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "July 11, 2005" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5a/AG_Pokemon_Super_Drill_Lets_Learn_Numbers_from_1_to_20_JP_boxart.jpg/250px-AG_Pokemon_Super_Drill_Lets_Learn_Numbers_from_1_to_20_JP_boxart.jpg" .
+
+ex:Pokk_n_Tournament a ex:Game ;
+    rdfs:label "Pokkén Tournament" ;
+    schema1:Category "Fighting" ;
+    schema1:Platform "Arcade, Wii U, Nintendo Switch" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Bandai Namco Entertainment" ;
+    schema1:Publisher "Bandai Namco Entertainment (Arcade), The Pokémon Company (Consoles; Japan), Nintendo (Consoles; International)" ;
+    schema1:Part_of "Generation VI and VII spin off" ;
+    schema1:releaseDate_Japan "July 16, 2015 (Arcade), March 18, 2016 (Wii U), September 22, 2017 (Switch)" ;
+    schema1:releaseDate_North_America "September 24, 2015 (Arcade), March 18, 2016 (Wii U), September 22, 2017 (Switch)" ;
+    schema1:releaseDate_Australia "March 19, 2016 (Wii U), September 22, 2017 (Switch)" ;
+    schema1:releaseDate_Europe "March 18, 2016 (Wii U), September 22, 2017 (Switch)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "September 22, 2017 (Switch)" ;
+    schema1:releaseDate_Taiwan "December 1, 2017 (Switch)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/8b/Pokk%C3%A9n_Tournament_EN_boxart.png/250px-Pokk%C3%A9n_Tournament_EN_boxart.png" .
+
+ex:Pok_dex_3D a ex:Game ;
+    rdfs:label "Pokédex 3D" ;
+    schema1:Category "Utility" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "Single" ;
+    schema1:Connectivity "SpotPass, DS Wireless" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation V spin-off" ;
+    schema1:releaseDate_Japan "June 17, 2011" ;
+    schema1:releaseDate_North_America "June 6, 2011" ;
+    schema1:releaseDate_Australia "June 7, 2011" ;
+    schema1:releaseDate_Europe "June 7, 2011" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/77/Pok%C3%A9dex_3D_logo.png/250px-Pok%C3%A9dex_3D_logo.png" .
+
+ex:Pok_dex_3D_Pro a ex:Game ;
+    rdfs:label "Pokédex 3D Pro" ;
+    schema1:Category "Utility" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "Single" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation V spin-off" ;
+    schema1:releaseDate_Japan "July 14, 2012" ;
+    schema1:releaseDate_North_America "November 8, 2012" ;
+    schema1:releaseDate_Australia "November 8, 2012" ;
+    schema1:releaseDate_Europe "November 8, 2012" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/8/84/Pok%C3%A9dex_3D_Pro_logo.png" .
+
+ex:Pok_dex_for_iOS a ex:Game ;
+    rdfs:label "Pokédex for iOS" ;
+    schema1:Category "Utility" ;
+    schema1:Platform "iOS" ;
+    schema1:Players "Single" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation V spin-off" ;
+    schema1:releaseDate_Japan "December 6, 2012" ;
+    schema1:releaseDate_North_America "December 10, 2012" ;
+    schema1:releaseDate_Australia "December 10, 2012" ;
+    schema1:releaseDate_Europe "December 10, 2012" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/05/Pok%C3%A9dex_for_iOS.png/250px-Pok%C3%A9dex_for_iOS.png" .
+
+ex:Pok_mate a ex:Game ;
+    rdfs:label "Pokémate" ;
+    schema1:Category "Virtual pet" ;
+    schema1:Platform "Mobile phone" ;
+    schema1:Players "2 players" ;
+    schema1:Connectivity "Mobile phone" ;
+    schema1:Developer "Square Enix" ;
+    schema1:Publisher "Square Enix" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "June 5, 2006" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/0/00/Pok%C3%A9mate_logo.png" .
+
+ex:Pok_Mileage_Club a ex:Game ;
+    rdfs:label "PokéMileage Club" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e7/Dream_Berry_Juice_Sprite.png/40px-Dream_Berry_Juice_Sprite.png" .
+
+ex:Pok_mon_Advanced_Generation__I_ve_Begun_Hiragana_and_Katakana_ a ex:Game ;
+    rdfs:label "Pokémon Advanced Generation: I've Begun Hiragana and Katakana!" ;
+    schema1:Category "Edutainment" ;
+    schema1:Platform "Sega Pico" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega Toys" ;
+    schema1:Publisher "Sega Toys" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "November 17, 2003" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/46/AG_Ive_Begun_Hiragana_and_Katakana_JP_boxart.jpg/250px-AG_Ive_Begun_Hiragana_and_Katakana_JP_boxart.jpg" .
+
+ex:Pok_mon_Advanced_Generation__Pico_for_Everyone_Pok_mon_Loud_Battle_ a ex:Game ;
+    rdfs:label "Pokémon Advanced Generation: Pico for Everyone Pokémon Loud Battle!" ;
+    schema1:Category "Edutainment" ;
+    schema1:Platform "Sega Pico" ;
+    schema1:Players "2 players" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega Toys" ;
+    schema1:Publisher "Sega Toys" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "July 13, 2004" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/33/AG_Pico_for_Everyone_Pokemon_Loud_Battle_JP_boxart.png/250px-AG_Pico_for_Everyone_Pokemon_Loud_Battle_JP_boxart.png" .
+
+ex:Pok_mon_Advanced_Generation__Pok_mon_Number_Battle_ a ex:Game ;
+    rdfs:label "Pokémon Advanced Generation: Pokémon Number Battle!" ;
+    schema1:Category "Edutainment" ;
+    schema1:Platform "Advanced Pico Beena" ;
+    schema1:Players "1-2 players" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega Toys" ;
+    schema1:Publisher "Sega Toys" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "October 1, 2005" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e4/AG_Pokemon_Number_Battle_JP_boxart.png/149px-AG_Pokemon_Number_Battle_JP_boxart.png" .
+
+ex:Pok_mon_Art_Academy a ex:Game ;
+    rdfs:label "Pokémon Art Academy" ;
+    schema1:Category "Art training" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Nintendo Network" ;
+    schema1:Developer "Headstrong Games" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation VI side series" ;
+    schema1:releaseDate_Japan "June 19, 2014" ;
+    schema1:releaseDate_North_America "October 24, 2014" ;
+    schema1:releaseDate_Australia "July 5, 2014" ;
+    schema1:releaseDate_Europe "July 4, 2014" ;
+    schema1:releaseDate_South_Korea "April 23, 2015" ;
+    schema1:releaseDate_Hong_Kong "October 24, 2014" ;
+    schema1:releaseDate_Taiwan "October 24, 2014" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/19/Art_Academy_US_boxart.png/250px-Art_Academy_US_boxart.png" .
+
+ex:Pok_mon_Battle_Chess a ex:Game ;
+    rdfs:label "Pokémon Battle Chess" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Pok_mon_Battle_e a ex:Game ;
+    rdfs:label "Pokémon Battle e" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Pok_mon_Battle_Revolution a ex:Game ;
+    rdfs:label "Pokémon Battle Revolution" ;
+    schema1:Category "Battle Simulation" ;
+    schema1:Platform "Wii" ;
+    schema1:Players "Single and multiplayer" ;
+    schema1:Connectivity "Nintendo Wi-Fi Connection" ;
+    schema1:Developer "Genius Sonority" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV side series" ;
+    schema1:releaseDate_Japan "December 14, 2006" ;
+    schema1:releaseDate_North_America "June 25, 2007" ;
+    schema1:releaseDate_Australia "November 22, 2007" ;
+    schema1:releaseDate_Europe "December 7, 2007" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "July 12, 2008" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/a/a1/Battle_Revolution_EN_boxart.jpg/250px-Battle_Revolution_EN_boxart.jpg" .
+
+ex:Pok_mon_Battle_Trozei a ex:Game ;
+    rdfs:label "Pokémon Battle Trozei" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1-4" ;
+    schema1:Connectivity "StreetPass" ;
+    schema1:Developer "Genius Sonority" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation VI spin-off" ;
+    schema1:releaseDate_Japan "March 12, 2014" ;
+    schema1:releaseDate_North_America "March 20, 2014" ;
+    schema1:releaseDate_Australia "March 14, 2014" ;
+    schema1:releaseDate_Europe "March 13, 2014" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e0/Battle_Trozei_logo.png/200px-Battle_Trozei_logo.png" .
+
+ex:Pok_mon_Battrio a ex:Game ;
+    rdfs:label "Pokémon Battrio" ;
+    schema1:Category "Battle simulation" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 or 2 players simultaneous" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Takara Tomy/AQ Interactive" ;
+    schema1:Publisher "Takara Tomy" ;
+    schema1:Part_of "Generation IV and V miscellaneous" ;
+    schema1:releaseDate_Japan "July 14, 2007" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "May 2010" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/37/Battrio_machine.png/120px-Battrio_machine.png" .
+
+ex:Pok_mon_Best_Wishes__Intelligence_Training_Pok_mon_Big_Sports_Meet_ a ex:Game ;
+    rdfs:label "Pokémon Best Wishes: Intelligence Training Pokémon Big Sports Meet!" ;
+    schema1:Category "Edutainment" ;
+    schema1:Platform "Advanced Pico Beena" ;
+    schema1:Players "1-2 players" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega Toys" ;
+    schema1:Publisher "Sega Toys" ;
+    schema1:Part_of "Generation V miscellaneous" ;
+    schema1:releaseDate_Japan "December 4, 2010" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/7e/BW_Intelligence_Training_Pokemon_Big_Sports_Meet_JP_boxart.png/250px-BW_Intelligence_Training_Pokemon_Big_Sports_Meet_JP_boxart.png" .
+
+ex:Pok_mon_Black_and_White_Versions a ex:Game ;
+    rdfs:label "Pokémon Black and White Versions" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo DS (enhanced for the Nintendo DSi)" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "DS Wireless, Wi-Fi, IR" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo, The Pokémon Company" ;
+    schema1:Part_of "Generation V core series" ;
+    schema1:releaseDate_Japan "September 18, 2010" ;
+    schema1:releaseDate_North_America "March 6, 2011" ;
+    schema1:releaseDate_Australia "March 10, 2011" ;
+    schema1:releaseDate_Europe "March 4, 2011" ;
+    schema1:releaseDate_South_Korea "April 21, 2011" ;
+    schema1:releaseDate_Hong_Kong "September 18, 2010" ;
+    schema1:releaseDate_Taiwan "September 18, 2010" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/d/dc/Black_EN_boxart.png/250px-Black_EN_boxart.png" .
+
+ex:Pok_mon_Black_and_White_Versions_2 a ex:Game ;
+    rdfs:label "Pokémon Black and White Versions 2" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo DS (enhanced for the Nintendo DSi)" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "DS Wireless, Wi-Fi, IR" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo, The Pokémon Company" ;
+    schema1:Part_of "Generation V core series" ;
+    schema1:releaseDate_Japan "June 23, 2012" ;
+    schema1:releaseDate_North_America "October 7, 2012" ;
+    schema1:releaseDate_Australia "October 11, 2012" ;
+    schema1:releaseDate_Europe "October 12, 2012" ;
+    schema1:releaseDate_South_Korea "November 8, 2012" ;
+    schema1:releaseDate_Hong_Kong "June 23, 2012" ;
+    schema1:releaseDate_Taiwan "June 23, 2012" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/34/Black_2_EN_boxart.png/250px-Black_2_EN_boxart.png" .
+
+ex:Pok_mon_Blue_Version__Japanese_ a ex:Game ;
+    rdfs:label "Pokémon Blue Version (Japanese)" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Game Boy (enhanced for the Super Game Boy and Super Game Boy 2)" ;
+    schema1:Players "2 players simultaneous" ;
+    schema1:Connectivity "Game Link Cable (Game Boy), 3DS Wireless (3DS VC)" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I core series" ;
+    schema1:releaseDate_Japan "December 1996 to January 1997 (Game Boy, mail release), June 13, 1997 to August 31, 1997 (Game Boy, mail re-release), October 10, 1999 (Game Boy, retail), February 27, 2016 (3DS VC), (Note: October 15, 1996 is claimed to be Pokémon Blue's Japanese release date according to some official sources, but this was simply the date when the still unreleased game was announced on CoroCoro magazine)" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/b5/Blue_JP_boxart.png/250px-Blue_JP_boxart.png" .
+
+ex:Pok_mon_Box_Ruby___Sapphire a ex:Game ;
+    rdfs:label "Pokémon Box Ruby & Sapphire" ;
+    schema1:Category "Utility" ;
+    schema1:Platform "Nintendo GameCube" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "GameCube Game Boy Advance cable" ;
+    schema1:Developer "Nintendo, Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III side series" ;
+    schema1:releaseDate_Japan "May 30, 2003" ;
+    schema1:releaseDate_North_America "July 11, 2004" ;
+    schema1:releaseDate_Australia "July 16, 2004" ;
+    schema1:releaseDate_Europe "May 14, 2004" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/04/Box_RS_EN_boxart.png/250px-Box_RS_EN_boxart.png" .
+
+ex:Pok_mon_Breeder_mini a ex:Game ;
+    rdfs:label "Pokémon Breeder mini" ;
+    schema1:Category "Simulation" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "December 14, 2002" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/a/a3/Breeder_mini_JP_boxart.png/190px-Breeder_mini_JP_boxart.png" .
+
+ex:Pok_mon_Brilliant_Diamond_and_Shining_Pearl a ex:Game ;
+    rdfs:label "Pokémon Brilliant Diamond and Shining Pearl" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1-2, 4 players simultaneous" ;
+    schema1:Connectivity "Wireless, Nintendo Switch Online" ;
+    schema1:Developer "ILCA" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VIII core series" ;
+    schema1:releaseDate_Japan "November 19, 2021" ;
+    schema1:releaseDate_North_America "November 19, 2021" ;
+    schema1:releaseDate_Australia "November 19, 2021" ;
+    schema1:releaseDate_Europe "November 19, 2021" ;
+    schema1:releaseDate_South_Korea "November 19, 2021" ;
+    schema1:releaseDate_Hong_Kong "November 19, 2021" ;
+    schema1:releaseDate_Taiwan "November 19, 2021" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/33/Brilliant_Diamond_EN_boxart.png/250px-Brilliant_Diamond_EN_boxart.png" .
+
+ex:Pok_mon_Caf__ReMix a ex:Game ;
+    rdfs:label "Pokémon Café ReMix" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Nintendo Switch, iOS, iPadOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "Genius Sonority" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VIII spin-off" ;
+    schema1:releaseDate_Japan "June 24, 2020 (Café Mix), October 28, 2021 (Café ReMix)" ;
+    schema1:releaseDate_North_America "June 23, 2020[note 1] (Café Mix), October 27, 2021 (Café ReMix)" ;
+    schema1:releaseDate_Australia "June 24, 2020 (Café Mix), October 28, 2021 (Café ReMix)" ;
+    schema1:releaseDate_Europe "June 24, 2020 (Café Mix), October 28, 2021 (Café ReMix)" ;
+    schema1:releaseDate_South_Korea "June 24, 2020 (Café Mix), October 28, 2021 (Café ReMix)" ;
+    schema1:releaseDate_Hong_Kong "June 24, 2020 (Café Mix), October 28, 2021 (Café ReMix)" ;
+    schema1:releaseDate_Taiwan "June 24, 2020 (Café Mix), October 28, 2021 (Café ReMix)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/80/Pok%C3%A9mon_Caf%C3%A9_Mix_logo.png/250px-Pok%C3%A9mon_Caf%C3%A9_Mix_logo.png" .
+
+ex:Pok_mon_Card_Game_Entry_Battle a ex:Game ;
+    rdfs:label "Pokémon Card Game Entry Battle" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/a/ad/Fire-attack.png/20px-Fire-attack.png" .
+
+ex:Pok_mon_Card_Game_Gacha a ex:Game ;
+    rdfs:label "Pokémon Card Game Gacha" ;
+    schema1:Category "Arcade" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Takara Tomy A.R.T.S." ;
+    schema1:Publisher "Takara Tomy A.R.T.S." ;
+    schema1:Part_of "Generation VI miscellaneous" ;
+    schema1:releaseDate_Japan "June 23, 2014" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/66/Pok%C3%A9mon_Card_Game_Gacha_machine.jpg/100px-Pok%C3%A9mon_Card_Game_Gacha_machine.jpg" .
+
+ex:Pok_mon_Card_Game_Online a ex:Game ;
+    rdfs:label "Pokémon Card Game Online" ;
+    schema1:Category "Strategy" ;
+    schema1:Platform "PC and Mac" ;
+    schema1:Players "2" ;
+    schema1:Connectivity "Internet" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation IV misc" ;
+    schema1:releaseDate_Japan "November 20, 2009" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/2b/Pokemon_Card_Game_Online_Logo.png/250px-Pokemon_Card_Game_Online_Logo.png" .
+
+ex:Pok_mon_Card_Game__How_to_Play_DS a ex:Game ;
+    rdfs:label "Pokémon Card Game: How to Play DS" ;
+    schema1:Category "Strategy" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1-2 players simultaneous" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Creatures, Inc., ZENER WORKS" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation V miscellaneous" ;
+    schema1:releaseDate_Japan "August 5, 2011" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/f/f2/TCG_HTPDS_JP_boxart.png/200px-TCG_HTPDS_JP_boxart.png" .
+
+ex:Pok_mon_Channel a ex:Game ;
+    rdfs:label "Pokémon Channel" ;
+    schema1:Category "Virtual pet" ;
+    schema1:Platform "Nintendo GameCube" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III spin-off" ;
+    schema1:releaseDate_Japan "July 18, 2003" ;
+    schema1:releaseDate_North_America "December 1, 2003" ;
+    schema1:releaseDate_Australia "2004" ;
+    schema1:releaseDate_Europe "April 1, 2004" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e9/Channel_EN_boxart.png/250px-Channel_EN_boxart.png" .
+
+ex:Pok_mon_Colosseum a ex:Game ;
+    rdfs:label "Pokémon Colosseum" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo GameCube" ;
+    schema1:Players "1, 2, or 4" ;
+    schema1:Connectivity "GameCube Game Boy Advance cable, e-Reader (Japan only)" ;
+    schema1:Developer "Genius Sonority" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III side series" ;
+    schema1:releaseDate_Japan "November 21, 2003" ;
+    schema1:releaseDate_North_America "March 22, 2004" ;
+    schema1:releaseDate_Australia "June 24, 2004" ;
+    schema1:releaseDate_Europe "May 14, 2004" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/25/Colosseum_EN_boxart.png/250px-Colosseum_EN_boxart.png" .
+
+ex:Pok_mon_Conquest a ex:Game ;
+    rdfs:label "Pokémon Conquest" ;
+    schema1:Category "Turn-based strategy RPG" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "DS Wireless, Wi-Fi" ;
+    schema1:Developer "Tecmo Koei" ;
+    schema1:Publisher "Nintendo (International releases only), The Pokémon Company" ;
+    schema1:Part_of "Generation V miscellaneous" ;
+    schema1:releaseDate_Japan "March 17, 2012" ;
+    schema1:releaseDate_North_America "June 18, 2012" ;
+    schema1:releaseDate_Australia "June 21, 2012" ;
+    schema1:releaseDate_Europe "July 27, 2012" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/31/Conquest_EN_boxart.jpg/250px-Conquest_EN_boxart.jpg" .
+
+ex:Pok_mon_Corogarena a ex:Game ;
+    rdfs:label "Pokémon Corogarena" ;
+    schema1:Category "Medal game" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "4 (1 player on each station)" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega" ;
+    schema1:Publisher "Sega" ;
+    schema1:Part_of "Generation VIII miscellaneous" ;
+    schema1:releaseDate_Japan "March 14, 2022" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/9/91/Pok%C3%A9mon_Corogarena_machine.png/200px-Pok%C3%A9mon_Corogarena_machine.png" .
+
+ex:Pok_mon_Crystal_Version a ex:Game ;
+    rdfs:label "Pokémon Crystal Version" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Game Boy Color, Nintendo 3DS (Virtual Console)" ;
+    schema1:Players "2 players simultaneous" ;
+    schema1:Connectivity "Game Link Cable, IR*, Mobile*" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation II core series" ;
+    schema1:releaseDate_Japan "December 14, 2000 (Game Boy), January 26, 2018 (3DS VC)" ;
+    schema1:releaseDate_North_America "July 29, 2001 (Game Boy), January 26, 2018 (3DS VC)" ;
+    schema1:releaseDate_Australia "September 30, 2001 (Game Boy), January 26, 2018 (3DS VC)" ;
+    schema1:releaseDate_Europe "November 2, 2001 (Game Boy), January 26, 2018 (3DS VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "January 26, 2018 (3DS VC)" ;
+    schema1:releaseDate_Taiwan "January 26, 2018 (3DS VC)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/60/Crystal_EN_boxart.png/250px-Crystal_EN_boxart.png" .
+
+ex:Pok_mon_Dash a ex:Game ;
+    rdfs:label "Pokémon Dash" ;
+    schema1:Category "Racing game" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1-6" ;
+    schema1:Connectivity "DS Wireless" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III spin off" ;
+    schema1:releaseDate_Japan "December 2, 2004" ;
+    schema1:releaseDate_North_America "March 13, 2005" ;
+    schema1:releaseDate_Australia "April 7, 2005" ;
+    schema1:releaseDate_Europe "March 11, 2005" ;
+    schema1:releaseDate_South_Korea "March 22, 2007" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "December 2, 2004" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/21/Dash_EN_boxart.jpg/250px-Dash_EN_boxart.jpg" .
+
+ex:Pok_mon_Diamond___Pearl__Search_for_Pok_mon__Adventure_in_the_Maze_ a ex:Game ;
+    rdfs:label "Pokémon Diamond & Pearl: Search for Pokémon! Adventure in the Maze!" ;
+    schema1:Category "Edutainment" ;
+    schema1:Platform "Advanced Pico Beena" ;
+    schema1:Players "1-2 players" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega Toys" ;
+    schema1:Publisher "Sega Toys" ;
+    schema1:Part_of "Generation IV miscellaneous" ;
+    schema1:releaseDate_Japan "September 8, 2009" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/d/dc/DP_Search_for_Pokemon_Adventure_in_the_Maze_JP_boxart.png/250px-DP_Search_for_Pokemon_Adventure_in_the_Maze_JP_boxart.png" .
+
+ex:Pok_mon_Diamond_and_Pearl_Versions a ex:Game ;
+    rdfs:label "Pokémon Diamond and Pearl Versions" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "DS Wireless, Nintendo Wi-Fi Connection, dual-slot mode" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV core series" ;
+    schema1:releaseDate_Japan "September 28, 2006" ;
+    schema1:releaseDate_North_America "April 22, 2007" ;
+    schema1:releaseDate_Australia "June 21, 2007" ;
+    schema1:releaseDate_Europe "July 27, 2007" ;
+    schema1:releaseDate_South_Korea "February 14, 2008" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "September 28, 2006" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/69/Diamond_EN_boxart.jpg/250px-Diamond_EN_boxart.jpg" .
+
+ex:Pok_mon_Dream_Radar a ex:Game ;
+    rdfs:label "Pokémon Dream Radar" ;
+    schema1:Category "First-person shooter" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "Single" ;
+    schema1:Connectivity "Nintendo 3DS Link" ;
+    schema1:Developer "Creatures, Inc., Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation V side series" ;
+    schema1:releaseDate_Japan "June 23, 2012" ;
+    schema1:releaseDate_North_America "October 7, 2012" ;
+    schema1:releaseDate_Australia "October 11, 2012" ;
+    schema1:releaseDate_Europe "October 12, 2012" ;
+    schema1:releaseDate_South_Korea "November 8, 2012" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/f/f7/Pok%C3%A9mon_Dream_Radar_logo_EN.png/250px-Pok%C3%A9mon_Dream_Radar_logo_EN.png" .
+
+ex:Pok_mon_Dream_World a ex:Game ;
+    rdfs:label "Pokémon Dream World" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Pok_mon_Duel a ex:Game ;
+    rdfs:label "Pokémon Duel" ;
+    schema1:Category "Strategy" ;
+    schema1:Platform "iOS, iPadOS, Android, Fire OS" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "Online play" ;
+    schema1:Developer "HEROZ" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VI and VII spin-off" ;
+    schema1:releaseDate_Japan "April 12, 2016 (Android), April 19, 2016 (iOS), October 2, 2017 (Amazon)" ;
+    schema1:releaseDate_North_America "January 24, 2017 (iOS, Android), October 2, 2017 (Amazon)" ;
+    schema1:releaseDate_Australia "January 24, 2017 (iOS, Android), October 2, 2017 (Amazon)" ;
+    schema1:releaseDate_Europe "January 24, 2017 (iOS, Android), October 2, 2017 (Amazon)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "January 24, 2017 (iOS, Android), October 2, 2017 (Amazon)" ;
+    schema1:releaseDate_Taiwan "January 24, 2017 (iOS, Android), October 2, 2017 (Amazon)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/9/92/Pok%C3%A9mon_Duel_Logo.png/250px-Pok%C3%A9mon_Duel_Logo.png" .
+
+ex:Pok_mon_Electronic_Hand_Held_Yahtzee a ex:Game ;
+    rdfs:label "Pokémon Electronic Hand-Held Yahtzee" ;
+    schema1:Category "Board game" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Hasbro" ;
+    schema1:Publisher "Hasbro" ;
+    schema1:Part_of "Generation I miscellaneous" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "1999" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/1e/Pok%C3%A9mon_Electronic_Hand-Held_Yahtzee.png/250px-Pok%C3%A9mon_Electronic_Hand-Held_Yahtzee.png" .
+
+ex:Pok_mon_Emerald_Version a ex:Game ;
+    rdfs:label "Pokémon Emerald Version" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Game Boy Advance" ;
+    schema1:Players "up to 5" ;
+    schema1:Connectivity "Game Link Cable, Wireless Adapter, e-Reader" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III core series" ;
+    schema1:releaseDate_Japan "September 16, 2004" ;
+    schema1:releaseDate_North_America "May 1, 2005" ;
+    schema1:releaseDate_Australia "June 9, 2005" ;
+    schema1:releaseDate_Europe "October 21, 2005" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/65/Emerald_EN_boxart.jpg/250px-Emerald_EN_boxart.jpg" .
+
+ex:Pok_mon_FireRed_and_LeafGreen_Versions a ex:Game ;
+    rdfs:label "Pokémon FireRed and LeafGreen Versions" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Game Boy Advance" ;
+    schema1:Players "up to 5" ;
+    schema1:Connectivity "Game Link Cable, Wireless Adapter, e-Reader" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III core series" ;
+    schema1:releaseDate_Japan "January 29, 2004" ;
+    schema1:releaseDate_North_America "September 9, 2004" ;
+    schema1:releaseDate_Australia "September 23, 2004" ;
+    schema1:releaseDate_Europe "October 1, 2004" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/43/FireRed_EN_boxart.png/250px-FireRed_EN_boxart.png" .
+
+ex:Pok_mon_Frienda a ex:Game ;
+    rdfs:label "Pokémon Frienda" ;
+    schema1:Category "Battle simulation" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Takara Tomy A.R.T.S./, Marvelous" ;
+    schema1:Publisher "Takara Tomy A.R.T.S." ;
+    schema1:Part_of "Generation IX miscellaneous" ;
+    schema1:releaseDate_Japan "July 11, 2024" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/70/Pok%C3%A9mon_Frienda_machine.png/150px-Pok%C3%A9mon_Frienda_machine.png" .
+
+ex:Pok_mon_Ga_Ol_ a ex:Game ;
+    rdfs:label "Pokémon Ga-Olé" ;
+    schema1:Category "Battle simulation" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Takara Tomy A.R.T.S./, Marvelous" ;
+    schema1:Publisher "Takara Tomy A.R.T.S." ;
+    schema1:Part_of "Generation VI, VII, and VIII miscellaneous" ;
+    schema1:releaseDate_Japan "July 7, 2016" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "August 2, 2021" ;
+    schema1:releaseDate_Hong_Kong "October 13, 2021" ;
+    schema1:releaseDate_Taiwan "December 5, 2020" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/0d/Pok%C3%A9mon_Ga-Ol%C3%A9_logo_English.png/250px-Pok%C3%A9mon_Ga-Ol%C3%A9_logo_English.png" .
+
+ex:Pok_mon_Garden a ex:Game ;
+    rdfs:label "Pokémon Garden" ;
+    schema1:Category "Massively multiplayer online game" ;
+    schema1:Platform "Browser based Flash game" ;
+    schema1:Players "Up to 11 (Pokémon Special Tour)" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "Bascule" ;
+    schema1:Publisher "Yahoo! Japan" ;
+    schema1:Part_of "Generation IV side series" ;
+    schema1:releaseDate_Japan "July 7, 2006" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/63/Garden_exterior.png/300px-Garden_exterior.png" .
+
+ex:Pok_mon_Get_Round_and_Round a ex:Game ;
+    rdfs:label "Pokémon Get Round and Round" ;
+    schema1:Category "Medal game" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Namco Bandai Games" ;
+    schema1:Publisher "Namco Bandai Games" ;
+    schema1:Part_of "Generation IV and V miscellaneous" ;
+    schema1:releaseDate_Japan "April 2010" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/a/a4/Pok%C3%A9mon_Get_Round_and_Round_machine_yellow_blue.jpg/250px-Pok%C3%A9mon_Get_Round_and_Round_machine_yellow_blue.jpg" .
+
+ex:Pok_mon_GO a ex:Game ;
+    rdfs:label "Pokémon GO" ;
+    schema1:Category "Real-world adventure, Location-based game" ;
+    schema1:Platform "iOS, Android" ;
+    schema1:Players "1+" ;
+    schema1:Connectivity "Wireless, Bluetooth" ;
+    schema1:Developer "Niantic, Inc." ;
+    schema1:Publisher "Niantic, Inc." ;
+    schema1:Part_of "Generation VI - IX spin off" ;
+    schema1:releaseDate_Japan "March 29, 2016 (field test), July 22, 2016 (public release)" ;
+    schema1:releaseDate_North_America "May 25, 2016 (field test), July 6, 2016 (public release)" ;
+    schema1:releaseDate_Australia "April 25, 2016 (field test), July 6, 2016 (public release)" ;
+    schema1:releaseDate_Europe "July 13, 2016" ;
+    schema1:releaseDate_South_Korea "January 24, 2017" ;
+    schema1:releaseDate_Hong_Kong "July 25, 2016" ;
+    schema1:releaseDate_Taiwan "August 6, 2016" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/3d/Pokemon_Go_Logo.png/200px-Pokemon_Go_Logo.png" .
+
+ex:Pok_mon_Gold_and_Silver_Spaceworld__97_demo a ex:Game ;
+    rdfs:label "Pokémon Gold and Silver Spaceworld '97 demo" ;
+    schema1:Category "RPG demo" ;
+    schema1:Platform "Game Boy (enhanced for the Super Game Boy)" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation II" ;
+    schema1:releaseDate_Japan "November 21, 1997" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/55/Japanese_GoldTitle_SW97_main_SGB_demo.png/250px-Japanese_GoldTitle_SW97_main_SGB_demo.png" .
+
+ex:Pok_mon_Gold_and_Silver_Versions a ex:Game ;
+    rdfs:label "Pokémon Gold and Silver Versions" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Game Boy (enhanced for the Super Game Boy, Super Game Boy 2, and Game Boy Color), Game Boy Color (South Korea only), Nintendo 3DS (Virtual Console)" ;
+    schema1:Players "2 players simultaneous" ;
+    schema1:Connectivity "Game Link Cable, Infrared (Game Boy Color only)" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo, Daewon (South Korea)" ;
+    schema1:Part_of "Generation II core series" ;
+    schema1:releaseDate_Japan "November 21, 1999 (Game Boy), September 22, 2017 (3DS VC)" ;
+    schema1:releaseDate_North_America "October 15, 2000 (Game Boy), September 22, 2017 (3DS VC)" ;
+    schema1:releaseDate_Australia "October 13, 2000 (Game Boy), September 22, 2017 (3DS VC)" ;
+    schema1:releaseDate_Europe "April 6, 2001 (Game Boy), September 22, 2017 (3DS VC)" ;
+    schema1:releaseDate_South_Korea "April 24, 2002 (Game Boy Color), September 22, 2017 (3DS VC)" ;
+    schema1:releaseDate_Hong_Kong "September 22, 2017 (3DS VC)" ;
+    schema1:releaseDate_Taiwan "September 22, 2017 (3DS VC)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/c/c7/Gold_EN_boxart.png/250px-Gold_EN_boxart.png" .
+
+ex:Pok_mon_HeartGold_and_SoulSilver_Versions a ex:Game ;
+    rdfs:label "Pokémon HeartGold and SoulSilver Versions" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "DS Wireless, Wi-Fi, IR (for Pokéwalker)" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV core series" ;
+    schema1:releaseDate_Japan "September 12, 2009" ;
+    schema1:releaseDate_North_America "March 14, 2010" ;
+    schema1:releaseDate_Australia "March 25, 2010" ;
+    schema1:releaseDate_Europe "March 26, 2010, April 2, 2010*" ;
+    schema1:releaseDate_South_Korea "February 4, 2010" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "September 12, 2009" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/6e/HeartGold_EN_boxart.jpg/250px-HeartGold_EN_boxart.jpg" .
+
+ex:Pok_mon_Jukebox a ex:Game ;
+    rdfs:label "Pokémon Jukebox" ;
+    schema1:Category "Music" ;
+    schema1:Platform "Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Shop" ;
+    schema1:Developer "The Pokémon Company" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VI miscellaneous" ;
+    schema1:releaseDate_Japan "May 7, 2015" ;
+    schema1:releaseDate_North_America "June 23, 2015" ;
+    schema1:releaseDate_Australia "June 23, 2015" ;
+    schema1:releaseDate_Europe "June 23, 2015" ;
+    schema1:releaseDate_South_Korea "June 23, 2015" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/06/Pok%C3%A9mon_Jukebox_icon.png/175px-Pok%C3%A9mon_Jukebox_icon.png" .
+
+ex:Pok_mon_Legends__Arceus a ex:Game ;
+    rdfs:label "Pokémon Legends: Arceus" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VIII core series" ;
+    schema1:releaseDate_Japan "January 28, 2022" ;
+    schema1:releaseDate_North_America "January 28, 2022" ;
+    schema1:releaseDate_Australia "January 28, 2022" ;
+    schema1:releaseDate_Europe "January 28, 2022" ;
+    schema1:releaseDate_South_Korea "January 28, 2022" ;
+    schema1:releaseDate_Hong_Kong "January 28, 2022" ;
+    schema1:releaseDate_Taiwan "January 28, 2022" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/3a/Legends_Arceus_EN_boxart.png/250px-Legends_Arceus_EN_boxart.png" .
+
+ex:Pok_mon_Legends__Z_A a ex:Game ;
+    rdfs:label "Pokémon Legends: Z-A" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation IX core series" ;
+    schema1:releaseDate_Japan "2025" ;
+    schema1:releaseDate_North_America "2025" ;
+    schema1:releaseDate_Australia "2025" ;
+    schema1:releaseDate_Europe "2025" ;
+    schema1:releaseDate_South_Korea "2025" ;
+    schema1:releaseDate_Hong_Kong "2025" ;
+    schema1:releaseDate_Taiwan "2025" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/f/f7/Pok%C3%A9mon_Legends_Z-A_logo.png/250px-Pok%C3%A9mon_Legends_Z-A_logo.png" .
+
+ex:Draft_Pok_mon_Let_s_Go__Pikachu__and_Let_s_Go__Eevee__Demo_Version a ex:Game ;
+    rdfs:label "Draft:Pokémon Let's Go, Pikachu! and Let's Go, Eevee! Demo Version" ;
+    schema1:Category "RPG demo" ;
+    schema1:Platform "Nintendo Switch (digital)" ;
+    schema1:Players "1-2 players" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VII" ;
+    schema1:releaseDate_Japan "February 13, 2019" ;
+    schema1:releaseDate_North_America "February 13, 2019" ;
+    schema1:releaseDate_Australia "February 13, 2019" ;
+    schema1:releaseDate_Europe "February 13, 2019" ;
+    schema1:releaseDate_South_Korea "February 13, 2019" ;
+    schema1:releaseDate_Hong_Kong "February 13, 2019" ;
+    schema1:releaseDate_Taiwan "February 13, 2019" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/e/e3/None.png" .
+
+ex:Pok_mon_Masters_Arena a ex:Game ;
+    rdfs:label "Pokémon Masters Arena" ;
+    schema1:Category "Compilation" ;
+    schema1:Platform "PC" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "ImaginEngine" ;
+    schema1:Publisher "ValuSoft" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "January 1, 2004" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/5/5a/Masters_Arena_EN_boxart.jpg" .
+
+ex:Pok_mon_Masters_EX a ex:Game ;
+    rdfs:label "Pokémon Masters EX" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "iOS, iPadOS, Android" ;
+    schema1:Players "N/A" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "DeNA" ;
+    schema1:Publisher "DeNA" ;
+    schema1:Part_of "Generation VII - IX spin-off" ;
+    schema1:releaseDate_Japan "August 29, 2019 (Masters), August 25, 2020 (Masters EX)" ;
+    schema1:releaseDate_North_America "August 28, 2019[note 1] (Masters), August 24, 2020 (Masters EX)" ;
+    schema1:releaseDate_Australia "August 29, 2019 (Masters), August 25, 2020 (Masters EX)" ;
+    schema1:releaseDate_Europe "August 29, 2019 (Masters), August 25, 2020 (Masters EX)" ;
+    schema1:releaseDate_South_Korea "August 29, 2019 (Masters), August 25, 2020 (Masters EX)" ;
+    schema1:releaseDate_Hong_Kong "August 29, 2019 (Masters), August 25, 2020 (Masters EX)" ;
+    schema1:releaseDate_Taiwan "August 29, 2019 (Masters), August 25, 2020 (Masters EX)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5d/Pok%C3%A9mon_Masters_Logo.png/250px-Pok%C3%A9mon_Masters_Logo.png" .
+
+ex:Pok_mon_Medal_World a ex:Game ;
+    rdfs:label "Pokémon Medal World" ;
+    schema1:Category "Medal game" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 to 24 (1 to 4 players per station, 6 stations)" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Namco Bandai Games" ;
+    schema1:Publisher "Namco Bandai Games" ;
+    schema1:Part_of "Generation V miscellaneous" ;
+    schema1:releaseDate_Japan "January 17, 2012" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e1/Medal_World_machine.png/300px-Medal_World_machine.png" .
+
+ex:Pok_mon_Medallion_Battle a ex:Game ;
+    rdfs:label "Pokémon Medallion Battle" ;
+    schema1:Category "Card Battle / Strategy" ;
+    schema1:Platform "Facebook" ;
+    schema1:Players "1v1" ;
+    schema1:Connectivity "Online Play" ;
+    schema1:Developer "GC Turbo" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VIII spin-off" ;
+    schema1:releaseDate_Japan "December 23, 2019" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "December 23, 2019" ;
+    schema1:releaseDate_Taiwan "December 23, 2019" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/b/bc/Medallion_Battle_logo.png" .
+
+ex:Pok_mon_Mega_Get_ a ex:Game ;
+    rdfs:label "Pokémon Mega Get!" ;
+    schema1:Category "Throwing game" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 - 2" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Bandai Namco Amusement" ;
+    schema1:Publisher "Bandai Namco Amusement" ;
+    schema1:Part_of "Generation VI miscellaneous" ;
+    schema1:releaseDate_Japan "November 2015 (Pokémon Mega Get!), October 2022 (Pokémon Mega Get! Nagetore BOX)" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/f/f2/Get_Pokemon_Mega%21_machine.jpg/114px-Get_Pokemon_Mega%21_machine.jpg" .
+
+ex:Pok_mon_Mezastar a ex:Game ;
+    rdfs:label "Pokémon Mezastar" ;
+    schema1:Category "Battle simulation" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Takara Tomy A.R.T.S./, Marvelous" ;
+    schema1:Publisher "Takara Tomy A.R.T.S." ;
+    schema1:Part_of "Generation VIII-IX miscellaneous" ;
+    schema1:releaseDate_Japan "September 17, 2020" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "TBC" ;
+    schema1:releaseDate_Taiwan "TBC" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e3/Pok%C3%A9mon_Mezastar_logo_English.png/250px-Pok%C3%A9mon_Mezastar_logo_English.png" .
+
+ex:Pok_mon_Mystery_Dungeon__WiiWare_ a ex:Game ;
+    rdfs:label "Pokémon Mystery Dungeon (WiiWare)" ;
+    schema1:Category "Roguelite" ;
+    schema1:Platform "Wii" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "The Pokémon Company/Chunsoft" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation IV spin-off" ;
+    schema1:releaseDate_Japan "August 4, 2009" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/49/PMD_KGBAS_Japanese.png/250px-PMD_KGBAS_Japanese.png" .
+
+ex:Pok_mon_Mystery_Dungeon__Explorers_of_Sky a ex:Game ;
+    rdfs:label "Pokémon Mystery Dungeon: Explorers of Sky" ;
+    schema1:Category "Roguelite" ;
+    schema1:Platform "Nintendo DS, Wii U (Virtual Console)" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "DS Wireless, Wi-Fi" ;
+    schema1:Developer "The Pokémon Company/Chunsoft" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation IV spin-off" ;
+    schema1:releaseDate_Japan "April 18, 2009 (DS), July 20, 2016 (Wii U VC)" ;
+    schema1:releaseDate_North_America "October 12, 2009 (DS), June 23, 2016 (Wii U VC)" ;
+    schema1:releaseDate_Australia "November 12, 2009, August 18, 2016 (Wii U VC)" ;
+    schema1:releaseDate_Europe "November 20, 2009, August 18, 2016 (Wii U VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "April 18, 2009" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/3b/MD_Sky_EN_boxart.jpg/250px-MD_Sky_EN_boxart.jpg" .
+
+ex:Pok_mon_Mystery_Dungeon__Explorers_of_Time_and_Explorers_of_Darkness a ex:Game ;
+    rdfs:label "Pokémon Mystery Dungeon: Explorers of Time and Explorers of Darkness" ;
+    schema1:Category "Roguelite" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "DS Wireless, Wi-Fi" ;
+    schema1:Developer "The Pokémon Company/Chunsoft" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation IV spin-off" ;
+    schema1:releaseDate_Japan "September 13, 2007" ;
+    schema1:releaseDate_North_America "April 20, 2008" ;
+    schema1:releaseDate_Australia "June 19, 2008" ;
+    schema1:releaseDate_Europe "July 4, 2008" ;
+    schema1:releaseDate_South_Korea "December 11, 2008" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "September 13, 2007" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/b1/MD_Time_EN_boxart.jpg/250px-MD_Time_EN_boxart.jpg" .
+
+ex:Pok_mon_Mystery_Dungeon__Gates_to_Infinity a ex:Game ;
+    rdfs:label "Pokémon Mystery Dungeon: Gates to Infinity" ;
+    schema1:Category "Roguelite" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1-4" ;
+    schema1:Connectivity "SpotPass (DLC), StreetPass (Dungeon Rescue), DS Wireless (Multiplayer)" ;
+    schema1:Developer "The Pokémon Company/Spike Chunsoft" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation V spin-off" ;
+    schema1:releaseDate_Japan "November 23, 2012" ;
+    schema1:releaseDate_North_America "March 24, 2013" ;
+    schema1:releaseDate_Australia "May 18, 2013" ;
+    schema1:releaseDate_Europe "May 17, 2013" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/8e/MD_GTI_EN_boxart.png/250px-MD_GTI_EN_boxart.png" .
+
+ex:Pok_mon_Mystery_Dungeon__Gold_Rescue_Team a ex:Game ;
+    rdfs:label "Pokémon Mystery Dungeon: Gold Rescue Team" ;
+    schema1:Category "Dungeon crawler" ;
+    schema1:Platform "PC" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Chunsoft" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III side series" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "August 11, 2007" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/b/bc/Gold_Rescue_Team_title_screen.png" .
+
+ex:Pok_mon_Mystery_Dungeon__Red_Rescue_Team_and_Blue_Rescue_Team a ex:Game ;
+    rdfs:label "Pokémon Mystery Dungeon: Red Rescue Team and Blue Rescue Team" ;
+    schema1:Category "Roguelite" ;
+    schema1:Platform "Game Boy Advance, Wii U (Virtual Console), Nintendo Switch (Nintendo Switch Online)R, Nintendo DS, Wii U (Virtual Console)B" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Dual-slot mode, Game Link CableR, DS WirelessB" ;
+    schema1:Developer "The Pokémon Company/Chunsoft" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation III spin-off" ;
+    schema1:releaseDate_Japan "November 17, 2005 (GBA, DS), March 23, 2016 (Wii U VC), August 9, 2024 (Nintendo Switch Online; Red Rescue Team only)" ;
+    schema1:releaseDate_North_America "September 18, 2006 (GBA, DS), June 23, 2016 (Wii U VC), August 9, 2024 (Nintendo Switch Online; Red Rescue Team only)" ;
+    schema1:releaseDate_Australia "September 28, 2006 (GBA, DS), February 12, 2016 (Wii U VC), August 9, 2024 (Nintendo Switch Online; Red Rescue Team only)" ;
+    schema1:releaseDate_Europe "November 10, 2006 (GBA, DS), February 11, 2016 (Wii U VC), August 9, 2024 (Nintendo Switch Online; Red Rescue Team only)" ;
+    schema1:releaseDate_South_Korea "August 30, 2007 (Blue Rescue Team only)" ;
+    schema1:releaseDate_Hong_Kong "August 9, 2024 (Nintendo Switch Online; Red Rescue Team only)" ;
+    schema1:releaseDate_Taiwan "November 17, 2005 (Blue Rescue Team only)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/b4/MD_Red_EN_boxart.jpg/250px-MD_Red_EN_boxart.jpg" .
+
+ex:Pok_mon_Mystery_Dungeon__Rescue_Team_DX a ex:Game ;
+    rdfs:label "Pokémon Mystery Dungeon: Rescue Team DX" ;
+    schema1:Category "Roguelite" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Nintendo Switch Online" ;
+    schema1:Developer "The Pokémon Company/Spike Chunsoft" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VIII spin-off" ;
+    schema1:releaseDate_Japan "March 6, 2020" ;
+    schema1:releaseDate_North_America "March 6, 2020" ;
+    schema1:releaseDate_Australia "March 6, 2020" ;
+    schema1:releaseDate_Europe "March 6, 2020" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "March 6, 2020" ;
+    schema1:releaseDate_Taiwan "March 6, 2020" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/86/MD_Rescue_Team_DX_EN_boxart.png/250px-MD_Rescue_Team_DX_EN_boxart.png" .
+
+ex:Pok_mon_Omega_Ruby_and_Alpha_Sapphire a ex:Game ;
+    rdfs:label "Pokémon Omega Ruby and Alpha Sapphire" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "3DS Wireless, StreetPass, SpotPass, Nintendo Network, IR" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VI core series" ;
+    schema1:releaseDate_Japan "November 21, 2014" ;
+    schema1:releaseDate_North_America "November 21, 2014" ;
+    schema1:releaseDate_Australia "November 21, 2014" ;
+    schema1:releaseDate_Europe "November 28, 2014" ;
+    schema1:releaseDate_South_Korea "November 21, 2014" ;
+    schema1:releaseDate_Hong_Kong "November 21, 2014" ;
+    schema1:releaseDate_Taiwan "November 21, 2014" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5b/Omega_Ruby_EN_boxart.png/250px-Omega_Ruby_EN_boxart.png" .
+
+ex:Pok_mon_Omega_Ruby_and_Pok_mon_Alpha_Sapphire_Special_Demo_Version a ex:Game ;
+    rdfs:label "Pokémon Omega Ruby and Pokémon Alpha Sapphire Special Demo Version" ;
+    schema1:Category "RPG demo" ;
+    schema1:Platform "Nintendo 3DS (digital)" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VI" ;
+    schema1:releaseDate_Japan "October 15, 2014" ;
+    schema1:releaseDate_North_America "October 21, 2014" ;
+    schema1:releaseDate_Australia "October 15, 2014" ;
+    schema1:releaseDate_Europe "October 15, 2014" ;
+    schema1:releaseDate_South_Korea "October 15, 2014" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/83/ORAS_Prerelease_Demo_Intro.png/250px-ORAS_Prerelease_Demo_Intro.png" .
+
+ex:Pok_mon_Party_mini a ex:Game ;
+    rdfs:label "Pokémon Party mini" ;
+    schema1:Category "Minigames" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "1-6 players" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Denyusha" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "December 14, 2001" ;
+    schema1:releaseDate_North_America "November 16, 2001" ;
+    schema1:releaseDate_Australia "2001/2002[note 1]" ;
+    schema1:releaseDate_Europe "March 15, 2002" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e8/Party_mini_JP_boxart.png/190px-Party_mini_JP_boxart.png" .
+
+ex:Pok_mon_Pass a ex:Game ;
+    rdfs:label "Pokémon Pass" ;
+    schema1:Category "Entertainment" ;
+    schema1:Platform "iOS, iPadOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "The Pokémon Company International" ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generation VII spin-off" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "May 1, 2019 (United States)" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/66/Pok%C3%A9mon_Pass_logo.png/250px-Pok%C3%A9mon_Pass_logo.png" .
+
+ex:Pok_mon_PC_Master a ex:Game ;
+    rdfs:label "Pokémon PC Master" ;
+    schema1:Category "Edutainment" ;
+    schema1:Platform "PC" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "Pokémon Learning Co." ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "June 20, 2006" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/b3/PC_Master_JP_boxart.jpg/250px-PC_Master_JP_boxart.jpg" .
+
+ex:Pok_mon_Photo_Booth a ex:Game ;
+    rdfs:label "Pokémon Photo Booth" ;
+    schema1:Category "Entertainment" ;
+    schema1:Platform "iOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "NotWithoutUs" ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generation VI spin-off" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "February 24, 2016 (iOS), April 9, 2016 (Android)" ;
+    schema1:releaseDate_Australia "February 24, 2016 (iOS), April 9, 2016 (Android)" ;
+    schema1:releaseDate_Europe "February 24, 2016 (iOS), April 9, 2016 (Android)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/9/98/Pok%C3%A9mon_Photo_Booth_icon.png/250px-Pok%C3%A9mon_Photo_Booth_icon.png" .
+
+ex:Pok_mon_Picross a ex:Game ;
+    rdfs:label "Pokémon Picross" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation VI spin-off" ;
+    schema1:releaseDate_Japan "December 2, 2015" ;
+    schema1:releaseDate_North_America "December 3, 2015" ;
+    schema1:releaseDate_Australia "December 4, 2015" ;
+    schema1:releaseDate_Europe "December 3, 2015" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5e/Pok%C3%A9mon_Picross_logo.png/250px-Pok%C3%A9mon_Picross_logo.png" .
+
+ex:Pok_mon_Picross__GBC_ a ex:Game ;
+    rdfs:label "Pokémon Picross (GBC)" ;
+    schema1:Category "Puzzle prototype" ;
+    schema1:Platform "Game Boy Color (enhanced for the Super Game Boy)" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation I spin off" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/9/92/PicrossGBCTitle.png" .
+
+ex:Pok_mon_Pikachu a ex:Game ;
+    rdfs:label "Pokémon Pikachu" ;
+    schema1:Category "Virtual pet" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generations I and II" ;
+    schema1:releaseDate_Japan "March 27, 1998" ;
+    schema1:releaseDate_North_America "November 2, 1998" ;
+    schema1:releaseDate_Australia "1998" ;
+    schema1:releaseDate_Europe "?" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/73/Pok%C3%A9mon_Pikachu.png/200px-Pok%C3%A9mon_Pikachu.png" .
+
+ex:Pok_mon_Pikachu_2_GS a ex:Game ;
+    rdfs:label "Pokémon Pikachu 2 GS" ;
+    schema1:Category "Virtual pet" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation II peripheral" ;
+    schema1:releaseDate_Japan "November 21, 1999" ;
+    schema1:releaseDate_North_America "October 16, 2000" ;
+    schema1:releaseDate_Australia "2000" ;
+    schema1:releaseDate_Europe "2000" ;
+    schema1:releaseDate_South_Korea "?" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/1f/Pp2gsboxart.png/200px-Pp2gsboxart.png" .
+
+ex:Pok_mon_Pinball a ex:Game ;
+    rdfs:label "Pokémon Pinball" ;
+    schema1:Category "Pinball" ;
+    schema1:Platform "Game Boy Color*" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I side series" ;
+    schema1:releaseDate_Japan "April 14, 1999" ;
+    schema1:releaseDate_North_America "June 28, 1999" ;
+    schema1:releaseDate_Australia "July 2000" ;
+    schema1:releaseDate_Europe "October 6, 2000" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/16/Pinball_EN_boxart.png/250px-Pinball_EN_boxart.png" .
+
+ex:Pok_mon_Pinball_mini a ex:Game ;
+    rdfs:label "Pokémon Pinball mini" ;
+    schema1:Category "Pinball" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "December 14, 2001" ;
+    schema1:releaseDate_North_America "November 16, 2001" ;
+    schema1:releaseDate_Australia "2001/2002[note 1]" ;
+    schema1:releaseDate_Europe "March 15, 2002" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/2/21/Pinball_mini_EN_boxart.png" .
+
+ex:Pok_mon_Pinball__Ruby___Sapphire a ex:Game ;
+    rdfs:label "Pokémon Pinball: Ruby & Sapphire" ;
+    schema1:Category "Pinball" ;
+    schema1:Platform "Game Boy Advance, Wii U (Virtual Console)" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III side series" ;
+    schema1:releaseDate_Japan "August 1, 2003 (GBA), December 10, 2014 (Wii U VC)" ;
+    schema1:releaseDate_North_America "August 25, 2003, January 1, 2015 (Wii U VC)" ;
+    schema1:releaseDate_Australia "September 26, 2003, December 12, 2014 (Wii U VC)" ;
+    schema1:releaseDate_Europe "November 14, 2003, December 11, 2014 (Wii U VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/bf/Pinball_RS_EN_boxart.png/250px-Pinball_RS_EN_boxart.png" .
+
+ex:Pok_mon_Platinum_Version a ex:Game ;
+    rdfs:label "Pokémon Platinum Version" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1-5 players simultaneous" ;
+    schema1:Connectivity "DS Wireless, Nintendo Wi-Fi Connection, dual-slot mode" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV core series" ;
+    schema1:releaseDate_Japan "September 13, 2008" ;
+    schema1:releaseDate_North_America "March 22, 2009" ;
+    schema1:releaseDate_Australia "May 14, 2009" ;
+    schema1:releaseDate_Europe "May 22, 2009" ;
+    schema1:releaseDate_South_Korea "July 2, 2009" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "September 13, 2008" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/83/Platinum_EN_boxart.png/250px-Platinum_EN_boxart.png" .
+
+ex:Pok_mon_Play_It_ a ex:Game ;
+    rdfs:label "Pokémon Play It!" ;
+    schema1:Category "Card game" ;
+    schema1:Platform "PC" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Fluid Entertainment" ;
+    schema1:Publisher "Wizards of the Coast" ;
+    schema1:Part_of "Generation I miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "February 2000" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "1999" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/b6/Play_It_EN_boxart.jpg/250px-Play_It_EN_boxart.jpg" .
+
+ex:Pok_mon_Play_It__Version_2 a ex:Game ;
+    rdfs:label "Pokémon Play It! Version 2" ;
+    schema1:Category "Card game" ;
+    schema1:Platform "PC" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Fluid Entertainment" ;
+    schema1:Publisher "Wizards of the Coast" ;
+    schema1:Part_of "Generation I miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "Early 2000s" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "2000" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/8/82/Play_It_Version_2_EN_boxart.jpg" .
+
+ex:Pok_mon_Playhouse a ex:Game ;
+    rdfs:label "Pokémon Playhouse" ;
+    schema1:Category "Entertainment, Pretend Play" ;
+    schema1:Platform "iOS, iPadOS, Android, Fire OS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "The Pokémon Company International" ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generation VII side series" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "September 21, 2017" ;
+    schema1:releaseDate_Australia "September 21, 2017" ;
+    schema1:releaseDate_Europe "September 21, 2017" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/16/Pok%C3%A9mon_Playhouse_logo.png/250px-Pok%C3%A9mon_Playhouse_logo.png" .
+
+ex:Pok_mon_Pok__Ball a ex:Game ;
+    rdfs:label "Pokémon Poké Ball" ;
+    schema1:Category "Arcade" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "2 player" ;
+    schema1:Connectivity "Physical" ;
+    schema1:Developer "Tiger Electronics and Hasbro" ;
+    schema1:Publisher "Tiger Electronics and Hasbro" ;
+    schema1:Part_of "Generation I miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "1998" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/65/Pok%C3%A9mon_Pok%C3%A9_Ball_open.jpg/250px-Pok%C3%A9mon_Pok%C3%A9_Ball_open.jpg" .
+
+ex:Pok_mon_Pok__Ball_Launcher a ex:Game ;
+    rdfs:label "Pokémon Poké Ball Launcher" ;
+    schema1:Category "Minigame" ;
+    schema1:Platform "PC" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Left Brain Games, Inc." ;
+    schema1:Publisher "Garr Group" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "2006" ;
+    schema1:releaseDate_Australia "???" ;
+    schema1:releaseDate_Europe "???" ;
+    schema1:releaseDate_South_Korea "???" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/32/Pok%C3%A9mon_Pok%C3%A9_Ball_Launcher.png/250px-Pok%C3%A9mon_Pok%C3%A9_Ball_Launcher.png" .
+
+ex:Pok_mon_Project_Studio_Red_and_Blue a ex:Game ;
+    rdfs:label "Pokémon Project Studio Red and Blue" ;
+    schema1:Category "Creative" ;
+    schema1:Platform "PC" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "The Learning Company" ;
+    schema1:Part_of "Generation I miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "November 9, 1999" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/0d/Project_Studio_Red_EN_boxart.png/250px-Project_Studio_Red_EN_boxart.png" .
+
+ex:Pok_mon_Puzzle_Challenge a ex:Game ;
+    rdfs:label "Pokémon Puzzle Challenge" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Game Boy Color" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Intelligent Systems" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation II spin off" ;
+    schema1:releaseDate_Japan "September 21, 2000" ;
+    schema1:releaseDate_North_America "December 4, 2000 (GBC), November 6, 2014 (3DS VC)" ;
+    schema1:releaseDate_Australia "June 15, 2001 (GBC), November 27, 2014 (3DS VC)" ;
+    schema1:releaseDate_Europe "June 8, 2001 (GBC), November 27, 2014 (3DS VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/c/c8/Puzzle_Challenge_EN_boxart.png/250px-Puzzle_Challenge_EN_boxart.png" .
+
+ex:Pok_mon_Puzzle_Collection a ex:Game ;
+    rdfs:label "Pokémon Puzzle Collection" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "1-5 players" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "December 14, 2001" ;
+    schema1:releaseDate_North_America "November 16, 2001" ;
+    schema1:releaseDate_Australia "2001/2002[note 1]" ;
+    schema1:releaseDate_Europe "March 15, 2002" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/f/f9/Puzzle_Collection_EN_boxart.png/190px-Puzzle_Collection_EN_boxart.png" .
+
+ex:Pok_mon_Puzzle_Collection_Vol__2 a ex:Game ;
+    rdfs:label "Pokémon Puzzle Collection Vol. 2" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "April 26, 2002" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/4b/Puzzle_Collection_Vol_2_JP_boxart.png/190px-Puzzle_Collection_Vol_2_JP_boxart.png" .
+
+ex:Pok_mon_Puzzle_League a ex:Game ;
+    rdfs:label "Pokémon Puzzle League" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Nintendo 64, Wii (Virtual Console), Nintendo Switch (Nintendo Switch Online)" ;
+    schema1:Players "1-2 simultaneously" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Nintendo Software Technology, Intelligent Systems" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I spin off" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "September 25, 2000 (N64), May 5, 2008 (Wii VC), July 15, 2022 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Australia "2001 (N64), March 30, 2008 (Wii VC), July 15, 2022 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Europe "March 2, 2001 (N64), May 30, 2008 (Wii VC), July 15, 2022 (Nintendo Switch Online)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/74/Puzzle_League_US_boxart.jpg/300px-Puzzle_League_US_boxart.jpg" .
+
+ex:Pok_mon_Quest a ex:Game ;
+    rdfs:label "Pokémon Quest" ;
+    schema1:Category "Action" ;
+    schema1:Platform "Nintendo Switch, iOS, iPadOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VII spin-off" ;
+    schema1:releaseDate_Japan "May 30, 2018 (Nintendo Switch), June 27, 2018 (mobile)" ;
+    schema1:releaseDate_North_America "May 29, 2018 (Nintendo Switch), June 27, 2018 (mobile)" ;
+    schema1:releaseDate_Australia "May 30, 2018 (Nintendo Switch), June 27, 2018 (mobile)" ;
+    schema1:releaseDate_Europe "May 30, 2018 (Nintendo Switch), June 27, 2018 (mobile)" ;
+    schema1:releaseDate_South_Korea "June 18, 2018 (Nintendo Switch), June 27, 2018 (mobile)" ;
+    schema1:releaseDate_Hong_Kong "May 30, 2018 (Nintendo Switch), June 27, 2018 (mobile)" ;
+    schema1:releaseDate_Taiwan "June 27, 2018 (mobile)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/26/Pok%C3%A9mon_Quest_logo.png/250px-Pok%C3%A9mon_Quest_logo.png" .
+
+ex:Pok_mon_Race_mini a ex:Game ;
+    rdfs:label "Pokémon Race mini" ;
+    schema1:Category "Racing" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "1-2 players" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "July 19, 2002" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/7f/Race_JP_boxart.png/190px-Race_JP_boxart.png" .
+
+ex:Pok_mon_Ranger__video_game_ a ex:Game ;
+    rdfs:label "Pokémon Ranger (video game)" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "DS Wireless, Wi-Fi" ;
+    schema1:Developer "HAL Laboratory, Creatures, Inc." ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III spin-off" ;
+    schema1:releaseDate_Japan "March 23, 2006 (DS), April 13, 2016 (Wii U VC)" ;
+    schema1:releaseDate_North_America "October 30, 2006 (DS), July 21, 2016 (Wii U VC)" ;
+    schema1:releaseDate_Australia "December 7, 2006 (DS), February 26, 2016 (Wii U VC)" ;
+    schema1:releaseDate_Europe "April 13, 2007 (DS), February 25, 2016 (Wii U VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "March 23, 2006" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/21/Ranger_EN_boxart.jpg/250px-Ranger_EN_boxart.jpg" .
+
+ex:Pok_mon_Ranger__Guardian_Signs a ex:Game ;
+    rdfs:label "Pokémon Ranger: Guardian Signs" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1-4" ;
+    schema1:Connectivity "DS Wireless, Wi-Fi" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV spin-off" ;
+    schema1:releaseDate_Japan "March 6, 2010 (DS), August 3, 2016 (Wii U VC)" ;
+    schema1:releaseDate_North_America "October 4, 2010, August 18, 2016 (Wii U VC)" ;
+    schema1:releaseDate_Australia "November 25, 2010, June 9, 2016 (Wii U VC)" ;
+    schema1:releaseDate_Europe "November 5, 2010, June 9, 2016 (Wii U VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "March 6, 2010" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/33/Ranger_GS_EN_boxart.png/250px-Ranger_GS_EN_boxart.png" .
+
+ex:Pok_mon_Ranger__Shadows_of_Almia a ex:Game ;
+    rdfs:label "Pokémon Ranger: Shadows of Almia" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "DS Wireless, Wi-Fi" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV spin-off" ;
+    schema1:releaseDate_Japan "March 20, 2008 (DS), July 27, 2016 (Wii U VC)" ;
+    schema1:releaseDate_North_America "November 10, 2008 (DS), August 4, 2016 (Wii U VC)" ;
+    schema1:releaseDate_Australia "November 13, 2008 (DS), June 9, 2016 (Wii U VC)" ;
+    schema1:releaseDate_Europe "November 21, 2008 (DS), June 9, 2016 (Wii U VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "March 20, 2008" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/c/ce/Ranger_SoA_EN_boxart.png/250px-Ranger_SoA_EN_boxart.png" .
+
+ex:Pok_mon_Red_and_Blue_Versions a ex:Game ;
+    rdfs:label "Pokémon Red and Blue Versions" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Game Boy (enhanced for the Super Game Boy), Nintendo 3DS (Virtual Console)" ;
+    schema1:Players "2 players simultaneous" ;
+    schema1:Connectivity "Game Link Cable (Game Boy), 3DS Wireless (3DS VC)" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I core series" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "September 28, 1998 (Game Boy), February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_Australia "October 23, 1998, February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_Europe "October 5, 1999 (Game Boy), February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/80/Red_EN_boxart.png/250px-Red_EN_boxart.png" .
+
+ex:Pok_mon_Red_and_Green_Versions a ex:Game ;
+    rdfs:label "Pokémon Red and Green Versions" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Game Boy (enhanced for the Super Game Boy and Super Game Boy 2)" ;
+    schema1:Players "2 players simultaneous" ;
+    schema1:Connectivity "Game Link Cable (Game Boy), 3DS Wireless (3DS VC)" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I core series" ;
+    schema1:releaseDate_Japan "February 27, 1996 (Game Boy), February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_Taiwan "February 27, 2016 (3DS VC)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/a/a8/Red_JP_boxart.png/250px-Red_JP_boxart.png" .
+
+ex:Pok_mon_Roll_Call_Rhythm_Game a ex:Game ;
+    rdfs:label "Pokémon Roll Call Rhythm Game" ;
+    schema1:Category "Rhythm game" ;
+    schema1:Platform "Web" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Neilo Co., Ltd." ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VII miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "January 18, 2019" ;
+    schema1:releaseDate_Taiwan "January 18, 2019" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/88/Pok%C3%A9mon_Roll_Call_Rhythm_Game_logo.png/200px-Pok%C3%A9mon_Roll_Call_Rhythm_Game_logo.png" .
+
+ex:Pok_mon_Ruby_and_Sapphire_demo a ex:Game ;
+    rdfs:label "Pokémon Ruby and Sapphire demo" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Pok_mon_Ruby_and_Sapphire_Versions a ex:Game ;
+    rdfs:label "Pokémon Ruby and Sapphire Versions" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Game Boy Advance" ;
+    schema1:Players "up to 4" ;
+    schema1:Connectivity "Game Link Cable, e-Reader" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III core series" ;
+    schema1:releaseDate_Japan "November 21, 2002" ;
+    schema1:releaseDate_North_America "March 19, 2003" ;
+    schema1:releaseDate_Australia "April 3, 2003" ;
+    schema1:releaseDate_Europe "July 25, 2003" ;
+    schema1:releaseDate_South_Korea "Unreleased" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5f/Ruby_EN_boxart.png/250px-Ruby_EN_boxart.png" .
+
+ex:Pok_mon_Rumble a ex:Game ;
+    rdfs:label "Pokémon Rumble" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "Wii" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "Nintendo Wi-Fi Connection" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV spin-off" ;
+    schema1:releaseDate_Japan "June 16, 2009" ;
+    schema1:releaseDate_North_America "November 16, 2009" ;
+    schema1:releaseDate_Australia "November 20, 2009" ;
+    schema1:releaseDate_Europe "November 20, 2009" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/07/Pok%C3%A9mon_Rumble_logo.png/250px-Pok%C3%A9mon_Rumble_logo.png" .
+
+ex:Pok_mon_Rumble_Blast a ex:Game ;
+    rdfs:label "Pokémon Rumble Blast" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1 to 2 players" ;
+    schema1:Connectivity "StreetPass" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation V spin-off" ;
+    schema1:releaseDate_Japan "August 11, 2011 (3DS), January 30, 2013 (eShop)" ;
+    schema1:releaseDate_North_America "October 24, 2011 (3DS), December 20, 2012 (eShop)" ;
+    schema1:releaseDate_Australia "December 8, 2011 (3DS), November 29, 2012 (eShop)" ;
+    schema1:releaseDate_Europe "December 2, 2011 (3DS), November 29, 2012 (eShop)" ;
+    schema1:releaseDate_South_Korea "July 12, 2012" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/82/Rumble_Blast_US_boxart.png/250px-Rumble_Blast_US_boxart.png" .
+
+ex:Pok_mon_Rumble_Rush a ex:Game ;
+    rdfs:label "Pokémon Rumble Rush" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "iOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VII spin-off" ;
+    schema1:releaseDate_Japan "May 22, 2019 (Android), July 23, 2019 (iOS)" ;
+    schema1:releaseDate_North_America "May 22, 2019 (Android), July 23, 2019 (iOS)" ;
+    schema1:releaseDate_Australia "May 15, 2019 (Android), July 23, 2019 (iOS)" ;
+    schema1:releaseDate_Europe "May 22, 2019 (Android), July 23, 2019 (iOS)" ;
+    schema1:releaseDate_South_Korea "May 22, 2019 (Android), July 23, 2019 (iOS)" ;
+    schema1:releaseDate_Hong_Kong "May 22, 2019 (Android), July 23, 2019 (iOS)" ;
+    schema1:releaseDate_Taiwan "May 22, 2019 (Android), July 23, 2019 (iOS)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/9/9d/Pok%C3%A9mon_Rumble_Rush_logo.png/250px-Pok%C3%A9mon_Rumble_Rush_logo.png" .
+
+ex:Pok_mon_Rumble_U a ex:Game ;
+    rdfs:label "Pokémon Rumble U" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "Wii U" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation V spin-off" ;
+    schema1:releaseDate_Japan "April 24, 2013" ;
+    schema1:releaseDate_North_America "August 29, 2013" ;
+    schema1:releaseDate_Australia "August 16, 2013" ;
+    schema1:releaseDate_Europe "August 15, 2013" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/35/Pok%C3%A9mon_Rumble_U_logo.png/250px-Pok%C3%A9mon_Rumble_U_logo.png" .
+
+ex:Pok_mon_Rumble_World a ex:Game ;
+    rdfs:label "Pokémon Rumble World" ;
+    schema1:Category "Action RPG" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "StreetPass, SpotPass" ;
+    schema1:Developer "Ambrella" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation VI spin-off" ;
+    schema1:releaseDate_Japan "April 8, 2015 (eShop), November 19, 2015 (retail)" ;
+    schema1:releaseDate_North_America "April 8, 2015 (eShop), April 29, 2016 (retail)" ;
+    schema1:releaseDate_Australia "April 8, 2015 (eShop), January 23, 2016 (retail)" ;
+    schema1:releaseDate_Europe "April 8, 2015 (eShop), January 22, 2016 (retail)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/c/c1/Rumble_World_US_boxart.png/250px-Rumble_World_US_boxart.png" .
+
+ex:Pok_mon_Say_Tap_ a ex:Game ;
+    rdfs:label "Pokémon Say Tap?" ;
+    schema1:Category "Rhythm" ;
+    schema1:Platform "iOS, Android" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "Leaderboards" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation V miscellaneous" ;
+    schema1:releaseDate_Japan "July 15, 2011" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/e/e4/Pok%C3%A9mon_Say_Tap_icon.png" .
+
+ex:Pok_mon_Scarlet_and_Violet a ex:Game ;
+    rdfs:label "Pokémon Scarlet and Violet" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "Wireless, Nintendo Switch Online" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation IX core series" ;
+    schema1:releaseDate_Japan "November 18, 2022" ;
+    schema1:releaseDate_North_America "November 18, 2022" ;
+    schema1:releaseDate_Australia "November 18, 2022" ;
+    schema1:releaseDate_Europe "November 18, 2022" ;
+    schema1:releaseDate_South_Korea "November 18, 2022" ;
+    schema1:releaseDate_Hong_Kong "November 18, 2022" ;
+    schema1:releaseDate_Taiwan "November 18, 2022" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5f/Scarlet_EN_boxart.png/250px-Scarlet_EN_boxart.png" .
+
+ex:Pok_mon_Seek___Find a ex:Game ;
+    rdfs:label "Pokémon Seek & Find" ;
+    schema1:Category "Minigame" ;
+    schema1:Platform "PC" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Left Brain Games, Inc." ;
+    schema1:Publisher "Garr Group" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "2006" ;
+    schema1:releaseDate_Australia "???" ;
+    schema1:releaseDate_Europe "???" ;
+    schema1:releaseDate_South_Korea "???" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/0a/Pok%C3%A9mon_Seek_and_Find.png/250px-Pok%C3%A9mon_Seek_and_Find.png" .
+
+ex:Pok_mon_Shuffle a ex:Game ;
+    rdfs:label "Pokémon Shuffle" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Nintendo 3DS, Android, iOS, iPadOS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Nintendo Network, StreetPass (3DS)" ;
+    schema1:Developer "Genius Sonority" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VI and VII spin-off series" ;
+    schema1:releaseDate_Japan "February 18, 2015 (3DS), August 24, 2015 (Mobile)" ;
+    schema1:releaseDate_North_America "February 18, 2015 (3DS), September 1, 2015 (Mobile)" ;
+    schema1:releaseDate_Australia "February 18, 2015 (3DS), September 1, 2015 (Mobile)" ;
+    schema1:releaseDate_Europe "February 18, 2015 (3DS), September 1, 2015 (Mobile)" ;
+    schema1:releaseDate_South_Korea "January 20, 2016 (Mobile)" ;
+    schema1:releaseDate_Hong_Kong "September 1, 2015 (Mobile)" ;
+    schema1:releaseDate_Taiwan "September 1, 2015 (Mobile)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/21/Pok%C3%A9mon_Shuffle_logo.png/200px-Pok%C3%A9mon_Shuffle_logo.png" .
+
+ex:Pok_mon_Sleep a ex:Game ;
+    rdfs:label "Pokémon Sleep" ;
+    schema1:Category "Sleep Tracking" ;
+    schema1:Platform "iOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Bluetooth" ;
+    schema1:Developer "SELECT BUTTON inc." ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation IX spin-off" ;
+    schema1:releaseDate_Japan "July 20, 2023[note 1]" ;
+    schema1:releaseDate_North_America "July 16, 2023 (Canada and Latin America), July 19, 2023 (United States)[note 1]" ;
+    schema1:releaseDate_Australia "July 16, 2023" ;
+    schema1:releaseDate_Europe "July 18, 2023" ;
+    schema1:releaseDate_South_Korea "July 19, 2023" ;
+    schema1:releaseDate_Hong_Kong "July 19, 2023" ;
+    schema1:releaseDate_Taiwan "July 19, 2023" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/05/Pok%C3%A9mon_Sleep_logo.png/250px-Pok%C3%A9mon_Sleep_logo.png" .
+
+ex:Pok_mon_Smile a ex:Game ;
+    rdfs:label "Pokémon Smile" ;
+    schema1:Category "Educational" ;
+    schema1:Platform "iOS, iPadOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "The Pokémon Company" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VIII spin-off" ;
+    schema1:releaseDate_Japan "June 17, 2020" ;
+    schema1:releaseDate_North_America "June 17, 2020" ;
+    schema1:releaseDate_Australia "June 17, 2020" ;
+    schema1:releaseDate_Europe "June 17, 2020" ;
+    schema1:releaseDate_South_Korea "June 17, 2020" ;
+    schema1:releaseDate_Hong_Kong "June 17, 2020" ;
+    schema1:releaseDate_Taiwan "June 17, 2020" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/02/Pok%C3%A9mon_Smile_logo.png/250px-Pok%C3%A9mon_Smile_logo.png" .
+
+ex:Pok_mon_Snap a ex:Game ;
+    rdfs:label "Pokémon Snap" ;
+    schema1:Category "First person rail shooter" ;
+    schema1:Platform "Nintendo 64, Wii (Virtual Console), Wii U (Virtual Console), Nintendo Switch (Nintendo Switch Online)" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "HAL Laboratory" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I spin off" ;
+    schema1:releaseDate_Japan "March 21, 1999 (N64), December 4, 2007 (Wii VC), April 6, 2016 (Wii U VC), June 24, 2022 (Nintendo Switch Online)" ;
+    schema1:releaseDate_North_America "June 30, 1999 (N64), December 10, 2007 (Wii VC), January 5, 2017 (Wii U VC), June 24, 2022 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Australia "March 23, 2000 (N64), December 11, 2007 (Wii VC), August 19, 2016 (Wii U VC), June 24, 2022 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Europe "September 15, 2000 (N64), December 11, 2007 (Wii VC), August 18, 2016 (Wii U VC), June 24, 2022 (Nintendo Switch Online)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/46/Snap_EN_boxart.jpg/250px-Snap_EN_boxart.jpg" .
+
+ex:Pok_mon_Stadium a ex:Game ;
+    rdfs:label "Pokémon Stadium" ;
+    schema1:Category "Battle Simulation" ;
+    schema1:Platform "Nintendo 64, Nintendo Switch (Nintendo Switch Online)" ;
+    schema1:Players "1-4" ;
+    schema1:Connectivity "Transfer Pak (N64), Nintendo Switch Online (Switch)" ;
+    schema1:Developer "Nintendo" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I side series" ;
+    schema1:releaseDate_Japan "April 30, 1999 (N64), April 12, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_North_America "February 29, 2000 (N64), April 12, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Australia "March 23, 2000 (N64), April 12, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Europe "April 7, 2000 (N64), April 12, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_South_Korea "April 12, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Hong_Kong "April 12, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e8/Stadium_EN_boxart.jpg/250px-Stadium_EN_boxart.jpg" .
+
+ex:Pok_mon_Stadium__Japanese_ a ex:Game ;
+    rdfs:label "Pokémon Stadium (Japanese)" ;
+    schema1:Category "Battle Simulation" ;
+    schema1:Platform "Nintendo 64" ;
+    schema1:Players "1-4" ;
+    schema1:Connectivity "Transfer Pak" ;
+    schema1:Developer "Nintendo" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I side series" ;
+    schema1:releaseDate_Japan "August 1, 1998" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e3/Stadium_1_JP_boxart.png/250px-Stadium_1_JP_boxart.png" .
+
+ex:Pok_mon_Stadium_2 a ex:Game ;
+    rdfs:label "Pokémon Stadium 2" ;
+    schema1:Category "Battle Simulation" ;
+    schema1:Platform "Nintendo 64, Nintendo Switch (Nintendo Switch Online)" ;
+    schema1:Players "1-4" ;
+    schema1:Connectivity "Transfer Pak" ;
+    schema1:Developer "Nintendo" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation II side series" ;
+    schema1:releaseDate_Japan "December 14, 2000 (N64), August 8, 2023 (Switch)" ;
+    schema1:releaseDate_North_America "March 26, 2001 (N64), August 8, 2023 (Switch)" ;
+    schema1:releaseDate_Australia "April 7, 2001 (N64), August 8, 2023 (Switch)" ;
+    schema1:releaseDate_Europe "October 10, 2001 (N64), August 8, 2023 (Switch)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/a/ac/Stadium_2_EN_boxart.jpg/250px-Stadium_2_EN_boxart.jpg" .
+
+ex:Pok_mon_Sun_and_Moon a ex:Game ;
+    rdfs:label "Pokémon Sun and Moon" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "3DS Wireless, Nintendo Network, IR" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VII core series" ;
+    schema1:releaseDate_Japan "November 18, 2016" ;
+    schema1:releaseDate_North_America "November 18, 2016" ;
+    schema1:releaseDate_Australia "November 18, 2016" ;
+    schema1:releaseDate_Europe "November 23, 2016" ;
+    schema1:releaseDate_South_Korea "November 18, 2016" ;
+    schema1:releaseDate_Hong_Kong "November 18, 2016" ;
+    schema1:releaseDate_Taiwan "November 18, 2016" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/06/Sun_EN_boxart.png/250px-Sun_EN_boxart.png" .
+
+ex:Pok_mon_Sun_and_Pok_mon_Moon_Special_Demo_Version a ex:Game ;
+    rdfs:label "Pokémon Sun and Pokémon Moon Special Demo Version" ;
+    schema1:Category "RPG demo" ;
+    schema1:Platform "Nintendo 3DS (digital)" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "Nintendo Network" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VII" ;
+    schema1:releaseDate_Japan "October 18, 2016" ;
+    schema1:releaseDate_North_America "October 18, 2016" ;
+    schema1:releaseDate_Australia "October 18, 2016" ;
+    schema1:releaseDate_Europe "October 18, 2016" ;
+    schema1:releaseDate_South_Korea "October 18, 2016" ;
+    schema1:releaseDate_Hong_Kong "October 18, 2016" ;
+    schema1:releaseDate_Taiwan "October 18, 2016" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/3b/SM_Demo_title_screen_EN.png/250px-SM_Demo_title_screen_EN.png" .
+
+ex:Pok_mon_Super_Mystery_Dungeon a ex:Game ;
+    rdfs:label "Pokémon Super Mystery Dungeon" ;
+    schema1:Category "Roguelite" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "Nintendo Network, StreetPass, Infrared" ;
+    schema1:Developer "The Pokémon Company/Spike Chunsoft" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VI spin-off" ;
+    schema1:releaseDate_Japan "September 17, 2015" ;
+    schema1:releaseDate_North_America "November 20, 2015" ;
+    schema1:releaseDate_Australia "February 20, 2016" ;
+    schema1:releaseDate_Europe "February 19, 2016" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/22/Super_Mystery_Dungeon_EN_boxart.png/250px-Super_Mystery_Dungeon_EN_boxart.png" .
+
+ex:Pok_mon_Sword_and_Shield a ex:Game ;
+    rdfs:label "Pokémon Sword and Shield" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1-2, 4 players simultaneous" ;
+    schema1:Connectivity "Wireless, Nintendo Switch Online" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VIII core series" ;
+    schema1:releaseDate_Japan "November 15, 2019" ;
+    schema1:releaseDate_North_America "November 15, 2019" ;
+    schema1:releaseDate_Australia "November 15, 2019" ;
+    schema1:releaseDate_Europe "November 15, 2019" ;
+    schema1:releaseDate_South_Korea "November 15, 2019" ;
+    schema1:releaseDate_Hong_Kong "November 15, 2019" ;
+    schema1:releaseDate_Taiwan "November 15, 2019" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/47/Sword_EN_boxart.png/250px-Sword_EN_boxart.png" .
+
+ex:Pok_mon_Sword_and_Shield_Expansion_Pass a ex:Game ;
+    rdfs:label "Pokémon Sword and Shield Expansion Pass" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1-2, 4 players simultaneous" ;
+    schema1:Connectivity "Wireless, Nintendo Switch Online" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VIII core series" ;
+    schema1:releaseDate_Japan "January 10, 2020, November 6, 2020*" ;
+    schema1:releaseDate_North_America "January 9, 2020, November 6, 2020*" ;
+    schema1:releaseDate_Australia "January 10, 2020, November 6, 2020*" ;
+    schema1:releaseDate_Europe "January 9, 2020, November 6, 2020*" ;
+    schema1:releaseDate_South_Korea "January 10, 2020, August 20, 2020*, November 6, 2020*" ;
+    schema1:releaseDate_Hong_Kong "January 10, 2020, November 6, 2020*" ;
+    schema1:releaseDate_Taiwan "January 10, 2020, November 6, 2020*" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/7e/Sword_EP_EN_boxart.png/250px-Sword_EP_EN_boxart.png" .
+
+ex:Pok_mon_TCG_Card_Dex a ex:Game ;
+    rdfs:label "Pokémon TCG Card Dex" ;
+    schema1:Category "Utility" ;
+    schema1:Platform "iOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Internet" ;
+    schema1:Developer "The Pokémon Company International" ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generation VII spin-off" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "February 8, 2019" ;
+    schema1:releaseDate_Australia "February 8, 2019" ;
+    schema1:releaseDate_Europe "February 4, 2019 (Sweden), February 8, 2019 (most countries)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "February 8, 2019" ;
+    schema1:releaseDate_Taiwan "February 8, 2019" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/2f/Pok%C3%A9mon_TCG_Card_Dex_logo.png/250px-Pok%C3%A9mon_TCG_Card_Dex_logo.png" .
+
+ex:Pok_mon_Team_Rocket_Blast_Off a ex:Game ;
+    rdfs:label "Pokémon Team Rocket Blast Off" ;
+    schema1:Category "Minigame" ;
+    schema1:Platform "PC" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Left Brain Games, Inc." ;
+    schema1:Publisher "Garr Group" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "2006" ;
+    schema1:releaseDate_Australia "???" ;
+    schema1:releaseDate_Europe "???" ;
+    schema1:releaseDate_South_Korea "???" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/3b/Pok%C3%A9mon_Team_Rocket_Blast_Off.png/250px-Pok%C3%A9mon_Team_Rocket_Blast_Off.png" .
+
+ex:Pok_mon_Team_Turbo a ex:Game ;
+    rdfs:label "Pokémon Team Turbo" ;
+    schema1:Category "Racing" ;
+    schema1:Platform "PC" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "ImaginEngine" ;
+    schema1:Publisher "ValuSoft" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "October 28, 2005" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/65/Team_Turbo_EN_boxart.png/250px-Team_Turbo_EN_boxart.png" .
+
+ex:Pok_mon_Tetris a ex:Game ;
+    rdfs:label "Pokémon Tetris" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "1-2 players" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Nintendo" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "March 21, 2002" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "2002" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/1a/Tetris_EN_boxart.png/190px-Tetris_EN_boxart.png" .
+
+ex:Pok_mon_Tower_Battle a ex:Game ;
+    rdfs:label "Pokémon Tower Battle" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Facebook Gaming" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "Facebook" ;
+    schema1:Developer "Bombay Play" ;
+    schema1:Publisher "Facebook" ;
+    schema1:Part_of "Generation VIII spin-off" ;
+    schema1:releaseDate_Japan "December 23, 2019" ;
+    schema1:releaseDate_North_America "December 23, 2019" ;
+    schema1:releaseDate_Australia "December 23, 2019" ;
+    schema1:releaseDate_Europe "December 23, 2019" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "December 23, 2019" ;
+    schema1:releaseDate_Taiwan "December 23, 2019" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5c/Pok%C3%A9mon_Tower_Battle_logo.png/250px-Pok%C3%A9mon_Tower_Battle_logo.png" .
+
+ex:Pok_mon_Trading_Card_Game__video_game_ a ex:Game ;
+    rdfs:label "Pokémon Trading Card Game (video game)" ;
+    schema1:Category "Strategy" ;
+    schema1:Platform "Game Boy Color*, Nintendo 3DS (Virtual Console), Nintendo Switch (Nintendo Switch Online)" ;
+    schema1:Players "2 players simultaneous" ;
+    schema1:Connectivity "Game Link Cable, Infrared" ;
+    schema1:Developer "Hudson Soft" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I spin-off" ;
+    schema1:releaseDate_Japan "December 18, 1998 (GBC), December 24, 2014 (3DS VC), August 8, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_North_America "April 10, 2000 (GBC), November 13, 2014 (3DS VC), August 8, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Australia "April 7, 2000 (GBC), July 11, 2014 (3DS VC), August 8, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_Europe "December 15, 2000 (GBC), July 10, 2014 (3DS VC), August 8, 2023 (Nintendo Switch Online)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/79/TCG_EN_boxart.png/250px-TCG_EN_boxart.png" .
+
+ex:Pok_mon_Trading_Card_Game_2__The_Invasion_of_Team_GR_ a ex:Game ;
+    rdfs:label "Pokémon Trading Card Game 2: The Invasion of Team GR!" ;
+    schema1:Category "Card game" ;
+    schema1:Platform "Game Boy Color" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "Game Link Cable" ;
+    schema1:Developer "Hudson Soft" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation II spin-off" ;
+    schema1:releaseDate_Japan "March 28, 2001" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/31/TCG_GB2_JP_boxart.jpg/250px-TCG_GB2_JP_boxart.jpg" .
+
+ex:Pok_mon_Trading_Card_Game_Live a ex:Game ;
+    rdfs:label "Pokémon Trading Card Game Live" ;
+    schema1:Category "Strategy card game" ;
+    schema1:Platform "Windows, macOS, iOS, iPadOS, Android" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "Internet" ;
+    schema1:Developer "The Pokémon Company International" ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generation VIII miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "February 22, 2022 (Canadian beta), June 8, 2023 (global launch)" ;
+    schema1:releaseDate_Australia "July 19, 2022 (beta), June 8, 2023 (global launch)" ;
+    schema1:releaseDate_Europe "August 14, 2022 (German, French and Italian beta), June 8, 2023 (global launch)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/4e/Pok%C3%A9mon_Trading_Card_Game_Live_logo.png/250px-Pok%C3%A9mon_Trading_Card_Game_Live_logo.png" .
+
+ex:Pok_mon_Trading_Card_Game_Online a ex:Game ;
+    rdfs:label "Pokémon Trading Card Game Online" ;
+    schema1:Category "Strategy" ;
+    schema1:Platform "Windows, macOS, iOS on iPad, iPadOS, Android tablets" ;
+    schema1:Players "1-2, with unlimited in chat" ;
+    schema1:Connectivity "Internet" ;
+    schema1:Developer "Electrified Games, Sleepy Giant Entertainment, Plexipixel, Inversoft, Dire Wolf Digital" ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generations V-VIII misc" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "March 24, 2011, (TC beta)" ;
+    schema1:releaseDate_Australia "March 24, 2011, (TC beta)" ;
+    schema1:releaseDate_Europe "March 24, 2011, (TC beta)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/4a/TCGOlogo.png/250px-TCGOlogo.png" .
+
+ex:Pok_mon_Trading_Card_Game_Pocket a ex:Game ;
+    rdfs:label "Pokémon Trading Card Game Pocket" ;
+    schema1:Category "Card game" ;
+    schema1:Platform "iOS, iPadOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "Creatures, Inc., DeNA Co., Ltd." ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation IX spin-off" ;
+    schema1:releaseDate_Japan "October 30, 2024" ;
+    schema1:releaseDate_North_America "October 30, 2024" ;
+    schema1:releaseDate_Australia "October 30, 2024" ;
+    schema1:releaseDate_Europe "October 30, 2024" ;
+    schema1:releaseDate_South_Korea "October 30, 2024" ;
+    schema1:releaseDate_Hong_Kong "October 30, 2024" ;
+    schema1:releaseDate_Taiwan "October 30, 2024" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/70/Pok%C3%A9mon_Trading_Card_Game_Pocket_logo.png/250px-Pok%C3%A9mon_Trading_Card_Game_Pocket_logo.png" .
+
+ex:Pok_mon_Tretta a ex:Game ;
+    rdfs:label "Pokémon Tretta" ;
+    schema1:Category "Battle simulation" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Takara Tomy A.R.T.S./, Marvelous AQL" ;
+    schema1:Publisher "Takara Tomy A.R.T.S." ;
+    schema1:Part_of "Generation V and VI miscellaneous" ;
+    schema1:releaseDate_Japan "July 14, 2012" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "2017" ;
+    schema1:releaseDate_Taiwan "April 16, 2016" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/b7/Pok%C3%A9mon_Tretta_logo.png/250px-Pok%C3%A9mon_Tretta_logo.png" .
+
+ex:Pok_mon_Tretta_Lab a ex:Game ;
+    rdfs:label "Pokémon Tretta Lab" ;
+    schema1:Category "Utility" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Takara Tomy A.R.T.S./, Marvelous AQL" ;
+    schema1:Publisher "Takara Tomy A.R.T.S." ;
+    schema1:Part_of "Generation V miscellaneous" ;
+    schema1:releaseDate_Japan "August 10, 2013" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/26/Pok%C3%A9mon_Tretta_Lab_logo.png/200px-Pok%C3%A9mon_Tretta_Lab_logo.png" .
+
+ex:Pok_mon_Trozei_ a ex:Game ;
+    rdfs:label "Pokémon Trozei!" ;
+    schema1:Category "Puzzle" ;
+    schema1:Platform "Nintendo DS" ;
+    schema1:Players "1-2" ;
+    schema1:Connectivity "DS Wireless" ;
+    schema1:Developer "Genius Sonority" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III spin-off" ;
+    schema1:releaseDate_Japan "October 20, 2005" ;
+    schema1:releaseDate_North_America "March 6, 2006" ;
+    schema1:releaseDate_Australia "April 28, 2006" ;
+    schema1:releaseDate_Europe "May 5, 2006" ;
+    schema1:releaseDate_South_Korea "May 17, 2007" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "October 20, 2005" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/b/bd/Trozei_US_boxart.jpg/300px-Trozei_US_boxart.jpg" .
+
+ex:Pok_mon_Tug_of_War_Tournament__Absolutely_Get_Medal_ a ex:Game ;
+    rdfs:label "Pokémon Tug of War Tournament: Absolutely Get Medal!" ;
+    schema1:Category "Medal game" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Banpresto" ;
+    schema1:Part_of "Generation V miscellaneous" ;
+    schema1:releaseDate_Japan "2010" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/25/Tug_of_War_Tournament_machine.png/100px-Tug_of_War_Tournament_machine.png" .
+
+ex:Pok_mon_Ultra_Sun_and_Ultra_Moon a ex:Game ;
+    rdfs:label "Pokémon Ultra Sun and Ultra Moon" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "3DS Wireless, Nintendo Network, IR" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VII core series" ;
+    schema1:releaseDate_Japan "November 17, 2017" ;
+    schema1:releaseDate_North_America "November 17, 2017" ;
+    schema1:releaseDate_Australia "November 17, 2017" ;
+    schema1:releaseDate_Europe "November 17, 2017" ;
+    schema1:releaseDate_South_Korea "November 17, 2017" ;
+    schema1:releaseDate_Hong_Kong "November 17, 2017" ;
+    schema1:releaseDate_Taiwan "November 17, 2017" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/d/de/Ultra_Sun_EN_boxart.png/250px-Ultra_Sun_EN_boxart.png" .
+
+ex:Pok_mon_UNITE a ex:Game ;
+    rdfs:label "Pokémon UNITE" ;
+    schema1:Category "Multiplayer online battle arena, Real-time strategy" ;
+    schema1:Platform "Nintendo Switch, iOS, iPadOS, Android" ;
+    schema1:Players "1‒10" ;
+    schema1:Connectivity "N/A" ;
+    schema1:Developer "TiMi Studio Group" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VIII - IX spin-off" ;
+    schema1:releaseDate_Japan "July 21, 2021 (Nintendo Switch), September 22, 2021 (iOS, iPadOS, Android)" ;
+    schema1:releaseDate_North_America "July 21, 2021 (Nintendo Switch), September 22, 2021 (iOS, iPadOS, Android)" ;
+    schema1:releaseDate_Australia "July 21, 2021 (Nintendo Switch), September 22, 2021 (iOS, iPadOS, Android)" ;
+    schema1:releaseDate_Europe "July 21, 2021 (Nintendo Switch), September 22, 2021 (iOS, iPadOS, Android)" ;
+    schema1:releaseDate_South_Korea "July 21, 2021 (Nintendo Switch), September 22, 2021 (iOS, iPadOS, Android)" ;
+    schema1:releaseDate_Hong_Kong "July 21, 2021 (Nintendo Switch), September 22, 2021 (iOS, iPadOS, Android)" ;
+    schema1:releaseDate_Taiwan "January 20, 2022 (iOS, iPadOS, Android)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/0d/Pok%C3%A9mon_UNITE_logo.png/250px-Pok%C3%A9mon_UNITE_logo.png" .
+
+ex:Pok_mon_Wave_Hello a ex:Game ;
+    rdfs:label "Pokémon Wave Hello" ;
+    schema1:Category "Entertainment" ;
+    schema1:Platform "Android (Pixel 4)" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "The Pokémon Company" ;
+    schema1:Publisher "Google" ;
+    schema1:Part_of "Generation VII spin-off" ;
+    schema1:releaseDate_Japan "October 15, 2019" ;
+    schema1:releaseDate_North_America "October 15, 2019" ;
+    schema1:releaseDate_Australia "October 15, 2019" ;
+    schema1:releaseDate_Europe "October 15, 2019" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "October 15, 2019" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/3/3b/Pok%C3%A9mon_Wave_Hello_title_screen.png/250px-Pok%C3%A9mon_Wave_Hello_title_screen.png" .
+
+ex:Pok_mon_X_and_Y a ex:Game ;
+    rdfs:label "Pokémon X and Y" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1-4 players simultaneous" ;
+    schema1:Connectivity "3DS Wireless, StreetPass, SpotPass, Nintendo Network, IR" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VI core series" ;
+    schema1:releaseDate_Japan "October 12, 2013" ;
+    schema1:releaseDate_North_America "October 12, 2013" ;
+    schema1:releaseDate_Australia "October 12, 2013" ;
+    schema1:releaseDate_Europe "October 12, 2013" ;
+    schema1:releaseDate_South_Korea "October 12, 2013" ;
+    schema1:releaseDate_Hong_Kong "October 12, 2013" ;
+    schema1:releaseDate_Taiwan "October 12, 2013" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/2/27/X_EN_boxart.png/250px-X_EN_boxart.png" .
+
+ex:Pok_mon_XD__Gale_of_Darkness a ex:Game ;
+    rdfs:label "Pokémon XD: Gale of Darkness" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo GameCube" ;
+    schema1:Players "Single-player, multiplayer" ;
+    schema1:Connectivity "GameCube Game Boy Advance cable, e-Reader (Japan only)" ;
+    schema1:Developer "Genius Sonority" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation III side series" ;
+    schema1:releaseDate_Japan "August 4, 2005" ;
+    schema1:releaseDate_North_America "October 3, 2005" ;
+    schema1:releaseDate_Australia "November 10, 2005" ;
+    schema1:releaseDate_Europe "November 18, 2005" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/12/XD_EN_boxart.jpg/250px-XD_EN_boxart.jpg" .
+
+ex:Pok_mon_Yellow_Version a ex:Game ;
+    rdfs:label "Pokémon Yellow Version" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Game Boy (enhanced for the Super Game Boy in all releases and for the Game Boy Color outside of Japan), Nintendo 3DS (Virtual Console)" ;
+    schema1:Players "2 players simultaneous" ;
+    schema1:Connectivity "Game Link Cable (Game Boy), 3DS Wireless (3DS Virtual Console)" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I core series" ;
+    schema1:releaseDate_Japan "September 12, 1998 (Game Boy), February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_North_America "October 18, 1999 (Game Boy), February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_Australia "September 3, 1999 (Game Boy), February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_Europe "June 16, 2000 (Game Boy), February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "February 27, 2016 (3DS VC)" ;
+    schema1:releaseDate_Taiwan "February 27, 2016 (3DS VC)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/9/95/Yellow_EN_boxart.png/250px-Yellow_EN_boxart.png" .
+
+ex:Pok_mon_Zany_Cards a ex:Game ;
+    rdfs:label "Pokémon Zany Cards" ;
+    schema1:Category "Strategy" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "1-5 players" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Denyusha" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "December 14, 2001" ;
+    schema1:releaseDate_North_America "November 16, 2001" ;
+    schema1:releaseDate_Australia "2001/2002[note 1]" ;
+    schema1:releaseDate_Europe "March 15, 2002" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/6d/Zany_Cards_EN_boxart.png/190px-Zany_Cards_EN_boxart.png" .
+
+ex:Pok_mon__Battle_Nine a ex:Game ;
+    rdfs:label "Pokémon: Battle Nine" ;
+    schema1:Category "Medal game" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "4 (1 player on each station)" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Bandai Namco Games" ;
+    schema1:Publisher "Bandai Namco Games" ;
+    schema1:Part_of "Generation VI miscellaneous" ;
+    schema1:releaseDate_Japan "July 8, 2014" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/73/Battle_Nine_Machine_Front.png/150px-Battle_Nine_Machine_Front.png" .
+
+ex:Pok_mon__Catch_the_Numbers_ a ex:Game ;
+    rdfs:label "Pokémon: Catch the Numbers!" ;
+    schema1:Category "Edutainment" ;
+    schema1:Platform "Sega Pico" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega Toys" ;
+    schema1:Publisher "Sega Toys" ;
+    schema1:Part_of "Generation II miscellaneous" ;
+    schema1:releaseDate_Japan "July 23, 2002" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/d/d8/Catch_the_Numbers_JP_boxart.jpg/250px-Catch_the_Numbers_JP_boxart.jpg" .
+
+ex:Pok_mon__Crayon_Kids a ex:Game ;
+    rdfs:label "Pokémon: Crayon Kids" ;
+    schema1:Category "Art training" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Sega" ;
+    schema1:Publisher "Banpresto" ;
+    schema1:Part_of "Generation II miscellaneous" ;
+    schema1:releaseDate_Japan "July 2001" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/d/d3/Pok%C3%A9mon_Crayon_Kids_machine.jpg/120px-Pok%C3%A9mon_Crayon_Kids_machine.jpg" .
+
+ex:Pok_mon__Kids_Winter_Fest a ex:Game ;
+    rdfs:label "Pokémon: Kids Winter Fest" ;
+    schema1:Category "Minigames" ;
+    schema1:Platform "PC, Mac, iOS, Android web browsers" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "The Pokémon Company International, Koko Digital" ;
+    schema1:Publisher "The Pokémon Company International" ;
+    schema1:Part_of "Generation VIII miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "December 1, 2020" ;
+    schema1:releaseDate_Australia "December 1, 2020" ;
+    schema1:releaseDate_Europe "December 1, 2020" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5d/Pok%C3%A9mon_Kids_Winter_Fest_logo.png/250px-Pok%C3%A9mon_Kids_Winter_Fest_logo.png" .
+
+ex:Pok_mon__Let_s_Go__Pikachu__and_Let_s_Go__Eevee_ a ex:Game ;
+    rdfs:label "Pokémon: Let's Go, Pikachu! and Let's Go, Eevee!" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1-2 players" ;
+    schema1:Connectivity "Wireless, Bluetooth, Nintendo Switch Online" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VII core series" ;
+    schema1:releaseDate_Japan "November 16, 2018" ;
+    schema1:releaseDate_North_America "November 16, 2018" ;
+    schema1:releaseDate_Australia "November 16, 2018" ;
+    schema1:releaseDate_Europe "November 16, 2018" ;
+    schema1:releaseDate_South_Korea "November 16, 2018" ;
+    schema1:releaseDate_Hong_Kong "November 16, 2018" ;
+    schema1:releaseDate_Taiwan "November 16, 2018" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/a/ae/Lets_Go_Pikachu_EN_boxart.png/250px-Lets_Go_Pikachu_EN_boxart.png" .
+
+ex:Pok_mon__Magikarp_Jump a ex:Game ;
+    rdfs:label "Pokémon: Magikarp Jump" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "iOS, iPadOS, Android" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "Facebook integration" ;
+    schema1:Developer "SELECT BUTTON inc." ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VII spin-off" ;
+    schema1:releaseDate_Japan "May 23, 2017" ;
+    schema1:releaseDate_North_America "May 24, 2017" ;
+    schema1:releaseDate_Australia "May 25, 2017" ;
+    schema1:releaseDate_Europe "May 17, 2017*, May 25, 2017*" ;
+    schema1:releaseDate_South_Korea "May 23, 2017" ;
+    schema1:releaseDate_Hong_Kong "May 23, 2017" ;
+    schema1:releaseDate_Taiwan "May 23, 2017" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/07/Pok%C3%A9mon_Magikarp_Jump_logo.png/250px-Pok%C3%A9mon_Magikarp_Jump_logo.png" .
+
+ex:Pok_mon__Wobbuffet_Fell_Down_ a ex:Game ;
+    rdfs:label "Pokémon: Wobbuffet Fell Down!" ;
+    schema1:Category "Medal game" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Namco Bandai" ;
+    schema1:Publisher "Banpresto" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "2006" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/0/0a/Wobbuffet_Fell_Down_machine.jpg/100px-Wobbuffet_Fell_Down_machine.jpg" .
+
+ex:Pok_Park_2__Wonders_Beyond a ex:Game ;
+    rdfs:label "PokéPark 2: Wonders Beyond" ;
+    schema1:Category "Action, Adventure" ;
+    schema1:Platform "Wii" ;
+    schema1:Players "Single and multiplayer" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation V spin-off" ;
+    schema1:releaseDate_Japan "November 12, 2011" ;
+    schema1:releaseDate_North_America "February 27, 2012" ;
+    schema1:releaseDate_Australia "March 29, 2012" ;
+    schema1:releaseDate_Europe "March 23, 2012" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "November 12, 2011" ;
+    schema1:releaseDate_Taiwan "November 12, 2011" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/d/d1/PokePark_2_EN_boxart.png/250px-PokePark_2_EN_boxart.png" .
+
+ex:Pok_Park_Wii__Pikachu_s_Adventure a ex:Game ;
+    rdfs:label "PokéPark Wii: Pikachu's Adventure" ;
+    schema1:Category "Action, Adventure" ;
+    schema1:Platform "Wii" ;
+    schema1:Players "Single" ;
+    schema1:Connectivity "Wi-Fi" ;
+    schema1:Developer "Creatures, Inc." ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV spin-off" ;
+    schema1:releaseDate_Japan "December 5, 2009  (Wii), July 5, 2017 (Wii U eShop)" ;
+    schema1:releaseDate_North_America "November 1, 2010 (Wii), May 19, 2016 (Wii U eShop)" ;
+    schema1:releaseDate_Australia "September 23, 2010, July 16, 2015 (Wii U eShop)" ;
+    schema1:releaseDate_Europe "July 9, 2010 (Wii), July 16, 2015 (Wii U eShop)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "February 25, 2010" ;
+    schema1:releaseDate_Taiwan "December 5, 2009" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/c/cb/PokePark_US_boxart.png/250px-PokePark_US_boxart.png" .
+
+ex:Pok_Park__Fishing_Rally_DS a ex:Game ;
+    rdfs:label "PokéPark: Fishing Rally DS" ;
+    schema1:Category "Fishing" ;
+    schema1:Platform "Nintendo DS Download Play" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "The Pokémon Company" ;
+    schema1:Publisher "The Pokémon Company, Nintendo" ;
+    schema1:Part_of "Generation III miscellaneous" ;
+    schema1:releaseDate_Japan "May 10, 2005" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/8/87/Pok%C3%A9Park_Fishing_Rally.png" .
+
+ex:Pok_ROM a ex:Game ;
+    rdfs:label "PokéROM" ;
+    schema1:Category "Educational" ;
+    schema1:Platform "PC" ;
+    schema1:Players "1-4 players" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Basis Applied Technology" ;
+    schema1:Publisher "The Learning Company, Mattel Interactive" ;
+    schema1:Part_of "Generation I miscellaneous" ;
+    schema1:releaseDate_Japan "N/A" ;
+    schema1:releaseDate_North_America "2000" ;
+    schema1:releaseDate_Australia "???" ;
+    schema1:releaseDate_Europe "???" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/79/Pikachu_Pok%C3%A9ROM.png/200px-Pikachu_Pok%C3%A9ROM.png" .
+
+ex:Pok_walker a ex:Game ;
+    rdfs:label "Pokéwalker" ;
+    schema1:Category "Virtual pet" ;
+    schema1:Platform "Self-contained" ;
+    schema1:Players "2 players simultaneous" ;
+    schema1:Connectivity "Infrared" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV peripheral" ;
+    schema1:releaseDate_Japan "September 12, 2009" ;
+    schema1:releaseDate_North_America "March 14, 2010" ;
+    schema1:releaseDate_Australia "March 25, 2010" ;
+    schema1:releaseDate_Europe "March 26, 2010, April 2, 2010*" ;
+    schema1:releaseDate_South_Korea "February 4, 2010" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/8b/Pokewalker.png/250px-Pokewalker.png" .
+
+ex:Pre_order_bonus a ex:Game ;
+    rdfs:label "Pre-order bonus" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/a/a3/Blue_pentagon_VI.png" .
+
+ex:Print_Club_Pok_mon_B a ex:Game ;
+    rdfs:label "Print Club Pokémon B" ;
+    schema1:Category "Purikura" ;
+    schema1:Platform "Arcade" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Atlus" ;
+    schema1:Publisher "Sega" ;
+    schema1:Part_of "Generation I miscellaneous" ;
+    schema1:releaseDate_Japan "1999" ;
+    schema1:releaseDate_North_America "1999" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/e4/Print_Club_Pokemon_B_cabinet.jpg/200px-Print_Club_Pokemon_B_cabinet.jpg" .
+
+ex:Record_mixing a ex:Game ;
+    rdfs:label "Record mixing" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:ROM_cartridge a ex:Game ;
+    rdfs:label "ROM cartridge" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:ROM_hack a ex:Game ;
+    rdfs:label "ROM hack" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Rotation_Battle a ex:Game ;
+    rdfs:label "Rotation Battle" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Sequence_breaking a ex:Game ;
+    rdfs:label "Sequence breaking" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Single_Battle__Battle_Mode_ a ex:Game ;
+    rdfs:label "Single Battle (Battle Mode)" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:User_SnorlaxMonster_Pok_mon_X_and_Y_demo a ex:Game ;
+    rdfs:label "User:SnorlaxMonster/Pokémon X and Y demo" ;
+    schema1:Category "RPG demo" ;
+    schema1:Platform "Nintendo 3DS (digital)" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation VI" ;
+    schema1:releaseDate_Japan "?" ;
+    schema1:releaseDate_North_America "?" ;
+    schema1:releaseDate_Australia "?" ;
+    schema1:releaseDate_Europe "?" ;
+    schema1:releaseDate_South_Korea "?" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/11/XY_launch_event_5.jpg/250px-XY_launch_event_5.jpg" .
+
+ex:User_Spriteit_Space_World_Demo a ex:Game ;
+    rdfs:label "User:Spriteit/Space World Demo" ;
+    schema1:Category "RPG demo" ;
+    schema1:Platform "Game Boy (enhanced for the Super Game Boy)" ;
+    schema1:Players "1 player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation II" ;
+    schema1:releaseDate_Japan "November 21, 1997" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/55/Japanese_GoldTitle_SW97_main_SGB_demo.png/250px-Japanese_GoldTitle_SW97_main_SGB_demo.png" .
+
+ex:Stadium_Cup a ex:Game ;
+    rdfs:label "Stadium Cup" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Stadium_Mode a ex:Game ;
+    rdfs:label "Stadium Mode" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Super_Smash_Bros_ a ex:Game ;
+    rdfs:label "Super Smash Bros." ;
+    schema1:Category "Versus fighting" ;
+    schema1:Platform "Nintendo 64, Wii (Virtual Console)" ;
+    schema1:Players "4 players simultaneous" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "HAL Laboratory" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation I spin-off" ;
+    schema1:releaseDate_Japan "January 21, 1999 (N64), January 20, 2009 (Wii VC)" ;
+    schema1:releaseDate_North_America "April 26, 1999 (N64), December 21, 2009 (Wii VC)" ;
+    schema1:releaseDate_Australia "1999 (N64), June 12, 2009 (Wii VC)" ;
+    schema1:releaseDate_Europe "November 19, 1999 (N64), June 12, 2009 (Wii VC)" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/1/18/Super_Smash_Brothers_EN_boxart.jpg/250px-Super_Smash_Brothers_EN_boxart.jpg" .
+
+ex:Super_Smash_Bros__Brawl a ex:Game ;
+    rdfs:label "Super Smash Bros. Brawl" ;
+    schema1:Category "Versus Fighting" ;
+    schema1:Platform "Wii" ;
+    schema1:Players "4 players simultaneous" ;
+    schema1:Connectivity "Nintendo Wi-Fi Connection" ;
+    schema1:Developer "Nintendo/Sora and various others, notably Game Arts" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation IV spin off" ;
+    schema1:releaseDate_Japan "January 31, 2008" ;
+    schema1:releaseDate_North_America "March 9, 2008" ;
+    schema1:releaseDate_Australia "June 26, 2008" ;
+    schema1:releaseDate_Europe "June 27, 2008" ;
+    schema1:releaseDate_South_Korea "April 29, 2010" ;
+    schema1:releaseDate_Hong_Kong "January 30, 2008" ;
+    schema1:releaseDate_Taiwan "July 12, 2008" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/e/ea/Brawl_US_boxart.png/250px-Brawl_US_boxart.png" .
+
+ex:Super_Smash_Bros__for_Nintendo_3DS_Wii_U a ex:Game ;
+    rdfs:label "Super Smash Bros. for Nintendo 3DS/Wii U" ;
+    schema1:Category "Versus Fighting" ;
+    schema1:Platform "3DS*, Wii U" ;
+    schema1:Players "1-4 players simultaneous (3DS), 1-8 players simultaneous (Wii U)" ;
+    schema1:Connectivity "Nintendo Network, StreetPass, SpotPass" ;
+    schema1:Developer "Namco Bandai" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation VI spin off" ;
+    schema1:releaseDate_Japan "September 13, 2014 (3DS), December 6, 2014 (Wii U)" ;
+    schema1:releaseDate_North_America "October 3, 2014 (3DS), November 21, 2014 (Wii U)" ;
+    schema1:releaseDate_Australia "October 4, 2014 (3DS), November 29, 2014 (Wii U)" ;
+    schema1:releaseDate_Europe "October 2, 2014 (3DS)*, October 3, 2014 (3DS), November 28, 2014 (Wii U)" ;
+    schema1:releaseDate_South_Korea "September 10, 2015 (3DS)" ;
+    schema1:releaseDate_Hong_Kong "July 24, 2015 (3DS)" ;
+    schema1:releaseDate_Taiwan "July 24, 2015 (3DS)" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/56/Smash_3DS_EN_boxart.png/250px-Smash_3DS_EN_boxart.png" .
+
+ex:Super_Smash_Bros__Melee a ex:Game ;
+    rdfs:label "Super Smash Bros. Melee" ;
+    schema1:Category "Versus Fighting" ;
+    schema1:Platform "Nintendo GameCube" ;
+    schema1:Players "4 players simultaneous" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "HAL Laboratory" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation II spin-off" ;
+    schema1:releaseDate_Japan "November 21, 2001" ;
+    schema1:releaseDate_North_America "December 3, 2001" ;
+    schema1:releaseDate_Australia "May 31, 2002" ;
+    schema1:releaseDate_Europe "May 24, 2002" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/7/75/Melee_EN_boxart.jpg/250px-Melee_EN_boxart.jpg" .
+
+ex:Super_Smash_Bros__Ultimate a ex:Game ;
+    rdfs:label "Super Smash Bros. Ultimate" ;
+    schema1:Category "Versus Fighting" ;
+    schema1:Platform "Switch" ;
+    schema1:Players "1-8 players simultaneous" ;
+    schema1:Connectivity "Nintendo Switch Online" ;
+    schema1:Developer "Sora, Ltd., Bandai Namco" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Generation VII spin off" ;
+    schema1:releaseDate_Japan "December 7, 2018" ;
+    schema1:releaseDate_North_America "December 7, 2018" ;
+    schema1:releaseDate_Australia "December 7, 2018" ;
+    schema1:releaseDate_Europe "December 7, 2018" ;
+    schema1:releaseDate_South_Korea "December 7, 2018" ;
+    schema1:releaseDate_Hong_Kong "December 7, 2018" ;
+    schema1:releaseDate_Taiwan "December 7, 2018" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/a/a1/Smash_Ultimate_EN_boxart.png/250px-Smash_Ultimate_EN_boxart.png" .
+
+ex:The_Hidden_Treasure_of_Area_Zero a ex:Game ;
+    rdfs:label "The Hidden Treasure of Area Zero" ;
+    schema1:Category "RPG" ;
+    schema1:Platform "Nintendo Switch" ;
+    schema1:Players "1-2, 4 players simultaneous" ;
+    schema1:Connectivity "Wireless, Nintendo Switch Online" ;
+    schema1:Developer "Game Freak" ;
+    schema1:Publisher "Nintendo/The Pokémon Company" ;
+    schema1:Part_of "Generation IX core series" ;
+    schema1:releaseDate_Japan "February 28, 2023, November 3, 2023*" ;
+    schema1:releaseDate_North_America "February 27, 2023, November 3, 2023*" ;
+    schema1:releaseDate_Australia "February 28, 2023, November 3, 2023*" ;
+    schema1:releaseDate_Europe "February 27, 2023, November 3, 2023*" ;
+    schema1:releaseDate_South_Korea "February 28, 2023, November 3, 2023*" ;
+    schema1:releaseDate_Hong_Kong "February 27, 2023, November 3, 2023*" ;
+    schema1:releaseDate_Taiwan "February 27, 2023, November 3, 2023*" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/4/41/Scarlet_HTAZ_EN_boxart.png/250px-Scarlet_HTAZ_EN_boxart.png" .
+
+ex:The_Thieves_and_the_1000_Pok_mon a ex:Game ;
+    rdfs:label "The Thieves and the 1000 Pokémon" ;
+    schema1:Category "Action" ;
+    schema1:Platform "Nintendo 3DS" ;
+    schema1:Players "1" ;
+    schema1:Connectivity "StreetPass" ;
+    schema1:Developer "Marvelous AQL" ;
+    schema1:Publisher "The Pokémon Company" ;
+    schema1:Part_of "Generation VI side series" ;
+    schema1:releaseDate_Japan "June 5, 2014" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/6/6e/The_Thieves_and_the_1000_Pok%C3%A9mon_banner.png/250px-The_Thieves_and_the_1000_Pok%C3%A9mon_banner.png" .
+
+ex:TM a ex:Game ;
+    rdfs:label "TM" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5e/0010Caterpie.png/70px-0010Caterpie.png" .
+
+ex:Togepi_s_Great_Adventure a ex:Game ;
+    rdfs:label "Togepi's Great Adventure" ;
+    schema1:Category "Adventure" ;
+    schema1:Platform "Pokémon mini" ;
+    schema1:Players "Single player" ;
+    schema1:Connectivity "None" ;
+    schema1:Developer "Jupiter Corporation" ;
+    schema1:Publisher "Nintendo" ;
+    schema1:Part_of "Pokémon mini series" ;
+    schema1:releaseDate_Japan "October 18, 2002" ;
+    schema1:releaseDate_North_America "N/A" ;
+    schema1:releaseDate_Australia "N/A" ;
+    schema1:releaseDate_Europe "N/A" ;
+    schema1:releaseDate_South_Korea "N/A" ;
+    schema1:releaseDate_Hong_Kong "N/A" ;
+    schema1:releaseDate_Taiwan "N/A" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/8/8a/Togepi_Great_Adventure_JP_boxart.png/190px-Togepi_Great_Adventure_JP_boxart.png" .
+
+ex:TR a ex:Game ;
+    rdfs:label "TR" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "https://archives.bulbagarden.net/media/upload/thumb/5/5e/0010Caterpie.png/70px-0010Caterpie.png" .
+
+ex:Trainer_Tips a ex:Game ;
+    rdfs:label "Trainer Tips" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Trainer_Token a ex:Game ;
+    rdfs:label "Trainer Token" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Virtual_Console a ex:Game ;
+    rdfs:label "Virtual Console" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+
+ex:Wi_Fi_Plaza a ex:Game ;
+    rdfs:label "Wi-Fi Plaza" ;
+    schema1:Category "Unknown" ;
+    schema1:Platform "Unknown" ;
+    schema1:Players "Unknown" ;
+    schema1:Connectivity "Unknown" ;
+    schema1:Developer "Unknown" ;
+    schema1:Publisher "Unknown" ;
+    schema1:Part_of "Unknown" ;
+    schema1:releaseDate_Japan "Unknown" ;
+    schema1:releaseDate_North_America "Unknown" ;
+    schema1:releaseDate_Australia "Unknown" ;
+    schema1:releaseDate_Europe "Unknown" ;
+    schema1:releaseDate_South_Korea "Unknown" ;
+    schema1:releaseDate_Hong_Kong "Unknown" ;
+    schema1:releaseDate_Taiwan "Unknown" ;
+    schema1:imageURL "Unknown" .
+

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Search Results{% endblock %}
+{% block content %}
+<h1>Search Results for "{{ request.args.get('query') }}"</h1>
+{% if results %}
+<ul>
+    {% for result in results %}
+    <li><a href="/entity/{{ result.uri.split('/')[-1] }}">{{ result.label }}</a></li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No results found for "{{ request.args.get('query') }}" in {{ category if category else 'all categories' }}.</p>
+{% endif %}
+<a href="/">Back to Home</a>
+{% endblock %}

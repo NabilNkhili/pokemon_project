@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ details.label }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='pokemon_details.css') }}">
+</head>
+<body>
+    <h1 class="pokemon-name">{{ details.label }}</h1>
+    <div class="image-container">
+        <img src="{{ details.image }}" alt="{{ details.label }}">
+    </div>
+    <div class="details-container">
+
+    <!-- Lien cliquable pour chaque capacité -->
+    <p><strong>Abilities:</strong>
+        {% if details.abilities %}
+            {% for ability in details.abilities %}
+                <a href="{{ url_for('ability_details', ability_name=ability) }}">{{ ability }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        {% else %}
+            None
+        {% endif %}
+    </p>
+    <p><strong>Egg Groups:</strong> {% if details.egg_groups %}{{ details.egg_groups|join(", ") }}{% else %}None{% endif %}</p>
+    <p><strong>Hidden Ability:</strong> {{ details.hidden_ability }}</p>
+    <p><strong>Types:</strong> {% if details.types %}{{ details.types|join(", ") }}{% else %}None{% endif %}</p>
+    <p><strong>Category:</strong> {{ details.category or 'None' }}</p>
+    <p><strong>Color:</strong> {{ details.color or 'None' }}</p>
+    <p><strong>Friendship:</strong> {{ details.friendship or 'None' }}</p>
+    <p><strong>Hatch Time:</strong> {{ details.hatchtime or 'None' }}</p>
+    <p><strong>Height:</strong> {{ details.height or 'None' }}</p>
+    <p><strong>Japanese Name:</strong> {{ details.jname or 'None' }}</p>
+    <p><strong>National Dex:</strong> {{ details.ndex or 'None' }}</p>
+    <p><strong>Weight:</strong> {{ details.weight or 'None' }}</p>
+    <!-- Afficher les noms dans différentes langues -->
+    <h2>Names in Other Languages</h2>
+    <ul>
+        {% for lang, name in details.names.items() %}
+            <li><strong>{{ lang }}:</strong> {{ name }}</li>
+        {% endfor %}
+    </ul>
+    </div>
+</body>
+</html>

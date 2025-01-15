@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ ability.label }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        {% if categories %}
+            {% for category, _ in categories.items() %}
+                <a href="/category/{{ category }}">{{ category.capitalize() }}</a>
+            {% endfor %}
+        {% endif %}
+        
+        <!-- Formulaire de recherche amélioré -->
+        <input type="text" id="search-bar" placeholder="Search..." onkeyup="search()">
+        <button onclick="search()">Search</button>
+    </div>
+
+    <div class="content">
+        <h1>{{ ability.label }}</h1>
+
+        <!-- Afficher les détails de la capacité -->
+        <div class="ability-details">
+            {% for key, value in ability.details.items() %}
+                <p><strong>{{ key }}:</strong> {{ value }}</p>
+            {% endfor %}
+        </div>
+
+        <!-- Bouton pour retourner à la liste des capacités -->
+        <a href="/category/ability" class="back-button">Back to All Abilities</a>
+    </div>
+
+    <!-- Script JS pour la recherche -->
+    <script>
+        function search() {
+            const query = document.getElementById('search-bar').value.toLowerCase();
+            const cards = document.querySelectorAll('.ability-card'); // Cibler les cartes de capacité
+
+            let found = false; // Suivi des résultats
+            cards.forEach(card => {
+                const label = card.querySelector('strong').textContent.toLowerCase();
+                if (label.includes(query)) {
+                    card.style.display = 'block'; // Affiche les résultats correspondants
+                    found = true;
+                } else {
+                    card.style.display = 'none'; // Cache les résultats non correspondants
+                }
+            });
+
+            if (!found) {
+                console.log("No results found for: " + query);
+            }
+        }
+    </script>
+</body>
+</html>

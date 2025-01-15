@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}{{ category }} List{% endblock %}
+{% block content %}
+<h1>{{ category }} List</h1>
+<div class="grid-container">
+    {% if category.lower() in ["type", "egg-group"] %}
+        <!-- Affichage spécifique pour la catégorie "Type" -->
+        {% for result in results %}
+            <div class="card">
+                <h3>{{ result.label }}</h3>
+            </div>
+        {% endfor %}
+    {% else %}
+        <!-- Affichage standard pour les autres catégories -->
+        {% for result in results %}
+            <div class="card">
+                <img src="/proxy-image/?url={{ result.image | urlencode }}" 
+                alt="{{ result.label }}" 
+                onerror="this.src='/static/no_image.png';">
+                           <h3>{{ result.label }}</h3>
+                <a href="{{ url_for('pokemon_details', pokemon_name=result.label.replace(' (Pokémon)', '')) }}">View Details</a>
+            </div>
+        {% endfor %}
+    {% endif %}
+</div>
+{% endblock %}

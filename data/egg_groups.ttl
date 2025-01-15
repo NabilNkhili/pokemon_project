@@ -1,0 +1,54 @@
+@prefix ex: <http://example.org/pokemon/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Amorphous a ex:EggGroup ;
+    rdfs:label "Amorphous" .
+
+ex:Bug a ex:EggGroup ;
+    rdfs:label "Bug" .
+
+ex:CategoryEgg_Groups a ex:EggGroup ;
+    rdfs:label "Category:Egg Groups" .
+
+ex:Ditto a ex:EggGroup ;
+    rdfs:label "Ditto" .
+
+ex:Dragon a ex:EggGroup ;
+    rdfs:label "Dragon" .
+
+ex:Fairy a ex:EggGroup ;
+    rdfs:label "Fairy" .
+
+ex:Field a ex:EggGroup ;
+    rdfs:label "Field" .
+
+ex:Flying a ex:EggGroup ;
+    rdfs:label "Flying" .
+
+ex:Grass a ex:EggGroup ;
+    rdfs:label "Grass" .
+
+ex:Human-Like a ex:EggGroup ;
+    rdfs:label "Human-Like" .
+
+ex:List_of_Pokémon_by_Egg_Group a ex:EggGroup ;
+    rdfs:label "List of Pokémon by Egg Group" .
+
+ex:Mineral a ex:EggGroup ;
+    rdfs:label "Mineral" .
+
+ex:Monster a ex:EggGroup ;
+    rdfs:label "Monster" .
+
+ex:No_Eggs_Discovered a ex:EggGroup ;
+    rdfs:label "No Eggs Discovered" .
+
+ex:Water_1 a ex:EggGroup ;
+    rdfs:label "Water 1" .
+
+ex:Water_2 a ex:EggGroup ;
+    rdfs:label "Water 2" .
+
+ex:Water_3 a ex:EggGroup ;
+    rdfs:label "Water 3" .
+

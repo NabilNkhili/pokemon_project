@@ -1,0 +1,60 @@
+@prefix ex: <http://example.org/pokemon/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:Bug a ex:PokemonType ;
+    rdfs:label "Bug" .
+
+ex:Dark a ex:PokemonType ;
+    rdfs:label "Dark" .
+
+ex:Dragon a ex:PokemonType ;
+    rdfs:label "Dragon" .
+
+ex:Electric a ex:PokemonType ;
+    rdfs:label "Electric" .
+
+ex:Fairy a ex:PokemonType ;
+    rdfs:label "Fairy" .
+
+ex:Fighting a ex:PokemonType ;
+    rdfs:label "Fighting" .
+
+ex:Fire a ex:PokemonType ;
+    rdfs:label "Fire" .
+
+ex:Flying a ex:PokemonType ;
+    rdfs:label "Flying" .
+
+ex:Generation_VI a ex:PokemonType ;
+    rdfs:label "Generation VI" .
+
+ex:Ghost a ex:PokemonType ;
+    rdfs:label "Ghost" .
+
+ex:Grass a ex:PokemonType ;
+    rdfs:label "Grass" .
+
+ex:Ground a ex:PokemonType ;
+    rdfs:label "Ground" .
+
+ex:Ice a ex:PokemonType ;
+    rdfs:label "Ice" .
+
+ex:Normal a ex:PokemonType ;
+    rdfs:label "Normal" .
+
+ex:Poison a ex:PokemonType ;
+    rdfs:label "Poison" .
+
+ex:Psychic a ex:PokemonType ;
+    rdfs:label "Psychic" .
+
+ex:Rock a ex:PokemonType ;
+    rdfs:label "Rock" .
+
+ex:Steel a ex:PokemonType ;
+    rdfs:label "Steel" .
+
+ex:Water a ex:PokemonType ;
+    rdfs:label "Water" .
+

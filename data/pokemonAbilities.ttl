@@ -1,0 +1,2362 @@
+@prefix ex: <http://example.org/pokemon/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://example.org/schema/> .
+
+ex:Abilities_by_effect a ex:Ability ;
+    rdfs:label "Abilities by effect" .
+
+ex:Abilities_by_generation a ex:Ability ;
+    rdfs:label "Abilities by generation" .
+
+ex:Abilities_in_need_of_research a ex:Ability ;
+    rdfs:label "Abilities in need of research" .
+
+ex:Abilities_only_available_as_a_Hidden_Ability a ex:Ability ;
+    rdfs:label "Abilities only available as a Hidden Ability" .
+
+ex:Ability_variations a ex:Ability ;
+    rdfs:label "Ability variations" .
+
+ex:Adaptability a ex:Ability ;
+    rdfs:label "Adaptability" ;
+    schema1:Generation_IV "Powers up moves of the same type." ;
+    schema1:Generation_IX "Powers up moves of the same type as the Pokémon." ;
+    schema1:Generation_V "Powers up moves of the same type." ;
+    schema1:Generation_VI "Powers up moves of the same type as the Pokémon." ;
+    schema1:Generation_VII "Powers up moves of the same type as the Pokémon." ;
+    schema1:Generation_VIII "Powers up moves of the same type as the Pokémon." .
+
+ex:Aerilate a ex:Ability ;
+    rdfs:label "Aerilate" ;
+    schema1:Generation_IX "Normal-type moves become Flying-type moves. The power of those moves is boosted a little." ;
+    schema1:Generation_VI "Normal-type moves become Flying-type moves." ;
+    schema1:Generation_VII "Normal-type moves become Flying-type moves. The power of those moves is boosted a little." ;
+    schema1:Generation_VIII "Normal-type moves become Flying-type moves. The power of those moves is boosted a little." .
+
+ex:Aftermath a ex:Ability ;
+    rdfs:label "Aftermath" ;
+    schema1:Generation_IV "Damages the foe landing the finishing hit." ;
+    schema1:Generation_IX "Damages the attacker if it knocks out the Pokémon with a move that makes direct contact." ;
+    schema1:Generation_V "Damages the attacker landing the finishing hit." ;
+    schema1:Generation_VI "Damages the attacker landing the finishing hit." ;
+    schema1:Generation_VII "Damages the attacker if it contacts the Pokémon with a finishing hit." ;
+    schema1:Generation_VIII "Damages the attacker if it contacts the Pokémon with a finishing hit." .
+
+ex:Air_Lock a ex:Ability ;
+    rdfs:label "Air Lock" ;
+    schema1:Generation_III "Negates weather effects." ;
+    schema1:Generation_IV "Eliminates the effects of weather." ;
+    schema1:Generation_IX "Eliminates the effects of weather." ;
+    schema1:Generation_V "Eliminates the effects of weather." ;
+    schema1:Generation_VI "Eliminates the effects of weather." ;
+    schema1:Generation_VII "Eliminates the effects of weather." ;
+    schema1:Generation_VIII "Eliminates the effects of weather." .
+
+ex:Analytic a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Analytic" ;
+    schema1:Generation_IX "Boosts the power of the Pokémon's move if it is the last to act that turn." ;
+    schema1:Generation_V "Boosts move power when the Pokémon moves last." ;
+    schema1:Generation_VI "Boosts move power when the Pokémon moves after the target." ;
+    schema1:Generation_VII "Boosts move power when the Pokémon moves last." ;
+    schema1:Generation_VIII "Boosts move power when the Pokémon moves last." .
+
+ex:Anger_Point a ex:Ability ;
+    rdfs:label "Anger Point" ;
+    schema1:Generation_IV "Raises Attack upon taking a critical hit." ;
+    schema1:Generation_IX "The Pokémon is angered when it takes a critical hit, and that maxes its Attack stat." ;
+    schema1:Generation_V "Maxes Attack after taking a critical hit." ;
+    schema1:Generation_VI "Maxes the Attack stat after the Pokémon takes a critical hit." ;
+    schema1:Generation_VII "The Pokémon is angered when it takes a critical hit, and that maxes its Attack stat." ;
+    schema1:Generation_VIII "The Pokémon is angered when it takes a critical hit, and that maxes its Attack stat." .
+
+ex:Anger_Shell a ex:Ability ;
+    rdfs:label "Anger Shell" ;
+    schema1:Generation_IX "When an attack causes its HP to drop to half or less, the Pokémon gets angry. This lowers its Defense and Sp. Def stats but boosts its Attack, Sp. Atk, and Speed stats." .
+
+ex:Anticipation a ex:Ability ;
+    rdfs:label "Anticipation" ;
+    schema1:Generation_IV "Senses the foe's dangerous moves." ;
+    schema1:Generation_IX "The Pokémon can sense an opposing Pokémon's dangerous moves." ;
+    schema1:Generation_V "Senses a foe's dangerous moves." ;
+    schema1:Generation_VI "Senses an opposing Pokémon's dangerous moves." ;
+    schema1:Generation_VII "The Pokémon can sense an opposing Pokémon's dangerous moves." ;
+    schema1:Generation_VIII "The Pokémon can sense an opposing Pokémon's dangerous moves." .
+
+ex:Arena_Trap a ex:Ability ;
+    rdfs:label "Arena Trap" ;
+    schema1:Generation_III "Prevents fleeing.RSEFRLGPrevents the foe's escape.ColoXD" ;
+    schema1:Generation_IV "Prevents the foe from fleeing." ;
+    schema1:Generation_IX "Prevents opposing Pokémon from fleeing from battle." ;
+    schema1:Generation_V "Prevents the foe from fleeing." ;
+    schema1:Generation_VI "Prevents opposing Pokémon from fleeing." ;
+    schema1:Generation_VII "Prevents opposing Pokémon from fleeing." ;
+    schema1:Generation_VIII "Prevents opposing Pokémon from fleeing." .
+
+ex:Armor_Tail a ex:Ability ;
+    rdfs:label "Armor Tail" ;
+    schema1:Generation_IX "The mysterious tail covering the Pokémon's head makes opponents unable to use priority moves against the Pokémon or its allies." .
+
+ex:Aroma_Veil a ex:Ability ;
+    rdfs:label "Aroma Veil" ;
+    schema1:Generation_IX "Protects the Pokémon and its allies from effects that prevent the use of moves." ;
+    schema1:Generation_VI "Protects allies from attacks that limit their move choices." ;
+    schema1:Generation_VII "Protects itself and its allies from attacks that limit their move choices." ;
+    schema1:Generation_VIII "Protects itself and its allies from attacks that limit their move choices." .
+
+ex:As_One a ex:Ability ;
+    rdfs:label "As One" ;
+    schema1:Generation_IX "Ice Rider This Ability combines the effects of both Calyrex's Unnerve Ability and Glastrier's Chilling Neigh Ability. Shadow Rider This Ability combines the effects of both Calyrex's Unnerve Ability and Spectrier's Grim Neigh Ability." ;
+    schema1:Generation_VIII "Ice Rider This Ability combines the effects of both Calyrex's Unnerve Ability and Glastrier's Chilling Neigh Ability. Shadow Rider This Ability combines the effects of both Calyrex's Unnerve Ability and Spectrier's Grim Neigh Ability." .
+
+ex:Aura_Break a ex:Ability ;
+    rdfs:label "Aura Break" ;
+    schema1:Generation_IX "The effects of \"Aura\" Abilities are reversed to lower the power of affected moves." ;
+    schema1:Generation_VI "The effects of \"Aura\" Abilities are reversed." ;
+    schema1:Generation_VII "The effects of \"Aura\" Abilities are reversed to lower the power of affected moves." ;
+    schema1:Generation_VIII "The effects of \"Aura\" Abilities are reversed to lower the power of affected moves." .
+
+ex:Bad_Dreams a ex:Ability ;
+    rdfs:label "Bad Dreams" ;
+    schema1:Generation_IV "Reduces a sleeping foe's HP." ;
+    schema1:Generation_IX "Damages opposing Pokémon that are asleep." ;
+    schema1:Generation_V "Reduces a sleeping foe's HP." ;
+    schema1:Generation_VI "Reduces the HP of sleeping opposing Pokémon." ;
+    schema1:Generation_VII "Reduces the HP of sleeping opposing Pokémon." ;
+    schema1:Generation_VIII "Reduces the HP of sleeping opposing Pokémon." .
+
+ex:Ball_Fetch a ex:Ability ;
+    rdfs:label "Ball Fetch" ;
+    schema1:Generation_IX "If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle." ;
+    schema1:Generation_VIII "If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle." .
+
+ex:Battery a ex:Ability ;
+    rdfs:label "Battery" ;
+    schema1:Generation_IX "Powers up ally Pokémon's special moves." ;
+    schema1:Generation_VII "Powers up ally Pokémon's special moves." ;
+    schema1:Generation_VIII "Powers up ally Pokémon's special moves." .
+
+ex:Battle_Armor a ex:Ability ;
+    rdfs:label "Battle Armor" ;
+    schema1:Generation_III "Blocks critical hits." ;
+    schema1:Generation_IV "The Pokémon is protected against critical hits." ;
+    schema1:Generation_IX "Hard armor protects the Pokémon from critical hits." ;
+    schema1:Generation_V "The Pokémon is protected against critical hits." ;
+    schema1:Generation_VI "Protects the Pokémon from critical hits." ;
+    schema1:Generation_VII "Hard armor protects the Pokémon from critical hits." ;
+    schema1:Generation_VIII "Hard armor protects the Pokémon from critical hits." .
+
+ex:Battle_Bond a ex:Ability ;
+    rdfs:label "Battle Bond" ;
+    schema1:Generation_IX "When the Pokémon knocks out a target, its bond with its Trainer is strengthened, and its Attack, Sp. Atk, and Speed stats are boosted." ;
+    schema1:Generation_VII "Defeating an opposing Pokémon strengthens the Pokémon's bond with its Trainer, and it becomes Ash-Greninja. Water Shuriken gets more powerful." ;
+    schema1:Generation_VIII "Defeating an opposing Pokémon strengthens the Pokémon's bond with its Trainer, and it becomes Ash-Greninja. Water Shuriken gets more powerful." .
+
+ex:Beads_of_Ruin a ex:Ability ;
+    rdfs:label "Beads of Ruin" ;
+    schema1:Generation_IX "The power of the Pokémon's ruinous beads lowers the Sp. Def stats of all Pokémon except itself." .
+
+ex:Beast_Boost a ex:Ability ;
+    rdfs:label "Beast Boost" ;
+    schema1:Generation_IX "Boosts the Pokémon's most proficient stat every time it knocks out a target." ;
+    schema1:Generation_VII "The Pokémon boosts its most proficient stat each time it knocks out a Pokémon." ;
+    schema1:Generation_VIII "The Pokémon boosts its most proficient stat each time it knocks out a Pokémon." .
+
+ex:Berserk a ex:Ability ;
+    rdfs:label "Berserk" ;
+    schema1:Generation_IX "Boosts the Pokémon's Sp. Atk stat when it takes a hit that causes its HP to drop to half or less." ;
+    schema1:Generation_VII "Boosts the Pokémon's Sp. Atk stat when it takes a hit that causes its HP to become half or less." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Sp. Atk stat when it takes a hit that causes its HP to become half or less." .
+
+ex:Big_Pecks a ex:Ability ;
+    rdfs:label "Big Pecks" ;
+    schema1:Generation_IX "Prevents the Pokémon from having its Defense stat lowered." ;
+    schema1:Generation_V "Protects the Pokémon from Defense-lowering attacks." ;
+    schema1:Generation_VI "Protects the Pokémon from Defense-lowering attacks." ;
+    schema1:Generation_VII "Protects the Pokémon from Defense-lowering effects." ;
+    schema1:Generation_VIII "Protects the Pokémon from Defense-lowering effects." .
+
+ex:Blaze a ex:Ability ;
+    rdfs:label "Blaze" ;
+    schema1:Generation_III "Ups Fire moves in a pinch." ;
+    schema1:Generation_IV "Powers up Fire-type moves in a pinch." ;
+    schema1:Generation_IX "Powers up Fire-type moves when the Pokémon's HP is low." ;
+    schema1:Generation_V "Powers up Fire-type moves in a pinch." ;
+    schema1:Generation_VI "Powers up Fire-type moves when the Pokémon is in trouble." ;
+    schema1:Generation_VII "Powers up Fire-type moves when the Pokémon's HP is low." ;
+    schema1:Generation_VIII "Powers up Fire-type moves when the Pokémon's HP is low." .
+
+ex:Bulletproof a ex:Ability ;
+    rdfs:label "Bulletproof" ;
+    schema1:Generation_IX "Protects the Pokémon from ball and bomb moves." ;
+    schema1:Generation_VI "Protects the Pokémon from some ball and bomb moves." ;
+    schema1:Generation_VII "Protects the Pokémon from some ball and bomb moves." ;
+    schema1:Generation_VIII "Protects the Pokémon from some ball and bomb moves." .
+
+ex:Cacophony a ex:Ability ;
+    rdfs:label "Cacophony" ;
+    schema1:Generation_III "Avoids sound-based moves." .
+
+ex:Cheek_Pouch a ex:Ability ;
+    rdfs:label "Cheek Pouch" ;
+    schema1:Generation_IX "The Pokémon's HP is restored when it eats any Berry, in addition to the Berry's usual effect." ;
+    schema1:Generation_VI "Restores HP as well when the Pokémon eats a Berry." ;
+    schema1:Generation_VII "Restores HP as well when the Pokémon eats a Berry." ;
+    schema1:Generation_VIII "Restores HP as well when the Pokémon eats a Berry." .
+
+ex:Chilling_Neigh a ex:Ability ;
+    rdfs:label "Chilling Neigh" ;
+    schema1:Generation_IX "When the Pokémon knocks out a target, it utters a chilling neigh, which boosts its Attack stat." ;
+    schema1:Generation_VIII "When the Pokémon knocks out a target, it utters a chilling neigh, which boosts its Attack stat." .
+
+ex:Chlorophyll a ex:Ability ;
+    rdfs:label "Chlorophyll" ;
+    schema1:Generation_III "Raises Speed in sunshine." ;
+    schema1:Generation_IV "Boosts the Pokémon's Speed in sunshine." ;
+    schema1:Generation_IX "Boosts the Pokémon's Speed stat in harsh sunlight." ;
+    schema1:Generation_V "Boosts the Pokémon's Speed in sunshine." ;
+    schema1:Generation_VI "Boosts the Pokémon's Speed stat in sunshine." ;
+    schema1:Generation_VII "Boosts the Pokémon's Speed stat in sunshine.SMBoosts the Pokémon's Speed stat in harsh sunlight.USUM" ;
+    schema1:Generation_VIII "Boosts the Pokémon's Speed stat in harsh sunlight." .
+
+ex:Clear_Body a ex:Ability ;
+    rdfs:label "Clear Body" ;
+    schema1:Generation_III "Prevents ability reduction." ;
+    schema1:Generation_IV "Prevents the Pokémon's stats from being lowered.DPPtPrevents its stats from being lowered.HGSS" ;
+    schema1:Generation_IX "Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats." ;
+    schema1:Generation_V "Prevents other Pokémon from lowering its stats." ;
+    schema1:Generation_VI "Prevents other Pokémon from lowering its stats." ;
+    schema1:Generation_VII "Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats." ;
+    schema1:Generation_VIII "Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats." .
+
+ex:Cloud_Nine a ex:Ability ;
+    rdfs:label "Cloud Nine" ;
+    schema1:Generation_III "Negates weather effects." ;
+    schema1:Generation_IV "Eliminates the effects of weather." ;
+    schema1:Generation_IX "Eliminates the effects of weather." ;
+    schema1:Generation_V "Eliminates the effects of weather." ;
+    schema1:Generation_VI "Eliminates the effects of weather." ;
+    schema1:Generation_VII "Eliminates the effects of weather." ;
+    schema1:Generation_VIII "Eliminates the effects of weather." .
+
+ex:Color_Change a ex:Ability ;
+    rdfs:label "Color Change" ;
+    schema1:Generation_III "Changes type to foe's move.RSEFRLGChanges type to target's move.ColoXD" ;
+    schema1:Generation_IV "Changes the Pokémon's type to the foe's move." ;
+    schema1:Generation_IX "The Pokémon's type becomes the type of the move used on it." ;
+    schema1:Generation_V "Changes the Pokémon's type to the foe's move." ;
+    schema1:Generation_VI "The Pokémon's type becomes the type of the move used on it." ;
+    schema1:Generation_VII "The Pokémon's type becomes the type of the move used on it." ;
+    schema1:Generation_VIII "The Pokémon's type becomes the type of the move used on it." .
+
+ex:Comatose a ex:Ability ;
+    rdfs:label "Comatose" ;
+    schema1:Generation_IX "The Pokémon is always drowsing and will never wake up. It can attack while in its sleeping state." ;
+    schema1:Generation_VII "It's always drowsing and will never wake up. It can attack without waking up." ;
+    schema1:Generation_VIII "It's always drowsing and will never wake up. It can attack without waking up." .
+
+ex:Commander a ex:Ability ;
+    rdfs:label "Commander" ;
+    schema1:Generation_IX "When the Pokémon enters a battle, it goes inside the mouth of an ally Dondozo if one is on the field. The Pokémon then issues commands from there." .
+
+ex:Competitive a ex:Ability ;
+    rdfs:label "Competitive" ;
+    schema1:Generation_IX "Boosts the Pokémon's Sp. Atk stat sharply when its stats are lowered by an opposing Pokémon." ;
+    schema1:Generation_VI "Boosts the Sp. Atk stat when a stat is lowered." ;
+    schema1:Generation_VII "Boosts the Sp. Atk stat sharply when a stat is lowered." ;
+    schema1:Generation_VIII "Boosts the Sp. Atk stat sharply when a stat is lowered." .
+
+ex:Compound_Eyes a ex:Ability ;
+    rdfs:label "Compound Eyes" ;
+    schema1:Generation_III "Raises accuracy." ;
+    schema1:Generation_IV "The Pokémon's accuracy is boosted." ;
+    schema1:Generation_IX "The Pokémon's compound eyes boost its accuracy." ;
+    schema1:Generation_V "The Pokémon's accuracy is boosted." ;
+    schema1:Generation_VI "Boosts the Pokémon's accuracy." ;
+    schema1:Generation_VII "The Pokémon's compound eyes boost its accuracy." ;
+    schema1:Generation_VIII "The Pokémon's compound eyes boost its accuracy." .
+
+ex:Contrary a ex:Ability ;
+    rdfs:label "Contrary" ;
+    schema1:Generation_IX "Reverses any stat changes affecting the Pokémon so that attempts to boost its stats instead lower them—and attempts to lower its stats will boost them." ;
+    schema1:Generation_V "Makes stat changes have an opposite effect." ;
+    schema1:Generation_VI "Makes stat changes have an opposite effect." ;
+    schema1:Generation_VII "Makes stat changes have an opposite effect." ;
+    schema1:Generation_VIII "Makes stat changes have an opposite effect." .
+
+ex:Corrosion a ex:Ability ;
+    rdfs:label "Corrosion" ;
+    schema1:Generation_IX "The Pokémon can poison the target even if it's a Steel or Poison type." ;
+    schema1:Generation_VII "The Pokémon can poison the target even if it's a Steel or Poison type." ;
+    schema1:Generation_VIII "The Pokémon can poison the target even if it's a Steel or Poison type." .
+
+ex:Costar a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Costar" ;
+    schema1:Generation_IX "When the Pokémon enters a battle, it copies an ally's stat changes." .
+
+ex:Cotton_Down a ex:Ability ;
+    rdfs:label "Cotton Down" ;
+    schema1:Generation_IX "When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stats of all Pokémon except itself." ;
+    schema1:Generation_VIII "When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stat of all Pokémon except itself." .
+
+ex:Cud_Chew a ex:Ability ;
+    rdfs:label "Cud Chew" ;
+    schema1:Generation_IX "When the Pokémon eats a Berry, it will regurgitate that Berry at the end of the next turn and eat it one more time." .
+
+ex:Curious_Medicine a ex:Ability ;
+    rdfs:label "Curious Medicine" ;
+    schema1:Generation_IX "When the Pokémon enters a battle, it scatters medicine from its shell, which removes all stat changes from allies." ;
+    schema1:Generation_VIII "When the Pokémon enters a battle, it scatters medicine from its shell, which removes all stat changes from allies." .
+
+ex:Cursed_Body a ex:Ability ;
+    rdfs:label "Cursed Body" ;
+    schema1:Generation_IX "May disable a move that has dealt damage to the Pokémon." ;
+    schema1:Generation_V "May disable a move used on the Pokémon." ;
+    schema1:Generation_VI "May disable a move used on the Pokémon." ;
+    schema1:Generation_VII "May disable a move used on the Pokémon." ;
+    schema1:Generation_VIII "May disable a move used on the Pokémon." .
+
+ex:Cute_Charm a ex:Ability ;
+    rdfs:label "Cute Charm" ;
+    schema1:Generation_III "Infatuates on contact." ;
+    schema1:Generation_IV "Contact with the Pokémon may cause infatuation." ;
+    schema1:Generation_IX "The Pokémon may infatuate attackers that make direct contact with it." ;
+    schema1:Generation_V "Contact with the Pokémon may cause infatuation." ;
+    schema1:Generation_VI "Contact with the Pokémon may cause infatuation." ;
+    schema1:Generation_VII "Contact with the Pokémon may cause infatuation." ;
+    schema1:Generation_VIII "Contact with the Pokémon may cause infatuation." .
+
+ex:Damp a ex:Ability ;
+    rdfs:label "Damp" ;
+    schema1:Generation_III "Prevents self-destruction." ;
+    schema1:Generation_IV "Prevents combatants from self destructing.DPPtPrevents combatants from self-destructing.HGSS" ;
+    schema1:Generation_IX "The Pokémon dampens its surroundings, preventing all Pokémon from using explosive moves such as Self-Destruct." ;
+    schema1:Generation_V "Prevents the use of self-destructing moves." ;
+    schema1:Generation_VI "Prevents the use of self-destructing moves." ;
+    schema1:Generation_VII "Prevents the use of explosive moves such as Self-Destruct by dampening its surroundings." ;
+    schema1:Generation_VIII "Prevents the use of explosive moves, such as Self-Destruct, by dampening its surroundings." .
+
+ex:Dancer a ex:Ability ;
+    rdfs:label "Dancer" ;
+    schema1:Generation_IX "Whenever a dance move is used in battle, the Pokémon will copy the user to immediately perform that dance move itself." ;
+    schema1:Generation_VII "When another Pokémon uses a dance move, it can use a dance move following it regardless of its Speed." ;
+    schema1:Generation_VIII "When another Pokémon uses a dance move, it can use a dance move following it regardless of its Speed." .
+
+ex:Dark_Aura a ex:Ability ;
+    rdfs:label "Dark Aura" ;
+    schema1:Generation_IX "Powers up the Dark-type moves of all Pokémon on the field." ;
+    schema1:Generation_VI "Powers up each Pokémon's Dark-type moves." ;
+    schema1:Generation_VII "Powers up each Pokémon's Dark-type moves." ;
+    schema1:Generation_VIII "Powers up each Pokémon's Dark-type moves." .
+
+ex:Dauntless_Shield a ex:Ability ;
+    rdfs:label "Dauntless Shield" ;
+    schema1:Generation_IX "Boosts the Pokémon’s Defense stat the first time the Pokémon enters a battle." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Defense stat when the Pokémon enters a battle." .
+
+ex:Dazzling a ex:Ability ;
+    rdfs:label "Dazzling" ;
+    schema1:Generation_IX "The Pokémon dazzles its opponents, making them unable to use priority moves against the Pokémon or its allies." ;
+    schema1:Generation_VII "Surprises the opposing Pokémon, making it unable to attack using priority moves." ;
+    schema1:Generation_VIII "Surprises the opposing Pokémon, making it unable to attack using priority moves." .
+
+ex:Defeatist a ex:Ability ;
+    rdfs:label "Defeatist" ;
+    schema1:Generation_IX "Halves the Pokémon's Attack and Sp. Atk stats when its HP drops to half or less." ;
+    schema1:Generation_V "Lowers stats when HP becomes half or less." ;
+    schema1:Generation_VI "Lowers stats when HP becomes half or less." ;
+    schema1:Generation_VII "Halves the Pokémon's Attack and Sp. Atk stats when its HP becomes half or less." ;
+    schema1:Generation_VIII "Halves the Pokémon's Attack and Sp. Atk stats when its HP becomes half or less." .
+
+ex:Defiant a ex:Ability ;
+    rdfs:label "Defiant" ;
+    schema1:Generation_IX "If the Pokémon has any stat lowered by an opposing Pokémon, its Attack stat will be boosted sharply." ;
+    schema1:Generation_V "When its stats are lowered its Attack increases." ;
+    schema1:Generation_VI "Boosts the Pokémon's Attack stat when its stats are lowered." ;
+    schema1:Generation_VII "Boosts the Pokémon's Attack stat sharply when its stats are lowered." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Attack stat sharply when its stats are lowered." .
+
+ex:Delta_Stream a ex:Ability ;
+    rdfs:label "Delta Stream" ;
+    schema1:Generation_IX "The Pokémon changes the weather so that no moves are super effective against the Flying type." ;
+    schema1:Generation_VI "Affects weather and eliminates all of the Flying type's weaknesses." ;
+    schema1:Generation_VII "The Pokémon changes the weather to eliminate all of the Flying type's weaknesses." ;
+    schema1:Generation_VIII "The Pokémon changes the weather to eliminate all of the Flying type's weaknesses." .
+
+ex:Desolate_Land a ex:Ability ;
+    rdfs:label "Desolate Land" ;
+    schema1:Generation_IX "The Pokémon changes the weather to nullify Water-type attacks." ;
+    schema1:Generation_VI "Affects weather and nullifies any Water-type attacks." ;
+    schema1:Generation_VII "The Pokémon changes the weather to nullify Water-type attacks." ;
+    schema1:Generation_VIII "The Pokémon changes the weather to nullify Water-type attacks." .
+
+ex:Disguise a ex:Ability ;
+    rdfs:label "Disguise" ;
+    schema1:Generation_IX "Once per battle, the shroud that covers the Pokémon can protect it from an attack." ;
+    schema1:Generation_VII "Once per battle, the shroud that covers the Pokémon can protect it from an attack." ;
+    schema1:Generation_VIII "Once per battle, the shroud that covers the Pokémon can protect it from an attack." .
+
+ex:Download a ex:Ability ;
+    rdfs:label "Download" ;
+    schema1:Generation_IV "Adjusts power according to the foe's ability." ;
+    schema1:Generation_IX "The Pokémon compares an opposing Pokémon's Defense and Sp. Def stats before raising its own Attack or Sp. Atk stat—whichever will be more effective." ;
+    schema1:Generation_V "Adjusts power according to a foe's defenses." ;
+    schema1:Generation_VI "Adjusts power based on an opposing Pokémon's stats." ;
+    schema1:Generation_VII "Compares an opposing Pokémon's Defense and Sp. Def stats before raising its own Attack or Sp. Atk stat—whichever will be more effective." ;
+    schema1:Generation_VIII "Compares an opposing Pokémon's Defense and Sp. Def stats before raising its own Attack or Sp. Atk stat—whichever will be more effective." .
+
+ex:Dragon_s_Maw a ex:Ability ;
+    rdfs:label "Dragon's Maw" ;
+    schema1:Generation_IX "Powers up Dragon-type moves." ;
+    schema1:Generation_VIII "Powers up Dragon-type moves." .
+
+ex:Drizzle a ex:Ability ;
+    rdfs:label "Drizzle" ;
+    schema1:Generation_III "Summons rain in battle." ;
+    schema1:Generation_IV "The Pokémon makes it rain if it appears in battle." ;
+    schema1:Generation_IX "The Pokémon makes it rain when it enters a battle." ;
+    schema1:Generation_V "The Pokémon makes it rain if it appears in battle." ;
+    schema1:Generation_VI "The Pokémon makes it rain when it enters a battle." ;
+    schema1:Generation_VII "The Pokémon makes it rain when it enters a battle." ;
+    schema1:Generation_VIII "The Pokémon makes it rain when it enters a battle." .
+
+ex:Drought a ex:Ability ;
+    rdfs:label "Drought" ;
+    schema1:Generation_III "Summons sunlight in battle." ;
+    schema1:Generation_IV "The Pokémon makes it sunny if it is in battle." ;
+    schema1:Generation_IX "Turns the sunlight harsh when the Pokémon enters a battle." ;
+    schema1:Generation_V "Turns the sunlight harsh if it is in battle." ;
+    schema1:Generation_VI "Turns the sunlight harsh when the Pokémon enters a battle." ;
+    schema1:Generation_VII "Turns the sunlight harsh when the Pokémon enters a battle." ;
+    schema1:Generation_VIII "Turns the sunlight harsh when the Pokémon enters a battle." .
+
+ex:Dry_Skin a ex:Ability ;
+    rdfs:label "Dry Skin" ;
+    schema1:Generation_IV "Reduces HP if it is hot. Water restores HP." ;
+    schema1:Generation_IX "Restores the Pokémon's HP in rain or when it is hit by Water-type moves. Reduces HP in harsh sunlight, and increases the damage received from Fire-type moves." ;
+    schema1:Generation_V "Reduces HP if it is hot. Water restores HP." ;
+    schema1:Generation_VI "Reduces HP if it's hot. Water restores HP." ;
+    schema1:Generation_VII "Restores HP in rain or when hit by Water-type moves. Reduces HP in sunshine, and increases the damage received from Fire-type moves.SMRestores HP in rain or when hit by Water-type moves. Reduces HP in harsh sunlight, and increases the damage received from Fire-type moves.USUM" ;
+    schema1:Generation_VIII "Restores HP in rain or when hit by Water-type moves. Reduces HP in harsh sunlight, and increases the damage received from Fire-type moves." .
+
+ex:Early_Bird a ex:Ability ;
+    rdfs:label "Early Bird" ;
+    schema1:Generation_III "Awakens quickly from sleep." ;
+    schema1:Generation_IV "The Pokémon awakens quickly from sleep." ;
+    schema1:Generation_IX "The Pokémon awakens from sleep twice as fast as other Pokémon." ;
+    schema1:Generation_V "The Pokémon awakens quickly from sleep." ;
+    schema1:Generation_VI "The Pokémon awakens quickly from sleep." ;
+    schema1:Generation_VII "The Pokémon awakens twice as fast as other Pokémon from sleep." ;
+    schema1:Generation_VIII "The Pokémon awakens from sleep twice as fast as other Pokémon." .
+
+ex:Earth_Eater a ex:Ability ;
+    rdfs:label "Earth Eater" ;
+    schema1:Generation_IX "If hit by a Ground-type move, the Pokémon has its HP restored instead of taking damage." .
+
+ex:Effect_Spore a ex:Ability ;
+    rdfs:label "Effect Spore" ;
+    schema1:Generation_III "Leaves spores on contact." ;
+    schema1:Generation_IV "Contact may paralyze, poison, or cause sleep." ;
+    schema1:Generation_IX "Contact with the Pokémon may inflict poison, sleep, or paralysis on the attacker." ;
+    schema1:Generation_V "Contact may poison or cause paralysis or sleep." ;
+    schema1:Generation_VI "Contact may poison or cause paralysis or sleep." ;
+    schema1:Generation_VII "Contact with the Pokémon may inflict poison, sleep, or paralysis on its attacker." ;
+    schema1:Generation_VIII "Contact with the Pokémon may inflict poison, sleep, or paralysis on its attacker." .
+
+ex:Electric_Surge a ex:Ability ;
+    rdfs:label "Electric Surge" ;
+    schema1:Generation_IX "Turns the ground into Electric Terrain when the Pokémon enters a battle." ;
+    schema1:Generation_VII "Turns the ground into Electric Terrain when the Pokémon enters a battle." ;
+    schema1:Generation_VIII "Turns the ground into Electric Terrain when the Pokémon enters a battle." .
+
+ex:Electromorphosis a ex:Ability ;
+    rdfs:label "Electromorphosis" ;
+    schema1:Generation_IX "The Pokémon becomes charged when it takes damage, boosting the power of the next Electric-type move the Pokémon uses." .
+
+ex:Embody_Aspect a ex:Ability ;
+    rdfs:label "Embody Aspect" ;
+    schema1:Generation_IX "Teal Mask The Pokémon's heart fills with memories, causing the Teal Mask to shine and the Pokémon's Speed stat to be boosted. Wellspring Mask The Pokémon's heart fills with memories, causing the Wellspring Mask to shine and the Pokémon's Sp. Def stat to be boosted. Hearthflame Mask The Pokémon's heart fills with memories, causing the Hearthflame Mask to shine and the Pokémon's Attack stat to be boosted. Cornerstone Mask The Pokémon's heart fills with memories, causing the Cornerstone Mask to shine and the Pokémon's Defense stat to be boosted." .
+
+ex:Emergency_Exit a ex:Ability ;
+    rdfs:label "Emergency Exit" ;
+    schema1:Generation_IX "The Pokémon, sensing danger, switches out when its HP drops to half or less." ;
+    schema1:Generation_VII "The Pokémon, sensing danger, switches out when its HP becomes half or less." ;
+    schema1:Generation_VIII "The Pokémon, sensing danger, switches out when its HP becomes half or less." .
+
+ex:Fairy_Aura a ex:Ability ;
+    rdfs:label "Fairy Aura" ;
+    schema1:Generation_IX "Powers up the Fairy-type moves of all Pokémon on the field." ;
+    schema1:Generation_VI "Powers up each Pokémon's Fairy-type moves." ;
+    schema1:Generation_VII "Powers up each Pokémon's Fairy-type moves." ;
+    schema1:Generation_VIII "Powers up each Pokémon's Fairy-type moves." .
+
+ex:Filter a ex:Ability ;
+    rdfs:label "Filter" ;
+    schema1:Generation_IV "Powers down super-effective moves.DPPtReduces damage from supereffective attacks.HGSS" ;
+    schema1:Generation_IX "Reduces the power of supereffective attacks that hit the Pokémon." ;
+    schema1:Generation_V "Reduces damage from supereffective attacks." ;
+    schema1:Generation_VI "Reduces damage from supereffective attacks." ;
+    schema1:Generation_VII "Reduces the power of supereffective attacks taken." ;
+    schema1:Generation_VIII "Reduces the power of supereffective attacks taken." .
+
+ex:Flame_Body a ex:Ability ;
+    rdfs:label "Flame Body" ;
+    schema1:Generation_III "Burns the foe on contact.RSEFRLGBurns the target on contact.ColoXD" ;
+    schema1:Generation_IV "Contact with the Pokémon may burn the foe." ;
+    schema1:Generation_IX "Contact with the Pokémon may burn the attacker." ;
+    schema1:Generation_V "Contact with the Pokémon may burn the attacker." ;
+    schema1:Generation_VI "Contact with the Pokémon may burn the attacker." ;
+    schema1:Generation_VII "Contact with the Pokémon may burn the attacker." ;
+    schema1:Generation_VIII "Contact with the Pokémon may burn the attacker." .
+
+ex:Flare_Boost a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Flare Boost" ;
+    schema1:Generation_IX "Powers up special moves when the Pokémon is burned." ;
+    schema1:Generation_V "Powers up special attacks when burned." ;
+    schema1:Generation_VI "Powers up special attacks when the Pokémon is burned." ;
+    schema1:Generation_VII "Powers up special attacks when the Pokémon is burned." ;
+    schema1:Generation_VIII "Powers up special attacks when the Pokémon is burned." .
+
+ex:Flash_Fire a ex:Ability ;
+    rdfs:label "Flash Fire" ;
+    schema1:Generation_III "Powers up if hit by fire." ;
+    schema1:Generation_IV "Powers up Fire-type moves if hit by a fire move.DPPtIt powers up Fire-type moves if it's hit by one.HGSS" ;
+    schema1:Generation_IX "If hit by a Fire-type move, the Pokémon absorbs the flames and uses them to power up its own Fire-type moves." ;
+    schema1:Generation_V "It powers up Fire-type moves if it's hit by one." ;
+    schema1:Generation_VI "Powers up the Pokémon's Fire-type moves if it's hit by one." ;
+    schema1:Generation_VII "Powers up the Pokémon's Fire-type moves if it's hit by one." ;
+    schema1:Generation_VIII "Powers up the Pokémon's Fire-type moves if it's hit by one." .
+
+ex:Flower_Gift a ex:Ability ;
+    rdfs:label "Flower Gift" ;
+    schema1:Generation_IV "Powers up party Pokémon when it is sunny." ;
+    schema1:Generation_IX "Boosts the Attack and Sp. Def stats of the Pokémon and its allies in harsh sunlight." ;
+    schema1:Generation_V "Powers up party Pokémon when it is sunny." ;
+    schema1:Generation_VI "Powers up party Pokémon when it is sunny." ;
+    schema1:Generation_VII "Boosts the Attack and Sp. Def stats of itself and allies when it is sunny.SMBoosts the Attack and Sp. Def stats of itself and allies in harsh sunlight.USUM" ;
+    schema1:Generation_VIII "Boosts the Attack and Sp. Def stats of itself and allies in harsh sunlight." .
+
+ex:Flower_Veil a ex:Ability ;
+    rdfs:label "Flower Veil" ;
+    schema1:Generation_IX "Ally Grass-type Pokémon are protected from status conditions and the lowering of their stats." ;
+    schema1:Generation_VI "Prevents lowering of ally Grass-type Pokémon's stats." ;
+    schema1:Generation_VII "Ally Grass-type Pokémon are protected from status conditions and the lowering of their stats." ;
+    schema1:Generation_VIII "Ally Grass-type Pokémon are protected from status conditions and the lowering of their stats." .
+
+ex:Fluffy a ex:Ability ;
+    rdfs:label "Fluffy" ;
+    schema1:Generation_IX "Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves." ;
+    schema1:Generation_VII "Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves." ;
+    schema1:Generation_VIII "Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves." .
+
+ex:Forecast a ex:Ability ;
+    rdfs:label "Forecast" ;
+    schema1:Generation_III "Changes with the weather." ;
+    schema1:Generation_IV "Castform transforms with the weather." ;
+    schema1:Generation_IX "The Pokémon transforms with the weather to change its type to Water, Fire, or Ice." ;
+    schema1:Generation_V "Castform transforms with the weather." ;
+    schema1:Generation_VI "Castform transforms with the weather." ;
+    schema1:Generation_VII "The Pokémon transforms with the weather to change its type to Water, Fire, or Ice." ;
+    schema1:Generation_VIII "The Pokémon transforms with the weather to change its type to Water, Fire, or Ice." .
+
+ex:Forewarn a ex:Ability ;
+    rdfs:label "Forewarn" ;
+    schema1:Generation_IV "Determines what moves the foe has." ;
+    schema1:Generation_IX "When it enters a battle, the Pokémon can tell one of the moves an opposing Pokémon has." ;
+    schema1:Generation_V "Determines what moves a foe has." ;
+    schema1:Generation_VI "Determines what moves an opposing Pokémon has." ;
+    schema1:Generation_VII "When it enters a battle, the Pokémon can tell one of the moves an opposing Pokémon has." ;
+    schema1:Generation_VIII "When it enters a battle, the Pokémon can tell one of the moves an opposing Pokémon has." .
+
+ex:Friend_Guard a ex:Ability ;
+    rdfs:label "Friend Guard" ;
+    schema1:Generation_IX "Reduces damage dealt to allies." ;
+    schema1:Generation_V "Reduces damage done to allies." ;
+    schema1:Generation_VI "Reduces damage done to allies." ;
+    schema1:Generation_VII "Reduces damage done to allies." ;
+    schema1:Generation_VIII "Reduces damage done to allies." .
+
+ex:Frisk a ex:Ability ;
+    rdfs:label "Frisk" ;
+    schema1:Generation_IV "The Pokémon can check the foe's held item." ;
+    schema1:Generation_IX "When it enters a battle, the Pokémon can check an opposing Pokémon's held item." ;
+    schema1:Generation_V "The Pokémon can check a foe's held item." ;
+    schema1:Generation_VI "The Pokémon can check an opposing Pokémon's held item." ;
+    schema1:Generation_VII "When it enters a battle, the Pokémon can check an opposing Pokémon's held item." ;
+    schema1:Generation_VIII "When it enters a battle, the Pokémon can check an opposing Pokémon's held item." .
+
+ex:Full_Metal_Body a ex:Ability ;
+    rdfs:label "Full Metal Body" ;
+    schema1:Generation_IX "Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats." ;
+    schema1:Generation_VII "Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats." ;
+    schema1:Generation_VIII "Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats." .
+
+ex:Fur_Coat a ex:Ability ;
+    rdfs:label "Fur Coat" ;
+    schema1:Generation_IX "Halves the damage from physical moves." ;
+    schema1:Generation_VI "Halves damage from physical moves." ;
+    schema1:Generation_VII "Halves the damage from physical moves." ;
+    schema1:Generation_VIII "Halves the damage from physical moves." .
+
+ex:Gale_Wings a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Gale Wings" ;
+    schema1:Generation_IX "Gives priority to the Pokémon's Flying-type moves while its HP is full." ;
+    schema1:Generation_VI "Gives priority to Flying-type moves." ;
+    schema1:Generation_VII "Gives priority to Flying-type moves when the Pokémon's HP is full." ;
+    schema1:Generation_VIII "Gives priority to Flying-type moves when the Pokémon's HP is full." .
+
+ex:Galvanize a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Galvanize" ;
+    schema1:Generation_IX "Normal-type moves become Electric-type moves. The power of those moves is boosted a little." ;
+    schema1:Generation_VII "Normal-type moves become Electric-type moves. The power of those moves is boosted a little." ;
+    schema1:Generation_VIII "Normal-type moves become Electric-type moves. The power of those moves is boosted a little." .
+
+ex:Gluttony a ex:Ability ;
+    rdfs:label "Gluttony" ;
+    schema1:Generation_IV "Encourages the early use of a held Berry." ;
+    schema1:Generation_IX "If the Pokémon is holding a Berry to be eaten when its HP is low, it will instead eat the Berry when its HP drops to half or less." ;
+    schema1:Generation_V "Encourages the early use of a held Berry." ;
+    schema1:Generation_VI "Makes the Pokémon use a held Berry earlier than usual." ;
+    schema1:Generation_VII "Makes the Pokémon eat a held Berry when its HP drops to half or less, which is sooner than usual." ;
+    schema1:Generation_VIII "Makes the Pokémon eat a held Berry when its HP drops to half or less, which is sooner than usual." .
+
+ex:Good_as_Gold a ex:Ability ;
+    rdfs:label "Good as Gold" ;
+    schema1:Generation_IX "A body of pure, solid gold gives the Pokémon full immunity to other Pokémon's status moves." .
+
+ex:Gooey a ex:Ability ;
+    rdfs:label "Gooey" ;
+    schema1:Generation_IX "Contact with the Pokémon lowers the attacker's Speed stat." ;
+    schema1:Generation_VI "Contact with the Pokémon lowers the attacker's Speed stat." ;
+    schema1:Generation_VII "Contact with the Pokémon lowers the attacker's Speed stat." ;
+    schema1:Generation_VIII "Contact with the Pokémon lowers the attacker's Speed stat." .
+
+ex:Gorilla_Tactics a ex:Ability ;
+    rdfs:label "Gorilla Tactics" ;
+    schema1:Generation_IX "Boosts the Pokémon's Attack stat but only allows the use of the first selected move." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Attack stat but only allows the use of the first selected move." .
+
+ex:Grass_Pelt a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Grass Pelt" ;
+    schema1:Generation_IX "Boosts the Pokémon's Defense stat on Grassy Terrain." ;
+    schema1:Generation_VI "Boosts the Defense stat in Grassy Terrain." ;
+    schema1:Generation_VII "Boosts the Pokémon's Defense stat in Grassy Terrain." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Defense stat on Grassy Terrain." .
+
+ex:Grassy_Surge a ex:Ability ;
+    rdfs:label "Grassy Surge" ;
+    schema1:Generation_IX "Turns the ground into Grassy Terrain when the Pokémon enters a battle." ;
+    schema1:Generation_VII "Turns the ground into Grassy Terrain when the Pokémon enters a battle." ;
+    schema1:Generation_VIII "Turns the ground into Grassy Terrain when the Pokémon enters a battle." .
+
+ex:Grim_Neigh a ex:Ability ;
+    rdfs:label "Grim Neigh" ;
+    schema1:Generation_IX "When the Pokémon knocks out a target, it utters a terrifying neigh, which boosts its Sp. Atk stat." ;
+    schema1:Generation_VIII "When the Pokémon knocks out a target, it utters a terrifying neigh, which boosts its Sp. Atk stat." .
+
+ex:Guard_Dog a ex:Ability ;
+    rdfs:label "Guard Dog" ;
+    schema1:Generation_IX "Boosts the Pokémon’s Attack stat if intimidated. Moves and items that would force the Pokémon to switch out also fail to work." .
+
+ex:Gulp_Missile a ex:Ability ;
+    rdfs:label "Gulp Missile" ;
+    schema1:Generation_IX "When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack." ;
+    schema1:Generation_VIII "When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack." .
+
+ex:Guts a ex:Ability ;
+    rdfs:label "Guts" ;
+    schema1:Generation_III "Ups Attack if suffering." ;
+    schema1:Generation_IV "Boosts Attack if there is a status problem." ;
+    schema1:Generation_IX "It's so gutsy that having a status condition boosts the Pokémon's Attack stat." ;
+    schema1:Generation_V "Boosts Attack if there is a status problem." ;
+    schema1:Generation_VI "Boosts the Attack stat if the Pokémon has a status condition." ;
+    schema1:Generation_VII "It's so gutsy that having a status condition boosts the Pokémon's Attack stat." ;
+    schema1:Generation_VIII "It's so gutsy that having a status condition boosts the Pokémon's Attack stat." .
+
+ex:Hadron_Engine a ex:Ability ;
+    rdfs:label "Hadron Engine" ;
+    schema1:Generation_IX "Turns the ground into Electric Terrain when the Pokémon enters a battle. The futuristic engine within the Pokémon also boosts its Sp. Atk stat on Electric Terrain." .
+
+ex:Harvest a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Harvest" ;
+    schema1:Generation_IX "May create another Berry after one is used." ;
+    schema1:Generation_V "May create another Berry after one is used." ;
+    schema1:Generation_VI "May create another Berry after one is used." ;
+    schema1:Generation_VII "May create another Berry after one is used." ;
+    schema1:Generation_VIII "May create another Berry after one is used." .
+
+ex:Healer a ex:Ability ;
+    rdfs:label "Healer" ;
+    schema1:Generation_IX "Sometimes cures the status conditions of the Pokémon's allies." ;
+    schema1:Generation_V "May heal an ally's status conditions." ;
+    schema1:Generation_VI "Sometimes heals an ally's status condition." ;
+    schema1:Generation_VII "Sometimes heals an ally's status condition." ;
+    schema1:Generation_VIII "Sometimes heals an ally's status condition." .
+
+ex:Heatproof a ex:Ability ;
+    rdfs:label "Heatproof" ;
+    schema1:Generation_IV "Weakens the power of Fire-type moves." ;
+    schema1:Generation_IX "The Pokémon's heatproof body halves the damage taken from Fire-type moves." ;
+    schema1:Generation_V "Weakens the power of Fire-type moves." ;
+    schema1:Generation_VI "Weakens the power of Fire-type moves." ;
+    schema1:Generation_VII "The heatproof body of the Pokémon halves the damage from Fire-type moves that hit it." ;
+    schema1:Generation_VIII "The heatproof body of the Pokémon halves the damage from Fire-type moves that hit it." .
+
+ex:Heavy_Metal a ex:Ability ;
+    rdfs:label "Heavy Metal" ;
+    schema1:Generation_IX "Doubles the Pokémon's weight." ;
+    schema1:Generation_V "Doubles the Pokémon's weight." ;
+    schema1:Generation_VI "Doubles the Pokémon's weight." ;
+    schema1:Generation_VII "Doubles the Pokémon's weight." ;
+    schema1:Generation_VIII "Doubles the Pokémon's weight." .
+
+ex:Hidden_Ability a ex:Ability ;
+    rdfs:label "Hidden Ability" .
+
+ex:Honey_Gather a ex:Ability ;
+    rdfs:label "Honey Gather" ;
+    schema1:Generation_IV "The Pokémon may gather Honey from somewhere.DPPtHGSSThe Pokémon may gather Honey from somewhere. It has no effect in Pokétopia.PBR" ;
+    schema1:Generation_IX "The Pokémon may gather Honey after a battle." ;
+    schema1:Generation_V "The Pokémon may gather Honey from somewhere." ;
+    schema1:Generation_VI "The Pokémon may gather Honey from somewhere." ;
+    schema1:Generation_VII "The Pokémon may gather Honey after a battle." ;
+    schema1:Generation_VIII "The Pokémon may gather Honey after a battle." .
+
+ex:Hospitality a ex:Ability ;
+    rdfs:label "Hospitality" ;
+    schema1:Generation_IX "When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP." .
+
+ex:Huge_Power a ex:Ability ;
+    rdfs:label "Huge Power" ;
+    schema1:Generation_III "Raises Attack." ;
+    schema1:Generation_IV "Raises the Pokémon's Attack stat." ;
+    schema1:Generation_IX "Doubles the Pokémon's Attack stat." ;
+    schema1:Generation_V "Raises the Pokémon's Attack stat." ;
+    schema1:Generation_VI "Boosts the Pokémon's Attack stat." ;
+    schema1:Generation_VII "Doubles the Pokémon's Attack stat." ;
+    schema1:Generation_VIII "Doubles the Pokémon's Attack stat." .
+
+ex:Hunger_Switch a ex:Ability ;
+    rdfs:label "Hunger Switch" ;
+    schema1:Generation_IX "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of every turn." ;
+    schema1:Generation_VIII "The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of each turn." .
+
+ex:Hustle a ex:Ability ;
+    rdfs:label "Hustle" ;
+    schema1:Generation_III "Trades accuracy for power." ;
+    schema1:Generation_IV "Boosts the Attack stat, but lowers accuracy." ;
+    schema1:Generation_IX "Boosts the Pokémon's Attack stat but lowers its accuracy." ;
+    schema1:Generation_V "Boosts the Attack stat, but lowers accuracy." ;
+    schema1:Generation_VI "Boosts the Attack stat, but lowers accuracy." ;
+    schema1:Generation_VII "Boosts the Attack stat, but lowers accuracy." ;
+    schema1:Generation_VIII "Boosts the Attack stat, but lowers accuracy." .
+
+ex:Hydration a ex:Ability ;
+    rdfs:label "Hydration" ;
+    schema1:Generation_IV "Heals status problems if it is raining." ;
+    schema1:Generation_IX "Cures the Pokémon's status conditions in rain." ;
+    schema1:Generation_V "Heals status problems if it is raining." ;
+    schema1:Generation_VI "Heals status conditions if it's raining." ;
+    schema1:Generation_VII "Heals status conditions if it's raining." ;
+    schema1:Generation_VIII "Heals status conditions if it's raining." .
+
+ex:Hyper_Cutter a ex:Ability ;
+    rdfs:label "Hyper Cutter" ;
+    schema1:Generation_III "Prevents Attack reduction." ;
+    schema1:Generation_IV "Prevents the Attack stat from being lowered." ;
+    schema1:Generation_IX "The Pokémon's prized, mighty pincers prevent other Pokémon from lowering its Attack stat." ;
+    schema1:Generation_V "Prevents other Pokémon from lowering Attack stat." ;
+    schema1:Generation_VI "Prevents other Pokémon from lowering its Attack stat." ;
+    schema1:Generation_VII "The Pokémon's proud of its powerful pincers. They prevent other Pokémon from lowering its Attack stat." ;
+    schema1:Generation_VIII "The Pokémon's proud of its powerful pincers. They prevent other Pokémon from lowering its Attack stat." .
+
+ex:Ice_Body a ex:Ability ;
+    rdfs:label "Ice Body" ;
+    schema1:Generation_IV "The Pokémon regains HP in a hailstorm." ;
+    schema1:Generation_IX "The Pokémon gradually regains HP in snow." ;
+    schema1:Generation_V "The Pokémon gradually regains HP in a hailstorm." ;
+    schema1:Generation_VI "The Pokémon gradually regains HP in a hailstorm." ;
+    schema1:Generation_VII "The Pokémon gradually regains HP in a hailstorm." ;
+    schema1:Generation_VIII "The Pokémon gradually regains HP in a hailstorm." .
+
+ex:Ice_Face a ex:Ability ;
+    rdfs:label "Ice Face" ;
+    schema1:Generation_IX "The Pokémon's ice head can take a physical attack as a substitute, but the attack also changes the Pokémon's appearance. The ice will be restored when it snows." ;
+    schema1:Generation_VIII "The Pokémon's ice head can take a physical attack as a substitute, but the attack also changes the Pokémon's appearance. The ice will be restored when it hails." .
+
+ex:Ice_Scales a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Ice Scales" ;
+    schema1:Generation_IX "The Pokémon is protected by ice scales, which halve the damage taken from special moves." ;
+    schema1:Generation_VIII "The Pokémon is protected by ice scales, which halve the damage taken from special moves." .
+
+ex:Illuminate a ex:Ability ;
+    rdfs:label "Illuminate" ;
+    schema1:Generation_III "Encounter rate increases." ;
+    schema1:Generation_IV "Raises the likelihood of meeting wild Pokémon.DPPtHGSSRaises the likelihood of meeting wild Pokémon. It has no effect in Pokétopia.PBR" ;
+    schema1:Generation_IX "Prior to Version 1.3.2Raises the likelihood of meeting wild Pokémon by illuminating the surroundings. Version 1.3.2 onwardsBy illuminating its surroundings, the Pokémon prevents its accuracy from being lowered." ;
+    schema1:Generation_V "Raises the likelihood of meeting wild Pokémon." ;
+    schema1:Generation_VI "Raises the likelihood of meeting wild Pokémon." ;
+    schema1:Generation_VII "Raises the likelihood of meeting wild Pokémon by illuminating the surroundings." ;
+    schema1:Generation_VIII "Raises the likelihood of meeting wild Pokémon by illuminating the surroundings." .
+
+ex:Illusion a ex:Ability ;
+    rdfs:label "Illusion" ;
+    schema1:Generation_IX "The Pokémon fools opponents by entering battle disguised as the last Pokémon in its Trainer's party." ;
+    schema1:Generation_V "Comes out disguised as the Pokémon in back." ;
+    schema1:Generation_VI "Comes out disguised as the Pokémon in the party's last spot." ;
+    schema1:Generation_VII "Comes out disguised as the Pokémon in the party's last spot." ;
+    schema1:Generation_VIII "Comes out disguised as the Pokémon in the party's last spot." .
+
+ex:Immunity a ex:Ability ;
+    rdfs:label "Immunity" ;
+    schema1:Generation_III "Prevents poisoning." ;
+    schema1:Generation_IV "Prevents the Pokémon from getting poisoned." ;
+    schema1:Generation_IX "The Pokémon's immune system prevents it from being poisoned." ;
+    schema1:Generation_V "Prevents the Pokémon from getting poisoned." ;
+    schema1:Generation_VI "Prevents the Pokémon from getting poisoned." ;
+    schema1:Generation_VII "The immune system of the Pokémon prevents it from getting poisoned." ;
+    schema1:Generation_VIII "The immune system of the Pokémon prevents it from getting poisoned." .
+
+ex:Imposter a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Imposter" ;
+    schema1:Generation_IX "The Pokémon transforms itself into the Pokémon it's facing." ;
+    schema1:Generation_V "It transforms itself into the Pokémon it is facing." ;
+    schema1:Generation_VI "The Pokémon transforms itself into the Pokémon it's facing." ;
+    schema1:Generation_VII "The Pokémon transforms itself into the Pokémon it's facing." ;
+    schema1:Generation_VIII "The Pokémon transforms itself into the Pokémon it's facing." .
+
+ex:Infiltrator a ex:Ability ;
+    rdfs:label "Infiltrator" ;
+    schema1:Generation_IX "The Pokémon's moves are unaffected by the target's barriers, substitutes, and the like." ;
+    schema1:Generation_V "Passes through the foe's barrier and strikes." ;
+    schema1:Generation_VI "Passes through the opposing Pokémon's barrier and strikes." ;
+    schema1:Generation_VII "Passes through the opposing Pokémon's barrier, substitute, and the like and strikes." ;
+    schema1:Generation_VIII "Passes through the opposing Pokémon's barrier, substitute, and the like and strikes." .
+
+ex:Innards_Out a ex:Ability ;
+    rdfs:label "Innards Out" ;
+    schema1:Generation_IX "When the Pokémon is knocked out, it damages its attacker by the amount equal to the HP it had left before it was hit." ;
+    schema1:Generation_VII "Damages the attacker landing the finishing hit by the amount equal to its last HP." ;
+    schema1:Generation_VIII "Damages the attacker landing the finishing hit by the amount equal to its last HP." .
+
+ex:Inner_Focus a ex:Ability ;
+    rdfs:label "Inner Focus" ;
+    schema1:Generation_III "Prevents flinching." ;
+    schema1:Generation_IV "The Pokémon is protected from flinching." ;
+    schema1:Generation_IX "The Pokémon's intense focus prevents it from flinching or being affected by Intimidate." ;
+    schema1:Generation_V "The Pokémon is protected from flinching." ;
+    schema1:Generation_VI "Protects the Pokémon from flinching." ;
+    schema1:Generation_VII "The Pokémon's intensely focused, and that protects the Pokémon from flinching." ;
+    schema1:Generation_VIII "The Pokémon's intensely focused, and that protects the Pokémon from flinching." .
+
+ex:Insomnia a ex:Ability ;
+    rdfs:label "Insomnia" ;
+    schema1:Generation_III "Prevents sleep." ;
+    schema1:Generation_IV "Prevents the Pokémon from falling asleep." ;
+    schema1:Generation_IX "The Pokémon's insomnia prevents it from falling asleep." ;
+    schema1:Generation_V "Prevents the Pokémon from falling asleep." ;
+    schema1:Generation_VI "Prevents the Pokémon from falling asleep." ;
+    schema1:Generation_VII "The Pokémon is suffering from insomnia and cannot fall asleep." ;
+    schema1:Generation_VIII "The Pokémon is suffering from insomnia and cannot fall asleep." .
+
+ex:Intimidate a ex:Ability ;
+    rdfs:label "Intimidate" ;
+    schema1:Generation_III "Lowers the foe's Attack." ;
+    schema1:Generation_IV "Lowers the foe's Attack stat." ;
+    schema1:Generation_IX "When the Pokémon enters a battle, it intimidates opposing Pokémon and makes them cower, lowering their Attack stats." ;
+    schema1:Generation_V "Lowers the foe's Attack stat." ;
+    schema1:Generation_VI "Lowers the opposing Pokémon's Attack stat." ;
+    schema1:Generation_VII "The Pokémon intimidates opposing Pokémon upon entering battle, lowering their Attack stat." ;
+    schema1:Generation_VIII "The Pokémon intimidates opposing Pokémon upon entering battle, lowering their Attack stat." .
+
+ex:Intrepid_Sword a ex:Ability ;
+    rdfs:label "Intrepid Sword" ;
+    schema1:Generation_IX "Boosts the Pokémon’s Attack stat the first time the Pokémon enters a battle." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Attack stat when the Pokémon enters a battle." .
+
+ex:Iron_Barbs a ex:Ability ;
+    rdfs:label "Iron Barbs" ;
+    schema1:Generation_IX "The Pokémon's iron barbs damage the attacker if it makes direct contact." ;
+    schema1:Generation_V "Inflicts damage to the Pokémon on contact." ;
+    schema1:Generation_VI "Inflicts damage to the attacker on contact." ;
+    schema1:Generation_VII "Inflicts damage to the attacker on contact with iron barbs." ;
+    schema1:Generation_VIII "Inflicts damage on the attacker upon contact with iron barbs." .
+
+ex:Iron_Fist a ex:Ability ;
+    rdfs:label "Iron Fist" ;
+    schema1:Generation_IV "Boosts the power of punching moves." ;
+    schema1:Generation_IX "Powers up punching moves." ;
+    schema1:Generation_V "Boosts the power of punching moves." ;
+    schema1:Generation_VI "Powers up punching moves." ;
+    schema1:Generation_VII "Powers up punching moves." ;
+    schema1:Generation_VIII "Powers up punching moves." .
+
+ex:Justified a ex:Ability ;
+    rdfs:label "Justified" ;
+    schema1:Generation_IX "When the Pokémon is hit by a Dark-type attack, its Attack stat is boosted by its sense of justice." ;
+    schema1:Generation_V "Raises Attack when hit by a Dark-type move." ;
+    schema1:Generation_VI "Boosts the Attack stat when it's hit by a Dark-type move." ;
+    schema1:Generation_VII "Being hit by a Dark-type move boosts the Attack stat of the Pokémon, for justice." ;
+    schema1:Generation_VIII "Being hit by a Dark-type move boosts the Attack stat of the Pokémon, for justice." .
+
+ex:Keen_Eye a ex:Ability ;
+    rdfs:label "Keen Eye" ;
+    schema1:Generation_III "Prevents loss of accuracy." ;
+    schema1:Generation_IV "Prevents the Pokémon from losing accuracy." ;
+    schema1:Generation_IX "The Pokémon's keen eyes prevent its accuracy from being lowered." ;
+    schema1:Generation_V "Prevents other Pokémon from lowering accuracy." ;
+    schema1:Generation_VI "Prevents other Pokémon from lowering accuracy." ;
+    schema1:Generation_VII "Keen eyes prevent other Pokémon from lowering this Pokémon's accuracy." ;
+    schema1:Generation_VIII "Keen eyes prevent other Pokémon from lowering this Pokémon's accuracy." .
+
+ex:Klutz a ex:Ability ;
+    rdfs:label "Klutz" ;
+    schema1:Generation_IV "The Pokémon can't use any held items." ;
+    schema1:Generation_IX "The Pokémon can't use any held items." ;
+    schema1:Generation_V "The Pokémon can't use any held items." ;
+    schema1:Generation_VI "The Pokémon can't use any held items." ;
+    schema1:Generation_VII "The Pokémon can't use any held items." ;
+    schema1:Generation_VIII "The Pokémon can't use any held items." .
+
+ex:Leaf_Guard a ex:Ability ;
+    rdfs:label "Leaf Guard" ;
+    schema1:Generation_IV "Prevents status problems in sunny weather.DPPtPrevents problems with status in sunny weather.HGSS" ;
+    schema1:Generation_IX "Prevents status conditions in harsh sunlight." ;
+    schema1:Generation_V "Prevents problems with status in sunny weather." ;
+    schema1:Generation_VI "Prevents status conditions in sunny weather." ;
+    schema1:Generation_VII "Prevents status conditions in sunny weather.SMPrevents status conditions in harsh sunlight.USUM" ;
+    schema1:Generation_VIII "Prevents status conditions in harsh sunlight." .
+
+ex:Levitate a ex:Ability ;
+    rdfs:label "Levitate" ;
+    schema1:Generation_III "Not hit by Ground Attacks." ;
+    schema1:Generation_IV "Gives full immunity to all Ground-type moves." ;
+    schema1:Generation_IX "By floating in the air, the Pokémon receives full immunity to all Ground-type moves." ;
+    schema1:Generation_V "Gives full immunity to all Ground-type moves." ;
+    schema1:Generation_VI "Gives full immunity to all Ground-type moves." ;
+    schema1:Generation_VII "By floating in the air, the Pokémon receives full immunity to all Ground-type moves." ;
+    schema1:Generation_VIII "By floating in the air, the Pokémon receives full immunity to all Ground-type moves." .
+
+ex:Libero a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Libero" ;
+    schema1:Generation_IX "Changes the Pokémon's type to the type of the move it's about to use. This works only once each time the Pokémon enters battle." ;
+    schema1:Generation_VIII "Changes the Pokémon's type to the type of the move it's about to use." .
+
+ex:Light_Metal a ex:Ability ;
+    rdfs:label "Light Metal" ;
+    schema1:Generation_IX "Halves the Pokémon's weight." ;
+    schema1:Generation_V "Halves the Pokémon's weight." ;
+    schema1:Generation_VI "Halves the Pokémon's weight." ;
+    schema1:Generation_VII "Halves the Pokémon's weight." ;
+    schema1:Generation_VIII "Halves the Pokémon's weight." .
+
+ex:Lightning_Rod a ex:Ability ;
+    rdfs:label "Lightning Rod" ;
+    schema1:Generation_III "Draws electrical moves." ;
+    schema1:Generation_IV "The Pokémon draws in all Electric-type moves." ;
+    schema1:Generation_IX "The Pokémon draws in all Electric-type moves. Instead of taking damage from them, its Sp. Atk stat is boosted." ;
+    schema1:Generation_V "Draws in all Electric-type moves to up Sp. Attack." ;
+    schema1:Generation_VI "Draws in all Electric-type moves to boost its Sp. Atk stat." ;
+    schema1:Generation_VII "The Pokémon draws in all Electric-type moves. Instead of being hit by Electric-type moves, it boosts its Sp. Atk." ;
+    schema1:Generation_VIII "The Pokémon draws in all Electric-type moves. Instead of being hit by Electric-type moves, it boosts its Sp. Atk." .
+
+ex:Limber a ex:Ability ;
+    rdfs:label "Limber" ;
+    schema1:Generation_III "Prevents paralysis." ;
+    schema1:Generation_IV "The Pokémon is protected from paralysis." ;
+    schema1:Generation_IX "The Pokémon's limber body prevents it from being paralyzed." ;
+    schema1:Generation_V "The Pokémon is protected from paralysis." ;
+    schema1:Generation_VI "Protects the Pokémon from paralysis." ;
+    schema1:Generation_VII "Its limber body protects the Pokémon from paralysis." ;
+    schema1:Generation_VIII "Its limber body protects the Pokémon from paralysis." .
+
+ex:Lingering_Aroma a ex:Ability ;
+    rdfs:label "Lingering Aroma" ;
+    schema1:Generation_IX "Contact with the Pokémon changes the attacker's Ability to Lingering Aroma." .
+
+ex:Liquid_Ooze a ex:Ability ;
+    rdfs:label "Liquid Ooze" ;
+    schema1:Generation_III "Draining causes injury." ;
+    schema1:Generation_IV "Inflicts damage on foes using any draining move." ;
+    schema1:Generation_IX "The strong stench of the Pokémon's oozed liquid damages attackers that use HP-draining moves." ;
+    schema1:Generation_V "Damages attackers using any draining move." ;
+    schema1:Generation_VI "Damages attackers using any draining move." ;
+    schema1:Generation_VII "Oozed liquid has strong stench, which damages attackers using any draining move." ;
+    schema1:Generation_VIII "The oozed liquid has a strong stench, which damages attackers using any draining move." .
+
+ex:Liquid_Voice a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Liquid Voice" ;
+    schema1:Generation_IX "Sound-based moves become Water-type moves." ;
+    schema1:Generation_VII "All sound-based moves become Water-type moves." ;
+    schema1:Generation_VIII "All sound-based moves become Water-type moves." .
+
+ex:Long_Reach a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Long Reach" ;
+    schema1:Generation_IX "The Pokémon uses its moves without making contact with the target." ;
+    schema1:Generation_VII "The Pokémon uses its moves without making contact with the target." ;
+    schema1:Generation_VIII "The Pokémon uses its moves without making contact with the target." .
+
+ex:Magic_Bounce a ex:Ability ;
+    rdfs:label "Magic Bounce" ;
+    schema1:Generation_IX "The Pokémon reflects status moves instead of getting hit by them." ;
+    schema1:Generation_V "Reflects status-changing moves." ;
+    schema1:Generation_VI "Reflects status moves." ;
+    schema1:Generation_VII "Reflects status moves, instead of getting hit by them." ;
+    schema1:Generation_VIII "Reflects status moves instead of getting hit by them." .
+
+ex:Magic_Guard a ex:Ability ;
+    rdfs:label "Magic Guard" ;
+    schema1:Generation_IV "The Pokémon only takes damage from attacks." ;
+    schema1:Generation_IX "The Pokémon only takes damage from attacks." ;
+    schema1:Generation_V "The Pokémon only takes damage from attacks." ;
+    schema1:Generation_VI "The Pokémon only takes damage from attacks." ;
+    schema1:Generation_VII "The Pokémon only takes damage from attacks." ;
+    schema1:Generation_VIII "The Pokémon only takes damage from attacks." .
+
+ex:Magician a ex:Ability ;
+    rdfs:label "Magician" ;
+    schema1:Generation_IX "The Pokémon steals the held item from any target it hits with a move." ;
+    schema1:Generation_VI "The Pokémon steals the held item of a Pokémon it hits with a move." ;
+    schema1:Generation_VII "The Pokémon steals the held item of a Pokémon it hits with a move." ;
+    schema1:Generation_VIII "The Pokémon steals the held item of a Pokémon it hits with a move." .
+
+ex:Magma_Armor a ex:Ability ;
+    rdfs:label "Magma Armor" ;
+    schema1:Generation_III "Prevents freezing." ;
+    schema1:Generation_IV "Prevents the Pokémon from becoming frozen." ;
+    schema1:Generation_IX "The Pokémon’s hot magma coating prevents it from being frozen." ;
+    schema1:Generation_V "Prevents the Pokémon from becoming frozen." ;
+    schema1:Generation_VI "Prevents the Pokémon from becoming frozen." ;
+    schema1:Generation_VII "The Pokémon is covered with hot magma, which prevents the Pokémon from becoming frozen." ;
+    schema1:Generation_VIII "The Pokémon is covered with hot magma, which prevents the Pokémon from becoming frozen." .
+
+ex:Magnet_Pull a ex:Ability ;
+    rdfs:label "Magnet Pull" ;
+    schema1:Generation_III "Traps Steel-type Pokémon.RSEFRLGTraps Steel-type foes.ColoXD" ;
+    schema1:Generation_IV "Prevents Steel-type Pokémon from escaping." ;
+    schema1:Generation_IX "Prevents Steel-type Pokémon from fleeing by pulling them in with magnetism." ;
+    schema1:Generation_V "Prevents Steel-type Pokémon from escaping." ;
+    schema1:Generation_VI "Prevents Steel-type Pokémon from escaping." ;
+    schema1:Generation_VII "Prevents Steel-type Pokémon from escaping using its magnetic force." ;
+    schema1:Generation_VIII "Prevents Steel-type Pokémon from escaping using its magnetic force." .
+
+ex:Marvel_Scale a ex:Ability ;
+    rdfs:label "Marvel Scale" ;
+    schema1:Generation_III "Ups Defense if suffering." ;
+    schema1:Generation_IV "Boosts Defense if there is a status problem.DPPtUps Defense if there is a status problem.HGSS" ;
+    schema1:Generation_IX "The Pokémon's marvelous scales boost its Defense stat if it has a status condition." ;
+    schema1:Generation_V "Ups Defense if there is a status problem." ;
+    schema1:Generation_VI "Boosts the Defense stat if the Pokémon has a status condition." ;
+    schema1:Generation_VII "The Pokémon's marvelous scales boost the Defense stat if it has a status condition." ;
+    schema1:Generation_VIII "The Pokémon's marvelous scales boost the Defense stat if it has a status condition." .
+
+ex:Mega_Evolution_exclusive_Abilities a ex:Ability ;
+    rdfs:label "Mega Evolution-exclusive Abilities" .
+
+ex:Mega_Launcher a ex:Ability ;
+    rdfs:label "Mega Launcher" ;
+    schema1:Generation_IX "Powers up pulse moves." ;
+    schema1:Generation_VI "Powers up aura and pulse moves." ;
+    schema1:Generation_VII "Powers up aura and pulse moves." ;
+    schema1:Generation_VIII "Powers up aura and pulse moves." .
+
+ex:Merciless a ex:Ability ;
+    rdfs:label "Merciless" ;
+    schema1:Generation_IX "The Pokémon's attacks become critical hits if the target is poisoned." ;
+    schema1:Generation_VII "The Pokémon's attacks become critical hits if the target is poisoned." ;
+    schema1:Generation_VIII "The Pokémon's attacks become critical hits if the target is poisoned." .
+
+ex:Mimicry a ex:Ability ;
+    rdfs:label "Mimicry" ;
+    schema1:Generation_IX "Changes the Pokémon's type depending on the terrain." ;
+    schema1:Generation_VIII "Changes the Pokémon's type depending on the terrain." .
+
+ex:Mind_s_Eye a ex:Ability ;
+    rdfs:label "Mind's Eye" ;
+    schema1:Generation_IX "The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal- and Fighting-type moves." .
+
+ex:Minus a ex:Ability ;
+    rdfs:label "Minus" ;
+    schema1:Generation_III "Powers up with Plus." ;
+    schema1:Generation_IV "Boosts Sp. Atk if another Pokémon has Plus.DPPtUps Sp. Atk if another Pokémon has Plus.HGSS" ;
+    schema1:Generation_IX "Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle." ;
+    schema1:Generation_V "Ups Sp. Atk if another Pokémon has Plus or Minus." ;
+    schema1:Generation_VI "Boosts the Sp. Atk stat if another Pokémon has Plus or Minus." ;
+    schema1:Generation_VII "Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle." ;
+    schema1:Generation_VIII "Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle." .
+
+ex:Mirror_Armor a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Mirror Armor" ;
+    schema1:Generation_IX "Bounces back only the stat-lowering effects that the Pokémon receives." ;
+    schema1:Generation_VIII "Bounces back only the stat-lowering effects that the Pokémon receives." .
+
+ex:Misty_Surge a ex:Ability ;
+    rdfs:label "Misty Surge" ;
+    schema1:Generation_IX "Turns the ground into Misty Terrain when the Pokémon enters a battle." ;
+    schema1:Generation_VII "Turns the ground into Misty Terrain when the Pokémon enters a battle." ;
+    schema1:Generation_VIII "Turns the ground into Misty Terrain when the Pokémon enters a battle." .
+
+ex:Mold_Breaker a ex:Ability ;
+    rdfs:label "Mold Breaker" ;
+    schema1:Generation_IV "Moves can be used regardless of abilities." ;
+    schema1:Generation_IX "The Pokémon's moves are unimpeded by the Ability of the target." ;
+    schema1:Generation_V "Moves can be used regardless of Abilities." ;
+    schema1:Generation_VI "Moves can be used on the target regardless of its Abilities." ;
+    schema1:Generation_VII "Moves can be used on the target regardless of its Abilities." ;
+    schema1:Generation_VIII "Moves can be used on the target regardless of its Abilities." .
+
+ex:Moody a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Moody" ;
+    schema1:Generation_IX "Every turn, one of the Pokémon's stats will be boosted sharply but another stat will be lowered." ;
+    schema1:Generation_V "Raises one stat and lowers another." ;
+    schema1:Generation_VI "Raises one stat and lowers another." ;
+    schema1:Generation_VII "Raises one stat sharply and lowers another every turn." ;
+    schema1:Generation_VIII "Raises one stat sharply and lowers another every turn." .
+
+ex:Motor_Drive a ex:Ability ;
+    rdfs:label "Motor Drive" ;
+    schema1:Generation_IV "Raises Speed if hit by an Electric-type move." ;
+    schema1:Generation_IX "The Pokémon takes no damage when hit by Electric-type moves. Instead, its Speed stat is boosted." ;
+    schema1:Generation_V "Raises Speed if hit by an Electric-type move." ;
+    schema1:Generation_VI "Boosts the Speed stat when it's hit by an Electric-type move." ;
+    schema1:Generation_VII "Boosts its Speed stat if hit by an Electric-type move, instead of taking damage." ;
+    schema1:Generation_VIII "Boosts its Speed stat if hit by an Electric-type move instead of taking damage." .
+
+ex:Moxie a ex:Ability ;
+    rdfs:label "Moxie" ;
+    schema1:Generation_IX "When the Pokémon knocks out a target, it shows moxie, which boosts its Attack stat." ;
+    schema1:Generation_V "Boosts Attack after knocking out any Pokémon." ;
+    schema1:Generation_VI "Boosts the Attack stat after knocking out any Pokémon." ;
+    schema1:Generation_VII "The Pokémon shows moxie, and that boosts the Attack stat after knocking out any Pokémon." ;
+    schema1:Generation_VIII "The Pokémon shows moxie, and that boosts the Attack stat after knocking out any Pokémon." .
+
+ex:Multiscale a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Multiscale" ;
+    schema1:Generation_IX "Reduces the amount of damage the Pokémon takes while its HP is full." ;
+    schema1:Generation_V "Reduces damage when HP is full." ;
+    schema1:Generation_VI "Reduces damage the Pokémon takes when its HP is full.XYReduces the damage taken by the Pokémon when its HP is full.ORAS" ;
+    schema1:Generation_VII "Reduces the amount of damage the Pokémon takes when its HP is full." ;
+    schema1:Generation_VIII "Reduces the amount of damage the Pokémon takes while its HP is full." .
+
+ex:Multitype a ex:Ability ;
+    rdfs:label "Multitype" ;
+    schema1:Generation_IV "Changes type to match the held Plate." ;
+    schema1:Generation_IX "Changes the Pokémon's type to match the plate it holds." ;
+    schema1:Generation_V "Changes type to match the held Plate." ;
+    schema1:Generation_VI "Changes the Pokémon's type to match the Plate it holds." ;
+    schema1:Generation_VII "Changes the Pokémon's type to match the Plate or Z-Crystal it holds." ;
+    schema1:Generation_VIII "Changes the Pokémon's type to match the Plate or Z-Crystal it holds.SwShLAChanges the Pokémon's type to match the Plate it holds.BDSP" .
+
+ex:Mummy a ex:Ability ;
+    rdfs:label "Mummy" ;
+    schema1:Generation_IX "Contact with the Pokémon changes the attacker's Ability to Mummy." ;
+    schema1:Generation_V "Contact with this Pokémon spreads this Ability." ;
+    schema1:Generation_VI "Contact with the Pokémon spreads this Ability." ;
+    schema1:Generation_VII "Contact with the Pokémon changes the attacker's Ability to Mummy." ;
+    schema1:Generation_VIII "Contact with the Pokémon changes the attacker's Ability to Mummy." .
+
+ex:Mycelium_Might a ex:Ability ;
+    rdfs:label "Mycelium Might" ;
+    schema1:Generation_IX "The Pokémon will always act more slowly when using status moves, but these moves will be unimpeded by the Ability of the target." .
+
+ex:Natural_Cure a ex:Ability ;
+    rdfs:label "Natural Cure" ;
+    schema1:Generation_III "Heals upon switching out." ;
+    schema1:Generation_IV "All status problems are healed upon switching out.DPPtAll status problems heal when it switches out.HGSS" ;
+    schema1:Generation_IX "The Pokémon's status conditions are cured when it switches out." ;
+    schema1:Generation_V "All status problems heal when it switches out." ;
+    schema1:Generation_VI "All status conditions heal when the Pokémon switches out." ;
+    schema1:Generation_VII "All status conditions heal when the Pokémon switches out." ;
+    schema1:Generation_VIII "All status conditions heal when the Pokémon switches out." .
+
+ex:Neuroforce a ex:Ability ;
+    rdfs:label "Neuroforce" ;
+    schema1:Generation_IX "Powers up the Pokémon’s supereffective attacks even further." ;
+    schema1:Generation_VII "Powers up moves that are super effective." ;
+    schema1:Generation_VIII "Powers up moves that are super effective." .
+
+ex:Neutralizing_Gas a ex:Ability ;
+    rdfs:label "Neutralizing Gas" ;
+    schema1:Generation_IX "While the Pokémon is in the battle, the effects of all other Pokémon's Abilities will be nullified or will not be triggered." ;
+    schema1:Generation_VIII "If the Pokémon with Neutralizing Gas is in the battle, the effects of all Pokémon's Abilities will be nullified or will not be triggered." .
+
+ex:No_Guard a ex:Ability ;
+    rdfs:label "No Guard" ;
+    schema1:Generation_IV "Ensures the Pokémon and its foe's attacks land.DPPtEnsures both Pokémon's and foe's attacks land.HGSS" ;
+    schema1:Generation_IX "The Pokémon employs no-guard tactics to ensure incoming and outgoing attacks always land." ;
+    schema1:Generation_V "Ensures attacks by or against the Pokémon land." ;
+    schema1:Generation_VI "Ensures attacks by or against the Pokémon land.XYEnsures that attacks by or against the Pokémon will land.ORAS" ;
+    schema1:Generation_VII "The Pokémon employs no-guard tactics to ensure incoming and outgoing attacks always land." ;
+    schema1:Generation_VIII "The Pokémon employs no-guard tactics to ensure incoming and outgoing attacks always land." .
+
+ex:Normalize a ex:Ability ;
+    rdfs:label "Normalize" ;
+    schema1:Generation_IV "All the Pokémon's moves become the Normal type." ;
+    schema1:Generation_IX "All the Pokémon's moves become Normal type. The power of those moves is boosted a little." ;
+    schema1:Generation_V "All the Pokémon's moves become the Normal type." ;
+    schema1:Generation_VI "All the Pokémon's moves become Normal type." ;
+    schema1:Generation_VII "All the Pokémon's moves become Normal type. The power of those moves is boosted a little." ;
+    schema1:Generation_VIII "All the Pokémon's moves become Normal type. The power of those moves is boosted a little." .
+
+ex:Oblivious a ex:Ability ;
+    rdfs:label "Oblivious" ;
+    schema1:Generation_III "Prevents attraction." ;
+    schema1:Generation_IV "Prevents the Pokémon from becoming infatuated.DPPtPrevents it from becoming infatuated.HGSS" ;
+    schema1:Generation_IX "The Pokémon is oblivious, keeping it from being infatuated, falling for taunts, or being affected by Intimidate." ;
+    schema1:Generation_V "Prevents it from becoming infatuated." ;
+    schema1:Generation_VI "Keeps the Pokémon from being infatuated or falling for taunts." ;
+    schema1:Generation_VII "The Pokémon is oblivious, and that keeps it from being infatuated or falling for taunts." ;
+    schema1:Generation_VIII "The Pokémon is oblivious, and that keeps it from being infatuated or falling for taunts." .
+
+ex:Opportunist a ex:Ability ;
+    rdfs:label "Opportunist" ;
+    schema1:Generation_IX "If an opponent's stat is boosted, the Pokémon seizes the opportunity to boost the same stat for itself." .
+
+ex:Orichalcum_Pulse a ex:Ability ;
+    rdfs:label "Orichalcum Pulse" ;
+    schema1:Generation_IX "Turns the sunlight harsh when the Pokémon enters a battle. The ancient pulse thrumming through the Pokémon also boosts its Attack stat in harsh sunlight." .
+
+ex:Overcoat a ex:Ability ;
+    rdfs:label "Overcoat" ;
+    schema1:Generation_IX "The Pokémon takes no damage from sandstorms. It is also protected from the effects of powders and spores." ;
+    schema1:Generation_V "Protects the Pokémon from damage from weather." ;
+    schema1:Generation_VI "Protects the Pokémon from things like sand, hail, and powder." ;
+    schema1:Generation_VII "Protects the Pokémon from things like sand, hail, and powder." ;
+    schema1:Generation_VIII "Protects the Pokémon from things like sand, hail, and powder." .
+
+ex:Overgrow a ex:Ability ;
+    rdfs:label "Overgrow" ;
+    schema1:Generation_III "Ups Grass moves in a pinch." ;
+    schema1:Generation_IV "Powers up Grass-type moves in a pinch." ;
+    schema1:Generation_IX "Powers up Grass-type moves when the Pokémon's HP is low." ;
+    schema1:Generation_V "Powers up Grass-type moves in a pinch." ;
+    schema1:Generation_VI "Powers up Grass-type moves when the Pokémon is in trouble." ;
+    schema1:Generation_VII "Powers up Grass-type moves when the Pokémon's HP is low." ;
+    schema1:Generation_VIII "Powers up Grass-type moves when the Pokémon's HP is low." .
+
+ex:Own_Tempo a ex:Ability ;
+    rdfs:label "Own Tempo" ;
+    schema1:Generation_III "Prevents confusion." ;
+    schema1:Generation_IV "Prevents the Pokémon from becoming confused." ;
+    schema1:Generation_IX "The Pokémon sticks to its own tempo, preventing it from becoming confused or being affected by Intimidate." ;
+    schema1:Generation_V "Prevents the Pokémon from becoming confused." ;
+    schema1:Generation_VI "Prevents the Pokémon from becoming confused." ;
+    schema1:Generation_VII "This Pokémon has its own tempo, and that prevents it from becoming confused." ;
+    schema1:Generation_VIII "This Pokémon has its own tempo, and that prevents it from becoming confused." .
+
+ex:Parental_Bond a ex:Ability ;
+    rdfs:label "Parental Bond" ;
+    schema1:Generation_IX "The parent and child attack one after the other." ;
+    schema1:Generation_VI "Parent and child attack together." ;
+    schema1:Generation_VII "Parent and child each attacks." ;
+    schema1:Generation_VIII "Parent and child each attacks." .
+
+ex:Pastel_Veil a ex:Ability ;
+    rdfs:label "Pastel Veil" ;
+    schema1:Generation_IX "Prevents the Pokémon and its allies from being poisoned." ;
+    schema1:Generation_VIII "Protects the Pokémon and its ally Pokémon from being poisoned." .
+
+ex:Perish_Body a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Perish Body" ;
+    schema1:Generation_IX "When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle." ;
+    schema1:Generation_VIII "When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle." .
+
+ex:Pickpocket a ex:Ability ;
+    rdfs:label "Pickpocket" ;
+    schema1:Generation_IX "The Pokémon steals the held item from attackers that make direct contact with it." ;
+    schema1:Generation_V "Steals an item when hit by another Pokémon." ;
+    schema1:Generation_VI "Steals an item from an attacker that made direct contact." ;
+    schema1:Generation_VII "Steals an item from an attacker that made direct contact." ;
+    schema1:Generation_VIII "Steals an item from an attacker that made direct contact." .
+
+ex:Pickup a ex:Ability ;
+    rdfs:label "Pickup" ;
+    schema1:Generation_III "May pick up items." ;
+    schema1:Generation_IV "The Pokémon may pick up items.DPPtHGSSThe Pokémon may pick up items. It has no effect in Pokétopia.PBR" ;
+    schema1:Generation_IX "The Pokémon may pick up an item another Pokémon used during a battle. It may pick up items outside of battle, too." ;
+    schema1:Generation_V "The Pokémon may pick up items." ;
+    schema1:Generation_VI "The Pokémon may pick up items." ;
+    schema1:Generation_VII "The Pokémon may pick up the item an opposing Pokémon used during a battle. It may pick up items outside of battle, too." ;
+    schema1:Generation_VIII "The Pokémon may pick up the item an opposing Pokémon used during a battle. It may pick up items outside of battle, too." .
+
+ex:Pixilate a ex:Ability ;
+    rdfs:label "Pixilate" ;
+    schema1:Generation_IX "Normal-type moves become Fairy-type moves. The power of those moves is boosted a little." ;
+    schema1:Generation_VI "Normal-type moves become Fairy-type moves." ;
+    schema1:Generation_VII "Normal-type moves become Fairy-type moves. The power of those moves is boosted a little." ;
+    schema1:Generation_VIII "Normal-type moves become Fairy-type moves. The power of those moves is boosted a little." .
+
+ex:Plus a ex:Ability ;
+    rdfs:label "Plus" ;
+    schema1:Generation_III "Powers up with Minus." ;
+    schema1:Generation_IV "Boosts Sp. Atk if another Pokémon has Minus.DPPtUps Sp. Atk if another Pokémon has Minus.HGSS" ;
+    schema1:Generation_IX "Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle." ;
+    schema1:Generation_V "Ups Sp. Atk if another Pokémon has Plus or Minus." ;
+    schema1:Generation_VI "Boosts the Sp. Atk stat if another Pokémon has Plus or Minus." ;
+    schema1:Generation_VII "Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle." ;
+    schema1:Generation_VIII "Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle." .
+
+ex:Poison_Heal a ex:Ability ;
+    rdfs:label "Poison Heal" ;
+    schema1:Generation_IV "Restores HP if the Pokémon is poisoned." ;
+    schema1:Generation_IX "If poisoned, the Pokémon has its HP restored instead of taking damage." ;
+    schema1:Generation_V "Restores HP if the Pokémon is poisoned." ;
+    schema1:Generation_VI "Restores HP if the Pokémon is poisoned." ;
+    schema1:Generation_VII "Restores HP if the Pokémon is poisoned, instead of losing HP." ;
+    schema1:Generation_VIII "Restores HP if the Pokémon is poisoned instead of losing HP." .
+
+ex:Poison_Point a ex:Ability ;
+    rdfs:label "Poison Point" ;
+    schema1:Generation_III "Poisons foe on contact.RSEFRLGPoisons target on contact.ColoXD" ;
+    schema1:Generation_IV "Contact with the Pokémon may poison the foe." ;
+    schema1:Generation_IX "Contact with the Pokémon may poison the attacker." ;
+    schema1:Generation_V "Contact with the Pokémon may poison the attacker." ;
+    schema1:Generation_VI "Contact with the Pokémon may poison the attacker." ;
+    schema1:Generation_VII "Contact with the Pokémon may poison the attacker." ;
+    schema1:Generation_VIII "Contact with the Pokémon may poison the attacker." .
+
+ex:Poison_Puppeteer a ex:Ability ;
+    rdfs:label "Poison Puppeteer" ;
+    schema1:Generation_IX "Pokémon poisoned by Pecharunt's moves will also become confused." .
+
+ex:Poison_Touch a ex:Ability ;
+    rdfs:label "Poison Touch" ;
+    schema1:Generation_IX "May poison a target when the Pokémon makes contact." ;
+    schema1:Generation_V "May poison targets when a Pokémon makes contact." ;
+    schema1:Generation_VI "May poison a target when the Pokémon makes contact." ;
+    schema1:Generation_VII "May poison a target when the Pokémon makes contact." ;
+    schema1:Generation_VIII "May poison a target when the Pokémon makes contact." .
+
+ex:Power_Construct a ex:Ability ;
+    rdfs:label "Power Construct" ;
+    schema1:Generation_IX "Cells gather to aid the Pokémon when its HP drops to half or less, causing it to change into its Complete Forme." ;
+    schema1:Generation_VII "Other Cells gather to aid when its HP becomes half or less. Then the Pokémon changes its form to Complete Forme." ;
+    schema1:Generation_VIII "Other Cells gather to aid when its HP becomes half or less. Then the Pokémon changes its form to Complete Forme." .
+
+ex:Power_Spot a ex:Ability ;
+    rdfs:label "Power Spot" ;
+    schema1:Generation_IX "Just being next to the Pokémon powers up moves." ;
+    schema1:Generation_VIII "Just being next to the Pokémon powers up moves." .
+
+ex:Power_of_Alchemy a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Power of Alchemy" ;
+    schema1:Generation_IX "The Pokémon copies the Ability of a defeated ally." ;
+    schema1:Generation_VII "The Pokémon copies the Ability of a defeated ally." ;
+    schema1:Generation_VIII "The Pokémon copies the Ability of a defeated ally." .
+
+ex:Prankster a ex:Ability ;
+    rdfs:label "Prankster" ;
+    schema1:Generation_IX "Gives priority to the Pokémon's status moves." ;
+    schema1:Generation_V "Gives priority to a status move." ;
+    schema1:Generation_VI "Gives priority to a status move." ;
+    schema1:Generation_VII "Gives priority to a status move." ;
+    schema1:Generation_VIII "Gives priority to a status move." .
+
+ex:Pressure a ex:Ability ;
+    rdfs:label "Pressure" ;
+    schema1:Generation_III "Raises foe's PP usage." ;
+    schema1:Generation_IV "The Pokémon raises the foe's PP usage." ;
+    schema1:Generation_IX "Puts other Pokémon under pressure, causing them to expend more PP to use their moves." ;
+    schema1:Generation_V "The Pokémon raises the foe's PP usage." ;
+    schema1:Generation_VI "The Pokémon raises opposing Pokémon's PP usage." ;
+    schema1:Generation_VII "By putting pressure on the opposing Pokémon, it raises their PP usage." ;
+    schema1:Generation_VIII "By putting pressure on the opposing Pokémon, it raises their PP usage." .
+
+ex:Primordial_Sea a ex:Ability ;
+    rdfs:label "Primordial Sea" ;
+    schema1:Generation_IX "The Pokémon changes the weather to nullify Fire-type attacks." ;
+    schema1:Generation_VI "Affects weather and nullifies any Fire-type attacks." ;
+    schema1:Generation_VII "The Pokémon changes the weather to nullify Fire-type attacks." ;
+    schema1:Generation_VIII "The Pokémon changes the weather to nullify Fire-type attacks." .
+
+ex:Prism_Armor a ex:Ability ;
+    rdfs:label "Prism Armor" ;
+    schema1:Generation_IX "Reduces the power of supereffective attacks that hit the Pokémon." ;
+    schema1:Generation_VII "Reduces the power of supereffective attacks taken." ;
+    schema1:Generation_VIII "Reduces the power of supereffective attacks taken." .
+
+ex:Propeller_Tail a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Propeller Tail" ;
+    schema1:Generation_IX "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves." ;
+    schema1:Generation_VIII "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves." .
+
+ex:Protean a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Protean" ;
+    schema1:Generation_IX "Changes the Pokémon's type to the type of the move it's about to use. This works only once each time the Pokémon enters battle." ;
+    schema1:Generation_VI "Changes the Pokémon's type to the type of the move it's using." ;
+    schema1:Generation_VII "Changes the Pokémon's type to the type of the move it's about to use." ;
+    schema1:Generation_VIII "Changes the Pokémon's type to the type of the move it's about to use." .
+
+ex:Protosynthesis a ex:Ability ;
+    rdfs:label "Protosynthesis" ;
+    schema1:Generation_IX "Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy." .
+
+ex:Psychic_Surge a ex:Ability ;
+    rdfs:label "Psychic Surge" ;
+    schema1:Generation_IX "Turns the ground into Psychic Terrain when the Pokémon enters a battle." ;
+    schema1:Generation_VII "Turns the ground into Psychic Terrain when the Pokémon enters a battle." ;
+    schema1:Generation_VIII "Turns the ground into Psychic Terrain when the Pokémon enters a battle." .
+
+ex:Punk_Rock a ex:Ability ;
+    rdfs:label "Punk Rock" ;
+    schema1:Generation_IX "Boosts the power of sound-based moves. The Pokémon also takes half the damage from these kinds of moves." ;
+    schema1:Generation_VIII "Boosts the power of sound-based moves. The Pokémon also takes half the damage from these kinds of moves." .
+
+ex:Pure_Power a ex:Ability ;
+    rdfs:label "Pure Power" ;
+    schema1:Generation_III "Raises Attack." ;
+    schema1:Generation_IV "Boosts the power of physical attacks." ;
+    schema1:Generation_IX "Using its pure power, the Pokémon doubles its Attack stat." ;
+    schema1:Generation_V "Raises the Pokémon's Attack stat." ;
+    schema1:Generation_VI "Boosts the Pokémon's Attack stat." ;
+    schema1:Generation_VII "Using its pure power, the Pokémon doubles its Attack stat." ;
+    schema1:Generation_VIII "Using its pure power, the Pokémon doubles its Attack stat." .
+
+ex:Purifying_Salt a ex:Ability ;
+    rdfs:label "Purifying Salt" ;
+    schema1:Generation_IX "The Pokémon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves." .
+
+ex:Quark_Drive a ex:Ability ;
+    rdfs:label "Quark Drive" ;
+    schema1:Generation_IX "Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy." .
+
+ex:Queenly_Majesty a ex:Ability ;
+    rdfs:label "Queenly Majesty" ;
+    schema1:Generation_IX "The Pokémon's majesty pressures opponents and makes them unable to use priority moves against the Pokémon or its allies." ;
+    schema1:Generation_VII "Its majesty pressures the opposing Pokémon, making it unable to attack using priority moves." ;
+    schema1:Generation_VIII "Its majesty pressures the opposing Pokémon, making it unable to attack using priority moves." .
+
+ex:Quick_Draw a ex:Ability ;
+    rdfs:label "Quick Draw" ;
+    schema1:Generation_IX "Enables the Pokémon to move first occasionally." ;
+    schema1:Generation_VIII "Enables the Pokémon to move first occasionally." .
+
+ex:Quick_Feet a ex:Ability ;
+    rdfs:label "Quick Feet" ;
+    schema1:Generation_IV "Boosts Speed if there is a status problem." ;
+    schema1:Generation_IX "Boosts the Speed stat if the Pokémon has a status condition." ;
+    schema1:Generation_V "Boosts Speed if there is a status problem." ;
+    schema1:Generation_VI "Boosts the Speed stat if the Pokémon has a status condition." ;
+    schema1:Generation_VII "Boosts the Speed stat if the Pokémon has a status condition." ;
+    schema1:Generation_VIII "Boosts the Speed stat if the Pokémon has a status condition." .
+
+ex:RKS_System a ex:Ability ;
+    rdfs:label "RKS System" ;
+    schema1:Generation_IX "Changes the Pokémon's type to match the memory disc it holds." ;
+    schema1:Generation_VII "Changes the Pokémon's type to match the memory disc it holds." ;
+    schema1:Generation_VIII "Changes the Pokémon's type to match the memory disc it holds." .
+
+ex:Rain_Dish a ex:Ability ;
+    rdfs:label "Rain Dish" ;
+    schema1:Generation_III "Slight HP recovery in rain." ;
+    schema1:Generation_IV "The Pokémon gradually recovers HP in rain." ;
+    schema1:Generation_IX "The Pokémon gradually regains HP in rain." ;
+    schema1:Generation_V "The Pokémon gradually regains HP in rain." ;
+    schema1:Generation_VI "The Pokémon gradually regains HP in rain." ;
+    schema1:Generation_VII "The Pokémon gradually regains HP in rain." ;
+    schema1:Generation_VIII "The Pokémon gradually regains HP in rain." .
+
+ex:Rattled a ex:Ability ;
+    rdfs:label "Rattled" ;
+    schema1:Generation_IX "The Pokémon gets scared when hit by a Dark-, Ghost-, or Bug-type attack or if intimidated, which boosts its Speed stat." ;
+    schema1:Generation_V "Some move types scare it and boost its Speed." ;
+    schema1:Generation_VI "Some move types scare it and boost its Speed stat." ;
+    schema1:Generation_VII "Dark-, Ghost-, and Bug-type moves scare the Pokémon and boost its Speed stat." ;
+    schema1:Generation_VIII "Dark-, Ghost-, and Bug-type moves scare the Pokémon and boost its Speed stat." .
+
+ex:Receiver a ex:Ability ;
+    rdfs:label "Receiver" ;
+    schema1:Generation_IX "The Pokémon copies the Ability of a defeated ally." ;
+    schema1:Generation_VII "The Pokémon copies the Ability of a defeated ally." ;
+    schema1:Generation_VIII "The Pokémon copies the Ability of a defeated ally." .
+
+ex:Reckless a ex:Ability ;
+    rdfs:label "Reckless" ;
+    schema1:Generation_IV "Powers up moves that have recoil damage." ;
+    schema1:Generation_IX "Powers up moves that have recoil damage." ;
+    schema1:Generation_V "Powers up moves that have recoil damage." ;
+    schema1:Generation_VI "Powers up moves that have recoil damage." ;
+    schema1:Generation_VII "Powers up moves that have recoil damage." ;
+    schema1:Generation_VIII "Powers up moves that have recoil damage." .
+
+ex:Refrigerate a ex:Ability ;
+    rdfs:label "Refrigerate" ;
+    schema1:Generation_IX "Normal-type moves become Ice-type moves. The power of those moves is boosted a little." ;
+    schema1:Generation_VI "Normal-type moves become Ice-type moves." ;
+    schema1:Generation_VII "Normal-type moves become Ice-type moves. The power of those moves is boosted a little." ;
+    schema1:Generation_VIII "Normal-type moves become Ice-type moves. The power of those moves is boosted a little." .
+
+ex:Regenerator a ex:Ability ;
+    rdfs:label "Regenerator" ;
+    schema1:Generation_IX "The Pokémon has a little of its HP restored when withdrawn from battle." ;
+    schema1:Generation_V "Restores a little HP when withdrawn from battle." ;
+    schema1:Generation_VI "Restores a little HP when withdrawn from battle." ;
+    schema1:Generation_VII "Restores a little HP when withdrawn from battle." ;
+    schema1:Generation_VIII "Restores a little HP when withdrawn from battle." .
+
+ex:Ripen a ex:Ability ;
+    rdfs:label "Ripen" ;
+    schema1:Generation_IX "Ripens Berries and doubles their effect." ;
+    schema1:Generation_VIII "Ripens Berries and doubles their effect." .
+
+ex:Rivalry a ex:Ability ;
+    rdfs:label "Rivalry" ;
+    schema1:Generation_IV "Raises Attack if the foe is of the same gender." ;
+    schema1:Generation_IX "The Pokémon's competitive spirit makes it deal more damage to Pokémon of the same gender, but less damage to Pokémon of the opposite gender." ;
+    schema1:Generation_V "Deals more damage to a Pokémon of same gender." ;
+    schema1:Generation_VI "Deals more damage to Pokémon of the same gender." ;
+    schema1:Generation_VII "Becomes competitive and deals more damage to Pokémon of the same gender, but deals less to Pokémon of the opposite gender." ;
+    schema1:Generation_VIII "Becomes competitive and deals more damage to Pokémon of the same gender, but deals less to Pokémon of the opposite gender." .
+
+ex:Rock_Head a ex:Ability ;
+    rdfs:label "Rock Head" ;
+    schema1:Generation_III "Prevents recoil damage." ;
+    schema1:Generation_IV "Protects the Pokémon from recoil damage." ;
+    schema1:Generation_IX "Protects the Pokémon from recoil damage." ;
+    schema1:Generation_V "Protects the Pokémon from recoil damage." ;
+    schema1:Generation_VI "Protects the Pokémon from recoil damage." ;
+    schema1:Generation_VII "Protects the Pokémon from recoil damage." ;
+    schema1:Generation_VIII "Protects the Pokémon from recoil damage." .
+
+ex:Rocky_Payload a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Rocky Payload" ;
+    schema1:Generation_IX "Powers up Rock-type moves." .
+
+ex:Rough_Skin a ex:Ability ;
+    rdfs:label "Rough Skin" ;
+    schema1:Generation_III "Hurts to touch." ;
+    schema1:Generation_IV "Inflicts damage to the foe on contact." ;
+    schema1:Generation_IX "The Pokémon's rough skin damages attackers that make direct contact with it." ;
+    schema1:Generation_V "Inflicts damage to the attacker on contact." ;
+    schema1:Generation_VI "Inflicts damage to the attacker on contact." ;
+    schema1:Generation_VII "This Pokémon inflicts damage with its rough skin to the attacker on contact." ;
+    schema1:Generation_VIII "This Pokémon inflicts damage with its rough skin to the attacker on contact." .
+
+ex:Run_Away a ex:Ability ;
+    rdfs:label "Run Away" ;
+    schema1:Generation_III "Makes escaping easier." ;
+    schema1:Generation_IV "Enables sure getaway from wild Pokémon.DPPtHGSSEnables sure getaway from wild Pokémon. It has no effect in Pokétopia.PBR" ;
+    schema1:Generation_IX "Enables a sure getaway from wild Pokémon." ;
+    schema1:Generation_V "Enables a sure getaway from wild Pokémon." ;
+    schema1:Generation_VI "Enables a sure getaway from wild Pokémon." ;
+    schema1:Generation_VII "Enables a sure getaway from wild Pokémon." ;
+    schema1:Generation_VIII "Enables a sure getaway from wild Pokémon." .
+
+ex:Sand_Force a ex:Ability ;
+    rdfs:label "Sand Force" ;
+    schema1:Generation_IX "Boosts the power of Rock-, Ground-, and Steel-type moves in a sandstorm." ;
+    schema1:Generation_V "Boosts certain moves' power in a sandstorm." ;
+    schema1:Generation_VI "Boosts certain moves' power in a sandstorm." ;
+    schema1:Generation_VII "Boosts the power of Rock-, Ground-, and Steel-type moves in a sandstorm." ;
+    schema1:Generation_VIII "Boosts the power of Rock-, Ground-, and Steel-type moves in a sandstorm." .
+
+ex:Sand_Rush a ex:Ability ;
+    rdfs:label "Sand Rush" ;
+    schema1:Generation_IX "Boosts the Pokémon's Speed stat in a sandstorm." ;
+    schema1:Generation_V "Boosts the Pokémon's Speed in a sandstorm." ;
+    schema1:Generation_VI "Boosts the Pokémon's Speed stat in a sandstorm." ;
+    schema1:Generation_VII "Boosts the Pokémon's Speed stat in a sandstorm." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Speed stat in a sandstorm." .
+
+ex:Sand_Spit a ex:Ability ;
+    rdfs:label "Sand Spit" ;
+    schema1:Generation_IX "The Pokémon creates a sandstorm when it's hit by an attack." ;
+    schema1:Generation_VIII "The Pokémon creates a sandstorm when it's hit by an attack." .
+
+ex:Sand_Stream a ex:Ability ;
+    rdfs:label "Sand Stream" ;
+    schema1:Generation_III "Summons a sandstorm." ;
+    schema1:Generation_IV "The Pokémon summons a sandstorm in battle." ;
+    schema1:Generation_IX "The Pokémon summons a sandstorm when it enters a battle." ;
+    schema1:Generation_V "The Pokémon summons a sandstorm in battle." ;
+    schema1:Generation_VI "The Pokémon summons a sandstorm in battle." ;
+    schema1:Generation_VII "The Pokémon summons a sandstorm when it enters a battle." ;
+    schema1:Generation_VIII "The Pokémon summons a sandstorm when it enters a battle." .
+
+ex:Sand_Veil a ex:Ability ;
+    rdfs:label "Sand Veil" ;
+    schema1:Generation_III "Ups evasion in a sandstorm." ;
+    schema1:Generation_IV "Boosts the Pokémon's evasion in a sandstorm." ;
+    schema1:Generation_IX "Boosts the Pokémon's evasiveness in a sandstorm." ;
+    schema1:Generation_V "Boosts the Pokémon's evasion in a sandstorm." ;
+    schema1:Generation_VI "Boosts the Pokémon's evasion in a sandstorm." ;
+    schema1:Generation_VII "Boosts the Pokémon's evasion in a sandstorm." ;
+    schema1:Generation_VIII "Boosts the Pokémon's evasiveness in a sandstorm." .
+
+ex:Sap_Sipper a ex:Ability ;
+    rdfs:label "Sap Sipper" ;
+    schema1:Generation_IX "The Pokémon takes no damage when hit by Grass-type moves. Instead, its Attack stat is boosted." ;
+    schema1:Generation_V "Boosts Attack when hit by a Grass-type move." ;
+    schema1:Generation_VI "Boosts the Attack stat when hit by a Grass-type move." ;
+    schema1:Generation_VII "Boosts the Attack stat if hit by a Grass-type move, instead of taking damage." ;
+    schema1:Generation_VIII "Boosts the Attack stat if hit by a Grass-type move instead of taking damage." .
+
+ex:Schooling a ex:Ability ;
+    rdfs:label "Schooling" ;
+    schema1:Generation_IX "When it has a lot of HP, the Pokémon forms a powerful school. It stops schooling when its HP is low." ;
+    schema1:Generation_VII "When it has a lot of HP, the Pokémon forms a powerful school. It stops schooling when its HP is low." ;
+    schema1:Generation_VIII "When it has a lot of HP, the Pokémon forms a powerful school. It stops schooling when its HP is low." .
+
+ex:Scrappy a ex:Ability ;
+    rdfs:label "Scrappy" ;
+    schema1:Generation_IV "Enables moves to hit Ghost-type foes." ;
+    schema1:Generation_IX "The Pokémon can hit Ghost-type Pokémon with Normal- and Fighting-type moves. It is also unaffected by Intimidate." ;
+    schema1:Generation_V "Enables moves to hit Ghost-type Pokémon." ;
+    schema1:Generation_VI "Makes Normal- and Fighting-type moves hit Ghost-type Pokémon." ;
+    schema1:Generation_VII "The Pokémon can hit Ghost-type Pokémon with Normal- and Fighting-type moves." ;
+    schema1:Generation_VIII "The Pokémon can hit Ghost-type Pokémon with Normal- and Fighting-type moves." .
+
+ex:Screen_Cleaner a ex:Ability ;
+    rdfs:label "Screen Cleaner" ;
+    schema1:Generation_IX "When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon." ;
+    schema1:Generation_VIII "When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon." .
+
+ex:Seed_Sower a ex:Ability ;
+    rdfs:label "Seed Sower" ;
+    schema1:Generation_IX "Turns the ground into Grassy Terrain when the Pokémon is hit by an attack." .
+
+ex:Serene_Grace a ex:Ability ;
+    rdfs:label "Serene Grace" ;
+    schema1:Generation_III "Promotes added effects." ;
+    schema1:Generation_IV "Boosts the likelihood of added effects appearing." ;
+    schema1:Generation_IX "Raises the likelihood of additional effects occurring when the Pokémon uses its moves." ;
+    schema1:Generation_V "Boosts the likelihood of added effects appearing." ;
+    schema1:Generation_VI "Boosts the likelihood of additional effects occurring." ;
+    schema1:Generation_VII "Boosts the likelihood of additional effects occurring when attacking." ;
+    schema1:Generation_VIII "Boosts the likelihood of additional effects occurring when attacking." .
+
+ex:Shadow_Shield a ex:Ability ;
+    rdfs:label "Shadow Shield" ;
+    schema1:Generation_IX "Reduces the amount of damage the Pokémon takes while its HP is full." ;
+    schema1:Generation_VII "Reduces the amount of damage the Pokémon takes while its HP is full." ;
+    schema1:Generation_VIII "Reduces the amount of damage the Pokémon takes while its HP is full." .
+
+ex:Shadow_Tag a ex:Ability ;
+    rdfs:label "Shadow Tag" ;
+    schema1:Generation_III "Prevents the foe's escape." ;
+    schema1:Generation_IV "Prevents the foe from escaping." ;
+    schema1:Generation_IX "The Pokémon steps on the opposing Pokémon's shadows to prevent them from fleeing or switching out." ;
+    schema1:Generation_V "Prevents the foe from escaping." ;
+    schema1:Generation_VI "Prevents opposing Pokémon from escaping." ;
+    schema1:Generation_VII "This Pokémon steps on the opposing Pokémon's shadow to prevent it from escaping." ;
+    schema1:Generation_VIII "This Pokémon steps on the opposing Pokémon's shadow to prevent it from escaping." .
+
+ex:Sharpness a ex:Ability ;
+    rdfs:label "Sharpness" ;
+    schema1:Generation_IX "Powers up slicing moves." .
+
+ex:Shed_Skin a ex:Ability ;
+    rdfs:label "Shed Skin" ;
+    schema1:Generation_III "Heals the body by shedding." ;
+    schema1:Generation_IV "The Pokémon may heal its own status problems." ;
+    schema1:Generation_IX "The Pokémon may cure its own status conditions by shedding its skin." ;
+    schema1:Generation_V "The Pokémon may heal its own status problems." ;
+    schema1:Generation_VI "The Pokémon may heal its own status conditions." ;
+    schema1:Generation_VII "The Pokémon may heal its own status conditions by shedding its skin." ;
+    schema1:Generation_VIII "The Pokémon may heal its own status conditions by shedding its skin." .
+
+ex:Sheer_Force a ex:Ability ;
+    rdfs:label "Sheer Force" ;
+    schema1:Generation_IX "Removes any additional effects from the Pokémon's moves, but increases the moves' power." ;
+    schema1:Generation_V "Removes added effects to increase move damage." ;
+    schema1:Generation_VI "Removes additional effects to increase move damage." ;
+    schema1:Generation_VII "Removes additional effects to increase the power of moves when attacking." ;
+    schema1:Generation_VIII "Removes additional effects to increase the power of moves when attacking." .
+
+ex:Shell_Armor a ex:Ability ;
+    rdfs:label "Shell Armor" ;
+    schema1:Generation_III "Blocks critical hits." ;
+    schema1:Generation_IV "The Pokémon is protected against critical hits." ;
+    schema1:Generation_IX "A hard shell protects the Pokémon from critical hits." ;
+    schema1:Generation_V "The Pokémon is protected against critical hits." ;
+    schema1:Generation_VI "Protects the Pokémon from critical hits." ;
+    schema1:Generation_VII "A hard shell protects the Pokémon from critical hits." ;
+    schema1:Generation_VIII "A hard shell protects the Pokémon from critical hits." .
+
+ex:Shield_Dust a ex:Ability ;
+    rdfs:label "Shield Dust" ;
+    schema1:Generation_III "Prevents added effects." ;
+    schema1:Generation_IV "Blocks the added effects of attacks taken." ;
+    schema1:Generation_IX "Protective dust shields the Pokémon from the additional effects of moves." ;
+    schema1:Generation_V "Blocks the added effects of attacks taken." ;
+    schema1:Generation_VI "Blocks the additional effects of attacks taken." ;
+    schema1:Generation_VII "This Pokémon's dust blocks the additional effects of attacks taken." ;
+    schema1:Generation_VIII "This Pokémon's dust blocks the additional effects of attacks taken." .
+
+ex:Shields_Down a ex:Ability ;
+    rdfs:label "Shields Down" ;
+    schema1:Generation_IX "When its HP drops to half or less, the Pokémon's shell breaks and it becomes aggressive." ;
+    schema1:Generation_VII "When its HP becomes half or less, the Pokémon's shell breaks and it becomes aggressive." ;
+    schema1:Generation_VIII "When its HP becomes half or less, the Pokémon's shell breaks and it becomes aggressive." .
+
+ex:Signature_Ability a ex:Ability ;
+    rdfs:label "Signature Ability" ;
+    schema1: "1025" ;
+    schema1:Air_Lock "0384" ;
+    schema1:Cloud_Nine "0055" ;
+    schema1:Color_Change "0352" ;
+    schema1:Drizzle "0382" ;
+    schema1:Drought "0383" ;
+    schema1:Forecast "0351" ;
+    schema1:Huge_Power "0298" ;
+    schema1:Marvel_Scale "0350" ;
+    schema1:Minus "0312" ;
+    schema1:Plus "0311" ;
+    schema1:Pure_Power "0308" ;
+    schema1:Rain_Dish "0272" ;
+    schema1:Rough_Skin "0319" ;
+    schema1:Sand_Stream "0248" ;
+    schema1:Shadow_Tag "0360" ;
+    schema1:Stench "0089" ;
+    schema1:Truant "0289" ;
+    schema1:White_Smoke "0324" ;
+    schema1:Wonder_Guard "0292" .
+
+ex:Simple a ex:Ability ;
+    rdfs:label "Simple" ;
+    schema1:Generation_IV "The Pokémon is prone to wild stat changes." ;
+    schema1:Generation_IX "Doubles the effects of the Pokémon's stat changes." ;
+    schema1:Generation_V "The Pokémon is prone to wild stat changes." ;
+    schema1:Generation_VI "The Pokémon is prone to wild stat changes." ;
+    schema1:Generation_VII "The stat changes the Pokémon receives are doubled." ;
+    schema1:Generation_VIII "The stat changes the Pokémon receives are doubled." .
+
+ex:Skill_Link a ex:Ability ;
+    rdfs:label "Skill Link" ;
+    schema1:Generation_IV "Increases the frequency of multi-strike moves." ;
+    schema1:Generation_IX "Maximizes the number of times multistrike moves hit." ;
+    schema1:Generation_V "Increases the frequency of multi-strike moves." ;
+    schema1:Generation_VI "Increases the number of times multi-strike moves hit." ;
+    schema1:Generation_VII "Maximizes the number of times multi-strike moves hit." ;
+    schema1:Generation_VIII "Maximizes the number of times multistrike moves hit." .
+
+ex:Slow_Start a ex:Ability ;
+    rdfs:label "Slow Start" ;
+    schema1:Generation_IV "Temporarily halves Attack and Speed." ;
+    schema1:Generation_IX "For five turns, the Pokémon's Attack and Speed stats are halved." ;
+    schema1:Generation_V "Temporarily halves Attack and Speed." ;
+    schema1:Generation_VI "Temporarily halves the Pokémon's Attack and Speed stats." ;
+    schema1:Generation_VII "For five turns, the Pokémon's Attack and Speed stats are halved." ;
+    schema1:Generation_VIII "For five turns, the Pokémon's Attack and Speed stats are halved.SwShBDSPThe Pokémon's Attack and Speed stats are halved until it gets going.LA" .
+
+ex:Slush_Rush a ex:Ability ;
+    rdfs:label "Slush Rush" ;
+    schema1:Generation_IX "Boosts the Pokémon's Speed stat in snow." ;
+    schema1:Generation_VII "Boosts the Pokémon's Speed stat in a hailstorm." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Speed stat in a hailstorm." .
+
+ex:Sniper a ex:Ability ;
+    rdfs:label "Sniper" ;
+    schema1:Generation_IV "Powers up moves if they become critical hits." ;
+    schema1:Generation_IX "If the Pokémon's attack lands a critical hit, the attack is powered up even further." ;
+    schema1:Generation_V "Powers up moves if they become critical hits." ;
+    schema1:Generation_VI "Powers up moves if they become critical hits." ;
+    schema1:Generation_VII "Powers up moves if they become critical hits when attacking." ;
+    schema1:Generation_VIII "Powers up moves if they become critical hits when attacking." .
+
+ex:Snow_Cloak a ex:Ability ;
+    rdfs:label "Snow Cloak" ;
+    schema1:Generation_IV "Raises evasion in a hailstorm." ;
+    schema1:Generation_IX "Boosts the Pokémon's evasiveness in snow." ;
+    schema1:Generation_V "Raises evasion in a hailstorm." ;
+    schema1:Generation_VI "Boosts evasion in a hailstorm." ;
+    schema1:Generation_VII "Boosts evasion in a hailstorm." ;
+    schema1:Generation_VIII "Boosts evasiveness in a hailstorm." .
+
+ex:Snow_Warning a ex:Ability ;
+    rdfs:label "Snow Warning" ;
+    schema1:Generation_IV "The Pokémon summons a hailstorm in battle." ;
+    schema1:Generation_IX "The Pokémon makes it snow when it enters a battle." ;
+    schema1:Generation_V "The Pokémon summons a hailstorm in battle." ;
+    schema1:Generation_VI "The Pokémon summons a hailstorm when it enters a battle." ;
+    schema1:Generation_VII "The Pokémon summons a hailstorm when it enters a battle." ;
+    schema1:Generation_VIII "The Pokémon summons a hailstorm when it enters a battle." .
+
+ex:Solar_Power a ex:Ability ;
+    rdfs:label "Solar Power" ;
+    schema1:Generation_IV "Boosts Sp. Atk, but lowers HP in sunshine." ;
+    schema1:Generation_IX "In harsh sunlight, the Pokémon's Sp. Atk stat is boosted, but its HP decreases every turn." ;
+    schema1:Generation_V "In sunshine, Sp. Atk is boosted but HP decreases." ;
+    schema1:Generation_VI "Boosts the Sp. Atk stat in sunny weather, but HP decreases." ;
+    schema1:Generation_VII "Boosts the Sp. Atk stat in sunny weather, but HP decreases every turn.SMBoosts the Sp. Atk stat in harsh sunlight, but HP decreases every turn.USUM" ;
+    schema1:Generation_VIII "Boosts the Sp. Atk stat in harsh sunlight, but HP decreases every turn." .
+
+ex:Solid_Rock a ex:Ability ;
+    rdfs:label "Solid Rock" ;
+    schema1:Generation_IV "Powers down super-effective moves.DPPtReduces damage from supereffective attacksHGSS" ;
+    schema1:Generation_IX "Reduces the power of supereffective attacks that hit the Pokémon." ;
+    schema1:Generation_V "Reduces damage from supereffective attacks." ;
+    schema1:Generation_VI "Reduces damage from supereffective attacks." ;
+    schema1:Generation_VII "Reduces the power of supereffective attacks taken." ;
+    schema1:Generation_VIII "Reduces the power of supereffective attacks taken." .
+
+ex:Soul_Heart a ex:Ability ;
+    rdfs:label "Soul-Heart" ;
+    schema1:Generation_IX "Boosts the Pokémon's Sp. Atk stat every time another Pokémon faints." ;
+    schema1:Generation_VII "Boosts its Sp. Atk stat every time a Pokémon faints." ;
+    schema1:Generation_VIII "Boosts its Sp. Atk stat every time a Pokémon faints." .
+
+ex:Soundproof a ex:Ability ;
+    rdfs:label "Soundproof" ;
+    schema1:Generation_III "Avoids sound-based moves." ;
+    schema1:Generation_IV "Gives full immunity to all sound-based moves." ;
+    schema1:Generation_IX "Soundproofing gives the Pokémon full immunity to all sound-based moves." ;
+    schema1:Generation_V "Gives full immunity to all sound-based moves." ;
+    schema1:Generation_VI "Gives full immunity to all sound-based moves." ;
+    schema1:Generation_VII "Soundproofing of the Pokémon itself gives full immunity to all sound-based moves." ;
+    schema1:Generation_VIII "Soundproofing gives the Pokémon full immunity to all sound-based moves." .
+
+ex:Speed_Boost a ex:Ability ;
+    rdfs:label "Speed Boost" ;
+    schema1:Generation_III "Gradually boosts Speed." ;
+    schema1:Generation_IV "The Pokémon's Speed stat is gradually boosted.DPPtIts Speed stat is gradually boosted.HGSS" ;
+    schema1:Generation_IX "The Pokémon's Speed stat is boosted every turn." ;
+    schema1:Generation_V "Its Speed stat is gradually boosted." ;
+    schema1:Generation_VI "Its Speed stat is gradually boosted." ;
+    schema1:Generation_VII "Its Speed stat is boosted every turn." ;
+    schema1:Generation_VIII "Its Speed stat is boosted every turn." .
+
+ex:Stakeout a ex:Ability ;
+    rdfs:label "Stakeout" ;
+    schema1:Generation_IX "Doubles the damage dealt to a target that has just switched into battle." ;
+    schema1:Generation_VII "Doubles the damage dealt to the target's replacement if the target switches out." ;
+    schema1:Generation_VIII "Doubles the damage dealt to the target's replacement if the target switches out." .
+
+ex:Stall a ex:Ability ;
+    rdfs:label "Stall" ;
+    schema1:Generation_IV "The Pokémon moves after even slower foes." ;
+    schema1:Generation_IX "The Pokémon is always the last to use its moves." ;
+    schema1:Generation_V "The Pokémon moves after all other Pokémon do." ;
+    schema1:Generation_VI "The Pokémon moves after all other Pokémon do." ;
+    schema1:Generation_VII "The Pokémon moves after all other Pokémon do." ;
+    schema1:Generation_VIII "The Pokémon moves after all other Pokémon do." .
+
+ex:Stalwart a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Stalwart" ;
+    schema1:Generation_IX "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves." ;
+    schema1:Generation_VIII "Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves." .
+
+ex:Stamina a ex:Ability ;
+    rdfs:label "Stamina" ;
+    schema1:Generation_IX "Boosts the Defense stat when the Pokémon is hit by an attack." ;
+    schema1:Generation_VII "Boosts the Defense stat when hit by an attack." ;
+    schema1:Generation_VIII "Boosts the Defense stat when hit by an attack." .
+
+ex:Stance_Change a ex:Ability ;
+    rdfs:label "Stance Change" ;
+    schema1:Generation_IX "The Pokémon changes its form to Blade Forme when it uses an attack move and changes to Shield Forme when it uses King's Shield." ;
+    schema1:Generation_VI "The Pokémon changes form depending on how it battles." ;
+    schema1:Generation_VII "The Pokémon changes its form to Blade Forme when it uses an attack move, and changes to Shield Forme when it uses King's Shield." ;
+    schema1:Generation_VIII "The Pokémon changes its form to Blade Forme when it uses an attack move and changes to Shield Forme when it uses King's Shield." .
+
+ex:Static a ex:Ability ;
+    rdfs:label "Static" ;
+    schema1:Generation_III "Paralyzes on contact." ;
+    schema1:Generation_IV "Contact with the Pokémon may cause paralysis." ;
+    schema1:Generation_IX "The Pokémon is charged with static electricity and may paralyze attackers that make direct contact with it." ;
+    schema1:Generation_V "Contact with the Pokémon may cause paralysis." ;
+    schema1:Generation_VI "Contact with the Pokémon may cause paralysis." ;
+    schema1:Generation_VII "The Pokémon is charged with static electricity, so contact with it may cause paralysis." ;
+    schema1:Generation_VIII "The Pokémon is charged with static electricity, so contact with it may cause paralysis." .
+
+ex:Steadfast a ex:Ability ;
+    rdfs:label "Steadfast" ;
+    schema1:Generation_IV "Raises Speed each time the Pokémon flinches." ;
+    schema1:Generation_IX "The Pokémon's determination boosts its Speed stat every time it flinches." ;
+    schema1:Generation_V "Raises Speed each time the Pokémon flinches." ;
+    schema1:Generation_VI "Boosts the Speed stat each time the Pokémon flinches." ;
+    schema1:Generation_VII "The Pokémon's determination boosts the Speed stat each time the Pokémon flinches." ;
+    schema1:Generation_VIII "The Pokémon's determination boosts the Speed stat each time the Pokémon flinches." .
+
+ex:Steam_Engine a ex:Ability ;
+    rdfs:label "Steam Engine" ;
+    schema1:Generation_IX "Boosts the Speed stat drastically when the Pokémon is hit by a Fire- or Water-type move." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Speed stat drastically if hit by a Fire- or Water-type move." .
+
+ex:Steelworker a ex:Ability ;
+    rdfs:label "Steelworker" ;
+    schema1:Generation_IX "Powers up Steel-type moves." ;
+    schema1:Generation_VII "Powers up Steel-type moves." ;
+    schema1:Generation_VIII "Powers up Steel-type moves." .
+
+ex:Steely_Spirit a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Steely Spirit" ;
+    schema1:Generation_IX "Powers up the Steel-type moves of the Pokémon and its allies." ;
+    schema1:Generation_VIII "Powers up ally Pokémon's Steel-type moves." .
+
+ex:Stench a ex:Ability ;
+    rdfs:label "Stench" ;
+    schema1:Generation_III "Helps repel wild Pokémon.RSEFRLGRepels wild Pokémon.ColoXD" ;
+    schema1:Generation_IV "The stench helps keep wild Pokémon away.DPPtHGSSThe stench helps keep wild Pokémon away. It has no effect in Pokétopia.PBR" ;
+    schema1:Generation_IX "By releasing a stench when attacking, the Pokémon may cause the target to flinch." ;
+    schema1:Generation_V "The stench may cause the target to flinch." ;
+    schema1:Generation_VI "The stench may cause the target to flinch." ;
+    schema1:Generation_VII "By releasing stench when attacking, this Pokémon may cause the target to flinch." ;
+    schema1:Generation_VIII "By releasing stench when attacking, this Pokémon may cause the target to flinch." .
+
+ex:Sticky_Hold a ex:Ability ;
+    rdfs:label "Sticky Hold" ;
+    schema1:Generation_III "Prevents item theft." ;
+    schema1:Generation_IV "Protects the Pokémon from item theft." ;
+    schema1:Generation_IX "The Pokémon's held items cling to its sticky body and cannot be removed by other Pokémon." ;
+    schema1:Generation_V "Protects the Pokémon from item theft." ;
+    schema1:Generation_VI "Protects the Pokémon from item theft." ;
+    schema1:Generation_VII "Items held by the Pokémon are stuck fast and cannot be removed by other Pokémon." ;
+    schema1:Generation_VIII "Items held by the Pokémon are stuck fast and cannot be removed by other Pokémon." .
+
+ex:Storm_Drain a ex:Ability ;
+    rdfs:label "Storm Drain" ;
+    schema1:Generation_IV "The Pokémon draws in all Water-type moves." ;
+    schema1:Generation_IX "The Pokémon draws in all Water-type moves. Instead of taking damage from them, its Sp. Atk stat is boosted." ;
+    schema1:Generation_V "Draws in all Water-type moves to up Sp. Attack." ;
+    schema1:Generation_VI "Draws in all Water-type moves to boost its Sp. Atk stat." ;
+    schema1:Generation_VII "Draws in all Water-type moves. Instead of being hit by Water-type moves, it boosts its Sp. Atk." ;
+    schema1:Generation_VIII "Draws in all Water-type moves. Instead of being hit by Water-type moves, it boosts its Sp. Atk." .
+
+ex:Strong_Jaw a ex:Ability ;
+    rdfs:label "Strong Jaw" ;
+    schema1:Generation_IX "The Pokémon's strong jaw boosts the power of its biting moves." ;
+    schema1:Generation_VI "The Pokémon's strong jaw gives it tremendous biting power." ;
+    schema1:Generation_VII "The Pokémon's strong jaw boosts the power of its biting moves." ;
+    schema1:Generation_VIII "The Pokémon's strong jaw boosts the power of its biting moves." .
+
+ex:Sturdy a ex:Ability ;
+    rdfs:label "Sturdy" ;
+    schema1:Generation_III "Negates 1-hit KO Attacks." ;
+    schema1:Generation_IV "The Pokémon is protected against 1-hit KO attacks.DPPtIt is protected against 1-hit KO attacks.HGSS" ;
+    schema1:Generation_IX "The Pokémon cannot be knocked out by a single hit as long as its HP is full. One-hit KO moves will also fail to knock it out." ;
+    schema1:Generation_V "It cannot be knocked out with one hit." ;
+    schema1:Generation_VI "It cannot be knocked out with one hit." ;
+    schema1:Generation_VII "It cannot be knocked out with one hit. One-hit KO moves cannot knock it out, either." ;
+    schema1:Generation_VIII "It cannot be knocked out with one hit. One-hit KO moves cannot knock it out, either." .
+
+ex:Suction_Cups a ex:Ability ;
+    rdfs:label "Suction Cups" ;
+    schema1:Generation_III "Firmly anchors the body." ;
+    schema1:Generation_IV "Negates moves that force switching out.DPPtNegates foes' moves that force switching out.HGSS" ;
+    schema1:Generation_IX "The Pokémon uses suction cups to stay in one spot. This protects it from moves and items that would force it to switch out." ;
+    schema1:Generation_V "Negates all moves that force switching out." ;
+    schema1:Generation_VI "Negates all moves and items that force switching out." ;
+    schema1:Generation_VII "This Pokémon uses suction cups to stay in one spot to negate all moves and items that force switching out." ;
+    schema1:Generation_VIII "This Pokémon uses suction cups to stay in one spot to negate all moves and items that force switching out." .
+
+ex:Super_Luck a ex:Ability ;
+    rdfs:label "Super Luck" ;
+    schema1:Generation_IV "Heightens the critical-hit ratios of moves." ;
+    schema1:Generation_IX "The Pokémon is so lucky that the critical-hit ratios of its moves are boosted." ;
+    schema1:Generation_V "Heightens the critical-hit ratios of moves." ;
+    schema1:Generation_VI "Boosts the critical-hit ratios of moves." ;
+    schema1:Generation_VII "The Pokémon is so lucky that the critical-hit ratios of its moves are boosted." ;
+    schema1:Generation_VIII "The Pokémon is so lucky that the critical-hit ratios of its moves are boosted." .
+
+ex:Supersweet_Syrup a ex:Ability ;
+    rdfs:label "Supersweet Syrup" ;
+    schema1:Generation_IX "A sickly sweet scent spreads across the field the first time the Pokémon enters a battle, lowering the evasiveness of opposing Pokémon." .
+
+ex:Supreme_Overlord a ex:Ability ;
+    rdfs:label "Supreme Overlord" ;
+    schema1:Generation_IX "When the Pokémon enters a battle, its Attack and Sp. Atk stats are slightly boosted for each of the allies in its party that have already been defeated." .
+
+ex:Surge_Surfer a ex:Ability ;
+    rdfs:label "Surge Surfer" ;
+    schema1:Generation_IX "Doubles the Pokémon's Speed stat on Electric Terrain." ;
+    schema1:Generation_VII "Doubles the Pokémon's Speed stat on Electric Terrain." ;
+    schema1:Generation_VIII "Doubles the Pokémon's Speed stat on Electric Terrain." .
+
+ex:Swarm a ex:Ability ;
+    rdfs:label "Swarm" ;
+    schema1:Generation_III "Ups Bug moves in a pinch." ;
+    schema1:Generation_IV "Powers up Bug-type moves in a pinch." ;
+    schema1:Generation_IX "Powers up Bug-type moves when the Pokémon's HP is low." ;
+    schema1:Generation_V "Powers up Bug-type moves in a pinch." ;
+    schema1:Generation_VI "Powers up Bug-type moves when the Pokémon is in trouble." ;
+    schema1:Generation_VII "Powers up Bug-type moves when the Pokémon's HP is low." ;
+    schema1:Generation_VIII "Powers up Bug-type moves when the Pokémon's HP is low." .
+
+ex:Sweet_Veil a ex:Ability ;
+    rdfs:label "Sweet Veil" ;
+    schema1:Generation_IX "Prevents the Pokémon and its allies from falling asleep." ;
+    schema1:Generation_VI "Prevents itself and ally Pokémon from falling asleep." ;
+    schema1:Generation_VII "Prevents itself and ally Pokémon from falling asleep." ;
+    schema1:Generation_VIII "Prevents itself and ally Pokémon from falling asleep." .
+
+ex:Swift_Swim a ex:Ability ;
+    rdfs:label "Swift Swim" ;
+    schema1:Generation_III "Raises Speed in rain." ;
+    schema1:Generation_IV "Boosts the Pokémon's Speed in rain." ;
+    schema1:Generation_IX "Boosts the Pokémon's Speed stat in rain." ;
+    schema1:Generation_V "Boosts the Pokémon's Speed in rain." ;
+    schema1:Generation_VI "Boosts the Pokémon's Speed stat in rain." ;
+    schema1:Generation_VII "Boosts the Pokémon's Speed stat in rain." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Speed stat in rain." .
+
+ex:Sword_of_Ruin a ex:Ability ;
+    rdfs:label "Sword of Ruin" ;
+    schema1:Generation_IX "The power of the Pokémon's ruinous sword lowers the Defense stats of all Pokémon except itself." .
+
+ex:Symbiosis a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Symbiosis" ;
+    schema1:Generation_IX "The Pokémon passes its held item to an ally that has used up an item." ;
+    schema1:Generation_VI "The Pokémon can pass an item to an ally." ;
+    schema1:Generation_VII "The Pokémon passes its item to an ally that has used up an item." ;
+    schema1:Generation_VIII "The Pokémon passes its item to an ally that has used up an item." .
+
+ex:Synchronize a ex:Ability ;
+    rdfs:label "Synchronize" ;
+    schema1:Generation_III "Passes on status problems." ;
+    schema1:Generation_IV "Passes on a burn, poison, or paralysis to the foe.DPPtPasses a burn, poison, or paralysis to the foe.HGSS" ;
+    schema1:Generation_IX "If the Pokémon is burned, paralyzed, or poisoned by another Pokémon, that Pokémon will be inflicted with the same status condition." ;
+    schema1:Generation_V "Passes a burn, poison, or paralysis to the foe." ;
+    schema1:Generation_VI "Passes poison, paralyze, or burn to the Pokémon that inflicted it." ;
+    schema1:Generation_VII "The attacker will receive the same status condition if it inflicts a burn, poison, or paralysis to the Pokémon." ;
+    schema1:Generation_VIII "The attacker will receive the same status condition if it inflicts a burn, poison, or paralysis to the Pokémon." .
+
+ex:Tablets_of_Ruin a ex:Ability ;
+    rdfs:label "Tablets of Ruin" ;
+    schema1:Generation_IX "The power of the Pokémon's ruinous wooden tablets lowers the Attack stats of all Pokémon except itself." .
+
+ex:Tangled_Feet a ex:Ability ;
+    rdfs:label "Tangled Feet" ;
+    schema1:Generation_IV "Raises evasion if the Pokémon is confused." ;
+    schema1:Generation_IX "Boosts the Pokémon's evasiveness if it is confused." ;
+    schema1:Generation_V "Raises evasion if the Pokémon is confused." ;
+    schema1:Generation_VI "Raises evasion if the Pokémon is confused." ;
+    schema1:Generation_VII "Raises evasion if the Pokémon is confused." ;
+    schema1:Generation_VIII "Raises evasiveness if the Pokémon is confused." .
+
+ex:Tangling_Hair a ex:Ability ;
+    rdfs:label "Tangling Hair" ;
+    schema1:Generation_IX "Contact with the Pokémon lowers the attacker's Speed stat." ;
+    schema1:Generation_VII "Contact with the Pokémon lowers the attacker's Speed stat." ;
+    schema1:Generation_VIII "Contact with the Pokémon lowers the attacker's Speed stat." .
+
+ex:Technician a ex:Ability ;
+    rdfs:label "Technician" ;
+    schema1:Generation_IV "Powers up the Pokémon's weaker moves." ;
+    schema1:Generation_IX "Powers up weak moves so the Pokémon can deal more damage with them." ;
+    schema1:Generation_V "Powers up the Pokémon's weaker moves." ;
+    schema1:Generation_VI "Powers up the Pokémon's weaker moves." ;
+    schema1:Generation_VII "Powers up the Pokémon's weaker moves." ;
+    schema1:Generation_VIII "Powers up the Pokémon's weaker moves." .
+
+ex:Telepathy a ex:Ability ;
+    rdfs:label "Telepathy" ;
+    schema1:Generation_IX "The Pokémon anticipates and dodges the attacks of its allies." ;
+    schema1:Generation_V "Anticipates an ally's attack and dodges it." ;
+    schema1:Generation_VI "Anticipates an ally's attack and dodges it." ;
+    schema1:Generation_VII "Anticipates an ally's attack and dodges it." ;
+    schema1:Generation_VIII "Anticipates an ally's attack and dodges it." .
+
+ex:Tera_Shell a ex:Ability ;
+    rdfs:label "Tera Shell" ;
+    schema1:Generation_IX "The Pokémon's shell contains the powers of each type. All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective." .
+
+ex:Tera_Shift a ex:Ability ;
+    rdfs:label "Tera Shift" ;
+    schema1:Generation_IX "When the Pokémon enters a battle, it absorbs the energy around itself and transforms into its Terastal Form." .
+
+ex:Teraform_Zero a ex:Ability ;
+    rdfs:label "Teraform Zero" ;
+    schema1:Generation_IX "When Terapagos changes into its Stellar Form, it uses its hidden powers to eliminate all effects of weather and terrain, reducing them to zero." .
+
+ex:Teravolt a ex:Ability ;
+    rdfs:label "Teravolt" ;
+    schema1:Generation_IX "The Pokémon's moves are unimpeded by the Ability of the target." ;
+    schema1:Generation_V "Moves can be used regardless of Abilities." ;
+    schema1:Generation_VI "Moves can be used on the target regardless of its Abilities." ;
+    schema1:Generation_VII "Moves can be used on the target regardless of its Abilities." ;
+    schema1:Generation_VIII "Moves can be used on the target regardless of its Abilities." .
+
+ex:Thermal_Exchange a ex:Ability ;
+    rdfs:label "Thermal Exchange" ;
+    schema1:Generation_IX "Boosts the Attack stat when the Pokémon is hit by a Fire-type move. The Pokémon also cannot be burned." .
+
+ex:Thick_Fat a ex:Ability ;
+    rdfs:label "Thick Fat" ;
+    schema1:Generation_III "Heat-and-cold protection." ;
+    schema1:Generation_IV "Raises resistance to Fire- and Ice-type moves.DPPtUps resistance to Fire- and Ice-type moves.HGSS" ;
+    schema1:Generation_IX "The Pokémon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves." ;
+    schema1:Generation_V "Ups resistance to Fire- and Ice-type moves." ;
+    schema1:Generation_VI "Boosts resistance to Fire- and Ice-type moves." ;
+    schema1:Generation_VII "The Pokémon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves." ;
+    schema1:Generation_VIII "The Pokémon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves." .
+
+ex:Tinted_Lens a ex:Ability ;
+    rdfs:label "Tinted Lens" ;
+    schema1:Generation_IV "Powers up \"not very effective\" moves." ;
+    schema1:Generation_IX "The Pokémon can use \"not very effective\" moves to deal regular damage." ;
+    schema1:Generation_V "Powers up \"not very effective\" moves." ;
+    schema1:Generation_VI "Powers up \"not very effective\" moves." ;
+    schema1:Generation_VII "The Pokémon can use \"not very effective\" moves to deal regular damage." ;
+    schema1:Generation_VIII "The Pokémon can use \"not very effective\" moves to deal regular damage." .
+
+ex:Torrent a ex:Ability ;
+    rdfs:label "Torrent" ;
+    schema1:Generation_III "Ups Water moves in a pinch." ;
+    schema1:Generation_IV "Powers up Water-type moves in a pinch." ;
+    schema1:Generation_IX "Powers up Water-type moves when the Pokémon's HP is low." ;
+    schema1:Generation_V "Powers up Water-type moves in a pinch." ;
+    schema1:Generation_VI "Powers up Water-type moves when the Pokémon is in trouble." ;
+    schema1:Generation_VII "Powers up Water-type moves when the Pokémon's HP is low." ;
+    schema1:Generation_VIII "Powers up Water-type moves when the Pokémon's HP is low." .
+
+ex:Tough_Claws a ex:Ability ;
+    rdfs:label "Tough Claws" ;
+    schema1:Generation_IX "Powers up moves that make direct contact." ;
+    schema1:Generation_VI "Powers up moves that make direct contact." ;
+    schema1:Generation_VII "Powers up moves that make direct contact." ;
+    schema1:Generation_VIII "Powers up moves that make direct contact." .
+
+ex:Toxic_Boost a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Toxic Boost" ;
+    schema1:Generation_IX "Powers up physical moves when the Pokémon is poisoned." ;
+    schema1:Generation_V "Powers up physical attacks when poisoned." ;
+    schema1:Generation_VI "Powers up physical attacks when the Pokémon is poisoned." ;
+    schema1:Generation_VII "Powers up physical attacks when the Pokémon is poisoned." ;
+    schema1:Generation_VIII "Powers up physical attacks when the Pokémon is poisoned." .
+
+ex:Toxic_Chain a ex:Ability ;
+    rdfs:label "Toxic Chain" ;
+    schema1:Generation_IX "The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move." .
+
+ex:Toxic_Debris a ex:Ability ;
+    rdfs:label "Toxic Debris" ;
+    schema1:Generation_IX "Scatters poison spikes at the feet of the opposing team when the Pokémon takes damage from physical moves." .
+
+ex:Trace a ex:Ability ;
+    rdfs:label "Trace" ;
+    schema1:Generation_III "Copies special ability." ;
+    schema1:Generation_IV "The Pokémon copies the foe's ability." ;
+    schema1:Generation_IX "When it enters a battle, the Pokémon copies an opposing Pokémon's Ability." ;
+    schema1:Generation_V "The Pokémon copies a foe's Ability." ;
+    schema1:Generation_VI "The Pokémon copies an opposing Pokémon's Ability." ;
+    schema1:Generation_VII "When it enters a battle, the Pokémon copies an opposing Pokémon's Ability." ;
+    schema1:Generation_VIII "When it enters a battle, the Pokémon copies an opposing Pokémon's Ability." .
+
+ex:Transistor a ex:Ability ;
+    rdfs:label "Transistor" ;
+    schema1:Generation_IX "Powers up Electric-type moves." ;
+    schema1:Generation_VIII "Powers up Electric-type moves." .
+
+ex:Triage a ex:Ability ;
+    rdfs:label "Triage" ;
+    schema1:Generation_IX "Gives priority to the Pokémon's healing moves." ;
+    schema1:Generation_VII "Gives priority to a healing move." ;
+    schema1:Generation_VIII "Gives priority to a healing move." .
+
+ex:Truant a ex:Ability ;
+    rdfs:label "Truant" ;
+    schema1:Generation_III "Moves only every two turns." ;
+    schema1:Generation_IV "The Pokémon can't attack on consecutive turns.DPPtPokémon can't attack on consecutive turns.HGSS" ;
+    schema1:Generation_IX "Each time the Pokémon uses a move, it spends the next turn loafing around." ;
+    schema1:Generation_V "Pokémon can't attack on consecutive turns." ;
+    schema1:Generation_VI "The Pokémon can't attack on consecutive turns." ;
+    schema1:Generation_VII "The Pokémon can't use a move the following turn if it uses one." ;
+    schema1:Generation_VIII "The Pokémon can't use a move if it had used a move on the previous turn." .
+
+ex:Turboblaze a ex:Ability ;
+    rdfs:label "Turboblaze" ;
+    schema1:Generation_IX "The Pokémon's moves are unimpeded by the Ability of the target." ;
+    schema1:Generation_V "Moves can be used regardless of Abilities." ;
+    schema1:Generation_VI "Moves can be used on the target regardless of its Abilities." ;
+    schema1:Generation_VII "Moves can be used on the target regardless of its Abilities." ;
+    schema1:Generation_VIII "Moves can be used on the target regardless of its Abilities." .
+
+ex:Unaware a ex:Ability ;
+    rdfs:label "Unaware" ;
+    schema1:Generation_IV "Ignores any change in ability by the foe." ;
+    schema1:Generation_IX "When attacking, the Pokémon ignores the target's stat changes." ;
+    schema1:Generation_V "Ignores any stat changes in the Pokémon." ;
+    schema1:Generation_VI "Ignores the opposing Pokémon's stat changes." ;
+    schema1:Generation_VII "When attacking, the Pokémon ignores the target Pokémon's stat changes." ;
+    schema1:Generation_VIII "When attacking, the Pokémon ignores the target Pokémon's stat changes." .
+
+ex:Unburden a ex:Ability ;
+    rdfs:label "Unburden" ;
+    schema1:Generation_IV "Raises Speed if a held item is used." ;
+    schema1:Generation_IX "Boosts the Speed stat if the Pokémon's held item is used or lost." ;
+    schema1:Generation_V "Raises Speed if a held item is used." ;
+    schema1:Generation_VI "Boosts the Speed stat if its held item is used or lost." ;
+    schema1:Generation_VII "Boosts the Speed stat if the Pokémon's held item is used or lost." ;
+    schema1:Generation_VIII "Boosts the Speed stat if the Pokémon's held item is used or lost." .
+
+ex:Unnerve a ex:Ability ;
+    rdfs:label "Unnerve" ;
+    schema1:Generation_IX "Unnerves opposing Pokémon and makes them unable to eat Berries." ;
+    schema1:Generation_V "Makes the foe nervous and unable to eat Berries." ;
+    schema1:Generation_VI "Unnerves opposing Pokémon and makes them unable to eat Berries." ;
+    schema1:Generation_VII "Unnerves opposing Pokémon and makes them unable to eat Berries." ;
+    schema1:Generation_VIII "Unnerves opposing Pokémon and makes them unable to eat Berries." .
+
+ex:Unseen_Fist a ex:Ability ;
+    rdfs:label "Unseen Fist" ;
+    schema1:Generation_IX "If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself." ;
+    schema1:Generation_VIII "If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself." .
+
+ex:User_Tycho_List_of_Pok_mon_with_released_Hidden_Abilities_by_availability a ex:Ability ;
+    rdfs:label "User:Tycho/List of Pokémon with released Hidden Abilities by availability" ;
+    <http://example.org/schema/#> "#    Pokémon  Hidden Ability  Gen V  Gen VI  Gen VII   In-game  Dream World  Other  In-game  Other  In-game  Other   001    Bulbasaur  Chlorophyll      JPN/KOR promotions ♂  Breed  Pokémon Bank   002    Ivysaur  Chlorophyll  Evolve  Friend Safari    Pokémon Bank   003    Venusaur  Chlorophyll  Evolve    Scrap 2016  Pokémon Bank   004    Charmander  Solar Power      JPN/KOR promotions ♂  Breed  Pokémon Bank   005    Charmeleon  Solar Power  Evolve  Friend Safari    Pokémon Bank   006    Charizard  Solar Power  Evolve    Scrap 2016  Pokémon Bank   007    Squirtle  Rain Dish      JPN/KOR promotions ♂  Breed  Pokémon Bank   008    Wartortle  Rain Dish  Evolve  Friend Safari    Pokémon Bank   009    Blastoise  Rain Dish  Evolve    Scrap 2016  Pokémon Bank   010    Caterpie  Run Away  Breed  Breed  SOS Battle   011    Metapod    Breed then Evolve  Breed  Pokémon Bank   012    Butterfree  Tinted Lens  Hidden Grotto  Windswept Sky    Friend Safari    SOS Battle   013    Weedle  Run Away  Breed  Breed  Pokémon Bank   014    Kakuna    Breed then Evolve  Friend Safari*Hidden Pokémon*    Pokémon Bank   015    Beedrill  Sniper  Hidden Grotto  Dream Park    Evolve  Pokémon Bank   016    Pidgey  Big Pecks    Windswept Sky    Friend Safari    Pokémon Bank   017    Pidgeotto  Big Pecks  Evolve  Hidden Pokémon    Pokémon Bank   018    Pidgeot  Big Pecks  Evolve  Evolve  Pokémon Bank   019    Rattata  Hustle    Pleasant Forest    Hidden Pokémon    Pokémon Bank   019A    Rattata  Thick Fat            SOS Battle   020    Raticate  Hustle  Evolve  Hidden Pokémon    Pokémon Bank   020A    Raticate  Thick Fat            SOS Battle   021    Spearow  Sniper    Windswept Sky    Friend Safari    SOS Battle   022    Fearow  Sniper  Evolve  Evolve  SOS Battle   023    Ekans  Unnerve    Dream Park    Horde EncounterXY    Pokémon Bank   024    Arbok  Unnerve  Evolve  Horde EncounterXY    Pokémon Bank   172    Pichu  Lightning Rod  Breed  Breed  SOS Battle   025    Pikachu  Lightning Rod      Singing ♀Promotion ♂WC 2012 ♀PC 15th Anniv ♂  Friend SafariCosplay PikachuHidden Pokémon    SOS Battle   026    Raichu  Lightning Rod  Evolve  Evolve  Pokémon Bank   026A    Raichu  Surge Surfer            Evolve   027    Sandshrew  Sand Rush    Icy Cave    Friend SafariHorde EncounterORASHidden Pokémon    Pokémon Bank   027A    Sandshrew  Slush Rush            SOS Battle   028    Sandslash  Sand Rush  Evolve  Evolve  Pokémon Bank   028A    Sandslash  Slush Rush            Evolve   029    Nidoran♀  Hustle  Hidden Grotto  Pleasant Forest    Horde EncounterXY    Pokémon Bank   030    Nidorina  Hustle  Evolve  Evolve  Pokémon Bank   031    Nidoqueen  Sheer Force  Evolve  Evolve  Pokémon Bank   032    Nidoran♂  Hustle  Hidden Grotto  Pleasant Forest    Horde EncounterXY    Pokémon Bank   033    Nidorino  Hustle  Evolve  Evolve  Pokémon Bank   034    Nidoking  Sheer Force  Evolve  Evolve  Pokémon Bank   173    Cleffa  Friend Guard    Icy Cave    Breed  SOS Battle   035    Clefairy  Friend Guard  Hidden Grotto      Friend SafariHidden Pokémon    SOS Battle   036    Clefable  Unaware  Evolve  Evolve  Evolve   037    Vulpix  Drought  Hidden Grotto  Pleasant Forest    Horde EncounterORASHidden Pokémon    Pokémon Bank   037A    Vulpix  Snow Warning            SOS Battle   038    Ninetales  Drought      Powerful Tag ♂  Friend Safari    Pokémon Bank   038A    Ninetales  Snow Warning            SOS Battle   174    Igglybuff  Friend Guard    Pleasant Forest  Pokémon Dream Radar  Breed  SOS Battle   039    Jigglypuff  Friend Guard  Evolve  Friend SafariHidden Pokémon    SOS Battle   040    Wigglytuff  Frisk  Evolve  Evolve  Evolve   041    Zubat  Infiltrator    Windswept Sky    Horde EncounterHidden Pokémon    SOS Battle   042    Golbat  Infiltrator  Evolve  Horde EncounterORASHidden Pokémon    SOS Battle   169    Crobat  Infiltrator  Evolve  Evolve  SOS Battle   043    Oddish  Run Away    Pleasant Forest    Friend SafariHorde EncounterORASHidden Pokémon    Pokémon Bank   044    Gloom  Stench  Evolve  Friend SafariHidden Pokémon    Pokémon Bank   045    Vileplume  Effect Spore  Evolve  Evolve  Pokémon Bank   182    Bellossom  Healer  Evolve  Evolve  Pokémon Bank   046    Paras  Damp    Dream Park    Friend SafariHidden Pokémon    SOS Battle   047    Parasect  Damp  Evolve  Evolve  Evolve   048    Venonat  Run Away  Hidden Grotto  Dream Park    Breed  Pokémon Bank   049    Venomoth  Wonder Skin  Evolve  Friend SafariHidden Pokémon    Pokémon Bank   050    Diglett  Sand Force    Icy Cave    Hidden Pokémon    Pokémon Bank   050A    Diglett  Sand Force            SOS Battle   051    Dugtrio  Sand Force  Evolve  Friend Safari    Pokémon Bank   051A    Dugtrio  Sand Force            SOS Battle   052    Meowth  Unnerve  Yancy's trade*  Spooky Manor    Breed  Pokémon Bank   052A    Meowth  Rattled            SOS Battle   053    Persian  Unnerve  Evolve  Hidden Pokémon    Pokémon Bank   053A    Persian  Rattled            SOS Battle   054    Psyduck  Swift Swim    Pleasant Forest    Horde EncounterHidden Pokémon    SOS Battle   055    Golduck  Swift Swim  Hidden Grotto      Evolve  SOS Battle   056    Mankey  Defiant  Curtis's trade*  Rugged Mountain    Friend SafariHidden Pokémon    SOS Battle   057    Primeape  Defiant  Evolve  Evolve  SOS Battle   058    Growlithe  Justified    Pleasant Forest    Friend SafariHidden Pokémon    SOS Battle   059    Arcanine  Justified  Evolve  Evolve  Evolve   060    Poliwag  Swift Swim    Pleasant Forest    Horde EncounterXY    SOS Battle   061    Poliwhirl  Swift Swim  Hidden Grotto  Pokémon Café Forest    Friend Safari    SOS Battle   062    Poliwrath  Swift Swim  Evolve  Evolve  SOS Battle   186    Politoed  Drizzle      Yamamoto's ♂  Evolve  SOS Battle   063    Abra  Magic Guard    Spooky Manor    Friend SafariHidden Pokémon    SOS Battle   064    Kadabra  Magic Guard  Evolve  Evolve  Evolve   065    Alakazam  Magic Guard  Evolve  Evolve  Evolve   066    Machop  Steadfast    Rugged Mountain    Horde EncounterORASHidden Pokémon    SOS Battle   067    Machoke  Steadfast  Evolve  Friend Safari    SOS Battle   068    Machamp  Steadfast  Evolve  Evolve  Evolve   069    Bellsprout  Gluttony    Pleasant Forest    Horde EncounterXY    Pokémon Bank   070    Weepinbell  Gluttony  Evolve  Horde EncounterXY    Pokémon Bank   071    Victreebel  Gluttony  Evolve  Evolve  Pokémon Bank   072    Tentacool  Rain Dish    Sparkling Sea    Hidden Pokémon    SOS Battle   073    Tentacruel  Rain Dish  Evolve  Hidden Pokémon    SOS Battle   074    Geodude  Sand Veil    Icy Cave    Horde EncounterHidden Pokémon    Pokémon Bank   074A    Geodude  Galvanize            SOS Battle   075    Graveler  Sand Veil  Evolve  Horde EncounterXY    Pokémon Bank   075A    Graveler  Galvanize            SOS Battle   076    Golem  Sand Veil  Evolve  Evolve  Pokémon Bank   076A    Golem  Galvanize            Evolve   077    Ponyta  Flame Body    Pleasant Forest    Friend SafariHidden Pokémon    Pokémon Bank   078    Rapidash  Flame Body  Evolve  Evolve  Pokémon Bank   079    Slowpoke  Regenerator    Sparkling Sea  Pokémon Dream Radar  Horde EncounterXYHidden Pokémon    SOS Battle   080    Slowbro  Regenerator  Evolve  Evolve  SOS Battle   199    Slowking  Regenerator  Evolve  Evolve  Evolve   081    Magnemite  Analytic    Rugged Mountain    Horde EncounterORASHidden Pokémon    SOS Battle   082    Magneton  Analytic  Evolve  Friend Safari    Evolve   462    Magnezone  Analytic  Evolve  Evolve  Evolve   083    Farfetch'd  Defiant    Pleasant Forest    Friend Safari    Pokémon Bank   084    Doduo  Tangled Feet    Pleasant Forest    Friend SafariHorde EncounterORASHidden Pokémon    Pokémon Bank   085    Dodrio  Tangled Feet  Evolve  Evolve  Pokémon Bank   086    Seel  Ice Body    Sparkling Sea    Hidden Pokémon    Pokémon Bank   087    Dewgong  Ice Body  Evolve  Friend SafariHidden Pokémon    Pokémon Bank   088    Grimer  Poison Touch    Dream Park    Horde EncounterORASHidden Pokémon    Pokémon Bank   088A    Grimer  Power of Alchemy            SOS Battle   089    Muk  Poison Touch  Hidden Grotto      Friend Safari    Pokémon Bank   089A    Muk  Power of Alchemy            Evolve   090    Shellder  Overcoat    Sparkling Sea    Breed  SOS Battle   091    Cloyster  Overcoat  Evolve  Friend Safari    Evolve   095    Onix  Weak Armor    Icy Cave    Friend SafariHidden Pokémon    Pokémon Bank   208    Steelix  Sheer Force  Evolve  Evolve  Pokémon Bank   096    Drowzee  Inner Focus    Spooky Manor    Friend Safari    SOS Battle   097    Hypno  Inner Focus  Evolve  Hidden Pokémon    SOS Battle   098    Krabby  Sheer Force    Sparkling Sea    Friend SafariHidden Pokémon    Pokémon Bank   099    Kingler  Sheer Force  Hidden Grotto      Evolve  Pokémon Bank   100    Voltorb  Aftermath    Icy Cave    Horde EncounterORASHidden Pokémon    Pokémon Bank   101    Electrode  Aftermath  Evolve  Friend Safari    Pokémon Bank   102    Exeggcute  Harvest    Pleasant Forest    Horde EncounterXY    SOS Battle   103    Exeggutor  Harvest  Evolve  Evolve  Pokémon Bank   103A    Exeggutor  Harvest            SOS Battle   104    Cubone  Battle Armor    Icy Cave    Breed  SOS Battle   105    Marowak  Battle Armor  Evolve  Friend Safari    Pokémon Bank   105A    Marowak  Rock Head            Evolve   236    Tyrogue  Vital Spirit    Rugged Mountain    Friend SafariHidden Pokémon    Pokémon Bank   106    Hitmonlee  Unburden  Evolve  Evolve  Pokémon Bank   107    Hitmonchan  Inner Focus  Evolve  Evolve  Pokémon Bank   237    Hitmontop  Steadfast  Evolve  Evolve  Pokémon Bank   108    Lickitung  Cloud Nine    Pleasant Forest    Horde EncounterXY    Pokémon Bank   463    Lickilicky  Cloud Nine  Evolve  Evolve  Pokémon Bank   111    Rhyhorn  Reckless  Curtis's/Yancy's trade  Rugged Mountain    Hidden Pokémon    Pokémon Bank   112    Rhydon  Reckless  Evolve  Friend Safari    Pokémon Bank   464    Rhyperior  Reckless  Evolve  Evolve  Pokémon Bank   440    Happiny  Friend Guard  Breed  Hidden Pokémon    SOS Battle   113    Chansey  Healer    Dream Park    Friend Safari    SOS Battle   242    Blissey  Healer      JPN/KOR promotions  Evolve  Evolve   114    Tangela  Regenerator  Hidden Grotto  Pleasant Forest    Friend SafariHidden Pokémon    Pokémon Bank   465    Tangrowth  Regenerator  Evolve  Evolve  Pokémon Bank   115    Kangaskhan  Inner Focus    Pleasant Forest    Poké Transporter  SOS Battle   116    Horsea  Damp    Sparkling Sea    Hidden Pokémon    Pokémon Bank   117    Seadra  Damp  Evolve  Hidden Pokémon    Pokémon Bank   230    Kingdra  Damp  Evolve  Evolve  Pokémon Bank   118    Goldeen  Lightning Rod    Sparkling Sea    Hidden Pokémon    SOS Battle   119    Seaking  Lightning Rod    Sparkling Sea    Hidden Pokémon    SOS Battle   120    Staryu  Analytic    Sparkling Sea  Pokémon Dream Radar  Hidden Pokémon    SOS Battle   121    Starmie  Analytic  Evolve  Evolve  SOS Battle   439    Mime Jr.  Technician  Breed  Horde EncounterXY    Pokémon Bank   122    Mr. Mime  Technician    Spooky Manor    Evolve  Pokémon Bank   123    Scyther  Steadfast    Pleasant Forest    Horde EncounterXY    SOS Battle   212    Scizor  Light Metal      Western promotion ♂  Evolve  Evolve   238    Smoochum  Hydration    Spooky Manor  Pokémon Dream Radar  Horde EncounterXY    Pokémon Bank   124    Jynx  Dry Skin  Evolve  Evolve  Pokémon Bank   239    Elekid  Vital Spirit    Pleasant Forest    Hidden Pokémon    SOS Battle   125    Electabuzz  Vital Spirit  Evolve  Friend Safari    SOS Battle   466    Electivire  Vital Spirit  Evolve  Evolve  Evolve   240    Magby  Vital Spirit    Rugged Mountain    Hidden Pokémon    SOS Battle   126    Magmar  Vital Spirit  Evolve  Friend Safari    SOS Battle   467    Magmortar  Vital Spirit  Evolve  Evolve  Evolve   127    Pinsir  Moxie  Hidden Grotto  Dream Park    Friend SafariHidden Pokémon    SOS Battle   128    Tauros  Sheer Force    Pleasant Forest    Horde EncounterXY    SOS Battle   129    Magikarp  Rattled    Sparkling Sea    Hidden Pokémon    SOS Battle   130    Gyarados  Moxie  Evolve  Friend SafariHidden Pokémon    SOS Battle   131    Lapras  Hydration    Sparkling Sea    Friend Safari    SOS Battle   132    Ditto  Imposter  Hidden Grotto      Friend SafariHidden Pokémon    SOS Battle   133    Eevee  Anticipation  Gift in Castelia City ♂B2W2  Pokémon Café ForestDream Park    Friend SafariHidden Pokémon    SOS Battle   134    Vaporeon  Hydration      Promotion ♂  Evolve  Evolve   135    Jolteon  Quick Feet      Promotion ♂  Evolve  Evolve   136    Flareon  Guts      Promotion ♂  Evolve  Evolve   196    Espeon  Magic Bounce      Promotion ♂  Evolve  SOS Battle   197    Umbreon  Inner Focus      Promotion ♂  Evolve  SOS Battle   470    Leafeon  Chlorophyll      Promotion ♂  Evolve  Evolve   471    Glaceon  Ice Body      Promotion ♂  Evolve  Evolve   700    Sylveon  Pixilate    Evolve  Pokémon Bank   137    Porygon  Analytic      PromotionPokémon Dream Radar  Hidden Pokémon    Pokémon Bank   233    Porygon2  Analytic  Evolve  Evolve  Pokémon Bank   474    Porygon-Z  Analytic  Evolve  Evolve  Pokémon Bank   138    Omanyte  Weak Armor    Sparkling Sea    Poké Transporter  Pokémon Bank   139    Omastar  Weak Armor  Evolve  Poké Transporter  Pokémon Bank   140    Kabuto  Weak Armor    Sparkling Sea    Poké Transporter  Pokémon Bank   141    Kabutops  Weak Armor  Evolve  Poké Transporter  Pokémon Bank   142    Aerodactyl  Unnerve    Windswept Sky    Poké Transporter  Pokémon Bank   446    Munchlax  Gluttony  Breed  Poké Transporter  SOS Battle   143    Snorlax  Gluttony  Curtis's/Yancy's trade  Dream Park    Poké Transporter  SOS Battle   144    Articuno  Snow Cloak      Scrap 2016  Pokémon Bank   145    Zapdos  Static      Scrap 2016  Pokémon Bank   146    Moltres  Flame Body      Scrap 2016  Pokémon Bank   147    Dratini  Marvel Scale    Sparkling Sea    Breed  SOS Battle   148    Dragonair  Marvel Scale  EvolveBreed then Evolve  Friend Safari    SOS Battle   149    Dragonite  Multiscale  Hidden Grotto    Strongest Class ♂Promotions (JPN/KOR, other) ♂  Evolve  SOS Battle   150    Mewtwo  Unnerve      Pokémon Hills    Scrap 2016  Pokémon Bank" .
+
+ex:Vessel_of_Ruin a ex:Ability ;
+    rdfs:label "Vessel of Ruin" ;
+    schema1:Generation_IX "The power of the Pokémon's ruinous vessel lowers the Sp. Atk stats of all Pokémon except itself." .
+
+ex:Victory_Star a ex:Ability ;
+    rdfs:label "Victory Star" ;
+    schema1:Generation_IX "Boosts the accuracy of the Pokémon and its allies." ;
+    schema1:Generation_V "Boosts the accuracy of its allies and itself." ;
+    schema1:Generation_VI "Boosts the accuracy of its allies and itself." ;
+    schema1:Generation_VII "Boosts the accuracy of its allies and itself." ;
+    schema1:Generation_VIII "Boosts the accuracy of its allies and itself." .
+
+ex:Vital_Spirit a ex:Ability ;
+    rdfs:label "Vital Spirit" ;
+    schema1:Generation_III "Prevents sleep." ;
+    schema1:Generation_IV "Prevents the Pokémon from falling asleep." ;
+    schema1:Generation_IX "The Pokémon is full of vitality, and that prevents it from falling asleep." ;
+    schema1:Generation_V "Prevents the Pokémon from falling asleep." ;
+    schema1:Generation_VI "Prevents the Pokémon from falling asleep." ;
+    schema1:Generation_VII "The Pokémon is full of vitality, and that prevents it from falling asleep." ;
+    schema1:Generation_VIII "The Pokémon is full of vitality, and that prevents it from falling asleep." .
+
+ex:Volt_Absorb a ex:Ability ;
+    rdfs:label "Volt Absorb" ;
+    schema1:Generation_III "Turns electricity into HP." ;
+    schema1:Generation_IV "Restores HP if hit by an Electric-type move." ;
+    schema1:Generation_IX "If hit by an Electric-type move, the Pokémon has its HP restored instead of taking damage." ;
+    schema1:Generation_V "Restores HP if hit by an Electric-type move." ;
+    schema1:Generation_VI "Restores HP if hit by an Electric-type move." ;
+    schema1:Generation_VII "Restores HP if hit by an Electric-type move, instead of taking damage." ;
+    schema1:Generation_VIII "Restores HP if hit by an Electric-type move instead of taking damage." .
+
+ex:Wandering_Spirit a ex:Ability ;
+    rdfs:label "Wandering Spirit" ;
+    schema1:Generation_IX "The Pokémon exchanges Abilities with a Pokémon that hits it with a move that makes direct contact." ;
+    schema1:Generation_VIII "The Pokémon exchanges Abilities with a Pokémon that hits it with a move that makes direct contact." .
+
+ex:Water_Absorb a ex:Ability ;
+    rdfs:label "Water Absorb" ;
+    schema1:Generation_III "Changes water into HP." ;
+    schema1:Generation_IV "Restores HP if hit by a Water-type move." ;
+    schema1:Generation_IX "If hit by a Water-type move, the Pokémon has its HP restored instead of taking damage." ;
+    schema1:Generation_V "Restores HP if hit by a Water-type move." ;
+    schema1:Generation_VI "Restores HP if hit by a Water-type move." ;
+    schema1:Generation_VII "Restores HP if hit by a Water-type move, instead of taking damage." ;
+    schema1:Generation_VIII "Restores HP if hit by a Water-type move instead of taking damage." .
+
+ex:Water_Bubble a ex:Ability ;
+    rdfs:label "Water Bubble" ;
+    schema1:Generation_IX "Lowers the power of Fire-type moves that hit the Pokémon and prevents it from being burned." ;
+    schema1:Generation_VII "Lowers the power of Fire-type moves done to the Pokémon and prevents the Pokémon from getting a burn." ;
+    schema1:Generation_VIII "Lowers the power of Fire-type moves done to the Pokémon and prevents the Pokémon from getting a burn." .
+
+ex:Water_Compaction a ex:Ability ;
+    rdfs:label "Water Compaction" ;
+    schema1:Generation_IX "Boosts the Defense stat sharply when the Pokémon is hit by a Water-type move." ;
+    schema1:Generation_VII "Boosts the Pokémon's Defense stat sharply when hit by a Water-type move." ;
+    schema1:Generation_VIII "Boosts the Pokémon's Defense stat sharply when hit by a Water-type move." .
+
+ex:Water_Veil a ex:Ability ;
+    rdfs:label "Water Veil" ;
+    schema1:Generation_III "Prevents burns." ;
+    schema1:Generation_IV "Prevents the Pokémon from getting a burn." ;
+    schema1:Generation_IX "The Pokémon's water veil prevents it from being burned." ;
+    schema1:Generation_V "Prevents the Pokémon from getting a burn." ;
+    schema1:Generation_VI "Prevents the Pokémon from getting a burn." ;
+    schema1:Generation_VII "The Pokémon is covered with a water veil, which prevents the Pokémon from getting a burn." ;
+    schema1:Generation_VIII "The Pokémon is covered with a water veil, which prevents the Pokémon from getting a burn." .
+
+ex:Weak_Armor a ex:Ability ;
+    rdfs:label "Weak Armor" ;
+    schema1:Generation_IX "The Pokémon's Defense stat is lowered when it takes damage from physical moves, but its Speed stat is sharply boosted." ;
+    schema1:Generation_V "Physical attacks lower Defense and raise Speed." ;
+    schema1:Generation_VI "Physical attacks lower its Defense stat and raise its Speed stat." ;
+    schema1:Generation_VII "Physical attacks to the Pokémon lower its Defense stat but sharply raise its Speed stat." ;
+    schema1:Generation_VIII "Physical attacks to the Pokémon lower its Defense stat but sharply raise its Speed stat." .
+
+ex:Well_Baked_Body a ex:Ability ;
+    rdfs:label "Well-Baked Body" ;
+    schema1:Generation_IX "The Pokémon takes no damage when hit by Fire-type moves. Instead, its Defense stat is sharply boosted." .
+
+ex:White_Smoke a ex:Ability ;
+    rdfs:label "White Smoke" ;
+    schema1:Generation_III "Prevents ability reduction." ;
+    schema1:Generation_IV "Prevents the Pokémon's stats from being lowered.DPPtPrevents its stats from being lowered.HGSS" ;
+    schema1:Generation_IX "The Pokémon is protected by its white smoke, which prevents other Pokémon from lowering its stats." ;
+    schema1:Generation_V "Prevents other Pokémon from lowering its stats." ;
+    schema1:Generation_VI "Prevents other Pokémon from lowering its stats." ;
+    schema1:Generation_VII "The Pokémon is protected by its white smoke, which prevents other Pokémon from lowering its stats." ;
+    schema1:Generation_VIII "The Pokémon is protected by its white smoke, which prevents other Pokémon from lowering its stats." .
+
+ex:Wimp_Out a ex:Ability ;
+    rdfs:label "Wimp Out" ;
+    schema1:Generation_IX "The Pokémon cowardly switches out when its HP drops to half or less." ;
+    schema1:Generation_VII "The Pokémon cowardly switches out when its HP becomes half or less." ;
+    schema1:Generation_VIII "The Pokémon cowardly switches out when its HP becomes half or less." .
+
+ex:Wind_Power a ex:Ability ;
+    rdfs:label "Wind Power" ;
+    schema1:Generation_IX "The Pokémon becomes charged when it is hit by a wind move, boosting the power of the next Electric-type move the Pokémon uses." .
+
+ex:Wind_Rider a ex:Ability ;
+    rdfs:label "Wind Rider" ;
+    schema1:Generation_IX "Boosts the Pokémon's Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves." .
+
+ex:Wonder_Guard a ex:Ability ;
+    rdfs:label "Wonder Guard" ;
+    schema1:Generation_III "\"Super effective\" hits.RSEFRLGSupereffective hits.ColoXD" ;
+    schema1:Generation_IV "Only supereffective moves will hit." ;
+    schema1:Generation_IX "Its mysterious power only lets supereffective moves hit the Pokémon." ;
+    schema1:Generation_V "Only supereffective moves will hit." ;
+    schema1:Generation_VI "Only supereffective moves will hit." ;
+    schema1:Generation_VII "Its mysterious power only lets supereffective moves hit the Pokémon." ;
+    schema1:Generation_VIII "Its mysterious power only lets supereffective moves hit the Pokémon." .
+
+ex:Wonder_Skin a ex:Ability ;
+    rdfs:label "Wonder Skin" ;
+    schema1:Generation_IX "Makes status moves more likely to miss the Pokémon." ;
+    schema1:Generation_V "Makes status-changing moves more likely to miss." ;
+    schema1:Generation_VI "Makes status moves more likely to miss." ;
+    schema1:Generation_VII "Makes status moves more likely to miss." ;
+    schema1:Generation_VIII "Makes status moves more likely to miss." .
+
+ex:Zen_Mode a ex:Ability,
+        ex:HiddenAbility ;
+    rdfs:label "Zen Mode" ;
+    schema1:Generation_IX "Changes the Pokémon's shape when its HP drops to half or less." ;
+    schema1:Generation_V "Changes the Pokémon's shape when HP is halved." ;
+    schema1:Generation_VI "Changes the Pokémon's shape when HP is half or less." ;
+    schema1:Generation_VII "Changes the Pokémon's shape when HP is half or less." ;
+    schema1:Generation_VIII "Changes the Pokémon's shape when HP is half or less." .
+
+ex:Zero_to_Hero a ex:Ability ;
+    rdfs:label "Zero to Hero" ;
+    schema1:Generation_IX "The Pokémon transforms into its Hero Form when it switches out." .
+
+ex:Ability a ex:Ability ;
+    rdfs:label "Ability" ;
+    <http://example.org/schema/#> "#  Name  Description  Gen.   1  Stench  By releasing a stench when attacking, the Pokémon may cause the target to flinch.  III   2  Drizzle  The Pokémon makes it rain when it enters a battle.  III   3  Speed Boost  The Pokémon's Speed stat is boosted every turn.  III   4  Battle Armor  Hard armor protects the Pokémon from critical hits.  III   5  Sturdy  The Pokémon cannot be knocked out by a single hit as long as its HP is full. One-hit KO moves will also fail to knock it out.  III   6  Damp  The Pokémon dampens its surroundings, preventing all Pokémon from using explosive moves such as Self-Destruct.  III   7  Limber  The Pokémon's limber body prevents it from being paralyzed.  III   8  Sand Veil  Boosts the Pokémon's evasiveness in a sandstorm.  III   9  Static  The Pokémon is charged with static electricity and may paralyze attackers that make direct contact with it.  III   10  Volt Absorb  If hit by an Electric-type move, the Pokémon has its HP restored instead of taking damage.  III   11  Water Absorb  If hit by a Water-type move, the Pokémon has its HP restored instead of taking damage.  III   12  Oblivious  The Pokémon is oblivious, keeping it from being infatuated, falling for taunts, or being affected by Intimidate.  III   13  Cloud Nine  Eliminates the effects of weather.  III   14  Compound Eyes  The Pokémon's compound eyes boost its accuracy.  III   15  Insomnia  The Pokémon's insomnia prevents it from falling asleep.  III   16  Color Change  The Pokémon's type becomes the type of the move used on it.  III   17  Immunity  The Pokémon's immune system prevents it from being poisoned.  III   18  Flash Fire  If hit by a Fire-type move, the Pokémon absorbs the flames and uses them to power up its own Fire-type moves.  III   19  Shield Dust  Protective dust shields the Pokémon from the additional effects of moves.  III   20  Own Tempo  The Pokémon sticks to its own tempo, preventing it from becoming confused or being affected by Intimidate.  III   21  Suction Cups  The Pokémon uses suction cups to stay in one spot. This protects it from moves and items that would force it to switch out.  III   22  Intimidate  When the Pokémon enters a battle, it intimidates opposing Pokémon and makes them cower, lowering their Attack stats.  III   23  Shadow Tag  The Pokémon steps on the opposing Pokémon's shadows to prevent them from fleeing or switching out.  III   24  Rough Skin  The Pokémon's rough skin damages attackers that make direct contact with it.  III   25  Wonder Guard  Its mysterious power only lets supereffective moves hit the Pokémon.  III   26  Levitate  By floating in the air, the Pokémon receives full immunity to all Ground-type moves.  III   27  Effect Spore  Contact with the Pokémon may inflict poison, sleep, or paralysis on the attacker.  III   28  Synchronize  If the Pokémon is burned, paralyzed, or poisoned by another Pokémon, that Pokémon will be inflicted with the same status condition.  III   29  Clear Body  Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats.  III   30  Natural Cure  The Pokémon's status conditions are cured when it switches out.  III   31  Lightning Rod  The Pokémon draws in all Electric-type moves. Instead of taking damage from them, its Sp. Atk stat is boosted.  III   32  Serene Grace  Raises the likelihood of additional effects occurring when the Pokémon uses its moves.  III   33  Swift Swim  Boosts the Pokémon's Speed stat in rain.  III   34  Chlorophyll  Boosts the Pokémon's Speed stat in harsh sunlight.  III   35  Illuminate  By illuminating its surroundings, the Pokémon prevents its accuracy from being lowered.  III   36  Trace  When it enters a battle, the Pokémon copies an opposing Pokémon's Ability.  III   37  Huge Power  Doubles the Pokémon's Attack stat.  III   38  Poison Point  Contact with the Pokémon may poison the attacker.  III   39  Inner Focus  The Pokémon's intense focus prevents it from flinching or being affected by Intimidate.  III   40  Magma Armor  The Pokémon's hot magma coating prevents it from being frozen.  III   41  Water Veil  The Pokémon's water veil prevents it from being burned.  III   42  Magnet Pull  Prevents Steel-type Pokémon from fleeing by pulling them in with magnetism.  III   43  Soundproof  Soundproofing gives the Pokémon full immunity to all sound-based moves.  III   44  Rain Dish  The Pokémon gradually regains HP in rain.  III   45  Sand Stream  The Pokémon summons a sandstorm when it enters a battle.  III   46  Pressure  Puts other Pokémon under pressure, causing them to expend more PP to use their moves.  III   47  Thick Fat  The Pokémon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves.  III   48  Early Bird  The Pokémon awakens from sleep twice as fast as other Pokémon.  III   49  Flame Body  Contact with the Pokémon may burn the attacker.  III   50  Run Away  Enables a sure getaway from wild Pokémon.  III   51  Keen Eye  The Pokémon's keen eyes prevent its accuracy from being lowered. It also ignores the target's stages in evasion.  III   52  Hyper Cutter  The Pokémon's prized, mighty pincers prevent other Pokémon from lowering its Attack stat.  III   53  Pickup  The Pokémon may pick up an item another Pokémon used during a battle. It may pick up items outside of battle, too.  III   54  Truant  Each time the Pokémon uses a move, it spends the next turn loafing around.  III   55  Hustle  Boosts the Pokémon's Attack stat but lowers its accuracy.  III   56  Cute Charm  The Pokémon may infatuate attackers that make direct contact with it.  III   57  Plus  Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle.  III   58  Minus  Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle.  III   59  Forecast  The Pokémon transforms with the weather to change its type to Water, Fire, or Ice.  III   60  Sticky Hold  The Pokémon's held items cling to its sticky body and cannot be removed by other Pokémon.  III   61  Shed Skin  The Pokémon may cure its own status conditions by shedding its skin.  III   62  Guts  It's so gutsy that having a status condition boosts the Pokémon's Attack stat.  III   63  Marvel Scale  The Pokémon's marvelous scales boost its Defense stat if it has a status condition.  III   64  Liquid Ooze  The strong stench of the Pokémon's oozed liquid damages attackers that use HP-draining moves.  III   65  Overgrow  Powers up Grass-type moves when the Pokémon's HP is low.  III   66  Blaze  Powers up Fire-type moves when the Pokémon's HP is low.  III   67  Torrent  Powers up Water-type moves when the Pokémon's HP is low.  III   68  Swarm  Powers up Bug-type moves when the Pokémon's HP is low.  III   69  Rock Head  Protects the Pokémon from recoil damage.  III   70  Drought  Turns the sunlight harsh when the Pokémon enters a battle.  III   71  Arena Trap  Prevents opposing Pokémon from fleeing from battle.  III   72  Vital Spirit  The Pokémon is full of vitality, and that prevents it from falling asleep.  III   73  White Smoke  The Pokémon is protected by its white smoke, which prevents other Pokémon from lowering its stats.  III   74  Pure Power  Using its pure power, the Pokémon doubles its Attack stat.  III   75  Shell Armor  A hard shell protects the Pokémon from critical hits.  III   76  Air Lock  Eliminates the effects of weather.  III   77  Tangled Feet  Boosts the Pokémon's evasiveness if it is confused.  IV   78  Motor Drive  The Pokémon takes no damage when hit by Electric-type moves. Instead, its Speed stat is boosted.  IV   79  Rivalry  The Pokémon's competitive spirit makes it deal more damage to Pokémon of the same gender, but less damage to Pokémon of the opposite gender.  IV   80  Steadfast  The Pokémon's determination boosts its Speed stat every time it flinches.  IV   81  Snow Cloak  Boosts the Pokémon's evasiveness in snow.  IV   82  Gluttony  If the Pokémon is holding a Berry to be eaten when its HP is low, it will instead eat the Berry when its HP drops to half or less.  IV   83  Anger Point  The Pokémon is angered when it takes a critical hit, and that maxes its Attack stat.  IV   84  Unburden  Boosts the Speed stat if the Pokémon's held item is used or lost.  IV   85  Heatproof  The Pokémon's heatproof body halves the damage taken from Fire-type moves.  IV   86  Simple  Doubles the effects of the Pokémon's stat changes.  IV   87  Dry Skin  Restores the Pokémon's HP in rain or when it is hit by Water-type moves. Reduces HP in harsh sunlight, and increases the damage received from Fire-type moves.  IV   88  Download  The Pokémon compares an opposing Pokémon's Defense and Sp. Def stats before raising its own Attack or Sp. Atk stat — whichever will be more effective.  IV   89  Iron Fist  Powers up punching moves.  IV   90  Poison Heal  If poisoned, the Pokémon has its HP restored instead of taking damage.  IV   91  Adaptability  Powers up moves of the same type as the Pokémon.  IV   92  Skill Link  Maximizes the number of times multistrike moves hit.  IV   93  Hydration  Cures the Pokémon's status conditions in rain.  IV   94  Solar Power  In harsh sunlight, the Pokémon's Sp. Atk stat is boosted, but its HP decreases every turn.  IV   95  Quick Feet  Boosts the Speed stat if the Pokémon has a status condition.  IV   96  Normalize  All the Pokémon's moves become Normal type. The power of those moves is boosted a little.  IV   97  Sniper  If the Pokémon's attack lands a critical hit, the attack is powered up even further.  IV   98  Magic Guard  The Pokémon only takes damage from attacks.  IV   99  No Guard  The Pokémon employs no-guard tactics to ensure incoming and outgoing attacks always land.  IV   100  Stall  The Pokémon is always the last to use its moves.  IV   101  Technician  Powers up weak moves so the Pokémon can deal more damage with them.  IV   102  Leaf Guard  Prevents status conditions in harsh sunlight.  IV   103  Klutz  The Pokémon can't use any held items.  IV   104  Mold Breaker  The Pokémon's moves are unimpeded by the Ability of the target.  IV   105  Super Luck  The Pokémon is so lucky that the critical-hit ratios of its moves are boosted.  IV   106  Aftermath  Damages the attacker if it knocks out the Pokémon with a move that makes direct contact.  IV   107  Anticipation  The Pokémon can sense an opposing Pokémon's dangerous moves.  IV   108  Forewarn  When it enters a battle, the Pokémon can tell one of the moves an opposing Pokémon has.  IV   109  Unaware  When attacking, the Pokémon ignores the target's stat changes.  IV   110  Tinted Lens  The Pokémon can use \"not very effective\" moves to deal regular damage.  IV   111  Filter  Reduces the power of supereffective attacks that hit the Pokémon.  IV   112  Slow Start  For five turns, the Pokémon's Attack and Speed stats are halved.  IV   113  Scrappy  The Pokémon can hit Ghost-type Pokémon with Normal- and Fighting-type moves. It is also unaffected by Intimidate.  IV   114  Storm Drain  The Pokémon draws in all Water-type moves. Instead of taking damage from them, its Sp. Atk stat is boosted.  IV   115  Ice Body  The Pokémon gradually regains HP in snow.  IV   116  Solid Rock  Reduces the power of supereffective attacks that hit the Pokémon.  IV   117  Snow Warning  The Pokémon makes it snow when it enters a battle.  IV   118  Honey Gather  The Pokémon may gather Honey after a battle.  IV   119  Frisk  When it enters a battle, the Pokémon can check an opposing Pokémon's held item.  IV   120  Reckless  Powers up moves that have recoil damage.  IV   121  Multitype  Changes the Pokémon's type to match the plate it holds.  IV   122  Flower Gift  Boosts the Attack and Sp. Def stats of the Pokémon and its allies in harsh sunlight.  IV   123  Bad Dreams  Damages opposing Pokémon that are asleep.  IV   124  Pickpocket  The Pokémon steals the held item from attackers that make direct contact with it.  V   125  Sheer Force  Removes any additional effects from the Pokémon's moves, but increases the moves' power.  V   126  Contrary  Reverses any stat changes affecting the Pokémon so that attempts to boost its stats instead lower them — and attempts to lower its stats will boost them.  V   127  Unnerve  Unnerves opposing Pokémon and makes them unable to eat Berries.  V   128  Defiant  If the Pokémon has any stat lowered by an opposing Pokémon, its Attack stat will be boosted sharply.  V   129  Defeatist  Halves the Pokémon's Attack and Sp. Atk stats when its HP drops to half or less.  V   130  Cursed Body  May disable a move that has dealt damage to the Pokémon.  V   131  Healer  Sometimes cures the status conditions of the Pokémon's allies.  V   132  Friend Guard  Reduces damage dealt to allies.  V   133  Weak Armor  The Pokémon's Defense stat is lowered when it takes damage from physical moves, but its Speed stat is sharply boosted.  V   134  Heavy Metal  Doubles the Pokémon's weight.  V   135  Light Metal  Halves the Pokémon's weight.  V   136  Multiscale  Reduces the amount of damage the Pokémon takes while its HP is full.  V   137  Toxic Boost  Powers up physical moves when the Pokémon is poisoned.  V   138  Flare Boost  Powers up special moves when the Pokémon is burned.  V   139  Harvest  May create another Berry after one is used.  V   140  Telepathy  The Pokémon anticipates and dodges the attacks of its allies.  V   141  Moody  Every turn, one of the Pokémon's stats will be boosted sharply, but another stat will be lowered.  V   142  Overcoat  The Pokémon takes no damage from sandstorms. It is also protected from the effects of powders and spores.  V   143  Poison Touch  May poison a target when the Pokémon makes contact.  V   144  Regenerator  The Pokémon has a little of its HP restored when withdrawn from battle.  V   145  Big Pecks  Prevents the Pokémon from having its Defense stat lowered.  V   146  Sand Rush  Boosts the Pokémon's Speed stat in a sandstorm.  V   147  Wonder Skin  Makes status moves more likely to miss the Pokémon.  V   148  Analytic  Boosts the power of the Pokémon's move if it is the last to act that turn.  V   149  Illusion  The Pokémon fools opponents by entering battle disguised as the last Pokémon in its Trainer's party.  V   150  Imposter  The Pokémon transforms itself into the Pokémon it's facing.  V   151  Infiltrator  The Pokémon's moves are unaffected by the target's barriers, substitutes, and the like.  V   152  Mummy  Contact with the Pokémon changes the attacker's Ability to Mummy.  V   153  Moxie  When the Pokémon knocks out a target, it shows moxie, which boosts its Attack stat.  V   154  Justified  When the Pokémon is hit by a Dark-type attack, its Attack stat is boosted by its sense of justice.  V   155  Rattled  The Pokémon gets scared when hit by a Dark-, Ghost-, or Bug-type attack or if intimidated, which boosts its Speed stat.  V   156  Magic Bounce  The Pokémon reflects status moves instead of getting hit by them.  V   157  Sap Sipper  The Pokémon takes no damage when hit by Grass-type moves. Instead, its Attack stat is boosted.  V   158  Prankster  Gives priority to the Pokémon's status moves.  V   159  Sand Force  Boosts the power of Rock-, Ground-, and Steel-type moves in a sandstorm.  V   160  Iron Barbs  The Pokémon's iron barbs damage the attacker if it makes direct contact.  V   161  Zen Mode  Changes the Pokémon's shape when its HP drops to half or less.  V   162  Victory Star  Boosts the accuracy of the Pokémon and its allies.  V   163  Turboblaze  The Pokémon's moves are unimpeded by the Ability of the target.  V   164  Teravolt  The Pokémon's moves are unimpeded by the Ability of the target.  V   165  Aroma Veil  Protects the Pokémon and its allies from effects that prevent the use of moves.  VI   166  Flower Veil  Ally Grass-type Pokémon are protected from status conditions and the lowering of their stats.  VI   167  Cheek Pouch  The Pokémon's HP is restored when it eats any Berry, in addition to the Berry's usual effect.  VI   168  Protean  Changes the Pokémon's type to the type of the move it's about to use. This works only once each time the Pokémon enters battle.  VI   169  Fur Coat  Halves the damage taken from physical moves.  VI   170  Magician  The Pokémon steals the held item from any target it hits with a move.  VI   171  Bulletproof  Protects the Pokémon from ball and bomb moves.  VI   172  Competitive  Boosts the Pokémon's Sp. Atk stat sharply when its stats are lowered by an opposing Pokémon.  VI   173  Strong Jaw  The Pokémon's strong jaw boosts the power of its biting moves.  VI   174  Refrigerate  Normal-type moves become Ice-type moves. The power of those moves is boosted a little.  VI   175  Sweet Veil  Prevents the Pokémon and its allies from falling asleep.  VI   176  Stance Change  The Pokémon changes its form to Blade Forme when it uses an attack move and changes to Shield Forme when it uses King's Shield.  VI   177  Gale Wings  Gives priority to the Pokémon's Flying-type moves while its HP is full.  VI   178  Mega Launcher  Powers up pulse moves.  VI   179  Grass Pelt  Boosts the Pokémon's Defense stat on Grassy Terrain.  VI   180  Symbiosis  The Pokémon passes its held item to an ally that has used up an item.  VI   181  Tough Claws  Powers up moves that make direct contact.  VI   182  Pixilate  Normal-type moves become Fairy-type moves. The power of those moves is boosted a little.  VI   183  Gooey  Contact with the Pokémon lowers the attacker's Speed stat.  VI   184  Aerilate  Normal-type moves become Flying-type moves. The power of those moves is boosted a little.  VI   185  Parental Bond  The parent and child attack one after the other.  VI   186  Dark Aura  Powers up the Dark-type moves of all Pokémon on the field.  VI   187  Fairy Aura  Powers up the Fairy-type moves of all Pokémon on the field.  VI   188  Aura Break  The effects of \"Aura\" Abilities are reversed to lower the power of affected moves.  VI   189  Primordial Sea  The Pokémon changes the weather to nullify Fire-type attacks.  VI   190  Desolate Land  The Pokémon changes the weather to nullify Water-type attacks.  VI   191  Delta Stream  The Pokémon changes the weather so that no moves are supereffective against the Flying type.  VI   192  Stamina  Boosts the Defense stat when the Pokémon is hit by an attack.  VII   193  Wimp Out  The Pokémon cowardly switches out when its HP drops to half or less.  VII   194  Emergency Exit  The Pokémon, sensing danger, switches out when its HP drops to half or less.  VII   195  Water Compaction  Boosts the Defense stat sharply when the Pokémon is hit by a Water-type move.  VII   196  Merciless  The Pokémon's attacks become critical hits if the target is poisoned.  VII   197  Shields Down  When its HP drops to half or less, the Pokémon's shell breaks and it becomes aggressive.  VII   198  Stakeout  Doubles the damage dealt to a target that has just switched into battle.  VII   199  Water Bubble  Lowers the power of Fire-type moves that hit the Pokémon and prevents it from being burned.  VII   200  Steelworker  Powers up Steel-type moves.  VII   201  Berserk  Boosts the Pokémon's Sp. Atk stat when it takes a hit that causes its HP to drop to half or less.  VII   202  Slush Rush  Boosts the Pokémon's Speed stat in snow.  VII   203  Long Reach  The Pokémon uses its moves without making contact with the target.  VII   204  Liquid Voice  Sound-based moves become Water-type moves.  VII   205  Triage  Gives priority to the Pokémon's healing moves.  VII   206  Galvanize  Normal-type moves become Electric-type moves. The power of those moves is boosted a little.  VII   207  Surge Surfer  Doubles the Pokémon's Speed stat on Electric Terrain.  VII   208  Schooling  When it has a lot of HP, the Pokémon forms a powerful school. It stops schooling when its HP is low.  VII   209  Disguise  Once per battle, the shroud that covers the Pokémon can protect it from an attack at the cost of 10% of its HP.  VII   210  Battle Bond  When the Pokémon knocks out a target, its bond with its Trainer is strengthened, and its Attack, Sp. Atk, and Speed stats are boosted.  VII   211  Power Construct  Cells gather to aid the Pokémon when its HP drops to half or less, causing it to change into its Complete Forme.  VII   212  Corrosion  The Pokémon can poison the target even if it's a Steel- or Poison-type.  VII   213  Comatose  The Pokémon is always drowsing and will never wake up. It can attack while in its sleeping state.  VII   214  Queenly Majesty  The Pokémon's majesty pressures opponents and makes them unable to use priority moves against the Pokémon or its allies.  VII   215  Innards Out  When the Pokémon is knocked out, it damages its attacker by the amount equal to the HP it had left before it was hit.  VII   216  Dancer  Whenever a dance move is used in battle, the Pokémon will copy the user to immediately perform that dance move itself.  VII   217  Battery  Powers up ally Pokémon's special moves.  VII   218  Fluffy  Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves.  VII   219  Dazzling  The Pokémon dazzles its opponents, making them unable to use priority moves against the Pokémon or its allies.  VII   220  Soul-Heart  Boosts the Pokémon's Sp. Atk stat every time another Pokémon faints.  VII   221  Tangling Hair  Contact with the Pokémon lowers the attacker's Speed stat.  VII   222  Receiver  The Pokémon copies the Ability of a defeated ally.  VII   223  Power of Alchemy  The Pokémon copies the Ability of a defeated ally.  VII   224  Beast Boost  Boosts the Pokémon's most proficient stat every time it knocks out a target.  VII   225  RKS System  Changes the Pokémon's type to match the memory disc it holds.  VII   226  Electric Surge  Turns the ground into Electric Terrain when the Pokémon enters a battle.  VII   227  Psychic Surge  Turns the ground into Psychic Terrain when the Pokémon enters a battle.  VII   228  Misty Surge  Turns the ground into Misty Terrain when the Pokémon enters a battle.  VII   229  Grassy Surge  Turns the ground into Grassy Terrain when the Pokémon enters a battle.  VII   230  Full Metal Body  Prevents other Pokémon's moves or Abilities from lowering the Pokémon's stats.  VII   231  Shadow Shield  Reduces the amount of damage the Pokémon takes while its HP is full.  VII   232  Prism Armor  Reduces the power of supereffective attacks that hit the Pokémon.  VII   233  Neuroforce  Powers up the Pokémon's supereffective attacks even further.  VII   234  Intrepid Sword  Boosts the Pokémon's Attack stat when the Pokémon enters a battle for the first time.  VIII   235  Dauntless Shield  Boosts the Pokémon's Defense stat when the Pokémon enters a battle for the first time.  VIII   236  Libero  Changes the Pokémon's type to the type of the move it's about to use. This works only once each time the Pokémon enters battle.  VIII   237  Ball Fetch  If the Pokémon is not holding an item, it will fetch the Poké Ball from the first failed throw of the battle.  VIII   238  Cotton Down  When the Pokémon is hit by an attack, it scatters cotton fluff around and lowers the Speed stats of all Pokémon except itself.  VIII   239  Propeller Tail  Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves.  VIII   240  Mirror Armor  Bounces back only the stat-lowering effects that the Pokémon receives.  VIII   241  Gulp Missile  When the Pokémon uses Surf or Dive, it will come back with prey. When it takes damage, it will spit out the prey to attack.  VIII   242  Stalwart  Ignores the effects of opposing Pokémon's Abilities and moves that draw in moves.  VIII   243  Steam Engine  Boosts the Speed stat drastically when the Pokémon is hit by a Fire- or Water-type move.  VIII   244  Punk Rock  Boosts the power of sound-based moves. The Pokémon also takes half the damage from these kinds of moves.  VIII   245  Sand Spit  The Pokémon creates a sandstorm when it's hit by an attack.  VIII   246  Ice Scales  The Pokémon is protected by ice scales, which halve the damage taken from special moves.  VIII   247  Ripen  Ripens Berries and doubles their effect.  VIII   248  Ice Face  The Pokémon's ice head can take a physical attack as a substitute, but the attack also changes the Pokémon's appearance. The ice will be restored when it snows.  VIII   249  Power Spot  Just being next to the Pokémon powers up moves.  VIII   250  Mimicry  Changes the Pokémon's type depending on the terrain.  VIII   251  Screen Cleaner  When the Pokémon enters a battle, the effects of Light Screen, Reflect, and Aurora Veil are nullified for both opposing and ally Pokémon.  VIII   252  Steely Spirit  Powers up the Steel-type moves of the Pokémon and its allies.  VIII   253  Perish Body  When hit by a move that makes direct contact, the Pokémon and the attacker will faint after three turns unless they switch out of battle.  VIII   254  Wandering Spirit  The Pokémon exchanges Abilities with a Pokémon that hits it with a move that makes direct contact.  VIII   255  Gorilla Tactics  Boosts the Pokémon's Attack stat, but only allows the use of the first selected move.  VIII   256  Neutralizing Gas  While the Pokémon is in the battle, the effects of all other Pokémon's Abilities will be nullified or will not be triggered.  VIII   257  Pastel Veil  Prevents the Pokémon and its allies from being poisoned.  VIII   258  Hunger Switch  The Pokémon changes its form, alternating between its Full Belly Mode and Hangry Mode after the end of every turn.  VIII   259  Quick Draw  Enables the Pokémon to move first occasionally.  VIII   260  Unseen Fist  If the Pokémon uses moves that make direct contact, it can attack the target even if the target protects itself.  VIII   261  Curious Medicine  When the Pokémon enters a battle, it scatters medicine from its shell, which removes all stat changes from allies.  VIII   262  Transistor  Powers up Electric-type moves.  VIII   263  Dragon's Maw  Powers up Dragon-type moves.  VIII   264  Chilling Neigh  When the Pokémon knocks out a target, it utters a chilling neigh, which boosts its Attack stat.  VIII   265  Grim Neigh  When the Pokémon knocks out a target, it utters a terrifying neigh, which boosts its Sp. Atk stat.  VIII   266  As One  This Ability combines the effects of both Calyrex's Unnerve Ability and Glastrier's Chilling Neigh Ability.  VIII   267  As One  This Ability combines the effects of both Calyrex's Unnerve Ability and Spectrier's Grim Neigh Ability.  VIII   268  Lingering Aroma  Contact with the Pokémon changes the attacker's Ability to Lingering Aroma.  IX   269  Seed Sower  Turns the ground into Grassy Terrain when the Pokémon is hit by an attack.  IX   270  Thermal Exchange  Boosts the Attack stat when the Pokémon is hit by a Fire-type move. The Pokémon also cannot be burned.  IX   271  Anger Shell  When an attack causes its HP to drop to half or less, the Pokémon gets angry. This lowers its Defense and Sp. Def stats but boosts its Attack, Sp. Atk, and Speed stats.  IX   272  Purifying Salt  The Pokémon's pure salt protects it from status conditions and halves the damage taken from Ghost-type moves.  IX   273  Well-Baked Body  The Pokémon takes no damage when hit by Fire-type moves. Instead, its Defense stat is sharply boosted.  IX   274  Wind Rider  Boosts the Pokémon's Attack stat if Tailwind takes effect or if the Pokémon is hit by a wind move. The Pokémon also takes no damage from wind moves.  IX   275  Guard Dog  Boosts the Pokémon's Attack stat if intimidated. Moves and items that would force the Pokémon to switch out also fail to work.  IX   276  Rocky Payload  Powers up Rock-type moves.  IX   277  Wind Power  The Pokémon becomes charged when it is hit by a wind move, boosting the power of the next Electric-type move the Pokémon uses.  IX   278  Zero to Hero  The Pokémon transforms into its Hero Form when it switches out.  IX   279  Commander  When the Pokémon enters a battle, it goes inside the mouth of an ally Dondozo if one is on the field. The Pokémon then issues commands from there.  IX   280  Electromorphosis  The Pokémon becomes charged when it takes damage, boosting the power of the next Electric-type move the Pokémon uses.  IX   281  Protosynthesis  Boosts the Pokémon's most proficient stat in harsh sunlight or if the Pokémon is holding Booster Energy.  IX   282  Quark Drive  Boosts the Pokémon's most proficient stat on Electric Terrain or if the Pokémon is holding Booster Energy.  IX   283  Good as Gold  A body of pure, solid gold gives the Pokémon full immunity to other Pokémon's status moves.  IX   284  Vessel of Ruin  The power of the Pokémon's ruinous vessel lowers the Sp. Atk stats of all Pokémon except itself.  IX   285  Sword of Ruin  The power of the Pokémon's ruinous sword lowers the Defense stats of all Pokémon except itself.  IX   286  Tablets of Ruin  The power of the Pokémon's ruinous wooden tablets lowers the Attack stats of all Pokémon except itself.  IX   287  Beads of Ruin  The power of the Pokémon's ruinous beads lowers the Sp. Def stats of all Pokémon except itself.  IX   288  Orichalcum Pulse  Turns the sunlight harsh when the Pokémon enters a battle. The ancient pulse thrumming through the Pokémon also boosts its Attack stat in harsh sunlight.  IX   289  Hadron Engine  Turns the ground into Electric Terrain when the Pokémon enters a battle. The futuristic engine within the Pokémon also boosts its Sp. Atk stat on Electric Terrain.  IX   290  Opportunist  If an opponent's stat is boosted, the Pokémon seizes the opportunity to boost the same stat for itself.  IX   291  Cud Chew  When the Pokémon eats a Berry, it will regurgitate that Berry at the end of the next turn and eat it one more time.  IX   292  Sharpness  Powers up slicing moves.  IX   293  Supreme Overlord  When the Pokémon enters a battle, its Attack and Sp. Atk stats are slightly boosted for each of the allies in its party that have already been defeated.  IX   294  Costar  When the Pokémon enters a battle, it copies an ally's stat changes.  IX   295  Toxic Debris  Scatters poison spikes at the feet of the opposing team when the Pokémon takes damage from physical moves.  IX   296  Armor Tail  The mysterious tail covering the Pokémon's head makes opponents unable to use priority moves against the Pokémon or its allies.  IX   297  Earth Eater  If hit by a Ground-type move, the Pokémon has its HP restored instead of taking damage.  IX   298  Mycelium Might  The Pokémon will always act more slowly when using status moves, but these moves will be unimpeded by the Ability of the target.  IX   299  Hospitality  When the Pokémon enters a battle, it showers its ally with hospitality, restoring a small amount of the ally's HP.  IX   300  Mind's Eye  The Pokémon ignores changes to opponents' evasiveness, its accuracy can't be lowered, and it can hit Ghost types with Normal- and Fighting-type moves.  IX   301  Embody Aspect  The Pokémon's heart fills with memories, causing the Teal Mask to shine and the Pokémon's Speed stat to be boosted.  IX   302  Embody Aspect  The Pokémon's heart fills with memories, causing the Hearthflame Mask to shine and the Pokémon's Attack stat to be boosted.  IX   303  Embody Aspect  The Pokémon's heart fills with memories, causing the Wellspring Mask to shine and the Pokémon's Sp. Def stat to be boosted.  IX   304  Embody Aspect  The Pokémon's heart fills with memories, causing the Cornerstone Mask to shine and the Pokémon's Defense stat to be boosted.  IX   305  Toxic Chain  The power of the Pokémon's toxic chain may badly poison any target the Pokémon hits with a move.  IX   306  Supersweet Syrup  A sickly sweet scent spreads across the field the first time the Pokémon enters a battle, lowering the evasiveness of opposing Pokémon.  IX   307  Tera Shift  When the Pokémon enters a battle, it absorbs the energy around itself and transforms into its Terastal Form.  IX   308  Tera Shell  The Pokémon's shell contains the powers of each type. All damage-dealing moves that hit the Pokémon when its HP is full will not be very effective.  IX   309  Teraform Zero  When Terapagos changes into its Stellar Form, it uses its hidden powers to eliminate all effects of weather and terrain, reducing them to zero.  IX   310  Poison Puppeteer  Pokémon poisoned by Pecharunt's moves will also become confused.  IX" .
+

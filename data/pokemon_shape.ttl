@@ -1,0 +1,42 @@
+@prefix ex: <http://example.org/pokemon/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Contrainte sur un Pokémon
+ex:PokemonShape a sh:NodeShape ;
+    sh:targetClass ex:Pokemon ;
+
+    # Vérification du nom
+    sh:property [
+        sh:path ex:name ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message "Chaque Pokémon doit avoir exactement un nom." ;
+    ] ;
+
+    # Vérification du type principal
+    sh:property [
+        sh:path ex:primaryType ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Chaque Pokémon doit avoir au moins un type principal." ;
+    ] ;
+
+    # Vérification de l'image
+    sh:property [
+        sh:path ex:image ;
+        sh:datatype xsd:anyURI ;
+        sh:minCount 1 ;
+        sh:message "Chaque Pokémon doit avoir une image valide." ;
+    ] ;
+
+    # Vérification de la description multilingue
+    sh:property [
+        sh:path ex:description ;
+        sh:datatype rdf:langString ;
+        sh:minCount 1 ;
+        sh:message "Chaque Pokémon doit avoir au moins une description multilingue." ;
+    ] .
