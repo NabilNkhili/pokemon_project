@@ -5,6 +5,8 @@ import re
 import requests
 from flask import Response  # ✅ Correct
 import time
+import os
+
 
 
 app = Flask(__name__)
@@ -14,12 +16,38 @@ import requests
 
 app = Flask(__name__)
 
+
+CACHE_DIR = "static/cache"
+
+if not os.path.exists(CACHE_DIR):
+    os.makedirs(CACHE_DIR)
+
+
+import os
+from flask import Flask, request, send_file, Response
+import requests
+
+app = Flask(__name__)
+
+CACHE_DIR = "static/cache"
+
+# Créez le dossier cache s'il n'existe pas
+if not os.path.exists(CACHE_DIR):
+    os.makedirs(CACHE_DIR)
+
 @app.route('/proxy-image/')
 def proxy_image():
     """Télécharge et sert l'image en évitant le blocage de Bulbapedia."""
     image_url = request.args.get("url")
     if not image_url:
         return "No image URL provided", 400
+
+    # Générer un nom de fichier basé sur l'URL
+    image_filename = os.path.join(CACHE_DIR, os.path.basename(image_url))
+    
+    # Si le fichier existe déjà en cache, le servir directement
+    if os.path.exists(image_filename):
+        return send_file(image_filename, mimetype="image/png")
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
@@ -28,12 +56,16 @@ def proxy_image():
     try:
         response = requests.get(image_url, headers=headers, stream=True)
         if response.status_code == 200:
-            flask_response = Response(response.content, content_type=response.headers['Content-Type'])
-            flask_response.headers["Access-Control-Allow-Origin"] = "*"
-            return flask_response
+            # Enregistrer l'image localement
+            with open(image_filename, "wb") as f:
+                f.write(response.content)
+            
+            # Servir l'image
+            return send_file(image_filename, mimetype="image/png")
         return "Image not found", 404
-    except requests.RequestException as e:
+    except requests.RequestException:
         return "Image not found", 404
+
 
 
 
@@ -82,6 +114,20 @@ def category(category):
             if category.lower() in ["type", "egg-group"]:
                 # Pour la catégorie "Type", on ne récupère que le label
                 results.append({"label": label})
+            elif category.lower() == "move":
+            # Spécifique à la catégorie Move
+                for s in g.subjects(RDF.type, categories[category]):
+                    label = g.value(s, RDFS.label)
+                    image = g.value(s, SCHEMA.image, default="/static/no_image.png")
+                    if not query or (label and query in label.lower()):
+                        results.append({"uri": str(s), "label": label, "image": image})
+            elif category.lower() == "episode":
+                # Spécifique à la catégorie Episode
+                image = g.value(s, EP.hasImage, default="/static/no_image.png")
+                title = g.value(s, EP.hasTitle)
+                if not query or (title and query in title.lower()):
+                    results.append({"uri": str(s), "label": title, "image": image})
+                    
             else:
                 # Pour les autres catégories, on récupère l'image et le lien
                 image = g.value(s, EX.hasImage, default="/static/no_image.png")
@@ -93,6 +139,74 @@ def category(category):
 
     return render_template("category.html", results=results, category=category.capitalize())
 
+
+@app.route("/move/<move_name>")
+def move_details(move_name):
+    # Recherche du move dans le graphe RDF
+    move_uri = None
+    for s in g.subjects(RDF.type, EX.Move):
+        label = g.value(s, RDFS.label)
+        if label and label.lower() == move_name.lower():
+            move_uri = s
+            break
+    
+    if not move_uri:
+        return "Move not found", 404
+    
+    type_uri = g.value(move_uri, EX.hasType)
+    type_label = g.value(type_uri, RDFS.label) if type_uri else None
+
+    # Récupération des informations du move
+    details = {
+        "label": g.value(move_uri, RDFS.label),
+        "type": type_label,
+        "accuracy": g.value(move_uri, SCHEMA.accuracy),
+        "category": g.value(move_uri, SCHEMA.category),
+        "image": g.value(move_uri, SCHEMA.image, default="/static/no_image.png"),
+        "power": g.value(move_uri, SCHEMA.power),
+        "pp": g.value(move_uri, SCHEMA.pp),
+    }
+    
+    return render_template("move_details.html", details=details)
+
+
+@app.route("/episode/<episode_id>")
+def episode_details(episode_id):
+    # Recherche de l'épisode dans le graphe RDF
+    episode_uri = None
+    for s in g.subjects(RDF.type, EP.Episode):
+        title = g.value(s, EP.hasTitle)
+        if title and title.lower() == episode_id.lower():
+            episode_uri = s
+            break
+
+    if not episode_uri:
+        return "Episode not found", 404
+
+    # Récupération des informations détaillées sur l'épisode
+    details = {
+        "title": g.value(episode_uri, EP.hasTitle),
+        "image": g.value(episode_uri, EP.hasImage, default="/static/no_image.png"),
+        "episode_number": g.value(episode_uri, EP.hasEpisodeNumber),
+        "japan_release_date": g.value(episode_uri, EP.hasJapanReleaseDate),
+        "us_release_date": g.value(episode_uri, EP.hasUSReleaseDate),
+        "director": g.value(episode_uri, EP.hasDirector),
+        "screenplay": g.value(episode_uri, EP.hasScreenplay),
+        "storyboard": g.value(episode_uri, EP.hasStoryboard),
+        "opening": g.value(episode_uri, EP.hasOpening),
+        "ending": g.value(episode_uri, EP.hasEnding),
+        "animation": g.value(episode_uri, EP.hasAnimation),
+        "pokemon_debut": [
+            {
+                "label": g.value(pokemon, RDFS.label) or None,
+                "image": g.value(pokemon, EX.hasImage, default=None)
+            }
+            for pokemon in g.objects(episode_uri, EP.hasPokemonDebut)
+            if g.value(pokemon, RDFS.label)  # Assure qu'un label existe
+        ],
+    }
+
+    return render_template("episode_details.html", details=details)
 
 # Fonction pour rendre les prédicats plus lisibles
 def format_predicate(predicate):
