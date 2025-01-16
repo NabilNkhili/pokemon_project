@@ -135,4 +135,230 @@ footer {
     font-size: 1rem;
     box-shadow: 0px -4px 10px rgba(0,0,0,0.2);
 }
-/*
+
+
+
+
+.css-page {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #6dd5ed, #f87c7c); /* Dégradé bleu-rouge */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.css-page h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Encapsulation des styles spécifiques */
+.css-page .css-details img {
+    max-width: 250px;
+    height: auto;
+    margin: 20px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.css-page .css-details img:hover {
+    transform: scale(1.1);
+}
+
+.css-page .css-details ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 20px;
+    width: 420px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+/* Styles pour la grille des Pokémon */
+.css-page .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+
+/* Styles pour la page All Abilities */
+.abilities-grid {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Transparence pour un effet moderne */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grille des capacités */
+.abilities-grid .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Carte pour chaque capacité */
+.abilities-grid .ability-card {
+    background: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.abilities-grid .ability-card:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.abilities-grid .ability-card strong {
+    font-size: 1.2rem;
+    color: #e63946;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.abilities-grid .ability-card a {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+.abilities-grid .ability-card a:hover {
+    color: #0056b3;
+}
+
+/* Boutons de tri */
+.filter-buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.filter-buttons button:hover {
+    background: #e63946;
+    transform: scale(1.1);
+}
+
+/* Styles pour les messages vides */
+.no-results {
+    color: #666;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+/* Styles pour la page des détails d'une capacité */
+.ability-details {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Transparence pour effet moderne */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.ability-details p {
+    margin: 10px 0;
+    color: #333;
+    font-weight: 400;
+}
+
+.ability-details p strong {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* Bouton de retour */
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background: #e63946;
+    transform: scale(1.05);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Recherche dans la barre de navigation */
+.navbar input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin-left: 10px;
+    width: 250px;
+    font-size: 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar button {
+    padding: 10px 15px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.navbar button:hover {
+    background: #555;
+}

@@ -8,7 +8,6 @@ from rdflib.namespace import RDF, RDFS
 # Configure logging
 logging.basicConfig(filename='download.log', level=logging.ERROR)
 
-# Define namespaces
 EX = Namespace("http://example.org/pokemon/")
 
 # Load the RDF graph
@@ -22,7 +21,6 @@ static_folder = 'static/images'
 if not os.path.exists(static_folder):
     os.makedirs(static_folder)
 
-# Function to download and save an image
 def download_image(url, save_path):
     if os.path.exists(save_path):
         print(f"Image {save_path} already exists.")
@@ -41,7 +39,6 @@ def download_image(url, save_path):
         print(f"Error downloading {url}: {e}")
         logging.error(f"Error downloading {url}: {e}")
 
-# Iterate over all Pokémon entities
 for pokemon in g.subjects(RDF.type, EX.Pokemon):
     image_url = g.value(pokemon, EX.hasImage)
     ndex = g.value(pokemon, EX.ndex)

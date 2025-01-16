@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ details.label }}{% endblock %}
+{% block content %}
+<div class="css-page">
+
+<div class="css-details">
+
+<h1>{{ details.label }}</h1>
+<div class="details-container">
+    <img src="/proxy-image/?url={{ details.image | urlencode }}" alt="{{ details.label }}" 
+         onerror="this.src='/static/no_character.png';">
+    <ul>
+        <li><strong>Gender:</strong> {{ details.gender }}</li>
+        <li><strong>Region:</strong> {{ details.region }}</li>
+        <li><strong>Trainer Class:</strong> {{ details.trainer_class }}</li>
+        <li><strong>Hometown:</strong> {{ details.hometown }}</li>
+        <li><strong>Generation:</strong> {{ details.generation }}</li>
+        <li><strong>Specializes in:</strong> {{ details.specializes_in }}</li>
+        <li><strong>Games:</strong>
+            <ul>
+                {% for game in details.games %}
+                    <li>{{ game }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+{% endblock %}

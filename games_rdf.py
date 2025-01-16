@@ -3,12 +3,10 @@ import rdflib
 import re
 from bs4 import BeautifulSoup
 
-# URLs Bulbapedia pour les jeux
 BASE_URL = "https://bulbapedia.bulbagarden.net"
 GAMES_URL = BASE_URL + "/wiki/Category:Games"
 
 def fetch_all_games(start_from="Adventure Log"):
-    """Récupère tous les jeux de Bulbapedia, en commençant à partir d'un jeu spécifique."""
     games = []
     next_page_url = GAMES_URL
     start_collecting = False
@@ -37,11 +35,10 @@ def fetch_all_games(start_from="Adventure Log"):
         next_page_link = soup.find('a', string="next page")
         next_page_url = BASE_URL + next_page_link['href'] if next_page_link else None
 
-    print(f"✅ {len(games)} Jeux valides trouvés.")
+    print(f" {len(games)} Jeux valides trouvés.")
     return games
 
 def fetch_game_details(game_url):
-    """Extrait les détails et l'image correcte d'un jeu depuis son infobox."""
     response = requests.get(game_url)
     if response.status_code != 200:
         return {}
@@ -90,14 +87,11 @@ def fetch_game_details(game_url):
 
     return infobox_data
 
-# Exécution principale
 all_games = fetch_all_games(start_from="Adventure Log")
 
-# Définir les namespaces
 SCHEMA = rdflib.Namespace("http://schema.org/")
 EX = rdflib.Namespace("http://example.org/pokemon/")
 
-# Sauvegarde dans un fichier Turtle sans commentaires inutiles
 with open("games_with_images.ttl", "w", encoding="utf-8") as f:
     f.write("@prefix ex: <http://example.org/pokemon/> .\n")
     f.write("@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n")
@@ -111,7 +105,6 @@ with open("games_with_images.ttl", "w", encoding="utf-8") as f:
 
         infobox_data = fetch_game_details(game_url)
 
-        # Infos générales
         basic_info_keys = ['Category', 'Platform', 'Players', 'Connectivity', 'Developer', 'Publisher', 'Part of']
         for key in basic_info_keys:
             value = infobox_data.get(key, "Unknown")
@@ -121,7 +114,6 @@ with open("games_with_images.ttl", "w", encoding="utf-8") as f:
             else:
                 f.write(f"    schema1:{clean_key} \"{value}\" ;\n")
 
-        # Release Dates (Ajout explicite d'un identifiant unique)
         release_dates_keys = ['Japan', 'North America', 'Australia', 'Europe', 'South Korea', 'Hong Kong', 'Taiwan']
         for key in release_dates_keys:
             value = infobox_data.get(key, "Unknown")
@@ -134,6 +126,6 @@ with open("games_with_images.ttl", "w", encoding="utf-8") as f:
         # Image (Ajout explicite d'un identifiant unique)
         f.write(f"    schema1:imageURL \"{infobox_data.get('Image', 'Unknown')}\" .\n\n")
 
-        print(f"✅ Jeu ajouté : {game_name}")
+        print(f" Jeu ajouté : {game_name}")
 
-print(f"✅ Fichier RDF avec tous les jeux généré avec succès : games_with_images.ttl")
+print(f" Fichier RDF avec tous les jeux généré avec succès : games_with_images.ttl")

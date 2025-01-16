@@ -7,6 +7,9 @@
 @prefix dbr: <http://dbpedia.org/resource/> .
 @prefix ex: <http://example.org/pokemon/> .
 @prefix ep: <http://example.org/episodes/> .
+@prefix ch: <http://example.org/characters/> .
+@prefix it: <http://example.org/items/> .
+
 
 
 ### Définition des classes principales
@@ -34,6 +37,14 @@ ex:EggGroup a rdfs:Class ;
 ex:Move a rdfs:Class ;
     rdfs:label "Move" ;
     rdfs:comment "Attaque ou mouvement qu'un Pokémon peut utiliser en combat." .
+
+ch:Character a rdfs:Class ;
+    rdfs:label "Character" ;
+    rdfs:comment "Une classe représentant un personnage avec des informations associées." .
+
+ch:Item a rdfs:Class ;
+    rdfs:label "Item" ;
+    rdfs:comment "Un item avec des informations associées." .
 
 
 

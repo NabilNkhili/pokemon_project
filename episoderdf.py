@@ -8,7 +8,6 @@ from datetime import datetime
 BASE_URL = "https://bulbapedia.bulbagarden.net"
 EPISODES_URL = BASE_URL + "/wiki/List_of_animated_series_episodes"
 
-# Namespaces
 EX = rdflib.Namespace("http://example.org/pokemon/")
 EP = rdflib.Namespace("http://example.org/episodes/")
 
@@ -21,7 +20,7 @@ def fetch_episode_links():
         try:
             response = requests.get(EPISODES_URL, timeout=10)
             if response.status_code != 200:
-                print(f"❌ Erreur {response.status_code} lors du chargement de la page : {EPISODES_URL}")
+                print(f" Erreur {response.status_code} lors du chargement de la page : {EPISODES_URL}")
                 continue  # Réessaye la requête
 
             soup = BeautifulSoup(response.text, 'html.parser')
@@ -35,17 +34,17 @@ def fetch_episode_links():
                     if not "Category:" in link['href'] and episode_name:
                         episode_links.append((episode_name, episode_url))
                 except KeyError:
-                    print(f"⚠️ Balise ignorée, absence de 'href' : {link}")
+                    print(f" Balise ignorée, absence de 'href' : {link}")
 
             if episode_links:
-                print(f"✅ {len(episode_links)} épisodes trouvés.")
+                print(f" {len(episode_links)} épisodes trouvés.")
                 return episode_links
 
         except requests.exceptions.RequestException as e:
-            print(f"⚠️ Erreur réseau ({attempt+1}/{retries}) pour la page des épisodes : {e}")
+            print(f" Erreur réseau ({attempt+1}/{retries}) pour la page des épisodes : {e}")
             time.sleep(5)  # Attente avant nouvelle tentative
 
-    print("❌ Échec final de la récupération des épisodes.")
+    print(" Échec final de la récupération des épisodes.")
     return []
 
 def fetch_episode_details(episode_url):
@@ -57,13 +56,13 @@ def fetch_episode_details(episode_url):
             time.sleep(0.5)  # Petite pause pour éviter le blocage IP
 
             if response.status_code != 200:
-                print(f"❌ Erreur {response.status_code} pour {episode_url}")
+                print(f" Erreur {response.status_code} pour {episode_url}")
                 continue  # Réessaye
 
             soup = BeautifulSoup(response.text, 'html.parser')
             infobox_table = soup.find('table', {'class': 'roundy'})
             if not infobox_table:
-                print(f"❌ Aucune infobox trouvée pour : {episode_url}")
+                print(f" Aucune infobox trouvée pour : {episode_url}")
                 return {}
 
             episode_data = {}
@@ -101,14 +100,14 @@ def fetch_episode_details(episode_url):
 
             episode_data['pokemon_debuts'] = pokemon_debuts
 
-            print(f"✅ Données extraites depuis : {episode_url}")
+            print(f" Données extraites depuis : {episode_url}")
             return episode_data
 
         except requests.exceptions.RequestException as e:
-            print(f"⚠️ Erreur réseau ({attempt+1}/{retries}) pour {episode_url}: {e}")
+            print(f" Erreur réseau ({attempt+1}/{retries}) pour {episode_url}: {e}")
             time.sleep(5)  # Attente avant nouvelle tentative
 
-    print(f"❌ Échec final pour {episode_url}, on passe au suivant.")
+    print(f" Échec final pour {episode_url}, on passe au suivant.")
     return {}
 
 def generate_rdf_graph(episode_list):
@@ -120,7 +119,7 @@ def generate_rdf_graph(episode_list):
     total_episodes = 0
 
     for episode_name, episode_url in episode_list:
-        print(f"🔍 Traitement de l'épisode {episode_name} ({total_episodes + 1}/{len(episode_list)})")
+        print(f" Traitement de l'épisode {episode_name} ({total_episodes + 1}/{len(episode_list)})")
         episode_entity = rdflib.URIRef(EP + re.sub(r'[^a-zA-Z0-9_]', '_', episode_name))
         g.add((episode_entity, rdflib.RDF.type, EP.Episode))
         g.add((episode_entity, EP.hasTitle, rdflib.Literal(episode_name)))
@@ -137,7 +136,7 @@ def generate_rdf_graph(episode_list):
                     date_obj = datetime.strptime(date_str, "%B %d, %Y")  # Adaptez le format si nécessaire
                     g.add((episode_entity, date_prop, rdflib.Literal(date_obj, datatype=rdflib.XSD.date)))
                 except ValueError:
-                    print(f"⚠️ Format de date invalide pour {episode_name}: {date_str}")
+                    print(f" Format de date invalide pour {episode_name}: {date_str}")
 
             g.add((episode_entity, EP.hasImage, rdflib.Literal(episode_details.get('image', ''))))
             g.add((episode_entity, EP.hasAnimation, rdflib.Literal(episode_details.get('animation', ''))))
@@ -154,21 +153,21 @@ def generate_rdf_graph(episode_list):
 
             total_episodes += 1
         else:
-            print(f"⚠️ Aucune donnée ajoutée pour : {episode_name}")
+            print(f" Aucune donnée ajoutée pour : {episode_name}")
 
         # Sauvegarde intermédiaire
         if total_episodes % 50 == 0:
             g.serialize("pokemon_all_episodes.ttl", format="turtle", encoding="utf-8")
-            print(f"💾 Sauvegarde intermédiaire après {total_episodes} épisodes.")
+            print(f" Sauvegarde intermédiaire après {total_episodes} épisodes.")
 
     # Sauvegarde finale
     g.serialize("pokemon_all_episodes.ttl", format="turtle", encoding="utf-8")
-    print(f"✅ Fichier RDF généré avec succès : pokemon_all_episodes.ttl")
-    print(f"🎬 Nombre total d'épisodes traités : {total_episodes}")
+    print(f" Fichier RDF généré avec succès : pokemon_all_episodes.ttl")
+    print(f" Nombre total d'épisodes traités : {total_episodes}")
 
 # Exécution principale
 episode_links = fetch_episode_links()
 if episode_links:
     generate_rdf_graph(episode_links)
 else:
-    print("❌ Aucune donnée trouvée pour générer le RDF.")
+    print(" Aucune donnée trouvée pour générer le RDF.")

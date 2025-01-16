@@ -16,7 +16,7 @@
             <div class="card">
                 <img src="/proxy-image/?url={{ result.image | urlencode }}" 
                 alt="{{ result.label }}" 
-                onerror="this.src='/static/no_image.png';">
+                onerror="this.src='/static/{% if category.lower() == 'game' %}no_game.png{% else %}no_image.png{% endif %}';">
                 <h3>{{ result.label }}</h3>
 
                 {% if category.lower() == "move" %}
@@ -25,6 +25,13 @@
                 {% elif category.lower() == "episode" %}
                     <!-- Lien vers les détails pour les épisodes -->
                     <a href="{{ url_for('episode_details', episode_id=result.label) }}">View Details</a>
+                {% elif category.lower() == "game" %}
+                    <a href="{{ url_for('game_details', game_name=result.label) }}">View Details</a>
+                {% elif category.lower() == "character" %}
+                    <a href="{{ url_for('character_details', character_name=result.label) }}">View Details</a>
+                {% elif category.lower() == "item" %}
+                    <a href="{{ url_for('item_details', item_name=result.label) }}">View Details</a>
+
                 {% else %}
                     <!-- Lien vers les détails standard -->
                     <a href="{{ url_for('pokemon_details', pokemon_name=result.label.replace(' (Pokémon)', '')) }}">View Details</a>

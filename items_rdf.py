@@ -3,13 +3,11 @@ import rdflib
 import re
 from bs4 import BeautifulSoup
 
-# URLs Bulbapedia pour les items
 BASE_URL = "https://bulbapedia.bulbagarden.net"
 ITEMS_URL = BASE_URL + "/wiki/Category:Items"
 ARCHIVE_BASE_URL = "https://archives.bulbagarden.net"
 
 def fetch_all_items():
-    """Récupère tous les items de la catégorie principale Items de Bulbapedia."""
     items = []
     next_page_url = ITEMS_URL
 
@@ -32,7 +30,7 @@ def fetch_all_items():
         next_page_link = soup.find('a', string="next page")
         next_page_url = BASE_URL + next_page_link['href'] if next_page_link else None
 
-    print(f"✅ {len(items)} Items trouvés.")
+    print(f" {len(items)} Items trouvés.")
     return items
 
 def fetch_item_details(item_url):
@@ -54,7 +52,7 @@ def fetch_item_details(item_url):
         image_src = image_element['src']
         # Construction de l'URL complète de l'image
         if image_src.startswith(('http://', 'https://')):
-            image_url = image_src  # Utiliser l'URL telle quelle si elle est déjà complète
+            image_url = image_src  
         elif image_src.startswith("/media"):
             image_url = ARCHIVE_BASE_URL + image_src
         else:
@@ -70,7 +68,6 @@ def fetch_item_details(item_url):
             key = header.text.strip()
             value = value.text.strip().replace('\n', ' ')
             if value:
-                # Traitement spécial pour la clé "Pocket" ou "Generation"
                 if key == "Pocket" or key.startswith("Generation"):
                     # Séparer les informations par génération
                     matches = re.findall(r'(Generation \w+)\s+(.*?)(?=Generation|\Z)', value)
@@ -84,9 +81,9 @@ def fetch_item_details(item_url):
                 else:
                     infobox_data[key] = value
 
-    # Ajout manuel des propriétés manquantes si elles ne sont pas dans l'infobox
+    
     if 'Artwork' not in infobox_data:
-        infobox_data['Artwork'] = "Pokemon Global Link artwork"  # Valeur par défaut
+        infobox_data['Artwork'] = "Pokemon Global Link artwork"  
     if 'IntroducedIn' not in infobox_data:
         infobox_data['IntroducedIn'] = "Generation VI"  # Valeur par défaut
 
@@ -95,14 +92,14 @@ def fetch_item_details(item_url):
 def create_rdf_graph_for_items(items):
     """Crée un graphe RDF pour tous les items avec leurs données d'infobox et images."""
     SCHEMA = rdflib.Namespace("http://schema.org/")
-    EX = rdflib.Namespace("http://example.org/pokemon/")
+    IT = rdflib.Namespace("http://example.org/items/")
     g = rdflib.Graph()
     g.bind('schema1', SCHEMA, override=True)
-    g.bind('ex', EX, override=True)
+    g.bind('it', IT, override=True)
 
     for item_name, item_url in items:
-        entity = rdflib.URIRef(EX + re.sub(r'[^a-zA-Z0-9_]', '_', item_name))
-        g.add((entity, rdflib.RDF.type, EX.Item))
+        entity = rdflib.URIRef(IT + re.sub(r'[^a-zA-Z0-9_]', '_', item_name))
+        g.add((entity, rdflib.RDF.type, IT.Item))
         g.add((entity, rdflib.RDFS.label, rdflib.Literal(item_name)))
 
         infobox_data = fetch_item_details(item_url)
@@ -118,15 +115,15 @@ def create_rdf_graph_for_items(items):
                     sub_predicate = SCHEMA[sub_key]
                     g.add((entity, sub_predicate, rdflib.Literal(sub_value)))
 
-        print(f"✅ Item ajouté : {item_name}")
+        print(f" Item ajouté : {item_name}")
 
     return g
 
 # Exécution principale
-all_items = fetch_all_items()  # Récupère tous les items
+all_items = fetch_all_items()  
 rdf_graph = create_rdf_graph_for_items(all_items)
 
 # Sauvegarde dans un fichier Turtle
 ttl_file_path = "all_items_with_images.ttl"
 rdf_graph.serialize(destination=ttl_file_path, format="turtle", encoding="utf-8")
-print(f"✅ Fichier RDF avec tous les items généré avec succès : {ttl_file_path}")
+print(f" Fichier RDF avec tous les items généré avec succès : {ttl_file_path}")

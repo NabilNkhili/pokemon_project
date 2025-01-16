@@ -3,12 +3,10 @@ import rdflib
 import re
 from bs4 import BeautifulSoup
 
-# Définition des namespaces RDF
 EX = rdflib.Namespace("http://example.org/pokemon/")
 SCHEMA = rdflib.Namespace("http://schema.org/")
 XSD = rdflib.Namespace("http://www.w3.org/2001/XMLSchema#")
 
-# 📌 URL des Moves (Mouvements Pokémon)
 
 def fetch_moves_list():
     url = 'https://bulbapedia.bulbagarden.net/wiki/List_of_moves'
@@ -26,7 +24,7 @@ def fetch_moves_list():
         return []
 
     moves = []
-    for row in moves_table.find_all('tr')[1:]:  # Ignorer l'en-tête
+    for row in moves_table.find_all('tr')[1:]:  
         cols = row.find_all('td')
         if len(cols) > 1:
             move_name = cols[1].get_text(strip=True)
@@ -50,11 +48,10 @@ def fetch_moves_list():
             })
     return moves
 
-# 📌 Récupération de l'image en haute résolution
 def fetch_move_image(move_url):
     response = requests.get(move_url)
     if response.status_code != 200:
-        print(f"❌ Impossible d'accéder à {move_url}")
+        print(f" Impossible d'accéder à {move_url}")
         return None
 
     soup = BeautifulSoup(response.text, 'html.parser')
@@ -64,10 +61,9 @@ def fetch_move_image(move_url):
     if image_link_tag:
         image_page_url = "https://bulbapedia.bulbagarden.net" + image_link_tag['href']
 
-        # Aller sur la page de l’image pour récupérer son URL finale
         response_image_page = requests.get(image_page_url)
         if response_image_page.status_code != 200:
-            print(f"❌ Impossible d'accéder à la page image {image_page_url}")
+            print(f" Impossible d'accéder à la page image {image_page_url}")
             return None
 
         soup_image_page = BeautifulSoup(response_image_page.text, 'html.parser')
@@ -86,20 +82,17 @@ def fetch_move_image(move_url):
             
             return image_url
 
-    print(f"⚠️ Aucune image trouvée pour {move_url}")
+    print(f" Aucune image trouvée pour {move_url}")
     return None
 
 def create_moves_rdf(moves):
-    """Crée un graphe RDF structuré avec des valeurs bien typées."""
     g = rdflib.Graph()
     g.bind('ex', EX)
     g.bind('schema1', SCHEMA)
     g.bind('xsd', XSD)
 
-    # 📌 Déclaration de la classe Move
     g.add((EX.Move, rdflib.RDF.type, rdflib.RDFS.Class))
 
-    # 📌 Déclaration de la propriété ex:hasType
     g.add((EX.hasType, rdflib.RDF.type, rdflib.RDF.Property))
     g.add((EX.hasType, rdflib.RDFS.domain, EX.Move))  # Le domaine est Move
     g.add((EX.hasType, rdflib.RDFS.range, EX.PokemonType))  # Le range est PokemonType
@@ -111,11 +104,9 @@ def create_moves_rdf(moves):
         g.add((move_uri, rdflib.RDF.type, EX.Move))
         g.add((move_uri, rdflib.RDFS.label, rdflib.Literal(move['name'])))
 
-        # 🟡 **Ajout du Type avec ex:hasType**
         move_type_uri = rdflib.URIRef(EX + re.sub(r'[^a-zA-Z0-9_]', '_', move['type'].replace(' ', '_')))
         g.add((move_uri, EX.hasType, move_type_uri))  # Utilisation de ex:hasType
 
-        # 🟡 **Ajout des propriétés avec le bon type**
         if move['accuracy'].replace('%', '').isdigit():
             g.add((move_uri, SCHEMA.accuracy, rdflib.Literal(int(move['accuracy'].replace('%', '')), datatype=XSD.integer)))
         else:
@@ -127,17 +118,15 @@ def create_moves_rdf(moves):
         if move['pp'].isdigit():
             g.add((move_uri, SCHEMA.pp, rdflib.Literal(int(move['pp']), datatype=XSD.integer)))
 
-        # **On garde `Category` et `Generation` sans les changer**
         g.add((move_uri, SCHEMA.category, rdflib.Literal(move['category'])))
 
-        print(f"✅ Move ajouté : {move['name']}")
+        print(f" Move ajouté : {move['name']}")
         
-        # 📌 Ajout de l'image
         image_url = fetch_move_image(move['url'])
         if image_url:
             g.add((move_uri, SCHEMA.image, rdflib.Literal(image_url)))
 
-        print(f"✅ Move ajouté : {move['name']} | Image : {image_url if image_url else '🚫 Pas d’image'}")
+        print(f" Move ajouté : {move['name']} | Image : {image_url if image_url else '🚫 Pas d’image'}")
 
     return g
 

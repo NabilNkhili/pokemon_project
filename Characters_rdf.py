@@ -3,13 +3,11 @@ import rdflib
 import re
 from bs4 import BeautifulSoup
 
-# URLs Bulbapedia pour les personnages
 BASE_URL = "https://bulbapedia.bulbagarden.net"
 CHARACTERS_URL = BASE_URL + "/wiki/Category:Characters"
 ARCHIVE_BASE_URL = "https://archives.bulbagarden.net"
 
 def fetch_all_characters():
-    """Récupère tous les personnages de Bulbapedia."""
     characters = []
     next_page_url = CHARACTERS_URL
 
@@ -31,7 +29,7 @@ def fetch_all_characters():
         next_page_link = soup.find('a', string="next page")
         next_page_url = BASE_URL + next_page_link['href'] if next_page_link else None
 
-    print(f"✅ {len(characters)} Personnages trouvés.")
+    print(f" {len(characters)} Personnages trouvés.")
     return characters
 
 def fetch_character_details(character_url):
@@ -82,14 +80,14 @@ def fetch_character_details(character_url):
 def create_rdf_graph_for_characters(characters):
     """Crée un graphe RDF pour tous les personnages avec leurs données d'infobox et images."""
     SCHEMA = rdflib.Namespace("http://schema.org/")
-    EX = rdflib.Namespace("http://example.org/pokemon/")
+    CH = rdflib.Namespace("http://example.org/characters/")
     g = rdflib.Graph()
     g.bind('schema1', SCHEMA, override=True)
-    g.bind('ex', EX, override=True)
+    g.bind('ch', CH, override=True)
 
     for character_name, character_url in characters:
-        entity = rdflib.URIRef(EX + re.sub(r'[^a-zA-Z0-9_]', '_', character_name))
-        g.add((entity, rdflib.RDF.type, EX.Character))
+        entity = rdflib.URIRef(CH + re.sub(r'[^a-zA-Z0-9_]', '_', character_name))
+        g.add((entity, rdflib.RDF.type, CH.Character))
         g.add((entity, rdflib.RDFS.label, rdflib.Literal(character_name)))
 
         infobox_data = fetch_character_details(character_url)
@@ -102,9 +100,9 @@ def create_rdf_graph_for_characters(characters):
             elif value.strip():
                 g.add((entity, predicate, rdflib.Literal(value)))
             else:
-                print(f"⚠️ Clé détectée mais vide : {key}")
+                print(f" Clé détectée mais vide : {key}")
 
-        print(f"✅ Personnage ajouté : {character_name}")
+        print(f" Personnage ajouté : {character_name}")
 
     return g
 
@@ -116,4 +114,4 @@ rdf_graph = create_rdf_graph_for_characters(all_characters)
 with open("characters_all_with_images.ttl", "w", encoding="utf-8") as f:
     f.write(rdf_graph.serialize(format="turtle"))
 
-print(f"✅ Fichier RDF complet avec images généré avec succès : characters_all_with_images.ttl")
+print(f" Fichier RDF complet avec images généré avec succès : characters_all_with_images.ttl")

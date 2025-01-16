@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ details.label }}{% endblock %}
+{% block content %}
+<div class="css-page">
+
+<div class="css-details">
+    <h1>{{ details.label }}</h1>
+    <img src="/proxy-image/?url={{ details.image | urlencode }}" alt="{{ details.label }}">
+    <ul>
+        <li><strong>Category:</strong> {{ details.category or "N/A" }}</li>
+        <li><strong>Platform:</strong> {{ details.platform or "N/A" }}</li>
+        <li><strong>Players:</strong> {{ details.players or "N/A" }}</li>
+        <li><strong>Connectivity:</strong> {{ details.connectivity or "N/A" }}</li>
+        <li><strong>Developer:</strong> {{ details.developer or "N/A" }}</li>
+        <li><strong>Publisher:</strong> {{ details.publisher or "N/A" }}</li>
+        <li><strong>Part Of:</strong> {{ details.part_of or "N/A" }}</li>
+        <li><strong>Release Dates:</strong>
+            <ul>
+                {% for region, date in details.release_dates.items() %}
+                    <li><strong>{{ region }}:</strong> {{ date or "N/A" }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>
+{% endblock %}

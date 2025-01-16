@@ -8,7 +8,6 @@ BASE_URL = "https://bulbapedia.bulbagarden.net"
 ABILITIES_URL = BASE_URL + "/wiki/Category:Abilities"
 
 def fetch_all_abilities():
-    """Récupère toutes les abilities depuis Bulbapedia."""
     abilities = []
     next_page_url = ABILITIES_URL
 
@@ -32,11 +31,10 @@ def fetch_all_abilities():
         next_page_link = soup.find('a', string="next page")
         next_page_url = BASE_URL + next_page_link['href'] if next_page_link else None
 
-    print(f"✅ {len(abilities)} Abilities trouvées.")
+    print(f"{len(abilities)} Abilities trouvées.")
     return abilities
 
 def fetch_ability_details(ability_url):
-    """Extrait les détails de l'ability depuis l'infobox."""
     response = requests.get(ability_url)
     if response.status_code != 200:
         return {}
@@ -68,7 +66,6 @@ def fetch_ability_details(ability_url):
     return infobox_data
 
 def create_rdf_graph_for_abilities(abilities):
-    """Crée un graphe RDF avec toutes les abilities."""
     SCHEMA = rdflib.Namespace("http://schema.org/")
     EX = rdflib.Namespace("http://example.org/pokemon/")
     g = rdflib.Graph()
@@ -89,9 +86,9 @@ def create_rdf_graph_for_abilities(abilities):
             if value.strip():
                 g.add((entity, predicate, rdflib.Literal(value)))
             else:
-                print(f"⚠️ Clé détectée mais vide : {key}")
+                print(f" Clé détectée mais vide : {key}")
 
-        print(f"✅ Ability ajoutée : {ability_name}")
+        print(f" Ability ajoutée : {ability_name}")
 
     return g
 
@@ -102,4 +99,4 @@ rdf_graph = create_rdf_graph_for_abilities(all_abilities)
 # Sauvegarde dans un fichier Turtle
 ttl_file_path = "abilities_all.ttl"
 rdf_graph.serialize(destination=ttl_file_path, format="turtle", encoding="utf-8")
-print(f"✅ Fichier RDF généré avec succès : {ttl_file_path}")
+print(f" Fichier RDF généré avec succès : {ttl_file_path}")

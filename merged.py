@@ -1,84 +1,51 @@
-from rdflib import Graph, Namespace, RDF, XSD
+import rdflib
+from rdflib import Graph, Namespace, URIRef, Literal
+from rdflib.namespace import RDF, RDFS
 import os
 
-# Définir les namespaces
-RDFS = Namespace("http://www.w3.org/2000/01/rdf-schema#")
-DBO = Namespace("http://dbpedia.org/ontology/")
-DBP = Namespace("http://dbpedia.org/property/")
-DBR = Namespace("http://dbpedia.org/resource/")
 EX = Namespace("http://example.org/pokemon/")
+DBP = Namespace("http://dbpedia.org/property/")
+SCHEMA = Namespace("http://schema.org/")
+XSD = Namespace("http://www.w3.org/2001/XMLSchema#")
 
-# Chemin du répertoire contenant les fichiers .ttl
-directory = "./data"
+main_graph = Graph()
 
-# Créer un graphe RDF vide
-merged_graph = Graph()
-
-# Charger le vocabulaire RDF (si vous avez un fichier séparé pour le vocabulaire)
-vocab_file = "vocabulary_demo.ttl"
-if os.path.exists(vocab_file):
-    try:
-        merged_graph.parse(vocab_file, format="turtle")
-        print(f"Vocabulaire chargé depuis : {vocab_file}")
-    except Exception as e:
-        print(f"Erreur lors du chargement du vocabulaire {vocab_file} : {e}")
-else:
-    print(f"Le fichier de vocabulaire {vocab_file} n'existe pas. Ignorer le chargement du vocabulaire.")
-
-# Parcourir tous les fichiers dans le répertoire
-for filename in os.listdir(directory):
-    if filename.endswith(".ttl") and filename != vocab_file:  # Éviter de charger le vocabulaire deux fois
-        file_path = os.path.join(directory, filename)
-        print(f"Traitement du fichier : {file_path}")
-        
-        try:
-            # Charger le fichier .ttl dans un graphe temporaire
-            temp_graph = Graph()
-            temp_graph.parse(file_path, format="turtle")
-            
-            # Ajouter les triplets du graphe temporaire au graphe fusionné
-            merged_graph += temp_graph
-            print(f"Fichier {filename} fusionné avec succès.")
-        except Exception as e:
-            print(f"Erreur lors du traitement du fichier {filename} : {e}")
-
-# Fonction pour lier les entités
-def link_entities(graph, property_uri, domain_class, range_class):
-    """
-    Lie les entités en fonction d'une propriété donnée.
-    :param graph: Le graphe RDF.
-    :param property_uri: La propriété à lier (ex: ex:hasMove).
-    :param domain_class: La classe du domaine (ex: ex:Pokemon).
-    :param range_class: La classe du range (ex: ex:Move).
-    """
-    if (None, property_uri, None) in graph:
-        for subject, _, obj in graph.triples((None, property_uri, None)):
-            # Vérifier que le sujet et l'objet sont bien des instances des classes attendues
-            if (subject, RDF.type, domain_class) in graph and (obj, RDF.type, range_class) in graph:
-                graph.add((subject, property_uri, obj))
-        print(f"Relations {property_uri} ajoutées avec succès.")
-    else:
-        print(f"Aucune relation {property_uri} trouvée dans le graphe fusionné.")
-
-# Lier les entités en fonction des propriétés définies dans le vocabulaire
-link_entities(merged_graph, EX.hasType, EX.Pokemon, EX.PokemonType)
-link_entities(merged_graph, EX.hasAbility, EX.Pokemon, EX.Ability)
-link_entities(merged_graph, EX.hasHiddenAbility, EX.Pokemon, EX.HiddenAbility)
-link_entities(merged_graph, EX.hasEggGroup, EX.Pokemon, EX.EggGroup)
-link_entities(merged_graph, EX.hasMove, EX.Pokemon, EX.Move)
-link_entities(merged_graph, EX.hasPower, EX.Move, XSD.integer)
-link_entities(merged_graph, EX.hasAccuracy, EX.Move, XSD.string)
-link_entities(merged_graph, EX.hasCategory, EX.Move, XSD.string)
-link_entities(merged_graph, EX.hasType, EX.Move, EX.PokemonType)
-link_entities(merged_graph, EX.hasEpisode, EX.Episode, XSD.string)
-link_entities(merged_graph, EX.hasGeneration, EX.Pokemon, XSD.integer)
-link_entities(merged_graph, EX.hasImage, EX.Pokemon, XSD.anyURI)
-link_entities(merged_graph, EX.relatedToDbpedia, EX.Pokemon, DBR.Pokemon)
-
-# Sauvegarder le graphe fusionné dans un nouveau fichier .ttl
-output_file = "merged_output.ttl"
+# Charger le vocabulaire RDF
 try:
-    merged_graph.serialize(destination=output_file, format="turtle")
-    print(f"Fichier fusionné sauvegardé sous : {output_file}")
+    main_graph.parse("data/vocabulary_demo.ttl", format="turtle")
+    print(" Vocabulaire chargé avec succès.")
 except Exception as e:
-    print(f"Erreur lors de la sauvegarde du fichier fusionné : {e}")
+    print(f" Erreur lors du chargement du vocabulaire : {e}")
+
+# Fusionner tous les fichiers RDF dans le dossier data/
+data_folder = "data/"
+for file in os.listdir(data_folder):
+    if file.endswith(".ttl") and file != "vocabulary_demo.ttl":
+        file_path = os.path.join(data_folder, file)
+        try:
+            main_graph.parse(file_path, format="turtle")
+            print(f" Fichier chargé : {file}")
+        except Exception as e:
+            print(f" Erreur lors du chargement de {file} : {e}")
+
+# Fonction pour relier automatiquement les entités entre elles
+def link_entities(graph):
+    for pokemon in graph.subjects(RDF.type, EX.Pokemon):
+        for pokemon_type in graph.objects(pokemon, EX.hasType):
+            if (pokemon_type, RDF.type, EX.PokemonType) not in graph:
+                graph.add((pokemon_type, RDF.type, EX.PokemonType))
+                
+        for ability in graph.objects(pokemon, EX.hasAbility):
+            if (ability, RDF.type, EX.Ability) not in graph:
+                graph.add((ability, RDF.type, EX.Ability))
+        
+        for egg_group in graph.objects(pokemon, EX.hasEggGroup):
+            if (egg_group, RDF.type, EX.EggGroup) not in graph:
+                graph.add((egg_group, RDF.type, EX.EggGroup))
+
+link_entities(main_graph)
+
+# Sauvegarder le graphe fusionné
+output_file = "merged_pokemon_knowledge_graph.ttl"
+main_graph.serialize(destination=output_file, format="turtle")
+print(f"\n Fichier RDF fusionné sauvegardé sous : {output_file}")

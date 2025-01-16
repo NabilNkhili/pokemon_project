@@ -16,10 +16,9 @@ def validate_rdf(data_file, shape_file):
     )
 
     if conforms:
-        print(f"✅ Les données dans {data_file} sont valides.")
+        print(f" Les données dans {data_file} sont valides.")
     else:
-        print(f"❌ Erreurs détectées dans {data_file} :")
+        print(f" Erreurs détectées dans {data_file} :")
         print(results_text)
 
-# Exemple d'utilisation :
-validate_rdf("tsv_merged_output.ttl", "data/pokemon_shape.ttl")
+validate_rdf("KG.ttl", "data/pokemon_shape.ttl")

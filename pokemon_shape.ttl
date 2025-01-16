@@ -1,0 +1,107 @@
+@prefix ex: <http://example.org/pokemon/> .
+@prefix ns1: <http://dbpedia.org/property/> .
+@prefix ep: <http://example.org/pokemon/episodes/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema1: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+### Contraintes pour Pokémon
+ex:PokemonShape a sh:NodeShape ;
+    sh:targetClass ex:Pokemon ;
+
+    # Vérification du label (rdfs:label)
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:maxCount 2 ;
+        sh:message "Chaque Pokémon doit avoir entre un et deux labels (rdfs:label)." ;
+    ] ;
+
+    # Vérification du type (ns1:hasType)
+    sh:property [
+        sh:path ns1:hasType ;
+        sh:nodeKind sh:IRI ;  # Accepter des URI (IRI) au lieu de chaînes de caractères
+        sh:minCount 1 ;
+        sh:message "Chaque Pokémon doit avoir au moins un type (ns1:hasType)." ;
+    ] ;
+
+    # Vérification de l'ability (ns1:hasAbility)
+    sh:property [
+        sh:path ns1:hasAbility ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:message "Chaque Pokémon doit avoir au moins une capacité (ns1:hasAbility)." ;
+    ] ;
+
+    # Vérification des groupes d'œufs (ns1:hasEggGroup)
+    sh:property [
+        sh:path ns1:hasEggGroup ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:message "Chaque Pokémon doit appartenir à au moins un groupe d'œufs (ns1:hasEggGroup)." ;
+    ] ;
+
+    # Vérification de la couleur (ex:color)
+    sh:property [
+        sh:path ex:color ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Chaque Pokémon doit avoir une couleur (ex:color)." ;
+    ] ;
+
+    # Vérification de la taille (ex:height)
+    sh:property [
+        sh:path ex:height ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.1 ;
+        sh:message "Chaque Pokémon doit avoir une taille positive (ex:height)." ;
+    ] ;
+
+    # Vérification du poids (ex:weight)
+    sh:property [
+        sh:path ex:weight ;
+        sh:datatype xsd:decimal ;
+        sh:minInclusive 0.1 ;
+        sh:message "Chaque Pokémon doit avoir un poids positif (ex:weight)." ;
+    ] ;
+
+    # Vérification du numéro (ex:ndex)
+    sh:property [
+        sh:path ex:ndex ;
+        sh:datatype xsd:string ;
+        sh:pattern "^\\d{4}$" ;
+        sh:message "Chaque Pokémon doit avoir un numéro national valide à 4 chiffres (ex:ndex)." ;
+    ] .
+
+ep:EpisodeShape a sh:NodeShape ;
+    sh:targetClass ep:Episode ;
+
+    # Vérification du label (rdfs:label)
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Chaque épisode doit avoir un label (rdfs:label)." ;
+    ] . 
+
+ex:MoveShape a sh:NodeShape ;
+    sh:targetClass ex:Move ;
+
+    # Vérification du label (rdfs:label)
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype xsd:string ;
+        sh:minCount 1 ;
+        sh:message "Chaque mouvement doit avoir un label (rdfs:label)." ;
+    ] ;
+
+    # Vérification du type (ex:hasType)
+    sh:property [
+        sh:path ex:hasType ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:message "Chaque mouvement doit avoir un type (ex:hasType)." ;
+    ] .

@@ -5,27 +5,25 @@ from rdflib.plugins.sparql import prepareQuery
 
 app = Flask(__name__)
 
-# 📌 Liste des fichiers RDF à charger
 ttl_files = [
     "all_pokemon.ttl",          
     "pokemonAbilities.ttl",      
     "pokemonTypes.ttl",          
-    "pokemon_moves.ttl",         # Reste inchangé
-    "pokemon_all_episodes.ttl",  # Reste inchangé
-    "egg_groups.ttl"     # Anciennement egg_groups.ttl
+    "pokemon_moves.ttl",         
+    "pokemon_all_episodes.ttl",  
+    "egg_groups.ttl"     
 ]
 
-# 📌 Chargement des fichiers RDF
 g = rdflib.Graph()
 for ttl_file in ttl_files:
     file_path = os.path.abspath(ttl_file)
     try:
         g.parse(file_path, format="turtle")
-        print(f"✅ Fichier {ttl_file} chargé avec succès. Nombre de triplets : {len(g)}")
+        print(f" Fichier {ttl_file} chargé avec succès. Nombre de triplets : {len(g)}")
     except Exception as e:
-        print(f"❌ Erreur lors du chargement de {ttl_file} : {e}")
+        print(f" Erreur lors du chargement de {ttl_file} : {e}")
 
-print(f"✅ Graph RDF chargé avec succès. Nombre total de triplets : {len(g)}")
+print(f" Graph RDF chargé avec succès. Nombre total de triplets : {len(g)}")
 
 @app.route("/")
 def home():

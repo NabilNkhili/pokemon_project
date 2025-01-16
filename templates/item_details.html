@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ details.label }}{% endblock %}
+{% block content %}
+<h1>{{ details.label }}</h1>
+<div class="css-page">
+
+<div class="css-details">
+    <img src="/proxy-image/?url={{ details.image | urlencode }}" alt="{{ details.label }}" onerror="this.src='/static/no_image.png';">
+    <p><strong>Introduced In:</strong> {{ details.introduced_in }}</p>
+    <p><strong>Artwork:</strong> {{ details.artwork }}</p>
+    <p><strong>Power:</strong> {{ details.power }}</p>
+    <p><strong>Generations:</strong></p>
+    <ul>
+        {% for gen, value in details.generations.items() %}
+        <li><strong>{{ gen }}:</strong> {{ value }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</div>
+{% endblock %}

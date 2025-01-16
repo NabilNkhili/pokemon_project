@@ -3,13 +3,12 @@ from rdflib import Graph, Namespace, URIRef, Literal
 from rdflib.namespace import RDF, RDFS
 import re
 import requests
-from flask import Response  # ✅ Correct
+from flask import Response 
 import time
 import os
 
 
 
-app = Flask(__name__)
 
 from flask import Flask, Response, request
 import requests
@@ -51,7 +50,7 @@ def proxy_image():
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"
-    }  # 🔥 Imitation d'un vrai navigateur
+    }  #Imitation d'un vrai navigateur
 
     try:
         response = requests.get(image_url, headers=headers, stream=True)
@@ -60,7 +59,6 @@ def proxy_image():
             with open(image_filename, "wb") as f:
                 f.write(response.content)
             
-            # Servir l'image
             return send_file(image_filename, mimetype="image/png")
         return "Image not found", 404
     except requests.RequestException:
@@ -70,38 +68,35 @@ def proxy_image():
 
 
 
-# Load the RDF graph
 EX = Namespace("http://example.org/pokemon/")
 NS1 =  Namespace("http://dbpedia.org/property/")
 EP = Namespace("http://example.org/episodes/")
-
+CH = Namespace("http://example.org/characters/")
+IT = Namespace("http://example.org/items/")
 DBP = Namespace("http://dbpedia.org/property/")
 SCHEMA = Namespace("http://schema.org/")
 
 g = Graph()
-g.parse("tsv_merged_output.ttl", format="turtle")
+g.parse("KG.ttl", format="turtle")
 
-# Définition des catégories pour tout afficher
 categories = {
     "pokemon": EX.Pokemon,
     "move": EX.Move,
-    "item": EX.Item,
+    "item": IT.Item,
     "ability": EX.Ability,
     "Type": EX.PokemonType,
     "egg-group": EX.EggGroup,
     "episode": EP.Episode,
     "game": EX.Game,
-    "character": EX.Character
+    "character": CH.Character
 }
 
 
-# HOMEPAGE: Display categories
 @app.route("/")
 def home():
     return render_template("home.html", categories=categories)
 
 
-# CATEGORY PAGE: List all entities within a category
 @app.route("/category/<category>")
 def category(category):
     query = request.args.get("query", "").lower()
@@ -112,24 +107,40 @@ def category(category):
             label = g.value(s, RDFS.label)
             
             if category.lower() in ["type", "egg-group"]:
-                # Pour la catégorie "Type", on ne récupère que le label
                 results.append({"label": label})
             elif category.lower() == "move":
-            # Spécifique à la catégorie Move
                 for s in g.subjects(RDF.type, categories[category]):
                     label = g.value(s, RDFS.label)
                     image = g.value(s, SCHEMA.image, default="/static/no_image.png")
                     if not query or (label and query in label.lower()):
                         results.append({"uri": str(s), "label": label, "image": image})
             elif category.lower() == "episode":
-                # Spécifique à la catégorie Episode
                 image = g.value(s, EP.hasImage, default="/static/no_image.png")
                 title = g.value(s, EP.hasTitle)
                 if not query or (title and query in title.lower()):
                     results.append({"uri": str(s), "label": title, "image": image})
                     
+            elif category.lower() == "game":
+                image = g.value(s, SCHEMA.imageURL, default="/static/no_image.png")
+                if not query or (label and query in label.lower()):
+                    results.append({"uri": str(s), "label": label, "image": image})
+                    
+            elif category.lower() == "character":
+                image = g.value(s, SCHEMA.Image, default="/static/no_character.png")
+                if not query or (label and query in label.lower()):
+                    results.append({"uri": str(s), "label": label, "image": image})
+               
+            elif category.lower() == "item":
+                image = g.value(s, SCHEMA.Image, default="/static/no_item.png")
+                introduced_in = g.value(s, SCHEMA.IntroducedIn, default="Unknown")
+                if not query or (label and query in label.lower()):
+                    results.append({
+                        "uri": str(s),
+                        "label": label,
+                        "image": image,
+                        "introduced_in": introduced_in
+                    })                
             else:
-                # Pour les autres catégories, on récupère l'image et le lien
                 image = g.value(s, EX.hasImage, default="/static/no_image.png")
                 if not query or (label and query in label.lower()):
                     results.append({"uri": str(s), "label": label, "image": image})
@@ -140,9 +151,99 @@ def category(category):
     return render_template("category.html", results=results, category=category.capitalize())
 
 
+@app.route("/item/<item_name>")
+def item_details(item_name):
+    """Affiche les détails d'un item."""
+    item_uri = None
+    for s in g.subjects(RDF.type, IT.Item):
+        label = g.value(s, RDFS.label)
+        if label and label.lower() == item_name.lower():
+            item_uri = s
+            break
+
+    if not item_uri:
+        return "Item not found", 404
+
+    details = {
+        "label": g.value(item_uri, RDFS.label),
+        "image": g.value(item_uri, SCHEMA.Image, default="/static/no_image.png"),
+        "introduced_in": g.value(item_uri, SCHEMA.IntroducedIn, default="Unknown"),
+        "artwork": g.value(item_uri, SCHEMA.Artwork, default="Unknown"),
+        "power": g.value(item_uri, SCHEMA.Power, default="Unknown"),
+        "generations": {
+            predicate.split("_")[-1]: g.value(item_uri, SCHEMA[predicate])
+            for predicate in ["Generation_V", "Generation_VI", "Generation_VII", "Generation_VIII", "Generation_IX"]
+            if g.value(item_uri, SCHEMA[predicate])
+        }
+    }
+
+    return render_template("item_details.html", details=details)
+
+@app.route("/character/<character_name>")
+def character_details(character_name):
+    character_uri = None
+    for s in g.subjects(RDF.type, CH.Character):
+        label = g.value(s, RDFS.label)
+        if label and label.lower() == character_name.lower():
+            character_uri = s
+            break
+
+    if not character_uri:
+        return "Character not found", 404
+
+    details = {
+        "label": g.value(character_uri, RDFS.label),
+        "gender": g.value(character_uri, SCHEMA.Gender),
+        "region": g.value(character_uri, SCHEMA.Region),
+        "trainer_class": g.value(character_uri, SCHEMA.Trainer_class),
+        "hometown": g.value(character_uri, SCHEMA.Hometown),
+        "generation": g.value(character_uri, SCHEMA.Generation),
+        "specializes_in": g.value(character_uri, SCHEMA.Specializes_in),
+        "games": g.objects(character_uri, SCHEMA.Games),
+        "image": g.value(character_uri, SCHEMA.Image, default="/static/no_character.png"),
+    }
+
+    return render_template("character_details.html", details=details)
+
+
+@app.route("/game/<game_name>")
+def game_details(game_name):
+    game_uri = None
+    for s in g.subjects(RDF.type, EX.Game):
+        label = g.value(s, RDFS.label)
+        if label and label.lower() == game_name.lower():
+            game_uri = s
+            break
+
+    if not game_uri:
+        return "Game not found", 404
+
+    details = {
+        "label": g.value(game_uri, RDFS.label),
+        "category": g.value(game_uri, SCHEMA.Category),
+        "platform": g.value(game_uri, SCHEMA.Platform),
+        "players": g.value(game_uri, SCHEMA.Players),
+        "connectivity": g.value(game_uri, SCHEMA.Connectivity),
+        "developer": g.value(game_uri, SCHEMA.Developer),
+        "publisher": g.value(game_uri, SCHEMA.Publisher),
+        "part_of": g.value(game_uri, SCHEMA.Part_of),
+        "release_dates": {
+            "Japan": g.value(game_uri, SCHEMA.releaseDate_Japan),
+            "North America": g.value(game_uri, SCHEMA.releaseDate_North_America),
+            "Australia": g.value(game_uri, SCHEMA.releaseDate_Australia),
+            "Europe": g.value(game_uri, SCHEMA.releaseDate_Europe),
+            "South Korea": g.value(game_uri, SCHEMA.releaseDate_South_Korea),
+            "Hong Kong": g.value(game_uri, SCHEMA.releaseDate_Hong_Kong),
+            "Taiwan": g.value(game_uri, SCHEMA.releaseDate_Taiwan),
+        },
+        "image": g.value(game_uri, SCHEMA.imageURL, default="/static/no_image.png"),
+    }
+
+    return render_template("game_details.html", details=details)
+
+
 @app.route("/move/<move_name>")
 def move_details(move_name):
-    # Recherche du move dans le graphe RDF
     move_uri = None
     for s in g.subjects(RDF.type, EX.Move):
         label = g.value(s, RDFS.label)
@@ -156,7 +257,6 @@ def move_details(move_name):
     type_uri = g.value(move_uri, EX.hasType)
     type_label = g.value(type_uri, RDFS.label) if type_uri else None
 
-    # Récupération des informations du move
     details = {
         "label": g.value(move_uri, RDFS.label),
         "type": type_label,
@@ -172,7 +272,6 @@ def move_details(move_name):
 
 @app.route("/episode/<episode_id>")
 def episode_details(episode_id):
-    # Recherche de l'épisode dans le graphe RDF
     episode_uri = None
     for s in g.subjects(RDF.type, EP.Episode):
         title = g.value(s, EP.hasTitle)
@@ -183,7 +282,6 @@ def episode_details(episode_id):
     if not episode_uri:
         return "Episode not found", 404
 
-    # Récupération des informations détaillées sur l'épisode
     details = {
         "title": g.value(episode_uri, EP.hasTitle),
         "image": g.value(episode_uri, EP.hasImage, default="/static/no_image.png"),
@@ -208,32 +306,28 @@ def episode_details(episode_id):
 
     return render_template("episode_details.html", details=details)
 
-# Fonction pour rendre les prédicats plus lisibles
 def format_predicate(predicate):
-    # Remplacer les prédicats RDF par des termes plus lisibles
     if predicate == str(RDFS.label):
         return "Label"
     elif predicate == str(RDF.type):
         return "Type"
     
-    # Gestion générale des autres prédicats (supprimer "has" et formater)
     clean_predicate = predicate.split("/")[-1]
     if clean_predicate.lower().startswith("has"):
         clean_predicate = clean_predicate[3:]
     return clean_predicate.replace("_", " ").capitalize()
 
-# DETAILS PAGE: Show details for a specific Pokémon
+
 @app.route("/pokemon/<pokemon_name>")
 def pokemon_details(pokemon_name):
     EX = Namespace("http://example.org/pokemon/")
     NS1 = Namespace("http://dbpedia.org/property/")
-    SCHEMA = Namespace("http://schema.org/")  # Ajoutez ce namespace si nécessaire
+    SCHEMA = Namespace("http://schema.org/")  
     pokemon_uri = EX[pokemon_name.replace(' ', '_')]
     
     label = g.value(pokemon_uri, RDFS.label)
     image = g.value(pokemon_uri, EX.hasImage, default="/static/no_image.png")
     
-    # Fetch URIs and then their labels
     abilities = list(g.objects(pokemon_uri, NS1.hasAbility))
     ability_labels = []
     for ability_uri in abilities:
@@ -273,10 +367,9 @@ def pokemon_details(pokemon_name):
     ndex = g.value(pokemon_uri, EX.ndex)
     weight = g.value(pokemon_uri, EX.weight)
     
-     # Récupérer les noms dans différentes langues
     names = {}
     for name in g.objects(pokemon_uri, SCHEMA.name):
-        lang = name.language  # Récupérer la langue du nom
+        lang = name.language 
         names[lang] = str(name)
         
     details = {
@@ -294,7 +387,7 @@ def pokemon_details(pokemon_name):
         "jname": jname,
         "ndex": ndex,
         "weight": weight,
-        "names": names  # Ajouter les noms multilingues
+        "names": names  
 
     }
     
@@ -308,7 +401,6 @@ def list_abilities():
     abilities = []
     hidden_abilities = []
 
-    # Récupérer toutes les instances de ex:Ability
     for ability_uri in g.subjects(RDF.type, EX.Ability):
         label = g.value(ability_uri, RDFS.label)
         if label:
@@ -317,7 +409,6 @@ def list_abilities():
                 hidden_abilities.append({"uri": str(ability_uri), "label": label})
             else:
                 abilities.append({"uri": str(ability_uri), "label": label})
-    # Compter le nombre total de capacités
     total_abilities = len(abilities) + len(hidden_abilities)
 
     return render_template("abilities.html", abilities=abilities,
@@ -327,22 +418,18 @@ def list_abilities():
 @app.route("/ability/<ability_name>")
 def ability_details(ability_name):
     EX = Namespace("http://example.org/pokemon/")
-    SCHEMA = Namespace("http://example.org/schema/")  # Namespace personnalisé pour les propriétés
+    SCHEMA = Namespace("http://example.org/schema/")  
     
-    # Convertir le nom de la capacité en URI
     ability_uri = EX[ability_name.replace(' ', '_')]
     
-    # Récupérer les informations de la capacité depuis le graphe RDF
     label = g.value(ability_uri, RDFS.label)
     details = {}
 
-    # Récupérer les propriétés de la capacité
     for p, o in g.predicate_objects(ability_uri):
-        if str(p).startswith(str(SCHEMA)):  # Filtrer les propriétés personnalisées
-            key = str(p).split('/')[-1]  # Extraire le nom de la propriété
+        if str(p).startswith(str(SCHEMA)):  
+            key = str(p).split('/')[-1] 
             details[key] = str(o)
 
-    # Préparer les données pour le template
     ability_info = {
         "label": label,
         "details": details
@@ -354,7 +441,6 @@ def list_types():
     EX = Namespace("http://example.org/pokemon/")
     types = []
 
-    # Récupérer toutes les instances de ex:PokemonType
     for type_uri in g.subjects(RDF.type, EX.PokemonType):
         label = g.value(type_uri, RDFS.label)
         if label:
@@ -368,12 +454,10 @@ def search():
     category = request.args.get("category")
     results = []
 
-    # Recherche limitée à la catégorie actuelle
     if category in categories:
         for s, p, o in g.triples((None, RDFS.label, None)):
             if query.lower() in str(o).lower() and (s, RDF.type, categories[category]) in g:
                 results.append({"uri": str(s), "label": o})
-    # Si aucune catégorie n'est spécifiée, effectuer une recherche globale
     else:
         for s, p, o in g.triples((None, RDFS.label, None)):
             if query.lower() in str(o).lower():

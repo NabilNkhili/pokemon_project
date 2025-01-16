@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 {% block title %}{{ details.label }}{% endblock %}
 {% block content %}
-<div class="move-details">
+
+<div class="css-page">
+
+    
+<div class="css-details">
     <h1>{{ details.label }}</h1>
     <img src="/proxy-image/?url={{ details.image | urlencode }}" alt="{{ details.label }}">
     <ul>
@@ -11,5 +15,7 @@
         <li><strong>Accuracy:</strong> {{ details.accuracy }}</li>
         <li><strong>PP:</strong> {{ details.pp }}</li>
     </ul>
+</div>
+
 </div>
 {% endblock %}
